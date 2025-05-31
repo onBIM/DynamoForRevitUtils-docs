@@ -1,0 +1,1030 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  commentId: T:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  id: ConversionServices
+  parent: DynamoForRevitUtils.Services.UnitsConversion
+  children:
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit(System.Double,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit(System.Double,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(System.Double)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(System.Double)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal(System.Double)
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: ConversionServices
+  nameWithType: ConversionServices
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Class for units conversion between Dynamo and Revit active document
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ConversionServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ConversionServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  id: ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertInternalToDisplayUnit(double, ForgeTypeId, Document?)
+  nameWithType: ConversionServices.ConvertInternalToDisplayUnit(double, ForgeTypeId, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: >-
+    Converts a value from Revit internal units to display units based on a specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>
+
+    and document.
+  remarks: >-
+    <p>
+        <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> specifies the "kind" of measurement, like length, area, volume, etc.
+        See also: <a href="https://revapidocs.com/2025.htm?id=35c5a3db-b4b3-daa0-ebdd-ae87d03cd5bb.htm">Revit API Docs - SpecTypeId</a>
+    </p>
+  example: []
+  syntax:
+    content: public static double ConvertInternalToDisplayUnit(this double x, ForgeTypeId specTypeId, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in Revit's internal units to be converted.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document to retrieve display unit formats from. If not provided, the current document is used.
+    return:
+      type: System.Double
+      description: The value converted to the display units corresponding to the specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ConvertInternalToDisplayUnit(x As Double, specTypeId As ForgeTypeId, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit*
+  nameWithType.vb: ConversionServices.ConvertInternalToDisplayUnit(Double, ForgeTypeId, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document)
+  name.vb: ConvertInternalToDisplayUnit(Double, ForgeTypeId, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  id: ConvertDisplayToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertDisplayToInternalUnit(double, ForgeTypeId, Document?)
+  nameWithType: ConversionServices.ConvertDisplayToInternalUnit(double, ForgeTypeId, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: >-
+    Converts a value from display units to Revit internal units based on a specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>
+
+    and document.
+  remarks: >-
+    <p>
+        <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> specifies the "kind" of measurement, like length, area, volume, etc.
+        See also: <a href="https://revapidocs.com/2025.htm?id=35c5a3db-b4b3-daa0-ebdd-ae87d03cd5bb.htm">Revit API Docs - SpecTypeId</a>
+    </p>
+  example: []
+  syntax:
+    content: public static double ConvertDisplayToInternalUnit(this double x, ForgeTypeId specTypeId, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in display units to be converted.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document to retrieve display unit formats from. If not provided, the current document is used.
+    return:
+      type: System.Double
+      description: The value converted to Revit internal units corresponding to the specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ConvertDisplayToInternalUnit(x As Double, specTypeId As ForgeTypeId, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit*
+  nameWithType.vb: ConversionServices.ConvertDisplayToInternalUnit(Double, ForgeTypeId, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document)
+  name.vb: ConvertDisplayToInternalUnit(Double, ForgeTypeId, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  id: ConvertToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertToDisplayUnit(double, ForgeTypeId, ForgeTypeId, Document?)
+  nameWithType: ConversionServices.ConvertToDisplayUnit(double, ForgeTypeId, ForgeTypeId, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from a specified unit type to the document's display units, based on the provided <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static double ConvertToDisplayUnit(this double x, ForgeTypeId currentUnitTypeId, ForgeTypeId specTypeId, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in the original unit type to be converted.
+    - id: currentUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type of the input value.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document to retrieve the display unit formats from. If not provided, the current document is used.
+    return:
+      type: System.Double
+      description: The value converted to the display units corresponding to the specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ConvertToDisplayUnit(x As Double, currentUnitTypeId As ForgeTypeId, specTypeId As ForgeTypeId, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when the provided <code class="paramref">currentUnitTypeId</code> is not valid for
+
+      the specified <code class="paramref">specTypeId</code>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the provided <code class="paramref">specTypeId</code> is not measurable.
+  nameWithType.vb: ConversionServices.ConvertToDisplayUnit(Double, ForgeTypeId, ForgeTypeId, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document)
+  name.vb: ConvertToDisplayUnit(Double, ForgeTypeId, ForgeTypeId, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  id: ConvertFromDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertFromDisplayUnit(double, ForgeTypeId, ForgeTypeId, Document?)
+  nameWithType: ConversionServices.ConvertFromDisplayUnit(double, ForgeTypeId, ForgeTypeId, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from the document's display units to a specified unit type, based on the provided <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static double ConvertFromDisplayUnit(this double x, ForgeTypeId targetUnitTypeId, ForgeTypeId specTypeId, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in display units to be converted.
+    - id: targetUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type to convert to.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document to retrieve the display unit formats from. If not provided, the current document is used.
+    return:
+      type: System.Double
+      description: The value converted from display units to the specified target unit type.
+    content.vb: Public Shared Function ConvertFromDisplayUnit(x As Double, targetUnitTypeId As ForgeTypeId, specTypeId As ForgeTypeId, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when the provided <code class="paramref">targetUnitTypeId</code> is not valid for
+
+      the specified <code class="paramref">specTypeId</code>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the provided <code class="paramref">specTypeId</code> is not measurable.
+  nameWithType.vb: ConversionServices.ConvertFromDisplayUnit(Double, ForgeTypeId, ForgeTypeId, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.Document)
+  name.vb: ConvertFromDisplayUnit(Double, ForgeTypeId, ForgeTypeId, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  id: ConvertToInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertToInternalUnit(double, ForgeTypeId, ForgeTypeId)
+  nameWithType: ConversionServices.ConvertToInternalUnit(double, ForgeTypeId, ForgeTypeId)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from a specified unit type to Revit's internal units, based on the provided <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static double ConvertToInternalUnit(this double x, ForgeTypeId currentUnitTypeId, ForgeTypeId specTypeId)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in the original unit type to be converted.
+    - id: currentUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type of the input value.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    return:
+      type: System.Double
+      description: The value converted to Revit's internal units corresponding to the specified <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ConvertToInternalUnit(x As Double, currentUnitTypeId As ForgeTypeId, specTypeId As ForgeTypeId) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when the provided <code class="paramref">currentUnitTypeId</code> is not valid for
+
+      the specified <code class="paramref">specTypeId</code>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the provided <code class="paramref">specTypeId</code> is not measurable.
+  nameWithType.vb: ConversionServices.ConvertToInternalUnit(Double, ForgeTypeId, ForgeTypeId)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  name.vb: ConvertToInternalUnit(Double, ForgeTypeId, ForgeTypeId)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  id: ConvertFromInternalUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertFromInternalUnit(double, ForgeTypeId, ForgeTypeId)
+  nameWithType: ConversionServices.ConvertFromInternalUnit(double, ForgeTypeId, ForgeTypeId)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from Revit's internal units to a specified unit type, based on the provided <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static double ConvertFromInternalUnit(this double x, ForgeTypeId targetUnitTypeId, ForgeTypeId specTypeId)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in Revit's internal units to be converted.
+    - id: targetUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type to convert to.
+    - id: specTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> representing the specification type for the value being converted.
+    return:
+      type: System.Double
+      description: The value converted from Revit's internal units to the specified target unit type.
+    content.vb: Public Shared Function ConvertFromInternalUnit(x As Double, targetUnitTypeId As ForgeTypeId, specTypeId As ForgeTypeId) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when the provided <code class="paramref">targetUnitTypeId</code> is not valid for
+
+      the specified <code class="paramref">specTypeId</code>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the provided <code class="paramref">specTypeId</code> is not measurable.
+  nameWithType.vb: ConversionServices.ConvertFromInternalUnit(Double, ForgeTypeId, ForgeTypeId)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  name.vb: ConvertFromInternalUnit(Double, ForgeTypeId, ForgeTypeId)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  id: ConvertBetweenUnits(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.ForgeTypeId)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: ConvertBetweenUnits(double, ForgeTypeId, ForgeTypeId)
+  nameWithType: ConversionServices.ConvertBetweenUnits(double, ForgeTypeId, ForgeTypeId)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits(double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value between two unit types using the specified current and target <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    <p>
+        <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> defines the unit used for measurement, like meter, square meters, cubic meters, etc.
+        See also: <a href="https://revapidocs.com/2025.htm?id=bc1b6454-f10a-66dc-9268-1dccbc403f78.htm">Revit API Docs - UnitTypeId</a>
+    </p>
+  example: []
+  syntax:
+    content: public static double ConvertBetweenUnits(this double x, ForgeTypeId currentUnitTypeId, ForgeTypeId targetUnitTypeId)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value to be converted from the current unit type to the target unit type.
+    - id: currentUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type of the input value.
+    - id: targetUnitTypeId
+      type: Autodesk.Revit.DB.ForgeTypeId
+      description: The <xref href="Autodesk.Revit.DB.UnitTypeId" data-throw-if-not-resolved="false"></xref> representing the unit type to which the input value should be converted.
+    return:
+      type: System.Double
+      description: The value converted from the current unit type to the target unit type.
+    content.vb: Public Shared Function ConvertBetweenUnits(x As Double, currentUnitTypeId As ForgeTypeId, targetUnitTypeId As ForgeTypeId) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits*
+  nameWithType.vb: ConversionServices.ConvertBetweenUnits(Double, ForgeTypeId, ForgeTypeId)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits(Double, Autodesk.Revit.DB.ForgeTypeId, Autodesk.Revit.DB.ForgeTypeId)
+  name.vb: ConvertBetweenUnits(Double, ForgeTypeId, ForgeTypeId)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit(System.Double,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit(System.Double,Autodesk.Revit.DB.Document)
+  id: DisplayMassDensityToInternalUnit(System.Double,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: DisplayMassDensityToInternalUnit(double, Document?)
+  nameWithType: ConversionServices.DisplayMassDensityToInternalUnit(double, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit(double, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: >-
+    Converts a mass density value from display units to Revit's internal units based on
+
+    display unit density.
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double DisplayMassDensityToInternalUnit(this double x, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The mass density value in display units to be converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: >-
+        The Revit document used to determine the display unit type for the conversion.
+
+        If not provided, the current active document is used.
+    return:
+      type: System.Double
+      description: The mass density value converted to Revit's internal units.
+    content.vb: Public Shared Function DisplayMassDensityToInternalUnit(x As Double, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit*
+  nameWithType.vb: ConversionServices.DisplayMassDensityToInternalUnit(Double, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit(Double, Autodesk.Revit.DB.Document)
+  name.vb: DisplayMassDensityToInternalUnit(Double, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit(System.Double,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit(System.Double,Autodesk.Revit.DB.Document)
+  id: InternalMassDensityToDisplayUnit(System.Double,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: InternalMassDensityToDisplayUnit(double, Document?)
+  nameWithType: ConversionServices.InternalMassDensityToDisplayUnit(double, Document?)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit(double, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a mass density value from Revit internal units to display units based on the document's unit settings.
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double InternalMassDensityToDisplayUnit(this double x, Document? doc = null)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The mass density value in Revit's internal units to be converted.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: >-
+        The Revit document to retrieve the display unit format for mass density from.
+
+        If not provided, the current active document is used.
+    return:
+      type: System.Double
+      description: The mass density value converted to the display units configured for the specified document.
+    content.vb: Public Shared Function InternalMassDensityToDisplayUnit(x As Double, doc As Document = Nothing) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit*
+  nameWithType.vb: ConversionServices.InternalMassDensityToDisplayUnit(Double, Document)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit(Double, Autodesk.Revit.DB.Document)
+  name.vb: InternalMassDensityToDisplayUnit(Double, Document)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal(System.Double)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal(System.Double)
+  id: KilogramsPerCubicMeterToInternal(System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: KilogramsPerCubicMeterToInternal(double)
+  nameWithType: ConversionServices.KilogramsPerCubicMeterToInternal(double)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal(double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from kilograms per cubic meter (kg/m³) to Revit's internal mass density unit (kg/ft³).
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double KilogramsPerCubicMeterToInternal(this double x)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in kilograms per cubic meter to be converted.
+    return:
+      type: System.Double
+      description: The equivalent value converted to Revit's internal mass density unit.
+    content.vb: Public Shared Function KilogramsPerCubicMeterToInternal(x As Double) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal*
+  nameWithType.vb: ConversionServices.KilogramsPerCubicMeterToInternal(Double)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal(Double)
+  name.vb: KilogramsPerCubicMeterToInternal(Double)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal(System.Double)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal(System.Double)
+  id: PoundsMassPerCubicFootToInternal(System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: PoundsMassPerCubicFootToInternal(double)
+  nameWithType: ConversionServices.PoundsMassPerCubicFootToInternal(double)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal(double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value from pounds mass per cubic foot to Revit's internal units for mass density.
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double PoundsMassPerCubicFootToInternal(this double x)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in pounds mass per cubic foot to be converted.
+    return:
+      type: System.Double
+      description: The value converted to Revit's internal units for mass density.
+    content.vb: Public Shared Function PoundsMassPerCubicFootToInternal(x As Double) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal*
+  nameWithType.vb: ConversionServices.PoundsMassPerCubicFootToInternal(Double)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal(Double)
+  name.vb: PoundsMassPerCubicFootToInternal(Double)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(System.Double)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(System.Double)
+  id: InternalMassDensityToKilogramsPerCubicMeter(System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: InternalMassDensityToKilogramsPerCubicMeter(double)
+  nameWithType: ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(double)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a mass density value in Revit's internal units to kilograms per cubic meter.
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double InternalMassDensityToKilogramsPerCubicMeter(this double x)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The mass density value in Revit's internal units to be converted.
+    return:
+      type: System.Double
+      description: The value converted to kilograms per cubic meter.
+    content.vb: Public Shared Function InternalMassDensityToKilogramsPerCubicMeter(x As Double) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter*
+  nameWithType.vb: ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(Double)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter(Double)
+  name.vb: InternalMassDensityToKilogramsPerCubicMeter(Double)
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(System.Double)
+  commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(System.Double)
+  id: InternalMassDensityToPoundsMassPerCubicFoot(System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  langs:
+  - csharp
+  - vb
+  name: InternalMassDensityToPoundsMassPerCubicFoot(double)
+  nameWithType: ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(double)
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.UnitsConversion
+  summary: Converts a value representing mass density from Revit internal units to pounds mass per cubic foot.
+  remarks: Revit API does not have a convertion methods for mass desenty cases.
+  example: []
+  syntax:
+    content: public static double InternalMassDensityToPoundsMassPerCubicFoot(this double x)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The value in Revit's internal mass density units to be converted.
+    return:
+      type: System.Double
+      description: The value converted to pounds mass per cubic foot.
+    content.vb: Public Shared Function InternalMassDensityToPoundsMassPerCubicFoot(x As Double) As Double
+  overload: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot*
+  nameWithType.vb: ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(Double)
+  fullName.vb: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot(Double)
+  name.vb: InternalMassDensityToPoundsMassPerCubicFoot(Double)
+references:
+- uid: DynamoForRevitUtils.Services.UnitsConversion
+  commentId: N:DynamoForRevitUtils.Services.UnitsConversion
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.UnitsConversion
+  nameWithType: DynamoForRevitUtils.Services.UnitsConversion
+  fullName: DynamoForRevitUtils.Services.UnitsConversion
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.UnitsConversion
+    name: UnitsConversion
+    isExternal: true
+    href: DynamoForRevitUtils.Services.UnitsConversion.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.UnitsConversion
+    name: UnitsConversion
+    isExternal: true
+    href: DynamoForRevitUtils.Services.UnitsConversion.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Autodesk.Revit.DB.SpecTypeId
+  commentId: T:Autodesk.Revit.DB.SpecTypeId
+  isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertInternalToDisplayUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_Document_
+  name: ConvertInternalToDisplayUnit
+  nameWithType: ConversionServices.ConvertInternalToDisplayUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Autodesk.Revit.DB.ForgeTypeId
+  commentId: T:Autodesk.Revit.DB.ForgeTypeId
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: ForgeTypeId
+  nameWithType: ForgeTypeId
+  fullName: Autodesk.Revit.DB.ForgeTypeId
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertDisplayToInternalUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_Document_
+  name: ConvertDisplayToInternalUnit
+  nameWithType: ConversionServices.ConvertDisplayToInternalUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit
+- uid: Autodesk.Revit.DB.UnitTypeId
+  commentId: T:Autodesk.Revit.DB.UnitTypeId
+  isExternal: true
+  name: UnitTypeId
+  nameWithType: UnitTypeId
+  fullName: Autodesk.Revit.DB.UnitTypeId
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertToDisplayUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_Document_
+  name: ConvertToDisplayUnit
+  nameWithType: ConversionServices.ConvertToDisplayUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToDisplayUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertFromDisplayUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_Document_
+  name: ConvertFromDisplayUnit
+  nameWithType: ConversionServices.ConvertFromDisplayUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromDisplayUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertToInternalUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_ForgeTypeId_
+  name: ConvertToInternalUnit
+  nameWithType: ConversionServices.ConvertToInternalUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertToInternalUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertFromInternalUnit_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_ForgeTypeId_
+  name: ConvertFromInternalUnit
+  nameWithType: ConversionServices.ConvertFromInternalUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertFromInternalUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_ConvertBetweenUnits_System_Double_Autodesk_Revit_DB_ForgeTypeId_Autodesk_Revit_DB_ForgeTypeId_
+  name: ConvertBetweenUnits
+  nameWithType: ConversionServices.ConvertBetweenUnits
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertBetweenUnits
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_DisplayMassDensityToInternalUnit_System_Double_Autodesk_Revit_DB_Document_
+  name: DisplayMassDensityToInternalUnit
+  nameWithType: ConversionServices.DisplayMassDensityToInternalUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.DisplayMassDensityToInternalUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_InternalMassDensityToDisplayUnit_System_Double_Autodesk_Revit_DB_Document_
+  name: InternalMassDensityToDisplayUnit
+  nameWithType: ConversionServices.InternalMassDensityToDisplayUnit
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToDisplayUnit
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_KilogramsPerCubicMeterToInternal_System_Double_
+  name: KilogramsPerCubicMeterToInternal
+  nameWithType: ConversionServices.KilogramsPerCubicMeterToInternal
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.KilogramsPerCubicMeterToInternal
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_PoundsMassPerCubicFootToInternal_System_Double_
+  name: PoundsMassPerCubicFootToInternal
+  nameWithType: ConversionServices.PoundsMassPerCubicFootToInternal
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.PoundsMassPerCubicFootToInternal
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_InternalMassDensityToKilogramsPerCubicMeter_System_Double_
+  name: InternalMassDensityToKilogramsPerCubicMeter
+  nameWithType: ConversionServices.InternalMassDensityToKilogramsPerCubicMeter
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToKilogramsPerCubicMeter
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot*
+  commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html#DynamoForRevitUtils_Services_UnitsConversion_ConversionServices_InternalMassDensityToPoundsMassPerCubicFoot_System_Double_
+  name: InternalMassDensityToPoundsMassPerCubicFoot
+  nameWithType: ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.InternalMassDensityToPoundsMassPerCubicFoot

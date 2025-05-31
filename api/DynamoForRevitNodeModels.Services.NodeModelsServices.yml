@@ -1,0 +1,947 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices
+  commentId: T:DynamoForRevitNodeModels.Services.NodeModelsServices
+  id: NodeModelsServices
+  parent: DynamoForRevitNodeModels.Services
+  children:
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription(Dynamo.Graph.Nodes.PortData)
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type,System.Type,Dynamo.Graph.Nodes.PortType,System.Int32)
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType,System.Int32)
+  - DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})
+  langs:
+  - csharp
+  - vb
+  name: NodeModelsServices
+  nameWithType: NodeModelsServices
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Several utilities for NodeModels
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class NodeModelsServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module NodeModelsServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription(Dynamo.Graph.Nodes.PortData)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription(Dynamo.Graph.Nodes.PortData)
+  id: BuildInputDescription(Dynamo.Graph.Nodes.PortData)
+  isExtensionMethod: true
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: BuildInputDescription(PortData)
+  nameWithType: NodeModelsServices.BuildInputDescription(PortData)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription(Dynamo.Graph.Nodes.PortData)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Creates input port description in Dynamo fashion way
+  example: []
+  syntax:
+    content: public static PortData BuildInputDescription(this PortData port)
+    parameters:
+    - id: port
+      type: Dynamo.Graph.Nodes.PortData
+      description: ''
+    return:
+      type: Dynamo.Graph.Nodes.PortData
+      description: ''
+    content.vb: Public Shared Function BuildInputDescription(port As PortData) As PortData
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription*
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type,System.Type,Dynamo.Graph.Nodes.PortType,System.Int32)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type,System.Type,Dynamo.Graph.Nodes.PortType,System.Int32)
+  id: BuildPortsByResources(System.Type,System.Type,Dynamo.Graph.Nodes.PortType,System.Int32)
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: BuildPortsByResources(Type, Type, PortType, int)
+  nameWithType: NodeModelsServices.BuildPortsByResources(Type, Type, PortType, int)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type, System.Type, Dynamo.Graph.Nodes.PortType, int)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Build NodeModel ports by resources
+  example: []
+  syntax:
+    content: public static List<PortData> BuildPortsByResources(Type nodeType, Type resourceType, PortType portType, int numberOfPorts = 1)
+    parameters:
+    - id: nodeType
+      type: System.Type
+      description: ''
+    - id: resourceType
+      type: System.Type
+      description: ''
+    - id: portType
+      type: Dynamo.Graph.Nodes.PortType
+      description: ''
+    - id: numberOfPorts
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+      description: ''
+    content.vb: Public Shared Function BuildPortsByResources(nodeType As Type, resourceType As Type, portType As PortType, numberOfPorts As Integer = 1) As List(Of PortData)
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources*
+  nameWithType.vb: NodeModelsServices.BuildPortsByResources(Type, Type, PortType, Integer)
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type, System.Type, Dynamo.Graph.Nodes.PortType, Integer)
+  name.vb: BuildPortsByResources(Type, Type, PortType, Integer)
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  id: AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  isExtensionMethod: true
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: AddPorts(NodeModel, List<PortData>, PortType)
+  nameWithType: NodeModelsServices.AddPorts(NodeModel, List<PortData>, PortType)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>, Dynamo.Graph.Nodes.PortType)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Add ports to NodeModel
+  example: []
+  syntax:
+    content: public static void AddPorts(this NodeModel ownerNode, List<PortData> portsData, PortType type)
+    parameters:
+    - id: ownerNode
+      type: Dynamo.Graph.Nodes.NodeModel
+      description: ''
+    - id: portsData
+      type: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+      description: ''
+    - id: type
+      type: Dynamo.Graph.Nodes.PortType
+      description: ''
+    content.vb: Public Shared Sub AddPorts(ownerNode As NodeModel, portsData As List(Of PortData), type As PortType)
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts*
+  nameWithType.vb: NodeModelsServices.AddPorts(NodeModel, List(Of PortData), PortType)
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData), Dynamo.Graph.Nodes.PortType)
+  name.vb: AddPorts(NodeModel, List(Of PortData), PortType)
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})
+  id: SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: SetJsonNodeInputPortsDefaultValues(IEnumerable<PortModel>, List<PortData>)
+  nameWithType: NodeModelsServices.SetJsonNodeInputPortsDefaultValues(IEnumerable<PortModel>, List<PortData>)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortModel>, System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: >-
+    <p>Method used by JSON constructor to set default values to input ports</p>
+
+    <remarks><i>Default values are made by using Associative Nodes in Dynamo API</i></remarks>
+  example: []
+  syntax:
+    content: public static void SetJsonNodeInputPortsDefaultValues(IEnumerable<PortModel> jsonNodeInputPorts, List<PortData> inputPortsData)
+    parameters:
+    - id: jsonNodeInputPorts
+      type: System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+      description: Input ports from dyn file, which is in JSON format.
+    - id: inputPortsData
+      type: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+      description: Input ports data from NodeModel class
+    content.vb: Public Shared Sub SetJsonNodeInputPortsDefaultValues(jsonNodeInputPorts As IEnumerable(Of PortModel), inputPortsData As List(Of PortData))
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues*
+  nameWithType.vb: NodeModelsServices.SetJsonNodeInputPortsDefaultValues(IEnumerable(Of PortModel), List(Of PortData))
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortModel), System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData))
+  name.vb: SetJsonNodeInputPortsDefaultValues(IEnumerable(Of PortModel), List(Of PortData))
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  id: GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: GetNodeFunctionArgsFromInputPorts(List<AssociativeNode>)
+  nameWithType: NodeModelsServices.GetNodeFunctionArgsFromInputPorts(List<AssociativeNode>)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List<ProtoCore.AST.AssociativeAST.AssociativeNode>)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: >-
+    <p>Get NodeModel function arguments from input ports</p>
+
+    <remarks><i><b>Input ports must be ordered in the same order of the function arguments</b></i></remarks>
+  example: []
+  syntax:
+    content: public static List<AssociativeNode> GetNodeFunctionArgsFromInputPorts(List<AssociativeNode> inputAstNodes)
+    parameters:
+    - id: inputAstNodes
+      type: System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode}
+      description: Input ports as Associative nodes
+    return:
+      type: System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode}
+      description: ''
+    content.vb: Public Shared Function GetNodeFunctionArgsFromInputPorts(inputAstNodes As List(Of AssociativeNode)) As List(Of AssociativeNode)
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts*
+  nameWithType.vb: NodeModelsServices.GetNodeFunctionArgsFromInputPorts(List(Of AssociativeNode))
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List(Of ProtoCore.AST.AssociativeAST.AssociativeNode))
+  name.vb: GetNodeFunctionArgsFromInputPorts(List(Of AssociativeNode))
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)
+  id: LoadNodeResources(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: LoadNodeResources(Type, Type, NodeModelMetadataType)
+  nameWithType: NodeModelsServices.LoadNodeResources(Type, Type, NodeModelMetadataType)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources(System.Type, System.Type, DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Load resources to be used in NodeModels attributes
+  remarks: >-
+    <p>Resources keys are not culture variable and they are in the format:</p>
+
+    &lt;nodeTypeName&gt;_&lt;attributeType&gt;_[portIndex]
+
+    <p></p>
+
+    To make this method works properly is needed to order ports by index.
+  example: []
+  syntax:
+    content: public static string[] LoadNodeResources(Type nodeType, Type resourceType, NodeModelMetadataType metadataType)
+    parameters:
+    - id: nodeType
+      type: System.Type
+      description: <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of the NodeModel
+    - id: resourceType
+      type: System.Type
+      description: <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of resource used to create ports
+    - id: metadataType
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+      description: Enum that defines the node attribute used by resource
+    return:
+      type: System.String[]
+      description: Array of strings containing the resources. If the resource type is not found, an empty array is returned.
+    content.vb: Public Shared Function LoadNodeResources(nodeType As Type, resourceType As Type, metadataType As NodeModelMetadataType) As String()
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources*
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType,System.Int32)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType,System.Int32)
+  id: LoadPortResourceByIndex(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType,System.Int32)
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  langs:
+  - csharp
+  - vb
+  name: LoadPortResourceByIndex(Type, Type, NodeModelMetadataType, int)
+  nameWithType: NodeModelsServices.LoadPortResourceByIndex(Type, Type, NodeModelMetadataType, int)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type, System.Type, DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType, int)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Load NodeModel Port resource by index
+  remarks: >-
+    <p>Resources keys are not culture variable and they are in the format:</p>
+
+    &lt;nodeTypeName&gt;_&lt;attributeType&gt;_[portIndex]
+  example: []
+  syntax:
+    content: public static string LoadPortResourceByIndex(Type nodeType, Type resourceType, NodeModelMetadataType metadataType, int portIndex)
+    parameters:
+    - id: nodeType
+      type: System.Type
+      description: <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of the NodeModel
+    - id: resourceType
+      type: System.Type
+      description: <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of resource used to create ports
+    - id: metadataType
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+      description: Enum that defines the node attribute used by resource
+    - id: portIndex
+      type: System.Int32
+      description: In/out port zero based index
+    return:
+      type: System.String
+      description: String containing the resource. If the resource type is not found, an empty string is returned.
+    content.vb: Public Shared Function LoadPortResourceByIndex(nodeType As Type, resourceType As Type, metadataType As NodeModelMetadataType, portIndex As Integer) As String
+  overload: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex*
+  nameWithType.vb: NodeModelsServices.LoadPortResourceByIndex(Type, Type, NodeModelMetadataType, Integer)
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type, System.Type, DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType, Integer)
+  name.vb: LoadPortResourceByIndex(Type, Type, NodeModelMetadataType, Integer)
+references:
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_BuildInputDescription_Dynamo_Graph_Nodes_PortData_
+  name: BuildInputDescription
+  nameWithType: NodeModelsServices.BuildInputDescription
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription
+- uid: Dynamo.Graph.Nodes.PortData
+  commentId: T:Dynamo.Graph.Nodes.PortData
+  parent: Dynamo.Graph.Nodes
+  isExternal: true
+  name: PortData
+  nameWithType: PortData
+  fullName: Dynamo.Graph.Nodes.PortData
+- uid: Dynamo.Graph.Nodes
+  commentId: N:Dynamo.Graph.Nodes
+  isExternal: true
+  name: Dynamo.Graph.Nodes
+  nameWithType: Dynamo.Graph.Nodes
+  fullName: Dynamo.Graph.Nodes
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph.Nodes
+    name: Nodes
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph.Nodes
+    name: Nodes
+    isExternal: true
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_BuildPortsByResources_System_Type_System_Type_Dynamo_Graph_Nodes_PortType_System_Int32_
+  name: BuildPortsByResources
+  nameWithType: NodeModelsServices.BuildPortsByResources
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Dynamo.Graph.Nodes.PortType
+  commentId: T:Dynamo.Graph.Nodes.PortType
+  parent: Dynamo.Graph.Nodes
+  isExternal: true
+  name: PortType
+  nameWithType: PortType
+  fullName: Dynamo.Graph.Nodes.PortType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+  commentId: T:System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PortData>
+  nameWithType: List<PortData>
+  fullName: System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>
+  nameWithType.vb: List(Of PortData)
+  fullName.vb: System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData)
+  name.vb: List(Of PortData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  name: AddPorts
+  nameWithType: NodeModelsServices.AddPorts
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts
+- uid: Dynamo.Graph.Nodes.NodeModel
+  commentId: T:Dynamo.Graph.Nodes.NodeModel
+  parent: Dynamo.Graph.Nodes
+  isExternal: true
+  name: NodeModel
+  nameWithType: NodeModel
+  fullName: Dynamo.Graph.Nodes.NodeModel
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_SetJsonNodeInputPortsDefaultValues_System_Collections_Generic_IEnumerable_Dynamo_Graph_Nodes_PortModel__System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__
+  name: SetJsonNodeInputPortsDefaultValues
+  nameWithType: NodeModelsServices.SetJsonNodeInputPortsDefaultValues
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues
+- uid: System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+  commentId: T:System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PortModel>
+  nameWithType: IEnumerable<PortModel>
+  fullName: System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortModel>
+  nameWithType.vb: IEnumerable(Of PortModel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortModel)
+  name.vb: IEnumerable(Of PortModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_GetNodeFunctionArgsFromInputPorts_System_Collections_Generic_List_ProtoCore_AST_AssociativeAST_AssociativeNode__
+  name: GetNodeFunctionArgsFromInputPorts
+  nameWithType: NodeModelsServices.GetNodeFunctionArgsFromInputPorts
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts
+- uid: System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode}
+  commentId: T:System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AssociativeNode>
+  nameWithType: List<AssociativeNode>
+  fullName: System.Collections.Generic.List<ProtoCore.AST.AssociativeAST.AssociativeNode>
+  nameWithType.vb: List(Of AssociativeNode)
+  fullName.vb: System.Collections.Generic.List(Of ProtoCore.AST.AssociativeAST.AssociativeNode)
+  name.vb: List(Of AssociativeNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_LoadNodeResources_System_Type_System_Type_DynamoForRevitNodeModels_Enumerations_NodeModelMetadataType_
+  name: LoadNodeResources
+  nameWithType: NodeModelsServices.LoadNodeResources
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  commentId: T:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  parent: DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.html
+  name: NodeModelMetadataType
+  nameWithType: NodeModelMetadataType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: DynamoForRevitNodeModels.Enumerations
+  commentId: N:DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Enumerations
+  nameWithType: DynamoForRevitNodeModels.Enumerations
+  fullName: DynamoForRevitNodeModels.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex*
+  commentId: Overload:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_LoadPortResourceByIndex_System_Type_System_Type_DynamoForRevitNodeModels_Enumerations_NodeModelMetadataType_System_Int32_
+  name: LoadPortResourceByIndex
+  nameWithType: NodeModelsServices.LoadPortResourceByIndex
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.UnitsConversion
+  commentId: N:DynamoForRevitUtils.Services.UnitsConversion
+  id: DynamoForRevitUtils.Services.UnitsConversion
+  children:
+  - DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  - DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices
+  - DynamoForRevitUtils.Services.UnitsConversion.UnitsServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.UnitsConversion
+  nameWithType: DynamoForRevitUtils.Services.UnitsConversion
+  fullName: DynamoForRevitUtils.Services.UnitsConversion
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  commentId: T:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html
+  name: ConversionServices
+  nameWithType: ConversionServices
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices
+- uid: DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices
+  commentId: T:DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.html
+  name: SpecificFactorsServices
+  nameWithType: SpecificFactorsServices
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices
+- uid: DynamoForRevitUtils.Services.UnitsConversion.UnitsServices
+  commentId: T:DynamoForRevitUtils.Services.UnitsConversion.UnitsServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.UnitsConversion.UnitsServices.html
+  name: UnitsServices
+  nameWithType: UnitsServices
+  fullName: DynamoForRevitUtils.Services.UnitsConversion.UnitsServices

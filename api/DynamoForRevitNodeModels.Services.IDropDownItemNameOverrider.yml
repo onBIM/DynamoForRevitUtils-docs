@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  id: IDropDownItemNameOverrider
+  parent: DynamoForRevitNodeModels.Services
+  children:
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IDropDownItemNameOverrider
+  nameWithType: IDropDownItemNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  type: Interface
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Interface to override the name of the element in the drop down menu
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public interface IDropDownItemNameOverrider
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Interface IDropDownItemNameOverrider
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  id: Override(System.Object)
+  parent: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: Override(object)
+  nameWithType: IDropDownItemNameOverrider.Override(object)
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Overrides the object name
+  example: []
+  syntax:
+    content: string Override(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: Object to override name
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function Override(item As Object) As String
+  overload: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override*
+  nameWithType.vb: IDropDownItemNameOverrider.Override(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(Object)
+  name.vb: Override(Object)
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  id: RemoveOverrides(System.Object)
+  parent: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: RemoveOverrides(object)
+  nameWithType: IDropDownItemNameOverrider.RemoveOverrides(object)
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Remove overrides from object name
+  example: []
+  syntax:
+    content: string RemoveOverrides(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: Object to get original name
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function RemoveOverrides(item As Object) As String
+  overload: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides*
+  nameWithType.vb: IDropDownItemNameOverrider.RemoveOverrides(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(Object)
+  name.vb: RemoveOverrides(Object)
+references:
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override*
+  commentId: Overload:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_Override_System_Object_
+  name: Override
+  nameWithType: IDropDownItemNameOverrider.Override
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides*
+  commentId: Overload:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_RemoveOverrides_System_Object_
+  name: RemoveOverrides
+  nameWithType: IDropDownItemNameOverrider.RemoveOverrides
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides

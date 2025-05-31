@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Files
+  commentId: N:DynamoForRevitUtils.Services.Files
+  id: DynamoForRevitUtils.Services.Files
+  children:
+  - DynamoForRevitUtils.Services.Files.CSV
+  - DynamoForRevitUtils.Services.Files.Excel
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Files
+  nameWithType: DynamoForRevitUtils.Services.Files
+  fullName: DynamoForRevitUtils.Services.Files
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Files.CSV
+  commentId: T:DynamoForRevitUtils.Services.Files.CSV
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Files.CSV.html
+  name: CSV
+  nameWithType: CSV
+  fullName: DynamoForRevitUtils.Services.Files.CSV
+- uid: DynamoForRevitUtils.Services.Files.Excel
+  commentId: T:DynamoForRevitUtils.Services.Files.Excel
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Files.Excel.html
+  name: Excel
+  nameWithType: Excel
+  fullName: DynamoForRevitUtils.Services.Files.Excel

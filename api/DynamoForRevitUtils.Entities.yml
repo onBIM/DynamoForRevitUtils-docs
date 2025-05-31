@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities
+  commentId: N:DynamoForRevitUtils.Entities
+  id: DynamoForRevitUtils.Entities
+  children:
+  - DynamoForRevitUtils.Entities.Axis
+  - DynamoForRevitUtils.Entities.CompoundStructureLayersInfo
+  - DynamoForRevitUtils.Entities.CropRegionOffsetSettings
+  - DynamoForRevitUtils.Entities.GetUnitsResultData
+  - DynamoForRevitUtils.Entities.MEPCurveReferences
+  - DynamoForRevitUtils.Entities.Section
+  - DynamoForRevitUtils.Entities.SectionCreationData
+  - DynamoForRevitUtils.Entities.SelectionResults
+  - DynamoForRevitUtils.Entities.SelectionSettings
+  - DynamoForRevitUtils.Entities.WallElevation
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Entities
+  nameWithType: DynamoForRevitUtils.Entities
+  fullName: DynamoForRevitUtils.Entities
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Entities.Axis
+  commentId: T:DynamoForRevitUtils.Entities.Axis
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Axis.html
+  name: Axis
+  nameWithType: Axis
+  fullName: DynamoForRevitUtils.Entities.Axis
+- uid: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo
+  commentId: T:DynamoForRevitUtils.Entities.CompoundStructureLayersInfo
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.html
+  name: CompoundStructureLayersInfo
+  nameWithType: CompoundStructureLayersInfo
+  fullName: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo
+- uid: DynamoForRevitUtils.Entities.CropRegionOffsetSettings
+  commentId: T:DynamoForRevitUtils.Entities.CropRegionOffsetSettings
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.CropRegionOffsetSettings.html
+  name: CropRegionOffsetSettings
+  nameWithType: CropRegionOffsetSettings
+  fullName: DynamoForRevitUtils.Entities.CropRegionOffsetSettings
+- uid: DynamoForRevitUtils.Entities.GetUnitsResultData
+  commentId: T:DynamoForRevitUtils.Entities.GetUnitsResultData
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.GetUnitsResultData.html
+  name: GetUnitsResultData
+  nameWithType: GetUnitsResultData
+  fullName: DynamoForRevitUtils.Entities.GetUnitsResultData
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences
+  commentId: T:DynamoForRevitUtils.Entities.MEPCurveReferences
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html
+  name: MEPCurveReferences
+  nameWithType: MEPCurveReferences
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences
+- uid: DynamoForRevitUtils.Entities.Section
+  commentId: T:DynamoForRevitUtils.Entities.Section
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Section.html
+  name: Section
+  nameWithType: Section
+  fullName: DynamoForRevitUtils.Entities.Section
+- uid: DynamoForRevitUtils.Entities.SectionCreationData
+  commentId: T:DynamoForRevitUtils.Entities.SectionCreationData
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SectionCreationData.html
+  name: SectionCreationData
+  nameWithType: SectionCreationData
+  fullName: DynamoForRevitUtils.Entities.SectionCreationData
+- uid: DynamoForRevitUtils.Entities.SelectionResults
+  commentId: T:DynamoForRevitUtils.Entities.SelectionResults
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html
+  name: SelectionResults
+  nameWithType: SelectionResults
+  fullName: DynamoForRevitUtils.Entities.SelectionResults
+- uid: DynamoForRevitUtils.Entities.SelectionSettings
+  commentId: T:DynamoForRevitUtils.Entities.SelectionSettings
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionSettings.html
+  name: SelectionSettings
+  nameWithType: SelectionSettings
+  fullName: DynamoForRevitUtils.Entities.SelectionSettings
+- uid: DynamoForRevitUtils.Entities.WallElevation
+  commentId: T:DynamoForRevitUtils.Entities.WallElevation
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.WallElevation.html
+  name: WallElevation
+  nameWithType: WallElevation
+  fullName: DynamoForRevitUtils.Entities.WallElevation
+- uid: DynamoForRevitUtils.Entities
+  commentId: N:DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities
+  nameWithType: DynamoForRevitUtils.Entities
+  fullName: DynamoForRevitUtils.Entities
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html

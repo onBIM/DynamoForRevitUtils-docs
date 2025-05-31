@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Collectors
+  commentId: N:DynamoForRevitUtils.Services.Collectors
+  id: DynamoForRevitUtils.Services.Collectors
+  children:
+  - DynamoForRevitUtils.Services.Collectors.CategoryCollectors
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  - DynamoForRevitUtils.Services.Collectors.LineStyleCollectors
+  - DynamoForRevitUtils.Services.Collectors.PhaseCollectors
+  - DynamoForRevitUtils.Services.Collectors.RoomCollectors
+  - DynamoForRevitUtils.Services.Collectors.WallCollectors
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Collectors
+  nameWithType: DynamoForRevitUtils.Services.Collectors
+  fullName: DynamoForRevitUtils.Services.Collectors
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Collectors.CategoryCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.CategoryCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.CategoryCollectors.html
+  name: CategoryCollectors
+  nameWithType: CategoryCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.CategoryCollectors
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html
+  name: GenericCollectors
+  nameWithType: GenericCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+- uid: DynamoForRevitUtils.Services.Collectors.LineStyleCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.LineStyleCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.LineStyleCollectors.html
+  name: LineStyleCollectors
+  nameWithType: LineStyleCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.LineStyleCollectors
+- uid: DynamoForRevitUtils.Services.Collectors.PhaseCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.PhaseCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.PhaseCollectors.html
+  name: PhaseCollectors
+  nameWithType: PhaseCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.PhaseCollectors
+- uid: DynamoForRevitUtils.Services.Collectors.RoomCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.RoomCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.RoomCollectors.html
+  name: RoomCollectors
+  nameWithType: RoomCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.RoomCollectors
+- uid: DynamoForRevitUtils.Services.Collectors.WallCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.WallCollectors
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.WallCollectors.html
+  name: WallCollectors
+  nameWithType: WallCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.WallCollectors

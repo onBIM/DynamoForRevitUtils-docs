@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  id: TagTypeNameOverrider
+  parent: DynamoForRevitNodeModels.Services
+  children:
+  - DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor
+  - DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(System.Object)
+  - DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: TagTypeNameOverrider
+  nameWithType: TagTypeNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Class containing methods to overrides TagType name in the DropDown node
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class TagTypeNameOverrider : IDropDownItemNameOverrider
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class TagTypeNameOverrider Implements IDropDownItemNameOverrider
+  inheritance:
+  - System.Object
+  implements:
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(System.Object)
+  id: Override(System.Object)
+  parent: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: Override(object)
+  nameWithType: TagTypeNameOverrider.Override(object)
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Overrides the object name
+  example: []
+  syntax:
+    content: public string Override(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: Object to override name
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function Override(item As Object) As String
+  overload: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override*
+  implements:
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  nameWithType.vb: TagTypeNameOverrider.Override(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(Object)
+  name.vb: Override(Object)
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(System.Object)
+  id: RemoveOverrides(System.Object)
+  parent: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: RemoveOverrides(object)
+  nameWithType: TagTypeNameOverrider.RemoveOverrides(object)
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  summary: Remove overrides from object name
+  example: []
+  syntax:
+    content: public string RemoveOverrides(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: Object to get original name
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function RemoveOverrides(item As Object) As String
+  overload: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides*
+  implements:
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  nameWithType.vb: TagTypeNameOverrider.RemoveOverrides(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(Object)
+  name.vb: RemoveOverrides(Object)
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor
+  commentId: M:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor
+  id: '#ctor'
+  parent: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: TagTypeNameOverrider()
+  nameWithType: TagTypeNameOverrider.TagTypeNameOverrider()
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.TagTypeNameOverrider()
+  type: Constructor
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Services
+  syntax:
+    content: public TagTypeNameOverrider()
+    content.vb: Public Sub New()
+  overload: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor*
+  nameWithType.vb: TagTypeNameOverrider.New()
+  fullName.vb: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.New()
+  name.vb: New()
+references:
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  parent: DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html
+  name: IDropDownItemNameOverrider
+  nameWithType: IDropDownItemNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override*
+  commentId: Overload:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.html#DynamoForRevitNodeModels_Services_TagTypeNameOverrider_Override_System_Object_
+  name: Override
+  nameWithType: TagTypeNameOverrider.Override
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+  parent: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_Override_System_Object_
+  name: Override(object)
+  nameWithType: IDropDownItemNameOverrider.Override(object)
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(object)
+  nameWithType.vb: IDropDownItemNameOverrider.Override(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(Object)
+  name.vb: Override(Object)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+    name: Override
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_Override_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)
+    name: Override
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_Override_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides*
+  commentId: Overload:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.html#DynamoForRevitNodeModels_Services_TagTypeNameOverrider_RemoveOverrides_System_Object_
+  name: RemoveOverrides
+  nameWithType: TagTypeNameOverrider.RemoveOverrides
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  commentId: M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+  parent: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_RemoveOverrides_System_Object_
+  name: RemoveOverrides(object)
+  nameWithType: IDropDownItemNameOverrider.RemoveOverrides(object)
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(object)
+  nameWithType.vb: IDropDownItemNameOverrider.RemoveOverrides(Object)
+  fullName.vb: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(Object)
+  name.vb: RemoveOverrides(Object)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+    name: RemoveOverrides
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_RemoveOverrides_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)
+    name: RemoveOverrides
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html#DynamoForRevitNodeModels_Services_IDropDownItemNameOverrider_RemoveOverrides_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor*
+  commentId: Overload:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.#ctor
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.html#DynamoForRevitNodeModels_Services_TagTypeNameOverrider__ctor
+  name: TagTypeNameOverrider
+  nameWithType: TagTypeNameOverrider.TagTypeNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.TagTypeNameOverrider
+  nameWithType.vb: TagTypeNameOverrider.New
+  fullName.vb: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.New
+  name.vb: New

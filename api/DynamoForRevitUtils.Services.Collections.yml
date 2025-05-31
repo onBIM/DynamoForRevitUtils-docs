@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Collections
+  commentId: N:DynamoForRevitUtils.Services.Collections
+  id: DynamoForRevitUtils.Services.Collections
+  children:
+  - DynamoForRevitUtils.Services.Collections.EnumerableServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Collections
+  nameWithType: DynamoForRevitUtils.Services.Collections
+  fullName: DynamoForRevitUtils.Services.Collections
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Collections.EnumerableServices
+  commentId: T:DynamoForRevitUtils.Services.Collections.EnumerableServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collections.EnumerableServices.html
+  name: EnumerableServices
+  nameWithType: EnumerableServices
+  fullName: DynamoForRevitUtils.Services.Collections.EnumerableServices

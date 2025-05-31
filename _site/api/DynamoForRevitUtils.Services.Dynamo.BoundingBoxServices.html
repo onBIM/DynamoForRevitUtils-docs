@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BoundingBoxServices | DynamoForRevitUtils - Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BoundingBoxServices | DynamoForRevitUtils - Docs ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/onbim-logo-128x128.png" alt="DynamoForRevitUtils - Docs" class="logomark">
+              <span class="brand-title">DynamoForRevitUtils - Docs</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/onbim-logo-128x128.png" alt="DynamoForRevitUtils - Docs" class="logomark">
+                          <span class="brand-title">DynamoForRevitUtils - Docs</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  onBIM Technology
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices">
+
+
+
+  <h1 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices" class="text-break">Class BoundingBoxServices</h1>
+  <div class="markdown level0 summary"><p>Dynamo BoundingBox utils</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">BoundingBoxServices</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Services.html">Services</a>.<a class="xref" href="DynamoForRevitUtils.Services.Dynamo.html">Dynamo</a></h6>
+  <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
+  <h5 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
+public static class BoundingBoxServices</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_AddPoint_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_AddPoint_Autodesk_DesignScript_Geometry_BoundingBox_Autodesk_DesignScript_Geometry_Point_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint(Autodesk.DesignScript.Geometry.BoundingBox,Autodesk.DesignScript.Geometry.Point)">AddPoint(BoundingBox, Point)</h4>
+  <div class="markdown level1 summary"><p>Expand bounding box using a point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBox AddPoint(this BoundingBox bbox, Point point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to offset by adding a point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomCenter_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomCenter_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)">GetBottomCenter(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box bottom face center</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point GetBottomCenter(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get bottom center</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurface_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurface_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)">GetBottomSurface(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box bottom surface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Surface GetBottomSurface(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get bottom surface</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Surface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurfaceDiagonal_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)">GetBottomSurfaceDiagonal(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box bottom surface diagonal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Line GetBottomSurfaceDiagonal(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get bottom surface diagonal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Bottom diagonal is the diagonal that starts at the bounding box min point and
+ends at the bounding box max point projected on bottom surface.</p>
+</div>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetCentroid_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetCentroid_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)">GetCentroid(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box centroid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point GetCentroid(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get centroid</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonal_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)">GetDiagonal(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box diagonal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Line GetDiagonal(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get main diagonal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonal_Autodesk_DesignScript_Geometry_BoundingBox__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Main diagonal is the diagonal that starts at the bounding box min point and
+ends at the bounding box max point.</p>
+</div>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonalLength_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonalLength_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)">GetDiagonalLength(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box diagonal length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetDiagonalLength(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get diagonal length</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonalLength_Autodesk_DesignScript_Geometry_BoundingBox__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Bottom diagonal is the diagonal that starts at the bounding box min point and
+ends at the bounding box max point projected to the bottom surface.</p>
+</div>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetEdges_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetEdges_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)">GetEdges(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box edges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Curve&gt; GetEdges(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get edges</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetHeight_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetHeight_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)">GetHeight(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box diagonal height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetHeight(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get height</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetLength_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetLength_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength(Autodesk.DesignScript.Geometry.BoundingBox)">GetLength(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box diagonal length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetLength(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get length</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetOppositeBottomSurfaceDiagonal_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetOppositeBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)">GetOppositeBottomSurfaceDiagonal(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box opposite bottom surface diagonal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Line GetOppositeBottomSurfaceDiagonal(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get bottom surface diagonal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetOppositeBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Opposite bottom diagonal is the diagonal perpendicular to bottom diagonal.</p>
+<p>Start point (max.X, min.Y, min.Z)</p>
+<p>End point (min.X, max.Y, min.Z). </p>
+</div>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetSurfaces_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetSurfaces_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)">GetSurfaces(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box surfaces</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Surface&gt; GetSurfaces(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get surfaces</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Surface</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopCenter_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopCenter_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)">GetTopCenter(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box top face center</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point GetTopCenter(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get top center</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopSurface_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopSurface_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)">GetTopSurface(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box bottom surface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Surface GetTopSurface(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get top surface</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Surface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetVertices_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetVertices_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)">GetVertices(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Point&gt; GetVertices(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get vertices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Point</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetWidth_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetWidth_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)">GetWidth(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Get bounding box diagonal width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetWidth(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get width</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_Offset_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_Offset_Autodesk_DesignScript_Geometry_BoundingBox_System_Double_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox,System.Double)">Offset(BoundingBox, double)</h4>
+  <div class="markdown level1 summary"><p>Offset bounding box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBox Offset(this BoundingBox bbox, double offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get offset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToBoundingBoxXYZ_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToBoundingBoxXYZ_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)">ToBoundingBoxXYZ(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Converts a Dynamo Geometry BoundingBox to Revit API BoundingBoxXYZ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBoxXYZ ToBoundingBoxXYZ(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to convert</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBoxXYZ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToCoordinateSystem_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem*"></a>
+  <h4 id="DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToCoordinateSystem_Autodesk_DesignScript_Geometry_BoundingBox_" data-uid="DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)">ToCoordinateSystem(BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Converts bounding box to coordinate system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoordinateSystem ToCoordinateSystem(this BoundingBox bbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundingBox</span></td>
+        <td><span class="parametername">bbox</span></td>
+        <td><p>Bounding box to get coordinate system</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CoordinateSystem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; onBIM Technology. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

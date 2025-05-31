@@ -1,0 +1,771 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  commentId: T:DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  id: GenericCollectors
+  parent: DynamoForRevitUtils.Services.Collectors
+  children:
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass``1(Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  - DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  langs:
+  - csharp
+  - vb
+  name: GenericCollectors
+  nameWithType: GenericCollectors
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Generic Collectors
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class GenericCollectors
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module GenericCollectors
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  id: GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  langs:
+  - csharp
+  - vb
+  name: GetAllElementsOfCategory<TCast>(Document, BuiltInCategory, View?, ElementFilter?)
+  nameWithType: GenericCollectors.GetAllElementsOfCategory<TCast>(Document, BuiltInCategory, View?, ElementFilter?)
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory<TCast>(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory, Autodesk.Revit.DB.View?, Autodesk.Revit.DB.ElementFilter?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Get all elements of Category
+  example: []
+  syntax:
+    content: 'public static List<TCast> GetAllElementsOfCategory<TCast>(this Document doc, BuiltInCategory cat, View? view = null, ElementFilter? filter = null) where TCast : Element'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get elements
+    - id: cat
+      type: Autodesk.Revit.DB.BuiltInCategory
+      description: Category to get elements
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View to get visible elements in it. Leave null to not consider the view on filtering
+    - id: filter
+      type: Autodesk.Revit.DB.ElementFilter
+      description: Filter to be applied on elements. Leave null to not apply.
+    typeParameters:
+    - id: TCast
+      description: Type derived from <xref href="Autodesk.Revit.DB.Element" data-throw-if-not-resolved="false"></xref> to cast collected elements
+    return:
+      type: System.Collections.Generic.List{{TCast}}
+      description: Collected elements casted to <code class="typeparamref">TCast</code>
+    content.vb: Public Shared Function GetAllElementsOfCategory(Of TCast As Element)(doc As Document, cat As BuiltInCategory, view As View = Nothing, filter As ElementFilter = Nothing) As List(Of TCast)
+  overload: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory*
+  nameWithType.vb: GenericCollectors.GetAllElementsOfCategory(Of TCast)(Document, BuiltInCategory, View, ElementFilter)
+  fullName.vb: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory(Of TCast)(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory, Autodesk.Revit.DB.View, Autodesk.Revit.DB.ElementFilter)
+  name.vb: GetAllElementsOfCategory(Of TCast)(Document, BuiltInCategory, View, ElementFilter)
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  id: GetAllElementTypesOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  langs:
+  - csharp
+  - vb
+  name: GetAllElementTypesOfCategory<TCast>(Document, BuiltInCategory)
+  nameWithType: GenericCollectors.GetAllElementTypesOfCategory<TCast>(Document, BuiltInCategory)
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory<TCast>(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Get all Element Types of Category
+  example: []
+  syntax:
+    content: 'public static List<TCast> GetAllElementTypesOfCategory<TCast>(this Document doc, BuiltInCategory cat) where TCast : ElementType'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get element types
+    - id: cat
+      type: Autodesk.Revit.DB.BuiltInCategory
+      description: Category to get element types
+    typeParameters:
+    - id: TCast
+      description: Type derived from <xref href="Autodesk.Revit.DB.Element" data-throw-if-not-resolved="false"></xref> to cast collected elements
+    return:
+      type: System.Collections.Generic.List{{TCast}}
+      description: Collected elements casted to <code class="typeparamref">TCast</code>
+    content.vb: Public Shared Function GetAllElementTypesOfCategory(Of TCast As ElementType)(doc As Document, cat As BuiltInCategory) As List(Of TCast)
+  overload: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory*
+  nameWithType.vb: GenericCollectors.GetAllElementTypesOfCategory(Of TCast)(Document, BuiltInCategory)
+  fullName.vb: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory(Of TCast)(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: GetAllElementTypesOfCategory(Of TCast)(Document, BuiltInCategory)
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  id: GetAllFamilySymbolsOfCategory(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  langs:
+  - csharp
+  - vb
+  name: GetAllFamilySymbolsOfCategory(Document, BuiltInCategory)
+  nameWithType: GenericCollectors.GetAllFamilySymbolsOfCategory(Document, BuiltInCategory)
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Get all Family Symbols (active or not) of Category.
+  example: []
+  syntax:
+    content: public static List<FamilySymbol> GetAllFamilySymbolsOfCategory(this Document doc, BuiltInCategory cat)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get family symbols
+    - id: cat
+      type: Autodesk.Revit.DB.BuiltInCategory
+      description: Category to get family symbols
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FamilySymbol}
+      description: Collected Family Symbols
+    content.vb: Public Shared Function GetAllFamilySymbolsOfCategory(doc As Document, cat As BuiltInCategory) As List(Of FamilySymbol)
+  overload: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory*
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  id: GetAllElementsOfClass``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  langs:
+  - csharp
+  - vb
+  name: GetAllElementsOfClass<TClass>(Document, View?, ElementFilter?)
+  nameWithType: GenericCollectors.GetAllElementsOfClass<TClass>(Document, View?, ElementFilter?)
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass<TClass>(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.View?, Autodesk.Revit.DB.ElementFilter?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Get all elements of class.
+  example: []
+  syntax:
+    content: 'public static List<TClass> GetAllElementsOfClass<TClass>(this Document doc, View? view = null, ElementFilter? filter = null) where TClass : Element'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get elements
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View to get visible elements in it. Leave null to not consider the view on filtering
+    - id: filter
+      type: Autodesk.Revit.DB.ElementFilter
+      description: Filter to be applied on elements. Leave null to not apply.
+    typeParameters:
+    - id: TClass
+      description: Derived class from <xref href="Autodesk.Revit.DB.Element" data-throw-if-not-resolved="false"></xref> to get elements
+    return:
+      type: System.Collections.Generic.List{{TClass}}
+      description: Collected Elements of type <code class="typeparamref">TClass</code>
+    content.vb: Public Shared Function GetAllElementsOfClass(Of TClass As Element)(doc As Document, view As View = Nothing, filter As ElementFilter = Nothing) As List(Of TClass)
+  overload: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass*
+  nameWithType.vb: GenericCollectors.GetAllElementsOfClass(Of TClass)(Document, View, ElementFilter)
+  fullName.vb: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass(Of TClass)(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.View, Autodesk.Revit.DB.ElementFilter)
+  name.vb: GetAllElementsOfClass(Of TClass)(Document, View, ElementFilter)
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass``1(Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass``1(Autodesk.Revit.DB.Document)
+  id: GetAllElementTypesOfClass``1(Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Collectors.GenericCollectors
+  langs:
+  - csharp
+  - vb
+  name: GetAllElementTypesOfClass<TClass>(Document)
+  nameWithType: GenericCollectors.GetAllElementTypesOfClass<TClass>(Document)
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass<TClass>(Autodesk.Revit.DB.Document)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Collectors
+  summary: Get all Element Types of class.
+  example: []
+  syntax:
+    content: 'public static List<TClass> GetAllElementTypesOfClass<TClass>(this Document doc) where TClass : ElementType'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get element types
+    typeParameters:
+    - id: TClass
+      description: Derived class from <xref href="Autodesk.Revit.DB.ElementType" data-throw-if-not-resolved="false"></xref> to get element types
+    return:
+      type: System.Collections.Generic.List{{TClass}}
+      description: Collected ElementTypes of type <code class="typeparamref">TClass</code>
+    content.vb: Public Shared Function GetAllElementTypesOfClass(Of TClass As ElementType)(doc As Document) As List(Of TClass)
+  overload: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass*
+  nameWithType.vb: GenericCollectors.GetAllElementTypesOfClass(Of TClass)(Document)
+  fullName.vb: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass(Of TClass)(Autodesk.Revit.DB.Document)
+  name.vb: GetAllElementTypesOfClass(Of TClass)(Document)
+references:
+- uid: DynamoForRevitUtils.Services.Collectors
+  commentId: N:DynamoForRevitUtils.Services.Collectors
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Collectors
+  nameWithType: DynamoForRevitUtils.Services.Collectors
+  fullName: DynamoForRevitUtils.Services.Collectors
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Collectors
+    name: Collectors
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Collectors.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Collectors
+    name: Collectors
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Collectors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory*
+  commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html#DynamoForRevitUtils_Services_Collectors_GenericCollectors_GetAllElementsOfCategory__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_View_Autodesk_Revit_DB_ElementFilter_
+  name: GetAllElementsOfCategory
+  nameWithType: GenericCollectors.GetAllElementsOfCategory
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BuiltInCategory
+  nameWithType: BuiltInCategory
+  fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: Autodesk.Revit.DB.ElementFilter
+  commentId: T:Autodesk.Revit.DB.ElementFilter
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: ElementFilter
+  nameWithType: ElementFilter
+  fullName: Autodesk.Revit.DB.ElementFilter
+- uid: System.Collections.Generic.List{{TCast}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TCast>
+  nameWithType: List<TCast>
+  fullName: System.Collections.Generic.List<TCast>
+  nameWithType.vb: List(Of TCast)
+  fullName.vb: System.Collections.Generic.List(Of TCast)
+  name.vb: List(Of TCast)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TCast
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCast
+  - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory*
+  commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html#DynamoForRevitUtils_Services_Collectors_GenericCollectors_GetAllElementTypesOfCategory__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_
+  name: GetAllElementTypesOfCategory
+  nameWithType: GenericCollectors.GetAllElementTypesOfCategory
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfCategory
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory*
+  commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html#DynamoForRevitUtils_Services_Collectors_GenericCollectors_GetAllFamilySymbolsOfCategory_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_
+  name: GetAllFamilySymbolsOfCategory
+  nameWithType: GenericCollectors.GetAllFamilySymbolsOfCategory
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllFamilySymbolsOfCategory
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.FamilySymbol}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.FamilySymbol}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FamilySymbol>
+  nameWithType: List<FamilySymbol>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.FamilySymbol>
+  nameWithType.vb: List(Of FamilySymbol)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.FamilySymbol)
+  name.vb: List(Of FamilySymbol)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FamilySymbol
+    name: FamilySymbol
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilySymbol
+    name: FamilySymbol
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass*
+  commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html#DynamoForRevitUtils_Services_Collectors_GenericCollectors_GetAllElementsOfClass__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_ElementFilter_
+  name: GetAllElementsOfClass
+  nameWithType: GenericCollectors.GetAllElementsOfClass
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfClass
+- uid: System.Collections.Generic.List{{TClass}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TClass>
+  nameWithType: List<TClass>
+  fullName: System.Collections.Generic.List<TClass>
+  nameWithType.vb: List(Of TClass)
+  fullName.vb: System.Collections.Generic.List(Of TClass)
+  name.vb: List(Of TClass)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TClass
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TClass
+  - name: )
+- uid: Autodesk.Revit.DB.ElementType
+  commentId: T:Autodesk.Revit.DB.ElementType
+  isExternal: true
+  name: ElementType
+  nameWithType: ElementType
+  fullName: Autodesk.Revit.DB.ElementType
+- uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass*
+  commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Collectors.GenericCollectors.html#DynamoForRevitUtils_Services_Collectors_GenericCollectors_GetAllElementTypesOfClass__1_Autodesk_Revit_DB_Document_
+  name: GetAllElementTypesOfClass
+  nameWithType: GenericCollectors.GetAllElementTypesOfClass
+  fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass

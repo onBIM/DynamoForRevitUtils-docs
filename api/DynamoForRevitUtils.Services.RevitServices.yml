@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  id: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.CategoryServices
+  - DynamoForRevitUtils.Services.RevitServices.DesignOptionServices
+  - DynamoForRevitUtils.Services.RevitServices.DocumentServices
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices
+  - DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices
+  - DynamoForRevitUtils.Services.RevitServices.GridServices
+  - DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+  - DynamoForRevitUtils.Services.RevitServices.LevelServices
+  - DynamoForRevitUtils.Services.RevitServices.MEPCurveServices
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  - DynamoForRevitUtils.Services.RevitServices.TagInfo
+  - DynamoForRevitUtils.Services.RevitServices.TaskDialogServices
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices
+  - DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices.CategoryServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.CategoryServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.CategoryServices.html
+  name: CategoryServices
+  nameWithType: CategoryServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.CategoryServices
+- uid: DynamoForRevitUtils.Services.RevitServices.DesignOptionServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.DesignOptionServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.html
+  name: DesignOptionServices
+  nameWithType: DesignOptionServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.DesignOptionServices
+- uid: DynamoForRevitUtils.Services.RevitServices.DocumentServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.DocumentServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.DocumentServices.html
+  name: DocumentServices
+  nameWithType: DocumentServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.DocumentServices
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html
+  name: ElementIdServices
+  nameWithType: ElementIdServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ElementServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html
+  name: ElementServices
+  nameWithType: ElementServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices
+- uid: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.html
+  name: FamilyInstanceServices
+  nameWithType: FamilyInstanceServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.GridServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.GridServices.html
+  name: GridServices
+  nameWithType: GridServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices
+- uid: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.html
+  name: ImportInstanceServices
+  nameWithType: ImportInstanceServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+- uid: DynamoForRevitUtils.Services.RevitServices.LevelServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.LevelServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.LevelServices.html
+  name: LevelServices
+  nameWithType: LevelServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.LevelServices
+- uid: DynamoForRevitUtils.Services.RevitServices.MEPCurveServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.MEPCurveServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.html
+  name: MEPCurveServices
+  nameWithType: MEPCurveServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.MEPCurveServices
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html
+  name: RevitGeometryServices
+  nameWithType: RevitGeometryServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html
+  name: TagCreationService
+  nameWithType: TagCreationService
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+- uid: DynamoForRevitUtils.Services.RevitServices.TagInfo
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.TagInfo
+  parent: DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagInfo.html
+  name: TagInfo
+  nameWithType: TagInfo
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagInfo
+- uid: DynamoForRevitUtils.Services.RevitServices.TaskDialogServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.TaskDialogServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.html
+  name: TaskDialogServices
+  nameWithType: TaskDialogServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.TaskDialogServices
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ViewServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html
+  name: ViewServices
+  nameWithType: ViewServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.WallServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html
+  name: WallServices
+  nameWithType: WallServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html

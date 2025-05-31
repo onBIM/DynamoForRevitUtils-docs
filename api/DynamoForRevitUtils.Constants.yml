@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Constants
+  commentId: N:DynamoForRevitUtils.Constants
+  id: DynamoForRevitUtils.Constants
+  children:
+  - DynamoForRevitUtils.Constants.Common
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Constants
+  nameWithType: DynamoForRevitUtils.Constants
+  fullName: DynamoForRevitUtils.Constants
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Constants.Common
+  commentId: T:DynamoForRevitUtils.Constants.Common
+  isExternal: true
+  href: DynamoForRevitUtils.Constants.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: DynamoForRevitUtils.Constants.Common

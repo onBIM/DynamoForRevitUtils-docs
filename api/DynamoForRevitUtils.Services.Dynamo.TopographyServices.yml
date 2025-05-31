@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  id: TopographyServices
+  parent: DynamoForRevitUtils.Services.Dynamo
+  children:
+  - DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor
+  - DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces(Revit.Elements.Topography)
+  - DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface},Autodesk.DesignScript.Geometry.Point)
+  - DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
+  langs:
+  - csharp
+  - vb
+  name: TopographyServices
+  nameWithType: TopographyServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Provides methods to work with Topography elements.
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class TopographyServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class TopographyServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
+  id: TopographyToPolySurface(Revit.Elements.Topography)
+  parent: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  langs:
+  - csharp
+  - vb
+  name: TopographyToPolySurface(Topography)
+  nameWithType: TopographyServices.TopographyToPolySurface(Topography)
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Transforms a Topography into a PolysSurface.
+  example: []
+  syntax:
+    content: public static PolySurface? TopographyToPolySurface(Topography topography)
+    parameters:
+    - id: topography
+      type: Revit.Elements.Topography
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.PolySurface
+      description: ''
+    content.vb: Public Shared Function TopographyToPolySurface(topography As Topography) As PolySurface
+  overload: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface*
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces(Revit.Elements.Topography)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces(Revit.Elements.Topography)
+  id: GetTopographySurfaces(Revit.Elements.Topography)
+  parent: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  langs:
+  - csharp
+  - vb
+  name: GetTopographySurfaces(Topography)
+  nameWithType: TopographyServices.GetTopographySurfaces(Topography)
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces(Revit.Elements.Topography)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Transforms a Topography into a list of Surfaces.
+  example: []
+  syntax:
+    content: public static IEnumerable<Surface> GetTopographySurfaces(Topography topography)
+    parameters:
+    - id: topography
+      type: Revit.Elements.Topography
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetTopographySurfaces(topography As Topography) As IEnumerable(Of Surface)
+  overload: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces*
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface},Autodesk.DesignScript.Geometry.Point)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface},Autodesk.DesignScript.Geometry.Point)
+  id: PointProject(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface},Autodesk.DesignScript.Geometry.Point)
+  parent: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  langs:
+  - csharp
+  - vb
+  name: PointProject(List<Surface>, Point)
+  nameWithType: TopographyServices.PointProject(List<Surface>, Point)
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject(System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Surface>, Autodesk.DesignScript.Geometry.Point)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Projects a point into a Topography surfaces list
+  example: []
+  syntax:
+    content: public static Point? PointProject(List<Surface> topoSurfaces, Point point)
+    parameters:
+    - id: topoSurfaces
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    - id: point
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function PointProject(topoSurfaces As List(Of Surface), point As Point) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject*
+  nameWithType.vb: TopographyServices.PointProject(List(Of Surface), Point)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject(System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Surface), Autodesk.DesignScript.Geometry.Point)
+  name.vb: PointProject(List(Of Surface), Point)
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor
+  id: '#ctor'
+  parent: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  langs:
+  - csharp
+  - vb
+  name: TopographyServices()
+  nameWithType: TopographyServices.TopographyServices()
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyServices()
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  syntax:
+    content: public TopographyServices()
+    content.vb: Public Sub New()
+  overload: DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor*
+  nameWithType.vb: TopographyServices.New()
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.TopographyServices.New()
+  name.vb: New()
+references:
+- uid: DynamoForRevitUtils.Services.Dynamo
+  commentId: N:DynamoForRevitUtils.Services.Dynamo
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Dynamo
+  nameWithType: DynamoForRevitUtils.Services.Dynamo
+  fullName: DynamoForRevitUtils.Services.Dynamo
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.TopographyServices.html#DynamoForRevitUtils_Services_Dynamo_TopographyServices_TopographyToPolySurface_Revit_Elements_Topography_
+  name: TopographyToPolySurface
+  nameWithType: TopographyServices.TopographyToPolySurface
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface
+- uid: Revit.Elements.Topography
+  commentId: T:Revit.Elements.Topography
+  parent: Revit.Elements
+  isExternal: true
+  name: Topography
+  nameWithType: Topography
+  fullName: Revit.Elements.Topography
+- uid: Autodesk.DesignScript.Geometry.PolySurface
+  commentId: T:Autodesk.DesignScript.Geometry.PolySurface
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: PolySurface
+  nameWithType: PolySurface
+  fullName: Autodesk.DesignScript.Geometry.PolySurface
+- uid: Revit.Elements
+  commentId: N:Revit.Elements
+  isExternal: true
+  name: Revit.Elements
+  nameWithType: Revit.Elements
+  fullName: Revit.Elements
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.TopographyServices.html#DynamoForRevitUtils_Services_Dynamo_TopographyServices_GetTopographySurfaces_Revit_Elements_Topography_
+  name: GetTopographySurfaces
+  nameWithType: TopographyServices.GetTopographySurfaces
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces
+- uid: System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Surface>
+  nameWithType: IEnumerable<Surface>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: IEnumerable(Of Surface)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.DesignScript.Geometry.Surface)
+  name.vb: IEnumerable(Of Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.TopographyServices.html#DynamoForRevitUtils_Services_Dynamo_TopographyServices_PointProject_System_Collections_Generic_List_Autodesk_DesignScript_Geometry_Surface__Autodesk_DesignScript_Geometry_Point_
+  name: PointProject
+  nameWithType: TopographyServices.PointProject
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.PointProject
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Surface>
+  nameWithType: List<Surface>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: List(Of Surface)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Surface)
+  name.vb: List(Of Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Autodesk.DesignScript.Geometry.Point
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.TopographyServices.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.TopographyServices.html#DynamoForRevitUtils_Services_Dynamo_TopographyServices__ctor
+  name: TopographyServices
+  nameWithType: TopographyServices.TopographyServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyServices
+  nameWithType.vb: TopographyServices.New
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.TopographyServices.New
+  name.vb: New

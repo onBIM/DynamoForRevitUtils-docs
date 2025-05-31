@@ -1,0 +1,777 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ViewServices
+  id: ViewServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView(Autodesk.Revit.UI.UIDocument)
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane(Autodesk.Revit.DB.View)
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView(System.String,System.Boolean,System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes})
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane(Autodesk.Revit.DB.View)
+  - DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ViewServices
+  nameWithType: ViewServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Class containing tools to deal with Revit Views
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ViewServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ViewServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
+  id: GetCuboid(Autodesk.Revit.DB.View3D)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: GetCuboid(View3D)
+  nameWithType: ViewServices.GetCuboid(View3D)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Extension method to get a <xref href="Autodesk.DesignScript.Geometry.Cuboid" data-throw-if-not-resolved="false"></xref>
+
+    that represents the View3d SectionBox, properly positioned in 3d space
+  example: []
+  syntax:
+    content: public static Cuboid GetCuboid(this View3D view3d)
+    parameters:
+    - id: view3d
+      type: Autodesk.Revit.DB.View3D
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Cuboid
+      description: ''
+    content.vb: Public Shared Function GetCuboid(view3d As View3D) As Cuboid
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid*
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane(Autodesk.Revit.DB.View)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane(Autodesk.Revit.DB.View)
+  id: GetPlane(Autodesk.Revit.DB.View)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: GetPlane(View)
+  nameWithType: ViewServices.GetPlane(View)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane(Autodesk.Revit.DB.View)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the Plane of a View. The Plane is created by the ViewDirection and Origin of the View
+  example: []
+  syntax:
+    content: public static Plane? GetPlane(this View view)
+    parameters:
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.Plane
+      description: ''
+    content.vb: Public Shared Function GetPlane(view As View) As Plane
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane*
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView(Autodesk.Revit.UI.UIDocument)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView(Autodesk.Revit.UI.UIDocument)
+  id: GetActiveUIView(Autodesk.Revit.UI.UIDocument)
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: GetActiveUIView(UIDocument)
+  nameWithType: ViewServices.GetActiveUIView(UIDocument)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get active UIView
+  example: []
+  syntax:
+    content: public static UIView? GetActiveUIView(UIDocument uidoc)
+    parameters:
+    - id: uidoc
+      type: Autodesk.Revit.UI.UIDocument
+    return:
+      type: Autodesk.Revit.UI.UIView
+      description: ''
+    content.vb: Public Shared Function GetActiveUIView(uidoc As UIDocument) As UIView
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView*
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView(System.String,System.Boolean,System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes})
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView(System.String,System.Boolean,System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes})
+  id: PickPointOnActive2DView(System.String,System.Boolean,System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes})
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: PickPointOnActive2DView(string, bool, ObjectSnapTypes?)
+  nameWithType: ViewServices.PickPointOnActive2DView(string, bool, ObjectSnapTypes?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView(string, bool, Autodesk.Revit.UI.Selection.ObjectSnapTypes?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Pick a point on the Active 2D view.
+  example: []
+  syntax:
+    content: public static XYZ PickPointOnActive2DView(string prompt = "Select Point", bool showDialog = false, ObjectSnapTypes? snapTypes = null)
+    parameters:
+    - id: prompt
+      type: System.String
+      description: Prompt selection text
+    - id: showDialog
+      type: System.Boolean
+      description: Whether show a TaskDialog or not
+    - id: snapTypes
+      type: System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes}
+      description: Snap types allowed during PickPoint operations. Leave null to set all.
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    content.vb: Public Shared Function PickPointOnActive2DView(prompt As String = "Select Point", showDialog As Boolean = False, snapTypes As ObjectSnapTypes? = Nothing) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView*
+  nameWithType.vb: ViewServices.PickPointOnActive2DView(String, Boolean, ObjectSnapTypes?)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView(String, Boolean, Autodesk.Revit.UI.Selection.ObjectSnapTypes?)
+  name.vb: PickPointOnActive2DView(String, Boolean, ObjectSnapTypes?)
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane(Autodesk.Revit.DB.View)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane(Autodesk.Revit.DB.View)
+  id: TrySet2DViewPlaneAsWorkPlane(Autodesk.Revit.DB.View)
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: TrySet2DViewPlaneAsWorkPlane(View)
+  nameWithType: ViewServices.TrySet2DViewPlaneAsWorkPlane(View)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane(Autodesk.Revit.DB.View)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Try set view plane as work plane
+  example: []
+  syntax:
+    content: public static void TrySet2DViewPlaneAsWorkPlane(View view)
+    parameters:
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: ''
+    content.vb: Public Shared Sub TrySet2DViewPlaneAsWorkPlane(view As View)
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane*
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View,System.Boolean)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View,System.Boolean)
+  id: Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View,System.Boolean)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ViewServices
+  langs:
+  - csharp
+  - vb
+  name: Validate2DViewToPlaceAnnotations(View, bool)
+  nameWithType: ViewServices.Validate2DViewToPlaceAnnotations(View, bool)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Validate a View to place annotations
+  example: []
+  syntax:
+    content: public static void Validate2DViewToPlaceAnnotations(this View view, bool mustBeViewPlan = false)
+    parameters:
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View to validate
+    - id: mustBeViewPlan
+      type: System.Boolean
+      description: Set true to validate if the view is <xref href="Autodesk.Revit.DB.ViewPlan" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Sub Validate2DViewToPlaceAnnotations(view As View, mustBeViewPlan As Boolean = False)
+  overload: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">view</code> is null
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown if any other error occurs
+  nameWithType.vb: ViewServices.Validate2DViewToPlaceAnnotations(View, Boolean)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations(Autodesk.Revit.DB.View, Boolean)
+  name.vb: Validate2DViewToPlaceAnnotations(View, Boolean)
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Autodesk.DesignScript.Geometry.Cuboid
+  commentId: T:Autodesk.DesignScript.Geometry.Cuboid
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Cuboid
+  nameWithType: Cuboid
+  fullName: Autodesk.DesignScript.Geometry.Cuboid
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_GetCuboid_Autodesk_Revit_DB_View3D_
+  name: GetCuboid
+  nameWithType: ViewServices.GetCuboid
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid
+- uid: Autodesk.Revit.DB.View3D
+  commentId: T:Autodesk.Revit.DB.View3D
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: View3D
+  nameWithType: View3D
+  fullName: Autodesk.Revit.DB.View3D
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_GetPlane_Autodesk_Revit_DB_View_
+  name: GetPlane
+  nameWithType: ViewServices.GetPlane
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane
+- uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: Autodesk.Revit.DB.Plane
+  commentId: T:Autodesk.Revit.DB.Plane
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Plane
+  nameWithType: Plane
+  fullName: Autodesk.Revit.DB.Plane
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_GetActiveUIView_Autodesk_Revit_UI_UIDocument_
+  name: GetActiveUIView
+  nameWithType: ViewServices.GetActiveUIView
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView
+- uid: Autodesk.Revit.UI.UIDocument
+  commentId: T:Autodesk.Revit.UI.UIDocument
+  parent: Autodesk.Revit.UI
+  isExternal: true
+  name: UIDocument
+  nameWithType: UIDocument
+  fullName: Autodesk.Revit.UI.UIDocument
+- uid: Autodesk.Revit.UI.UIView
+  commentId: T:Autodesk.Revit.UI.UIView
+  parent: Autodesk.Revit.UI
+  isExternal: true
+  name: UIView
+  nameWithType: UIView
+  fullName: Autodesk.Revit.UI.UIView
+- uid: Autodesk.Revit.UI
+  commentId: N:Autodesk.Revit.UI
+  isExternal: true
+  name: Autodesk.Revit.UI
+  nameWithType: Autodesk.Revit.UI
+  fullName: Autodesk.Revit.UI
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_PickPointOnActive2DView_System_String_System_Boolean_System_Nullable_Autodesk_Revit_UI_Selection_ObjectSnapTypes__
+  name: PickPointOnActive2DView
+  nameWithType: ViewServices.PickPointOnActive2DView
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes}
+  commentId: T:System.Nullable{Autodesk.Revit.UI.Selection.ObjectSnapTypes}
+  parent: System
+  definition: System.Nullable`1
+  name: ObjectSnapTypes?
+  nameWithType: ObjectSnapTypes?
+  fullName: Autodesk.Revit.UI.Selection.ObjectSnapTypes?
+  spec.csharp:
+  - uid: Autodesk.Revit.UI.Selection.ObjectSnapTypes
+    name: ObjectSnapTypes
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Autodesk.Revit.UI.Selection.ObjectSnapTypes
+    name: ObjectSnapTypes
+    isExternal: true
+  - name: '?'
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_TrySet2DViewPlaneAsWorkPlane_Autodesk_Revit_DB_View_
+  name: TrySet2DViewPlaneAsWorkPlane
+  nameWithType: ViewServices.TrySet2DViewPlaneAsWorkPlane
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane
+- uid: Autodesk.Revit.DB.ViewPlan
+  commentId: T:Autodesk.Revit.DB.ViewPlan
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: ViewPlan
+  nameWithType: ViewPlan
+  fullName: Autodesk.Revit.DB.ViewPlan
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ViewServices.html#DynamoForRevitUtils_Services_RevitServices_ViewServices_Validate2DViewToPlaceAnnotations_Autodesk_Revit_DB_View_System_Boolean_
+  name: Validate2DViewToPlaceAnnotations
+  nameWithType: ViewServices.Validate2DViewToPlaceAnnotations
+  fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.Validate2DViewToPlaceAnnotations

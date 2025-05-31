@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  id: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  children:
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.html
+  name: BasicColorsDropDown
+  nameWithType: BasicColorsDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown.html
+  name: SelectionMethodDropDown
+  nameWithType: SelectionMethodDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+    name: DropDownSelectionNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes
+    name: DropDownSelectionNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.html

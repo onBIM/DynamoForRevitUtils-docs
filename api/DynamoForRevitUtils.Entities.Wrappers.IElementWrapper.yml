@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  id: IElementWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  children:
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+  langs:
+  - csharp
+  - vb
+  name: IElementWrapper
+  nameWithType: IElementWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  type: Interface
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents an interface for wrapping Revit elements.
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public interface IElementWrapper
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Interface IElementWrapper
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  id: Element
+  parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  langs:
+  - csharp
+  - vb
+  name: Element
+  nameWithType: IElementWrapper.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents the Revit Element associated with this wrapper object.
+  example: []
+  syntax:
+    content: Element Element { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Element
+    content.vb: ReadOnly Property Element As Element
+  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element*
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+  id: ParameterMaps
+  parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParameterMaps
+  nameWithType: IElementWrapper.ParameterMaps
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Parameter indexers associated with the element.
+  example: []
+  syntax:
+    content: IEnumerable<IElementParameterMap> ParameterMaps { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap}
+    content.vb: ReadOnly Property ParameterMaps As IEnumerable(Of IElementParameterMap)
+  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps*
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+  id: ParameterAccessor
+  parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  langs:
+  - csharp
+  - vb
+  name: ParameterAccessor
+  nameWithType: IElementWrapper.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: >-
+    Provides access to manipulate and retrieve parameter values of a
+
+    Revit element through the associated element wrapper.
+  example: []
+  syntax:
+    content: ElementParameterAccessor ParameterAccessor { get; }
+    parameters: []
+    return:
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+    content.vb: ReadOnly Property ParameterAccessor As ElementParameterAccessor
+  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor*
+references:
+- uid: DynamoForRevitUtils.Entities.Wrappers
+  commentId: N:DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.Wrappers
+  nameWithType: DynamoForRevitUtils.Entities.Wrappers
+  fullName: DynamoForRevitUtils.Entities.Wrappers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_Element
+  name: Element
+  nameWithType: IElementWrapper.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+- uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterMaps
+  name: ParameterMaps
+  nameWithType: IElementWrapper.ParameterMaps
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
+- uid: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap}
+  commentId: T:System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IElementParameterMap>
+  nameWithType: IEnumerable<IElementParameterMap>
+  fullName: System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap>
+  nameWithType.vb: IEnumerable(Of IElementParameterMap)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap)
+  name.vb: IEnumerable(Of IElementParameterMap)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+    name: IElementParameterMap
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+    name: IElementParameterMap
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterAccessor
+  name: ParameterAccessor
+  nameWithType: IElementWrapper.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.html
+  name: ElementParameterAccessor
+  nameWithType: ElementParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers
+  commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.ParametersHandlers
+  nameWithType: DynamoForRevitUtils.Entities.ParametersHandlers
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html

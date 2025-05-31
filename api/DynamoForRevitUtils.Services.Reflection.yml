@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Reflection
+  commentId: N:DynamoForRevitUtils.Services.Reflection
+  id: DynamoForRevitUtils.Services.Reflection
+  children:
+  - DynamoForRevitUtils.Services.Reflection.ReflectionServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Reflection
+  nameWithType: DynamoForRevitUtils.Services.Reflection
+  fullName: DynamoForRevitUtils.Services.Reflection
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Reflection.ReflectionServices
+  commentId: T:DynamoForRevitUtils.Services.Reflection.ReflectionServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Reflection.ReflectionServices.html
+  name: ReflectionServices
+  nameWithType: ReflectionServices
+  fullName: DynamoForRevitUtils.Services.Reflection.ReflectionServices

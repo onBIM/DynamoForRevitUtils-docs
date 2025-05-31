@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Factories
+  commentId: N:DynamoForRevitUtils.Factories
+  id: DynamoForRevitUtils.Factories
+  children:
+  - DynamoForRevitUtils.Factories.AbstractGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Factories
+  nameWithType: DynamoForRevitUtils.Factories
+  fullName: DynamoForRevitUtils.Factories
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Factories.AbstractGeometryFactory
+  commentId: T:DynamoForRevitUtils.Factories.AbstractGeometryFactory
+  isExternal: true
+  href: DynamoForRevitUtils.Factories.AbstractGeometryFactory.html
+  name: AbstractGeometryFactory
+  nameWithType: AbstractGeometryFactory
+  fullName: DynamoForRevitUtils.Factories.AbstractGeometryFactory

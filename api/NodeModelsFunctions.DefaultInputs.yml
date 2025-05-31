@@ -1,0 +1,1171 @@
+### YamlMime:ManagedReference
+items:
+- uid: NodeModelsFunctions.DefaultInputs
+  commentId: T:NodeModelsFunctions.DefaultInputs
+  id: DefaultInputs
+  parent: NodeModelsFunctions
+  children:
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_COLOR
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_CULTURE_INFO
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_ENCODING
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_PARAMETER_KIND
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_SELECTION_METHOD
+  - NodeModelsFunctions.DefaultInputs.DEFAULT_STORAGE_TYPE
+  - NodeModelsFunctions.DefaultInputs.EMPTY_STRING
+  - NodeModelsFunctions.DefaultInputs.FALSE
+  - NodeModelsFunctions.DefaultInputs.GetDefaultColor
+  - NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo
+  - NodeModelsFunctions.DefaultInputs.GetDefaultDataType
+  - NodeModelsFunctions.DefaultInputs.GetDefaultEncoding
+  - NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind
+  - NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod
+  - NodeModelsFunctions.DefaultInputs.GetEmptyString
+  - NodeModelsFunctions.DefaultInputs.GetFalse
+  - NodeModelsFunctions.DefaultInputs.GetIdentity
+  - NodeModelsFunctions.DefaultInputs.GetNull
+  - NodeModelsFunctions.DefaultInputs.GetOrigin
+  - NodeModelsFunctions.DefaultInputs.GetTrue
+  - NodeModelsFunctions.DefaultInputs.GetZero
+  - NodeModelsFunctions.DefaultInputs.IDENTITY
+  - NodeModelsFunctions.DefaultInputs.NULL
+  - NodeModelsFunctions.DefaultInputs.ORIGIN
+  - NodeModelsFunctions.DefaultInputs.TRUE
+  - NodeModelsFunctions.DefaultInputs.ZERO
+  langs:
+  - csharp
+  - vb
+  name: DefaultInputs
+  nameWithType: DefaultInputs
+  fullName: NodeModelsFunctions.DefaultInputs
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default inputs to use in nodes
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class DefaultInputs
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module DefaultInputs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: NodeModelsFunctions.DefaultInputs.NULL
+  commentId: F:NodeModelsFunctions.DefaultInputs.NULL
+  id: "NULL"
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: "NULL"
+  nameWithType: DefaultInputs.NULL
+  fullName: NodeModelsFunctions.DefaultInputs.NULL
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default null value
+  example: []
+  syntax:
+    content: public const string NULL = "NodeModelsFunctions.DefaultInputs.GetNull()"
+    return:
+      type: System.String
+    content.vb: Public Const NULL As String = "NodeModelsFunctions.DefaultInputs.GetNull()"
+- uid: NodeModelsFunctions.DefaultInputs.TRUE
+  commentId: F:NodeModelsFunctions.DefaultInputs.TRUE
+  id: "TRUE"
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: "TRUE"
+  nameWithType: DefaultInputs.TRUE
+  fullName: NodeModelsFunctions.DefaultInputs.TRUE
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value boolean true
+  example: []
+  syntax:
+    content: public const string TRUE = "NodeModelsFunctions.DefaultInputs.GetTrue()"
+    return:
+      type: System.String
+    content.vb: Public Const TRUE As String = "NodeModelsFunctions.DefaultInputs.GetTrue()"
+- uid: NodeModelsFunctions.DefaultInputs.FALSE
+  commentId: F:NodeModelsFunctions.DefaultInputs.FALSE
+  id: "FALSE"
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: "FALSE"
+  nameWithType: DefaultInputs.FALSE
+  fullName: NodeModelsFunctions.DefaultInputs.FALSE
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value boolean false
+  example: []
+  syntax:
+    content: public const string FALSE = "NodeModelsFunctions.DefaultInputs.GetFalse()"
+    return:
+      type: System.String
+    content.vb: Public Const FALSE As String = "NodeModelsFunctions.DefaultInputs.GetFalse()"
+- uid: NodeModelsFunctions.DefaultInputs.EMPTY_STRING
+  commentId: F:NodeModelsFunctions.DefaultInputs.EMPTY_STRING
+  id: EMPTY_STRING
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: EMPTY_STRING
+  nameWithType: DefaultInputs.EMPTY_STRING
+  fullName: NodeModelsFunctions.DefaultInputs.EMPTY_STRING
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value string empty
+  example: []
+  syntax:
+    content: public const string EMPTY_STRING = "NodeModelsFunctions.DefaultInputs.GetEmptyString()"
+    return:
+      type: System.String
+    content.vb: Public Const EMPTY_STRING As String = "NodeModelsFunctions.DefaultInputs.GetEmptyString()"
+- uid: NodeModelsFunctions.DefaultInputs.ZERO
+  commentId: F:NodeModelsFunctions.DefaultInputs.ZERO
+  id: ZERO
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: ZERO
+  nameWithType: DefaultInputs.ZERO
+  fullName: NodeModelsFunctions.DefaultInputs.ZERO
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value double zero
+  example: []
+  syntax:
+    content: public const string ZERO = "NodeModelsFunctions.DefaultInputs.GetZero()"
+    return:
+      type: System.String
+    content.vb: Public Const ZERO As String = "NodeModelsFunctions.DefaultInputs.GetZero()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_COLOR
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_COLOR
+  id: DEFAULT_COLOR
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_COLOR
+  nameWithType: DefaultInputs.DEFAULT_COLOR
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_COLOR
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default color to use in inputs
+  example: []
+  syntax:
+    content: public const string DEFAULT_COLOR = "NodeModelsFunctions.DefaultInputs.GetDefaultColor()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_COLOR As String = "NodeModelsFunctions.DefaultInputs.GetDefaultColor()"
+- uid: NodeModelsFunctions.DefaultInputs.ORIGIN
+  commentId: F:NodeModelsFunctions.DefaultInputs.ORIGIN
+  id: ORIGIN
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: ORIGIN
+  nameWithType: DefaultInputs.ORIGIN
+  fullName: NodeModelsFunctions.DefaultInputs.ORIGIN
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Gets World origin
+  example: []
+  syntax:
+    content: public const string ORIGIN = "NodeModelsFunctions.DefaultInputs.GetOrigin()"
+    return:
+      type: System.String
+    content.vb: Public Const ORIGIN As String = "NodeModelsFunctions.DefaultInputs.GetOrigin()"
+- uid: NodeModelsFunctions.DefaultInputs.IDENTITY
+  commentId: F:NodeModelsFunctions.DefaultInputs.IDENTITY
+  id: IDENTITY
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: IDENTITY
+  nameWithType: DefaultInputs.IDENTITY
+  fullName: NodeModelsFunctions.DefaultInputs.IDENTITY
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Gets world coordinate system
+  example: []
+  syntax:
+    content: public const string IDENTITY = "NodeModelsFunctions.DefaultInputs.GetIdentity()"
+    return:
+      type: System.String
+    content.vb: Public Const IDENTITY As String = "NodeModelsFunctions.DefaultInputs.GetIdentity()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_SELECTION_METHOD
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_SELECTION_METHOD
+  id: DEFAULT_SELECTION_METHOD
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_SELECTION_METHOD
+  nameWithType: DefaultInputs.DEFAULT_SELECTION_METHOD
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_SELECTION_METHOD
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get default selection method
+  example: []
+  syntax:
+    content: public const string DEFAULT_SELECTION_METHOD = "NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_SELECTION_METHOD As String = "NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_STORAGE_TYPE
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_STORAGE_TYPE
+  id: DEFAULT_STORAGE_TYPE
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_STORAGE_TYPE
+  nameWithType: DefaultInputs.DEFAULT_STORAGE_TYPE
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_STORAGE_TYPE
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get default <xref href="Autodesk.Revit.DB.StorageType" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public const string DEFAULT_STORAGE_TYPE = "NodeModelsFunctions.DefaultInputs.GetDefaultDataType()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_STORAGE_TYPE As String = "NodeModelsFunctions.DefaultInputs.GetDefaultDataType()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_PARAMETER_KIND
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_PARAMETER_KIND
+  id: DEFAULT_PARAMETER_KIND
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_PARAMETER_KIND
+  nameWithType: DefaultInputs.DEFAULT_PARAMETER_KIND
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_PARAMETER_KIND
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get default parameter kind
+  example: []
+  syntax:
+    content: public const string DEFAULT_PARAMETER_KIND = "NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_PARAMETER_KIND As String = "NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_ENCODING
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_ENCODING
+  id: DEFAULT_ENCODING
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_ENCODING
+  nameWithType: DefaultInputs.DEFAULT_ENCODING
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_ENCODING
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default encoding to use in inputs
+  example: []
+  syntax:
+    content: public const string DEFAULT_ENCODING = "NodeModelsFunctions.DefaultInputs.GetDefaultEncoding()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_ENCODING As String = "NodeModelsFunctions.DefaultInputs.GetDefaultEncoding()"
+- uid: NodeModelsFunctions.DefaultInputs.DEFAULT_CULTURE_INFO
+  commentId: F:NodeModelsFunctions.DefaultInputs.DEFAULT_CULTURE_INFO
+  id: DEFAULT_CULTURE_INFO
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_CULTURE_INFO
+  nameWithType: DefaultInputs.DEFAULT_CULTURE_INFO
+  fullName: NodeModelsFunctions.DefaultInputs.DEFAULT_CULTURE_INFO
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default culture info to use in inputs
+  example: []
+  syntax:
+    content: public const string DEFAULT_CULTURE_INFO = "NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo()"
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_CULTURE_INFO As String = "NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo()"
+- uid: NodeModelsFunctions.DefaultInputs.GetNull
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetNull
+  id: GetNull
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetNull()
+  nameWithType: DefaultInputs.GetNull()
+  fullName: NodeModelsFunctions.DefaultInputs.GetNull()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default null value
+  example: []
+  syntax:
+    content: public static object? GetNull()
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetNull() As Object
+  overload: NodeModelsFunctions.DefaultInputs.GetNull*
+- uid: NodeModelsFunctions.DefaultInputs.GetTrue
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetTrue
+  id: GetTrue
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetTrue()
+  nameWithType: DefaultInputs.GetTrue()
+  fullName: NodeModelsFunctions.DefaultInputs.GetTrue()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value boolean true
+  example: []
+  syntax:
+    content: public static bool GetTrue()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function GetTrue() As Boolean
+  overload: NodeModelsFunctions.DefaultInputs.GetTrue*
+- uid: NodeModelsFunctions.DefaultInputs.GetFalse
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetFalse
+  id: GetFalse
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetFalse()
+  nameWithType: DefaultInputs.GetFalse()
+  fullName: NodeModelsFunctions.DefaultInputs.GetFalse()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value boolean false
+  example: []
+  syntax:
+    content: public static bool GetFalse()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function GetFalse() As Boolean
+  overload: NodeModelsFunctions.DefaultInputs.GetFalse*
+- uid: NodeModelsFunctions.DefaultInputs.GetEmptyString
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetEmptyString
+  id: GetEmptyString
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetEmptyString()
+  nameWithType: DefaultInputs.GetEmptyString()
+  fullName: NodeModelsFunctions.DefaultInputs.GetEmptyString()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value string empty
+  example: []
+  syntax:
+    content: public static string GetEmptyString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetEmptyString() As String
+  overload: NodeModelsFunctions.DefaultInputs.GetEmptyString*
+- uid: NodeModelsFunctions.DefaultInputs.GetZero
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetZero
+  id: GetZero
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetZero()
+  nameWithType: DefaultInputs.GetZero()
+  fullName: NodeModelsFunctions.DefaultInputs.GetZero()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default value double zero
+  example: []
+  syntax:
+    content: public static double GetZero()
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetZero() As Double
+  overload: NodeModelsFunctions.DefaultInputs.GetZero*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultColor
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultColor
+  id: GetDefaultColor
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultColor()
+  nameWithType: DefaultInputs.GetDefaultColor()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultColor()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Default color to use in inputs
+  example: []
+  syntax:
+    content: public static Color GetDefaultColor()
+    return:
+      type: DSCore.Color
+      description: ''
+    content.vb: Public Shared Function GetDefaultColor() As Color
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultColor*
+- uid: NodeModelsFunctions.DefaultInputs.GetOrigin
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetOrigin
+  id: GetOrigin
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetOrigin()
+  nameWithType: DefaultInputs.GetOrigin()
+  fullName: NodeModelsFunctions.DefaultInputs.GetOrigin()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Gets World origin
+  example: []
+  syntax:
+    content: public static Point GetOrigin()
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function GetOrigin() As Point
+  overload: NodeModelsFunctions.DefaultInputs.GetOrigin*
+- uid: NodeModelsFunctions.DefaultInputs.GetIdentity
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetIdentity
+  id: GetIdentity
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetIdentity()
+  nameWithType: DefaultInputs.GetIdentity()
+  fullName: NodeModelsFunctions.DefaultInputs.GetIdentity()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Gets world coordinate system
+  example: []
+  syntax:
+    content: public static CoordinateSystem GetIdentity()
+    return:
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+      description: ''
+    content.vb: Public Shared Function GetIdentity() As CoordinateSystem
+  overload: NodeModelsFunctions.DefaultInputs.GetIdentity*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod
+  id: GetDefaultSelectionMethod
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultSelectionMethod()
+  nameWithType: DefaultInputs.GetDefaultSelectionMethod()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get default selection method
+  example: []
+  syntax:
+    content: public static SelectionMethod GetDefaultSelectionMethod()
+    return:
+      type: DynamoForRevitUtils.Enumerations.SelectionMethod
+      description: ''
+    content.vb: Public Shared Function GetDefaultSelectionMethod() As SelectionMethod
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultDataType
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultDataType
+  id: GetDefaultDataType
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultDataType()
+  nameWithType: DefaultInputs.GetDefaultDataType()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultDataType()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: >-
+    <p>Get default <xref href="Autodesk.Revit.DB.StorageType" data-throw-if-not-resolved="false"></xref></p>
+
+    <i>Methods that returns <b>visible</b> <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum">enum</a> to Dynamo must be return <xref href="System.Object" data-throw-if-not-resolved="false"></xref> 
+
+    instead, in order to they don't appears on Library</i>
+  example: []
+  syntax:
+    content: public static ParameterDataType GetDefaultDataType()
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+      description: ''
+    content.vb: Public Shared Function GetDefaultDataType() As ParameterDataType
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultDataType*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind
+  id: GetDefaultParameterKind
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultParameterKind()
+  nameWithType: DefaultInputs.GetDefaultParameterKind()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get default parameter kind
+  example: []
+  syntax:
+    content: public static ParameterKind GetDefaultParameterKind()
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterKind
+      description: ''
+    content.vb: Public Shared Function GetDefaultParameterKind() As ParameterKind
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultEncoding
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultEncoding
+  id: GetDefaultEncoding
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultEncoding()
+  nameWithType: DefaultInputs.GetDefaultEncoding()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultEncoding()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Retrieves the default encoding used for reading or writing CSV files.
+  example: []
+  syntax:
+    content: public static object GetDefaultEncoding()
+    return:
+      type: System.Object
+      description: Default encoding object, typically UTF8.
+    content.vb: Public Shared Function GetDefaultEncoding() As Object
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultEncoding*
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo
+  commentId: M:NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo
+  id: GetDefaultCultureInfo
+  parent: NodeModelsFunctions.DefaultInputs
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultCultureInfo()
+  nameWithType: DefaultInputs.GetDefaultCultureInfo()
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo()
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: >-
+    Retrieves the default <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> used for parsing and formatting operations
+
+    within the CSV processing context.
+  example: []
+  syntax:
+    content: public static object GetDefaultCultureInfo()
+    return:
+      type: System.Object
+      description: Default <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> object, typically representing an invariant culture setting.
+    content.vb: Public Shared Function GetDefaultCultureInfo() As Object
+  overload: NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo*
+references:
+- uid: NodeModelsFunctions
+  commentId: N:NodeModelsFunctions
+  isExternal: true
+  href: NodeModelsFunctions.html
+  name: NodeModelsFunctions
+  nameWithType: NodeModelsFunctions
+  fullName: NodeModelsFunctions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Autodesk.Revit.DB.StorageType
+  commentId: T:Autodesk.Revit.DB.StorageType
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: StorageType
+  nameWithType: StorageType
+  fullName: Autodesk.Revit.DB.StorageType
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: NodeModelsFunctions.DefaultInputs.GetNull*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetNull
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetNull
+  name: GetNull
+  nameWithType: DefaultInputs.GetNull
+  fullName: NodeModelsFunctions.DefaultInputs.GetNull
+- uid: NodeModelsFunctions.DefaultInputs.GetTrue*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetTrue
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetTrue
+  name: GetTrue
+  nameWithType: DefaultInputs.GetTrue
+  fullName: NodeModelsFunctions.DefaultInputs.GetTrue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NodeModelsFunctions.DefaultInputs.GetFalse*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetFalse
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetFalse
+  name: GetFalse
+  nameWithType: DefaultInputs.GetFalse
+  fullName: NodeModelsFunctions.DefaultInputs.GetFalse
+- uid: NodeModelsFunctions.DefaultInputs.GetEmptyString*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetEmptyString
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetEmptyString
+  name: GetEmptyString
+  nameWithType: DefaultInputs.GetEmptyString
+  fullName: NodeModelsFunctions.DefaultInputs.GetEmptyString
+- uid: NodeModelsFunctions.DefaultInputs.GetZero*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetZero
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetZero
+  name: GetZero
+  nameWithType: DefaultInputs.GetZero
+  fullName: NodeModelsFunctions.DefaultInputs.GetZero
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultColor*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultColor
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultColor
+  name: GetDefaultColor
+  nameWithType: DefaultInputs.GetDefaultColor
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultColor
+- uid: DSCore.Color
+  commentId: T:DSCore.Color
+  parent: DSCore
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: DSCore.Color
+- uid: DSCore
+  commentId: N:DSCore
+  isExternal: true
+  name: DSCore
+  nameWithType: DSCore
+  fullName: DSCore
+- uid: NodeModelsFunctions.DefaultInputs.GetOrigin*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetOrigin
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetOrigin
+  name: GetOrigin
+  nameWithType: DefaultInputs.GetOrigin
+  fullName: NodeModelsFunctions.DefaultInputs.GetOrigin
+- uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Autodesk.DesignScript.Geometry.Point
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: NodeModelsFunctions.DefaultInputs.GetIdentity*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetIdentity
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetIdentity
+  name: GetIdentity
+  nameWithType: DefaultInputs.GetIdentity
+  fullName: NodeModelsFunctions.DefaultInputs.GetIdentity
+- uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: Autodesk.DesignScript.Geometry.CoordinateSystem
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultSelectionMethod
+  name: GetDefaultSelectionMethod
+  nameWithType: DefaultInputs.GetDefaultSelectionMethod
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod
+- uid: DynamoForRevitUtils.Enumerations.SelectionMethod
+  commentId: T:DynamoForRevitUtils.Enumerations.SelectionMethod
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.SelectionMethod.html
+  name: SelectionMethod
+  nameWithType: SelectionMethod
+  fullName: DynamoForRevitUtils.Enumerations.SelectionMethod
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultDataType*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultDataType
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultDataType
+  name: GetDefaultDataType
+  nameWithType: DefaultInputs.GetDefaultDataType
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterDataType
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  name: ParameterDataType
+  nameWithType: ParameterDataType
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultParameterKind
+  name: GetDefaultParameterKind
+  nameWithType: DefaultInputs.GetDefaultParameterKind
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind
+- uid: DynamoForRevitUtils.Enumerations.ParameterKind
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterKind
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterKind.html
+  name: ParameterKind
+  nameWithType: ParameterKind
+  fullName: DynamoForRevitUtils.Enumerations.ParameterKind
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultEncoding*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultEncoding
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultEncoding
+  name: GetDefaultEncoding
+  nameWithType: DefaultInputs.GetDefaultEncoding
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultEncoding
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo*
+  commentId: Overload:NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo
+  isExternal: true
+  href: NodeModelsFunctions.DefaultInputs.html#NodeModelsFunctions_DefaultInputs_GetDefaultCultureInfo
+  name: GetDefaultCultureInfo
+  nameWithType: DefaultInputs.GetDefaultCultureInfo
+  fullName: NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo

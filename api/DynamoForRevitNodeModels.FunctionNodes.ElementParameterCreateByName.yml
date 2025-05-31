@@ -1,0 +1,3920 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  commentId: T:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  id: ElementParameterCreateByName
+  parent: DynamoForRevitNodeModels.FunctionNodes
+  children:
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+  - DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+  langs:
+  - csharp
+  - vb
+  name: ElementParameterCreateByName
+  nameWithType: ElementParameterCreateByName
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  syntax:
+    content: >-
+      [IsDesignScriptCompatible]
+
+      [NodeModelOutPortsTypes(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelOutPortsDescriptions(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelOutPortsNames(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelInPortsTypes(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelInPortsDescriptions(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelInPortsNames(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelSearchTags(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeModelDescription(typeof(ElementParameterCreateByName), typeof(ElementParameterNodesResources))]
+
+      [NodeName("ElementParameter.CreateByName")]
+
+      [NodeCategory("onBIM Nodes")]
+
+      public class ElementParameterCreateByName : StandardNodeModelBaseByResources, INotifyPropertyChanged, ISelectable, ILocatable, ILogSource, IRenderPackageSource<NodeModel>, IDisposable
+    content.vb: >-
+      <IsDesignScriptCompatible>
+
+      <NodeModelOutPortsTypes(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelOutPortsDescriptions(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelOutPortsNames(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelInPortsTypes(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelInPortsDescriptions(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelInPortsNames(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelSearchTags(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeModelDescription(GetType(ElementParameterCreateByName), GetType(ElementParameterNodesResources))>
+
+      <NodeName("ElementParameter.CreateByName")>
+
+      <NodeCategory("onBIM Nodes")>
+
+      Public Class ElementParameterCreateByName Inherits StandardNodeModelBaseByResources Implements INotifyPropertyChanged, ISelectable, ILocatable, ILogSource, IRenderPackageSource(Of NodeModel), IDisposable
+  inheritance:
+  - System.Object
+  - Dynamo.Core.NotificationObject
+  - Dynamo.Graph.ModelBase
+  - Dynamo.Graph.Nodes.NodeModel
+  - DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase
+  - DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Dynamo.Selection.ISelectable
+  - Dynamo.Graph.ILocatable
+  - Dynamo.Logging.ILogSource
+  - Dynamo.Visualization.IRenderPackageSource{Dynamo.Graph.Nodes.NodeModel}
+  - System.IDisposable
+  inheritedMembers:
+  - DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.OutPortData
+  - DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  - Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+  - Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes
+  - Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(System.Int32)
+  - Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(System.Int32)
+  - Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX
+  - Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY
+  - Dynamo.Graph.Nodes.NodeModel.GetValue(System.Int32,Dynamo.Engine.EngineController)
+  - Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute
+  - Dynamo.Graph.Nodes.NodeModel.OnNodeModified(System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection
+  - Dynamo.Graph.Nodes.NodeModel.OnBuilt
+  - Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  - Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+  - Dynamo.Graph.Nodes.NodeModel.TryGetInput(System.Int32,System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}@)
+  - Dynamo.Graph.Nodes.NodeModel.TryGetOutput(System.Int32,System.Collections.Generic.HashSet{System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}}@)
+  - Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings
+  - Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages
+  - Dynamo.Graph.Nodes.NodeModel.SelectNeighbors
+  - Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours
+  - Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours
+  - Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours
+  - Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults
+  - Dynamo.Graph.Nodes.NodeModel.Error(System.String)
+  - Dynamo.Graph.Nodes.NodeModel.Info(System.String,System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.Warning(System.String,System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(System.String)
+  - Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  - Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  - Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList{Dynamo.Graph.Nodes.PortModel})
+  - Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts
+  - Dynamo.Graph.Nodes.NodeModel.Deselect
+  - Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+  - Dynamo.Graph.Nodes.NodeModel.OnSave
+  - Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  - Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  - Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag
+  - Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore
+  - Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean,System.Boolean)
+  - Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String)
+  - Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  - Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  - Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+  - Dynamo.Graph.Nodes.NodeModel.CreationName
+  - Dynamo.Graph.Nodes.NodeModel.NodeType
+  - Dynamo.Graph.Nodes.NodeModel.GUID
+  - Dynamo.Graph.Nodes.NodeModel.AllConnectors
+  - Dynamo.Graph.Nodes.NodeModel.IsCustomFunction
+  - Dynamo.Graph.Nodes.NodeModel.IsVisible
+  - Dynamo.Graph.Nodes.NodeModel.IsInputNode
+  - Dynamo.Graph.Nodes.NodeModel.IsSetAsInput
+  - Dynamo.Graph.Nodes.NodeModel.IsOutputNode
+  - Dynamo.Graph.Nodes.NodeModel.IsSetAsOutput
+  - Dynamo.Graph.Nodes.NodeModel.State
+  - Dynamo.Graph.Nodes.NodeModel.IsInErrorState
+  - Dynamo.Graph.Nodes.NodeModel.PreviewPinned
+  - Dynamo.Graph.Nodes.NodeModel.NodeInfos
+  - Dynamo.Graph.Nodes.NodeModel.Name
+  - Dynamo.Graph.Nodes.NodeModel.InPorts
+  - Dynamo.Graph.Nodes.NodeModel.OutPorts
+  - Dynamo.Graph.Nodes.NodeModel.InputNodes
+  - Dynamo.Graph.Nodes.NodeModel.OutputNodes
+  - Dynamo.Graph.Nodes.NodeModel.ArgumentLacing
+  - Dynamo.Graph.Nodes.NodeModel.Category
+  - Dynamo.Graph.Nodes.NodeModel.DictionaryLink
+  - Dynamo.Graph.Nodes.NodeModel.CachedValue
+  - Dynamo.Graph.Nodes.NodeModel.Tags
+  - Dynamo.Graph.Nodes.NodeModel.Description
+  - Dynamo.Graph.Nodes.NodeModel.CanUpdatePeriodically
+  - Dynamo.Graph.Nodes.NodeModel.AstIdentifierForPreview
+  - Dynamo.Graph.Nodes.NodeModel.IsConvertible
+  - Dynamo.Graph.Nodes.NodeModel.AstIdentifierBase
+  - Dynamo.Graph.Nodes.NodeModel.AstIdentifierGuid
+  - Dynamo.Graph.Nodes.NodeModel.DisplayLabels
+  - Dynamo.Graph.Nodes.NodeModel.IsPartiallyApplied
+  - Dynamo.Graph.Nodes.NodeModel.AreAllOutputsConnected
+  - Dynamo.Graph.Nodes.NodeModel.IsFrozen
+  - Dynamo.Graph.Nodes.NodeModel.InputData
+  - Dynamo.Graph.Nodes.NodeModel.OutputData
+  - Dynamo.Graph.Nodes.NodeModel.DismissedAlerts
+  - Dynamo.Graph.Nodes.NodeModel.DismissedAlertsCount
+  - Dynamo.Graph.Nodes.NodeModel.RaisesModificationEvents
+  - Dynamo.Graph.Nodes.NodeModel.IsTopMostNode
+  - Dynamo.Graph.Nodes.NodeModel.IsModified
+  - Dynamo.Graph.Nodes.NodeModel.NeedsForceExecution
+  - Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreview
+  - Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreviewCore
+  - Dynamo.Graph.Nodes.NodeModel.PortConnected
+  - Dynamo.Graph.Nodes.NodeModel.PortDisconnected
+  - Dynamo.Graph.Nodes.NodeModel.NodeExecutionBegin
+  - Dynamo.Graph.Nodes.NodeModel.NodeMessagesClearing
+  - Dynamo.Graph.Nodes.NodeModel.NodeInfoMessagesClearing
+  - Dynamo.Graph.Nodes.NodeModel.NodeExecutionEnd
+  - Dynamo.Graph.Nodes.NodeModel.Modified
+  - Dynamo.Graph.Nodes.NodeModel.UpdateASTCollection
+  - Dynamo.Graph.Nodes.NodeModel.ConnectorAdded
+  - Dynamo.Graph.Nodes.NodeModel.RequestRenderPackages
+  - Dynamo.Graph.Nodes.NodeModel.RenderPackagesUpdated
+  - Dynamo.Graph.ModelBase.Select
+  - Dynamo.Graph.ModelBase.ReportPosition
+  - Dynamo.Graph.ModelBase.SetSize(System.Double,System.Double)
+  - Dynamo.Graph.ModelBase.Dispose
+  - Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+  - Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+  - Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  - Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  - Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  - Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+  - Dynamo.Graph.ModelBase.Log(System.String)
+  - Dynamo.Graph.ModelBase.Log(System.String,Dynamo.Logging.WarningLevel)
+  - Dynamo.Graph.ModelBase.CenterX
+  - Dynamo.Graph.ModelBase.CenterY
+  - Dynamo.Graph.ModelBase.X
+  - Dynamo.Graph.ModelBase.Y
+  - Dynamo.Graph.ModelBase.Position
+  - Dynamo.Graph.ModelBase.Height
+  - Dynamo.Graph.ModelBase.Width
+  - Dynamo.Graph.ModelBase.Rect
+  - Dynamo.Graph.ModelBase.IsSelected
+  - Dynamo.Graph.ModelBase.Disposed
+  - Dynamo.Graph.ModelBase.DeletionStarted
+  - Dynamo.Graph.ModelBase.MessageLogged
+  - Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String)
+  - Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String[])
+  - Dynamo.Core.NotificationObject.PropertyChanged
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - Dynamo.Graph.Nodes.NodeModel.DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Dynamo.Graph.Nodes.IsDesignScriptCompatibleAttribute
+    ctor: Dynamo.Graph.Nodes.IsDesignScriptCompatibleAttribute.#ctor
+    arguments: []
+  - type: Dynamo.Graph.Nodes.NodeNameAttribute
+    ctor: Dynamo.Graph.Nodes.NodeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ElementParameter.CreateByName
+  - type: Dynamo.Graph.Nodes.NodeCategoryAttribute
+    ctor: Dynamo.Graph.Nodes.NodeCategoryAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: onBIM Nodes
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor
+  commentId: M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor
+  id: '#ctor'
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: ElementParameterCreateByName()
+  nameWithType: ElementParameterCreateByName.ElementParameterCreateByName()
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ElementParameterCreateByName()
+  type: Constructor
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: Node Constructor to Dynamo Engine
+  example: []
+  syntax:
+    content: public ElementParameterCreateByName()
+    content.vb: Public Sub New()
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor*
+  nameWithType.vb: ElementParameterCreateByName.New()
+  fullName.vb: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.New()
+  name.vb: New()
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})
+  commentId: M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})'
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: ElementParameterCreateByName(IEnumerable<PortModel>, IEnumerable<PortModel>)
+  nameWithType: ElementParameterCreateByName.ElementParameterCreateByName(IEnumerable<PortModel>, IEnumerable<PortModel>)
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ElementParameterCreateByName(System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortModel>, System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortModel>)
+  type: Constructor
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: >-
+    <p>Constructs Node on DYN file, which is in JSON format.</p>
+
+    <i>Parameters cannot be renamed, since Dynamo Core uses they.</i>
+  example: []
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      protected ElementParameterCreateByName(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts)
+    parameters:
+    - id: inPorts
+      type: System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+      description: ''
+    - id: outPorts
+      type: System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+      description: ''
+    content.vb: >-
+      <JsonConstructor>
+
+      Protected Sub New(inPorts As IEnumerable(Of PortModel), outPorts As IEnumerable(Of PortModel))
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ElementParameterCreateByName.New(IEnumerable(Of PortModel), IEnumerable(Of PortModel))
+  fullName.vb: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.New(System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortModel), System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortModel))
+  name.vb: New(IEnumerable(Of PortModel), IEnumerable(Of PortModel))
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+  id: NodeModelType
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: NodeModelType
+  nameWithType: ElementParameterCreateByName.NodeModelType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+  type: Property
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: Type that represents the Node Model
+  example: []
+  syntax:
+    content: protected override Type NodeModelType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overrides ReadOnly Property NodeModelType As Type
+  overridden: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeModelType
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType*
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+  id: ResourceType
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: ResourceType
+  nameWithType: ElementParameterCreateByName.ResourceType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+  type: Property
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: Represents the type of resource used to define the Nodel Data, like node name, description, and ports data.
+  example: []
+  syntax:
+    content: protected override Type ResourceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overrides ReadOnly Property ResourceType As Type
+  overridden: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.ResourceType
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType*
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+  id: InputPortsData
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: InputPortsData
+  nameWithType: ElementParameterCreateByName.InputPortsData
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+  type: Property
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: Data to create Input ports
+  example: []
+  syntax:
+    content: protected override List<PortData> InputPortsData { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+    content.vb: Protected Overrides ReadOnly Property InputPortsData As List(Of PortData)
+  overridden: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.InputPortsData
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData*
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+  id: NodeFunction
+  parent: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName
+  langs:
+  - csharp
+  - vb
+  name: NodeFunction
+  nameWithType: ElementParameterCreateByName.NodeFunction
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+  type: Property
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.FunctionNodes
+  summary: Function used to node execution
+  example: []
+  syntax:
+    content: protected override Delegate NodeFunction { get; }
+    parameters: []
+    return:
+      type: System.Delegate
+    content.vb: Protected Overrides ReadOnly Property NodeFunction As [Delegate]
+  overridden: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeFunction
+  overload: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction*
+references:
+- uid: DynamoForRevitNodeModels.FunctionNodes
+  commentId: N:DynamoForRevitNodeModels.FunctionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.FunctionNodes
+  nameWithType: DynamoForRevitNodeModels.FunctionNodes
+  fullName: DynamoForRevitNodeModels.FunctionNodes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.FunctionNodes
+    name: FunctionNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.FunctionNodes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.FunctionNodes
+    name: FunctionNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.FunctionNodes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Dynamo.Core.NotificationObject
+  commentId: T:Dynamo.Core.NotificationObject
+  parent: Dynamo.Core
+  isExternal: true
+  name: NotificationObject
+  nameWithType: NotificationObject
+  fullName: Dynamo.Core.NotificationObject
+- uid: Dynamo.Graph.ModelBase
+  commentId: T:Dynamo.Graph.ModelBase
+  parent: Dynamo.Graph
+  isExternal: true
+  name: ModelBase
+  nameWithType: ModelBase
+  fullName: Dynamo.Graph.ModelBase
+- uid: Dynamo.Graph.Nodes.NodeModel
+  commentId: T:Dynamo.Graph.Nodes.NodeModel
+  parent: Dynamo.Graph.Nodes
+  isExternal: true
+  name: NodeModel
+  nameWithType: NodeModel
+  fullName: Dynamo.Graph.Nodes.NodeModel
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase
+  commentId: T:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase
+  parent: DynamoForRevitNodeModels.FunctionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.html
+  name: StandardNodeModelBase
+  nameWithType: StandardNodeModelBase
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  commentId: T:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  parent: DynamoForRevitNodeModels.FunctionNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html
+  name: StandardNodeModelBaseByResources
+  nameWithType: StandardNodeModelBaseByResources
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Dynamo.Selection.ISelectable
+  commentId: T:Dynamo.Selection.ISelectable
+  parent: Dynamo.Selection
+  isExternal: true
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Dynamo.Selection.ISelectable
+- uid: Dynamo.Graph.ILocatable
+  commentId: T:Dynamo.Graph.ILocatable
+  parent: Dynamo.Graph
+  isExternal: true
+  name: ILocatable
+  nameWithType: ILocatable
+  fullName: Dynamo.Graph.ILocatable
+- uid: Dynamo.Logging.ILogSource
+  commentId: T:Dynamo.Logging.ILogSource
+  parent: Dynamo.Logging
+  isExternal: true
+  name: ILogSource
+  nameWithType: ILogSource
+  fullName: Dynamo.Logging.ILogSource
+- uid: Dynamo.Visualization.IRenderPackageSource{Dynamo.Graph.Nodes.NodeModel}
+  commentId: T:Dynamo.Visualization.IRenderPackageSource{Dynamo.Graph.Nodes.NodeModel}
+  parent: Dynamo.Visualization
+  definition: Dynamo.Visualization.IRenderPackageSource`1
+  name: IRenderPackageSource<NodeModel>
+  nameWithType: IRenderPackageSource<NodeModel>
+  fullName: Dynamo.Visualization.IRenderPackageSource<Dynamo.Graph.Nodes.NodeModel>
+  nameWithType.vb: IRenderPackageSource(Of NodeModel)
+  fullName.vb: Dynamo.Visualization.IRenderPackageSource(Of Dynamo.Graph.Nodes.NodeModel)
+  name.vb: IRenderPackageSource(Of NodeModel)
+  spec.csharp:
+  - uid: Dynamo.Visualization.IRenderPackageSource`1
+    name: IRenderPackageSource
+    isExternal: true
+  - name: <
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Dynamo.Visualization.IRenderPackageSource`1
+    name: IRenderPackageSource
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.OutPortData
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.OutPortData
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBaseByResources_OutPortData
+  name: OutPortData
+  nameWithType: StandardNodeModelBaseByResources.OutPortData
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.OutPortData
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  commentId: M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBase_BuildOutputAst_System_Collections_Generic_List_ProtoCore_AST_AssociativeAST_AssociativeNode__
+  name: BuildOutputAst(List<AssociativeNode>)
+  nameWithType: StandardNodeModelBase.BuildOutputAst(List<AssociativeNode>)
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List<ProtoCore.AST.AssociativeAST.AssociativeNode>)
+  nameWithType.vb: StandardNodeModelBase.BuildOutputAst(List(Of AssociativeNode))
+  fullName.vb: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List(Of ProtoCore.AST.AssociativeAST.AssociativeNode))
+  name.vb: BuildOutputAst(List(Of AssociativeNode))
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+    name: BuildOutputAst
+    isExternal: true
+    href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBase_BuildOutputAst_System_Collections_Generic_List_ProtoCore_AST_AssociativeAST_AssociativeNode__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+    name: BuildOutputAst
+    isExternal: true
+    href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBase_BuildOutputAst_System_Collections_Generic_List_ProtoCore_AST_AssociativeAST_AssociativeNode__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: DispatchOnUIThread(Action)
+  nameWithType: NodeModel.DispatchOnUIThread(Action)
+  fullName: Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+    name: DispatchOnUIThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.DispatchOnUIThread(System.Action)
+    name: DispatchOnUIThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: GetDescriptionStringFromAttributes()
+  nameWithType: NodeModel.GetDescriptionStringFromAttributes()
+  fullName: Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes
+    name: GetDescriptionStringFromAttributes
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetDescriptionStringFromAttributes
+    name: GetDescriptionStringFromAttributes
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(System.Int32)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(System.Int32)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetAstIdentifierForOutputIndex(int)
+  nameWithType: NodeModel.GetAstIdentifierForOutputIndex(int)
+  fullName: Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(int)
+  nameWithType.vb: NodeModel.GetAstIdentifierForOutputIndex(Integer)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(Integer)
+  name.vb: GetAstIdentifierForOutputIndex(Integer)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(System.Int32)
+    name: GetAstIdentifierForOutputIndex
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetAstIdentifierForOutputIndex(System.Int32)
+    name: GetAstIdentifierForOutputIndex
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(System.Int32)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(System.Int32)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetTypeHintForOutput(int)
+  nameWithType: NodeModel.GetTypeHintForOutput(int)
+  fullName: Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(int)
+  nameWithType.vb: NodeModel.GetTypeHintForOutput(Integer)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(Integer)
+  name.vb: GetTypeHintForOutput(Integer)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(System.Int32)
+    name: GetTypeHintForOutput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetTypeHintForOutput(System.Int32)
+    name: GetTypeHintForOutput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ShouldSerializeX()
+  nameWithType: NodeModel.ShouldSerializeX()
+  fullName: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX
+    name: ShouldSerializeX
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeX
+    name: ShouldSerializeX
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ShouldSerializeY()
+  nameWithType: NodeModel.ShouldSerializeY()
+  fullName: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY
+    name: ShouldSerializeY
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ShouldSerializeY
+    name: ShouldSerializeY
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.GetValue(System.Int32,Dynamo.Engine.EngineController)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.GetValue(System.Int32,Dynamo.Engine.EngineController)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetValue(int, EngineController)
+  nameWithType: NodeModel.GetValue(int, EngineController)
+  fullName: Dynamo.Graph.Nodes.NodeModel.GetValue(int, Dynamo.Engine.EngineController)
+  nameWithType.vb: NodeModel.GetValue(Integer, EngineController)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.GetValue(Integer, Dynamo.Engine.EngineController)
+  name.vb: GetValue(Integer, EngineController)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetValue(System.Int32,Dynamo.Engine.EngineController)
+    name: GetValue
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetValue(System.Int32,Dynamo.Engine.EngineController)
+    name: GetValue
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SetNameFromNodeNameAttribute()
+  nameWithType: NodeModel.SetNameFromNodeNameAttribute()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute
+    name: SetNameFromNodeNameAttribute
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SetNameFromNodeNameAttribute
+    name: SetNameFromNodeNameAttribute
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.OnNodeModified(System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.OnNodeModified(System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: OnNodeModified(bool)
+  nameWithType: NodeModel.OnNodeModified(bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.OnNodeModified(bool)
+  nameWithType.vb: NodeModel.OnNodeModified(Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.OnNodeModified(Boolean)
+  name.vb: OnNodeModified(Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnNodeModified(System.Boolean)
+    name: OnNodeModified
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnNodeModified(System.Boolean)
+    name: OnNodeModified
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OnUpdateASTCollection()
+  nameWithType: NodeModel.OnUpdateASTCollection()
+  fullName: Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection
+    name: OnUpdateASTCollection
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnUpdateASTCollection
+    name: OnUpdateASTCollection
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.OnBuilt
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.OnBuilt
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OnBuilt()
+  nameWithType: NodeModel.OnBuilt()
+  fullName: Dynamo.Graph.Nodes.NodeModel.OnBuilt()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnBuilt
+    name: OnBuilt
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnBuilt
+    name: OnBuilt
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: UseLevelAndReplicationGuide(List<AssociativeNode>)
+  nameWithType: NodeModel.UseLevelAndReplicationGuide(List<AssociativeNode>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List<ProtoCore.AST.AssociativeAST.AssociativeNode>)
+  nameWithType.vb: NodeModel.UseLevelAndReplicationGuide(List(Of AssociativeNode))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List(Of ProtoCore.AST.AssociativeAST.AssociativeNode))
+  name.vb: UseLevelAndReplicationGuide(List(Of AssociativeNode))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+    name: UseLevelAndReplicationGuide
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.UseLevelAndReplicationGuide(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})
+    name: UseLevelAndReplicationGuide
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProtoCore.AST.AssociativeAST.AssociativeNode
+    name: AssociativeNode
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OnConnectorAdded(ConnectorModel)
+  nameWithType: NodeModel.OnConnectorAdded(ConnectorModel)
+  fullName: Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+    name: OnConnectorAdded
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.Connectors.ConnectorModel
+    name: ConnectorModel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnConnectorAdded(Dynamo.Graph.Connectors.ConnectorModel)
+    name: OnConnectorAdded
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.Connectors.ConnectorModel
+    name: ConnectorModel
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.TryGetInput(System.Int32,System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}@)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.TryGetInput(System.Int32,System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}@)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: TryGetInput(int, out Tuple<int, NodeModel>)
+  nameWithType: NodeModel.TryGetInput(int, out Tuple<int, NodeModel>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.TryGetInput(int, out System.Tuple<int, Dynamo.Graph.Nodes.NodeModel>)
+  nameWithType.vb: NodeModel.TryGetInput(Integer, Tuple(Of Integer, NodeModel))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.TryGetInput(Integer, System.Tuple(Of Integer, Dynamo.Graph.Nodes.NodeModel))
+  name.vb: TryGetInput(Integer, Tuple(Of Integer, NodeModel))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.TryGetInput(System.Int32,System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}@)
+    name: TryGetInput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.TryGetInput(System.Int32,System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}@)
+    name: TryGetInput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.TryGetOutput(System.Int32,System.Collections.Generic.HashSet{System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}}@)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.TryGetOutput(System.Int32,System.Collections.Generic.HashSet{System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}}@)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: TryGetOutput(int, out HashSet<Tuple<int, NodeModel>>)
+  nameWithType: NodeModel.TryGetOutput(int, out HashSet<Tuple<int, NodeModel>>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.TryGetOutput(int, out System.Collections.Generic.HashSet<System.Tuple<int, Dynamo.Graph.Nodes.NodeModel>>)
+  nameWithType.vb: NodeModel.TryGetOutput(Integer, HashSet(Of Tuple(Of Integer, NodeModel)))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.TryGetOutput(Integer, System.Collections.Generic.HashSet(Of System.Tuple(Of Integer, Dynamo.Graph.Nodes.NodeModel)))
+  name.vb: TryGetOutput(Integer, HashSet(Of Tuple(Of Integer, NodeModel)))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.TryGetOutput(System.Int32,System.Collections.Generic.HashSet{System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}}@)
+    name: TryGetOutput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.TryGetOutput(System.Int32,System.Collections.Generic.HashSet{System.Tuple{System.Int32,Dynamo.Graph.Nodes.NodeModel}}@)
+    name: TryGetOutput
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: )
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ClearErrorsAndWarnings()
+  nameWithType: NodeModel.ClearErrorsAndWarnings()
+  fullName: Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings
+    name: ClearErrorsAndWarnings
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearErrorsAndWarnings
+    name: ClearErrorsAndWarnings
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ClearInfoMessages()
+  nameWithType: NodeModel.ClearInfoMessages()
+  fullName: Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages
+    name: ClearInfoMessages
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearInfoMessages
+    name: ClearInfoMessages
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SelectNeighbors
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SelectNeighbors
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SelectNeighbors()
+  nameWithType: NodeModel.SelectNeighbors()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SelectNeighbors()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectNeighbors
+    name: SelectNeighbors
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectNeighbors
+    name: SelectNeighbors
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SelectDownstreamNeighbours()
+  nameWithType: NodeModel.SelectDownstreamNeighbours()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours
+    name: SelectDownstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectDownstreamNeighbours
+    name: SelectDownstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SelectUpstreamNeighbours()
+  nameWithType: NodeModel.SelectUpstreamNeighbours()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours
+    name: SelectUpstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamNeighbours
+    name: SelectUpstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SelectUpstreamAndDownstreamNeighbours()
+  nameWithType: NodeModel.SelectUpstreamAndDownstreamNeighbours()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours
+    name: SelectUpstreamAndDownstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SelectUpstreamAndDownstreamNeighbours
+    name: SelectUpstreamAndDownstreamNeighbours
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SetNodeStateBasedOnConnectionAndDefaults()
+  nameWithType: NodeModel.SetNodeStateBasedOnConnectionAndDefaults()
+  fullName: Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults
+    name: SetNodeStateBasedOnConnectionAndDefaults
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SetNodeStateBasedOnConnectionAndDefaults
+    name: SetNodeStateBasedOnConnectionAndDefaults
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.Error(System.String)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.Error(System.String)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Error(string)
+  nameWithType: NodeModel.Error(string)
+  fullName: Dynamo.Graph.Nodes.NodeModel.Error(string)
+  nameWithType.vb: NodeModel.Error(String)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.Error(String)
+  name.vb: Error(String)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Error(System.String)
+    name: Error
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Error(System.String)
+    name: Error
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.Info(System.String,System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.Info(System.String,System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Info(string, bool)
+  nameWithType: NodeModel.Info(string, bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.Info(string, bool)
+  nameWithType.vb: NodeModel.Info(String, Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.Info(String, Boolean)
+  name.vb: Info(String, Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Info(System.String,System.Boolean)
+    name: Info
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Info(System.String,System.Boolean)
+    name: Info
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.Warning(System.String,System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.Warning(System.String,System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Warning(string, bool)
+  nameWithType: NodeModel.Warning(string, bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.Warning(string, bool)
+  nameWithType.vb: NodeModel.Warning(String, Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.Warning(String, Boolean)
+  name.vb: Warning(String, Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Warning(System.String,System.Boolean)
+    name: Warning
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Warning(System.String,System.Boolean)
+    name: Warning
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(System.String)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(System.String)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: NotifyAstBuildBroken(string)
+  nameWithType: NodeModel.NotifyAstBuildBroken(string)
+  fullName: Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(string)
+  nameWithType.vb: NodeModel.NotifyAstBuildBroken(String)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(String)
+  name.vb: NotifyAstBuildBroken(String)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(System.String)
+    name: NotifyAstBuildBroken
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.NotifyAstBuildBroken(System.String)
+    name: NotifyAstBuildBroken
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: RegisterInputPorts(IEnumerable<PortData>)
+  nameWithType: NodeModel.RegisterInputPorts(IEnumerable<PortData>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortData>)
+  nameWithType.vb: NodeModel.RegisterInputPorts(IEnumerable(Of PortData))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortData))
+  name.vb: RegisterInputPorts(IEnumerable(Of PortData))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+    name: RegisterInputPorts
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterInputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+    name: RegisterInputPorts
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: RegisterOutputPorts(IEnumerable<PortData>)
+  nameWithType: NodeModel.RegisterOutputPorts(IEnumerable<PortData>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortData>)
+  nameWithType.vb: NodeModel.RegisterOutputPorts(IEnumerable(Of PortData))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortData))
+  name.vb: RegisterOutputPorts(IEnumerable(Of PortData))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+    name: RegisterOutputPorts
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterOutputPorts(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortData})
+    name: RegisterOutputPorts
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList{Dynamo.Graph.Nodes.PortModel})
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList{Dynamo.Graph.Nodes.PortModel})
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: ConfigureSnapEdges(IList<PortModel>)
+  nameWithType: NodeModel.ConfigureSnapEdges(IList<PortModel>)
+  fullName: Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList<Dynamo.Graph.Nodes.PortModel>)
+  nameWithType.vb: NodeModel.ConfigureSnapEdges(IList(Of PortModel))
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList(Of Dynamo.Graph.Nodes.PortModel))
+  name.vb: ConfigureSnapEdges(IList(Of PortModel))
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList{Dynamo.Graph.Nodes.PortModel})
+    name: ConfigureSnapEdges
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ConfigureSnapEdges(System.Collections.Generic.IList{Dynamo.Graph.Nodes.PortModel})
+    name: ConfigureSnapEdges
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: RegisterAllPorts()
+  nameWithType: NodeModel.RegisterAllPorts()
+  fullName: Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts
+    name: RegisterAllPorts
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RegisterAllPorts
+    name: RegisterAllPorts
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.Deselect
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.Deselect
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Deselect()
+  nameWithType: NodeModel.Deselect()
+  fullName: Dynamo.Graph.Nodes.NodeModel.Deselect()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Deselect
+    name: Deselect
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.Deselect
+    name: Deselect
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: UpdateValueCore(UpdateValueParams)
+  nameWithType: NodeModel.UpdateValueCore(UpdateValueParams)
+  fullName: Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+    name: UpdateValueCore
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.UpdateValueParams
+    name: UpdateValueParams
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.UpdateValueCore(Dynamo.Graph.UpdateValueParams)
+    name: UpdateValueCore
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.UpdateValueParams
+    name: UpdateValueParams
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.OnSave
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.OnSave
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OnSave()
+  nameWithType: NodeModel.OnSave()
+  fullName: Dynamo.Graph.Nodes.NodeModel.OnSave()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnSave
+    name: OnSave
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.OnSave
+    name: OnSave
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: SerializeCore(XmlElement, SaveContext)
+  nameWithType: NodeModel.SerializeCore(XmlElement, SaveContext)
+  fullName: Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement, Dynamo.Graph.SaveContext)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: SerializeCore
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.SerializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: SerializeCore
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: DeserializeCore(XmlElement, SaveContext)
+  nameWithType: NodeModel.DeserializeCore(XmlElement, SaveContext)
+  fullName: Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement, Dynamo.Graph.SaveContext)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: DeserializeCore
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.DeserializeCore(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: DeserializeCore
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: MarkNodeAsModified(bool)
+  nameWithType: NodeModel.MarkNodeAsModified(bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(bool)
+  nameWithType.vb: NodeModel.MarkNodeAsModified(Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(Boolean)
+  name.vb: MarkNodeAsModified(Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(System.Boolean)
+    name: MarkNodeAsModified
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MarkNodeAsModified(System.Boolean)
+    name: MarkNodeAsModified
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ClearDirtyFlag()
+  nameWithType: NodeModel.ClearDirtyFlag()
+  fullName: Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag
+    name: ClearDirtyFlag
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.ClearDirtyFlag
+    name: ClearDirtyFlag
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: GetExecutionHintsCore()
+  nameWithType: NodeModel.GetExecutionHintsCore()
+  fullName: Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore()
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore
+    name: GetExecutionHintsCore
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.GetExecutionHintsCore
+    name: GetExecutionHintsCore
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, bool)
+  nameWithType: NodeModel.RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler, Dynamo.Engine.EngineController, Dynamo.Visualization.IRenderPackageFactory, bool)
+  nameWithType.vb: NodeModel.RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler, Dynamo.Engine.EngineController, Dynamo.Visualization.IRenderPackageFactory, Boolean)
+  name.vb: RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean)
+    name: RequestVisualUpdateAsync
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Scheduler.IScheduler
+    name: IScheduler
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Visualization.IRenderPackageFactory
+    name: IRenderPackageFactory
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean)
+    name: RequestVisualUpdateAsync
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Scheduler.IScheduler
+    name: IScheduler
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Visualization.IRenderPackageFactory
+    name: IRenderPackageFactory
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean,System.Boolean)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean,System.Boolean)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, bool, bool)
+  nameWithType: NodeModel.RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, bool, bool)
+  fullName: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler, Dynamo.Engine.EngineController, Dynamo.Visualization.IRenderPackageFactory, bool, bool)
+  nameWithType.vb: NodeModel.RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, Boolean, Boolean)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler, Dynamo.Engine.EngineController, Dynamo.Visualization.IRenderPackageFactory, Boolean, Boolean)
+  name.vb: RequestVisualUpdateAsync(IScheduler, EngineController, IRenderPackageFactory, Boolean, Boolean)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean,System.Boolean)
+    name: RequestVisualUpdateAsync
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Scheduler.IScheduler
+    name: IScheduler
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Visualization.IRenderPackageFactory
+    name: IRenderPackageFactory
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.RequestVisualUpdateAsync(Dynamo.Scheduler.IScheduler,Dynamo.Engine.EngineController,Dynamo.Visualization.IRenderPackageFactory,System.Boolean,System.Boolean)
+    name: RequestVisualUpdateAsync
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Scheduler.IScheduler
+    name: IScheduler
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Engine.EngineController
+    name: EngineController
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Visualization.IRenderPackageFactory
+    name: IRenderPackageFactory
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: MigrateToDsFunction(NodeMigrationData, string, string)
+  nameWithType: NodeModel.MigrateToDsFunction(NodeMigrationData, string, string)
+  fullName: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData, string, string)
+  nameWithType.vb: NodeModel.MigrateToDsFunction(NodeMigrationData, String, String)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData, String, String)
+  name.vb: MigrateToDsFunction(NodeMigrationData, String, String)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String)
+    name: MigrateToDsFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String)
+    name: MigrateToDsFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: MigrateToDsFunction(NodeMigrationData, string, string, string)
+  nameWithType: NodeModel.MigrateToDsFunction(NodeMigrationData, string, string, string)
+  fullName: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData, string, string, string)
+  nameWithType.vb: NodeModel.MigrateToDsFunction(NodeMigrationData, String, String, String)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData, String, String, String)
+  name.vb: MigrateToDsFunction(NodeMigrationData, String, String, String)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+    name: MigrateToDsFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+    name: MigrateToDsFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: MigrateToDsVarArgFunction(NodeMigrationData, string, string, string)
+  nameWithType: NodeModel.MigrateToDsVarArgFunction(NodeMigrationData, string, string, string)
+  fullName: Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData, string, string, string)
+  nameWithType.vb: NodeModel.MigrateToDsVarArgFunction(NodeMigrationData, String, String, String)
+  fullName.vb: Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData, String, String, String)
+  name.vb: MigrateToDsVarArgFunction(NodeMigrationData, String, String, String)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+    name: MigrateToDsVarArgFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateToDsVarArgFunction(Dynamo.Migration.NodeMigrationData,System.String,System.String,System.String)
+    name: MigrateToDsVarArgFunction
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+  commentId: M:Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: MigrateShortestLacingToAutoLacing(NodeMigrationData)
+  nameWithType: NodeModel.MigrateShortestLacingToAutoLacing(NodeMigrationData)
+  fullName: Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+  spec.csharp:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+    name: MigrateShortestLacingToAutoLacing
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.Nodes.NodeModel.MigrateShortestLacingToAutoLacing(Dynamo.Migration.NodeMigrationData)
+    name: MigrateShortestLacingToAutoLacing
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Migration.NodeMigrationData
+    name: NodeMigrationData
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.CreationName
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.CreationName
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: CreationName
+  nameWithType: NodeModel.CreationName
+  fullName: Dynamo.Graph.Nodes.NodeModel.CreationName
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeType
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.NodeType
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeType
+  nameWithType: NodeModel.NodeType
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeType
+- uid: Dynamo.Graph.Nodes.NodeModel.GUID
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.GUID
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: GUID
+  nameWithType: NodeModel.GUID
+  fullName: Dynamo.Graph.Nodes.NodeModel.GUID
+- uid: Dynamo.Graph.Nodes.NodeModel.AllConnectors
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.AllConnectors
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: AllConnectors
+  nameWithType: NodeModel.AllConnectors
+  fullName: Dynamo.Graph.Nodes.NodeModel.AllConnectors
+- uid: Dynamo.Graph.Nodes.NodeModel.IsCustomFunction
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsCustomFunction
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsCustomFunction
+  nameWithType: NodeModel.IsCustomFunction
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsCustomFunction
+- uid: Dynamo.Graph.Nodes.NodeModel.IsVisible
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsVisible
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsVisible
+  nameWithType: NodeModel.IsVisible
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsVisible
+- uid: Dynamo.Graph.Nodes.NodeModel.IsInputNode
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsInputNode
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsInputNode
+  nameWithType: NodeModel.IsInputNode
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsInputNode
+- uid: Dynamo.Graph.Nodes.NodeModel.IsSetAsInput
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsSetAsInput
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsSetAsInput
+  nameWithType: NodeModel.IsSetAsInput
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsSetAsInput
+- uid: Dynamo.Graph.Nodes.NodeModel.IsOutputNode
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsOutputNode
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsOutputNode
+  nameWithType: NodeModel.IsOutputNode
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsOutputNode
+- uid: Dynamo.Graph.Nodes.NodeModel.IsSetAsOutput
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsSetAsOutput
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsSetAsOutput
+  nameWithType: NodeModel.IsSetAsOutput
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsSetAsOutput
+- uid: Dynamo.Graph.Nodes.NodeModel.State
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.State
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: State
+  nameWithType: NodeModel.State
+  fullName: Dynamo.Graph.Nodes.NodeModel.State
+- uid: Dynamo.Graph.Nodes.NodeModel.IsInErrorState
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsInErrorState
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsInErrorState
+  nameWithType: NodeModel.IsInErrorState
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsInErrorState
+- uid: Dynamo.Graph.Nodes.NodeModel.PreviewPinned
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.PreviewPinned
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: PreviewPinned
+  nameWithType: NodeModel.PreviewPinned
+  fullName: Dynamo.Graph.Nodes.NodeModel.PreviewPinned
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeInfos
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.NodeInfos
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeInfos
+  nameWithType: NodeModel.NodeInfos
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeInfos
+- uid: Dynamo.Graph.Nodes.NodeModel.Name
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.Name
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Name
+  nameWithType: NodeModel.Name
+  fullName: Dynamo.Graph.Nodes.NodeModel.Name
+- uid: Dynamo.Graph.Nodes.NodeModel.InPorts
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.InPorts
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: InPorts
+  nameWithType: NodeModel.InPorts
+  fullName: Dynamo.Graph.Nodes.NodeModel.InPorts
+- uid: Dynamo.Graph.Nodes.NodeModel.OutPorts
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.OutPorts
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OutPorts
+  nameWithType: NodeModel.OutPorts
+  fullName: Dynamo.Graph.Nodes.NodeModel.OutPorts
+- uid: Dynamo.Graph.Nodes.NodeModel.InputNodes
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.InputNodes
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: InputNodes
+  nameWithType: NodeModel.InputNodes
+  fullName: Dynamo.Graph.Nodes.NodeModel.InputNodes
+- uid: Dynamo.Graph.Nodes.NodeModel.OutputNodes
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.OutputNodes
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OutputNodes
+  nameWithType: NodeModel.OutputNodes
+  fullName: Dynamo.Graph.Nodes.NodeModel.OutputNodes
+- uid: Dynamo.Graph.Nodes.NodeModel.ArgumentLacing
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.ArgumentLacing
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ArgumentLacing
+  nameWithType: NodeModel.ArgumentLacing
+  fullName: Dynamo.Graph.Nodes.NodeModel.ArgumentLacing
+- uid: Dynamo.Graph.Nodes.NodeModel.Category
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.Category
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Category
+  nameWithType: NodeModel.Category
+  fullName: Dynamo.Graph.Nodes.NodeModel.Category
+- uid: Dynamo.Graph.Nodes.NodeModel.DictionaryLink
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.DictionaryLink
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: DictionaryLink
+  nameWithType: NodeModel.DictionaryLink
+  fullName: Dynamo.Graph.Nodes.NodeModel.DictionaryLink
+- uid: Dynamo.Graph.Nodes.NodeModel.CachedValue
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.CachedValue
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: CachedValue
+  nameWithType: NodeModel.CachedValue
+  fullName: Dynamo.Graph.Nodes.NodeModel.CachedValue
+- uid: Dynamo.Graph.Nodes.NodeModel.Tags
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.Tags
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Tags
+  nameWithType: NodeModel.Tags
+  fullName: Dynamo.Graph.Nodes.NodeModel.Tags
+- uid: Dynamo.Graph.Nodes.NodeModel.Description
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.Description
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Description
+  nameWithType: NodeModel.Description
+  fullName: Dynamo.Graph.Nodes.NodeModel.Description
+- uid: Dynamo.Graph.Nodes.NodeModel.CanUpdatePeriodically
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.CanUpdatePeriodically
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: CanUpdatePeriodically
+  nameWithType: NodeModel.CanUpdatePeriodically
+  fullName: Dynamo.Graph.Nodes.NodeModel.CanUpdatePeriodically
+- uid: Dynamo.Graph.Nodes.NodeModel.AstIdentifierForPreview
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.AstIdentifierForPreview
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: AstIdentifierForPreview
+  nameWithType: NodeModel.AstIdentifierForPreview
+  fullName: Dynamo.Graph.Nodes.NodeModel.AstIdentifierForPreview
+- uid: Dynamo.Graph.Nodes.NodeModel.IsConvertible
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsConvertible
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsConvertible
+  nameWithType: NodeModel.IsConvertible
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsConvertible
+- uid: Dynamo.Graph.Nodes.NodeModel.AstIdentifierBase
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.AstIdentifierBase
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: AstIdentifierBase
+  nameWithType: NodeModel.AstIdentifierBase
+  fullName: Dynamo.Graph.Nodes.NodeModel.AstIdentifierBase
+- uid: Dynamo.Graph.Nodes.NodeModel.AstIdentifierGuid
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.AstIdentifierGuid
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: AstIdentifierGuid
+  nameWithType: NodeModel.AstIdentifierGuid
+  fullName: Dynamo.Graph.Nodes.NodeModel.AstIdentifierGuid
+- uid: Dynamo.Graph.Nodes.NodeModel.DisplayLabels
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.DisplayLabels
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: DisplayLabels
+  nameWithType: NodeModel.DisplayLabels
+  fullName: Dynamo.Graph.Nodes.NodeModel.DisplayLabels
+- uid: Dynamo.Graph.Nodes.NodeModel.IsPartiallyApplied
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsPartiallyApplied
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsPartiallyApplied
+  nameWithType: NodeModel.IsPartiallyApplied
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsPartiallyApplied
+- uid: Dynamo.Graph.Nodes.NodeModel.AreAllOutputsConnected
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.AreAllOutputsConnected
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: AreAllOutputsConnected
+  nameWithType: NodeModel.AreAllOutputsConnected
+  fullName: Dynamo.Graph.Nodes.NodeModel.AreAllOutputsConnected
+- uid: Dynamo.Graph.Nodes.NodeModel.IsFrozen
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsFrozen
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsFrozen
+  nameWithType: NodeModel.IsFrozen
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsFrozen
+- uid: Dynamo.Graph.Nodes.NodeModel.InputData
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.InputData
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: InputData
+  nameWithType: NodeModel.InputData
+  fullName: Dynamo.Graph.Nodes.NodeModel.InputData
+- uid: Dynamo.Graph.Nodes.NodeModel.OutputData
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.OutputData
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: OutputData
+  nameWithType: NodeModel.OutputData
+  fullName: Dynamo.Graph.Nodes.NodeModel.OutputData
+- uid: Dynamo.Graph.Nodes.NodeModel.DismissedAlerts
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.DismissedAlerts
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: DismissedAlerts
+  nameWithType: NodeModel.DismissedAlerts
+  fullName: Dynamo.Graph.Nodes.NodeModel.DismissedAlerts
+- uid: Dynamo.Graph.Nodes.NodeModel.DismissedAlertsCount
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.DismissedAlertsCount
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: DismissedAlertsCount
+  nameWithType: NodeModel.DismissedAlertsCount
+  fullName: Dynamo.Graph.Nodes.NodeModel.DismissedAlertsCount
+- uid: Dynamo.Graph.Nodes.NodeModel.RaisesModificationEvents
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.RaisesModificationEvents
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: RaisesModificationEvents
+  nameWithType: NodeModel.RaisesModificationEvents
+  fullName: Dynamo.Graph.Nodes.NodeModel.RaisesModificationEvents
+- uid: Dynamo.Graph.Nodes.NodeModel.IsTopMostNode
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsTopMostNode
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsTopMostNode
+  nameWithType: NodeModel.IsTopMostNode
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsTopMostNode
+- uid: Dynamo.Graph.Nodes.NodeModel.IsModified
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.IsModified
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: IsModified
+  nameWithType: NodeModel.IsModified
+  fullName: Dynamo.Graph.Nodes.NodeModel.IsModified
+- uid: Dynamo.Graph.Nodes.NodeModel.NeedsForceExecution
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.NeedsForceExecution
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NeedsForceExecution
+  nameWithType: NodeModel.NeedsForceExecution
+  fullName: Dynamo.Graph.Nodes.NodeModel.NeedsForceExecution
+- uid: Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreview
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreview
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ShouldDisplayPreview
+  nameWithType: NodeModel.ShouldDisplayPreview
+  fullName: Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreview
+- uid: Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreviewCore
+  commentId: P:Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreviewCore
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ShouldDisplayPreviewCore
+  nameWithType: NodeModel.ShouldDisplayPreviewCore
+  fullName: Dynamo.Graph.Nodes.NodeModel.ShouldDisplayPreviewCore
+- uid: Dynamo.Graph.Nodes.NodeModel.PortConnected
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.PortConnected
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: PortConnected
+  nameWithType: NodeModel.PortConnected
+  fullName: Dynamo.Graph.Nodes.NodeModel.PortConnected
+- uid: Dynamo.Graph.Nodes.NodeModel.PortDisconnected
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.PortDisconnected
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: PortDisconnected
+  nameWithType: NodeModel.PortDisconnected
+  fullName: Dynamo.Graph.Nodes.NodeModel.PortDisconnected
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeExecutionBegin
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.NodeExecutionBegin
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeExecutionBegin
+  nameWithType: NodeModel.NodeExecutionBegin
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeExecutionBegin
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeMessagesClearing
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.NodeMessagesClearing
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeMessagesClearing
+  nameWithType: NodeModel.NodeMessagesClearing
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeMessagesClearing
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeInfoMessagesClearing
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.NodeInfoMessagesClearing
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeInfoMessagesClearing
+  nameWithType: NodeModel.NodeInfoMessagesClearing
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeInfoMessagesClearing
+- uid: Dynamo.Graph.Nodes.NodeModel.NodeExecutionEnd
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.NodeExecutionEnd
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: NodeExecutionEnd
+  nameWithType: NodeModel.NodeExecutionEnd
+  fullName: Dynamo.Graph.Nodes.NodeModel.NodeExecutionEnd
+- uid: Dynamo.Graph.Nodes.NodeModel.Modified
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.Modified
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: Modified
+  nameWithType: NodeModel.Modified
+  fullName: Dynamo.Graph.Nodes.NodeModel.Modified
+- uid: Dynamo.Graph.Nodes.NodeModel.UpdateASTCollection
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.UpdateASTCollection
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: UpdateASTCollection
+  nameWithType: NodeModel.UpdateASTCollection
+  fullName: Dynamo.Graph.Nodes.NodeModel.UpdateASTCollection
+- uid: Dynamo.Graph.Nodes.NodeModel.ConnectorAdded
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.ConnectorAdded
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: ConnectorAdded
+  nameWithType: NodeModel.ConnectorAdded
+  fullName: Dynamo.Graph.Nodes.NodeModel.ConnectorAdded
+- uid: Dynamo.Graph.Nodes.NodeModel.RequestRenderPackages
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.RequestRenderPackages
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: RequestRenderPackages
+  nameWithType: NodeModel.RequestRenderPackages
+  fullName: Dynamo.Graph.Nodes.NodeModel.RequestRenderPackages
+- uid: Dynamo.Graph.Nodes.NodeModel.RenderPackagesUpdated
+  commentId: E:Dynamo.Graph.Nodes.NodeModel.RenderPackagesUpdated
+  parent: Dynamo.Graph.Nodes.NodeModel
+  isExternal: true
+  name: RenderPackagesUpdated
+  nameWithType: NodeModel.RenderPackagesUpdated
+  fullName: Dynamo.Graph.Nodes.NodeModel.RenderPackagesUpdated
+- uid: Dynamo.Graph.ModelBase.Select
+  commentId: M:Dynamo.Graph.ModelBase.Select
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Select()
+  nameWithType: ModelBase.Select()
+  fullName: Dynamo.Graph.ModelBase.Select()
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Select
+    name: Select
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Select
+    name: Select
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.ModelBase.ReportPosition
+  commentId: M:Dynamo.Graph.ModelBase.ReportPosition
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: ReportPosition()
+  nameWithType: ModelBase.ReportPosition()
+  fullName: Dynamo.Graph.ModelBase.ReportPosition()
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.ReportPosition
+    name: ReportPosition
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.ReportPosition
+    name: ReportPosition
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.ModelBase.SetSize(System.Double,System.Double)
+  commentId: M:Dynamo.Graph.ModelBase.SetSize(System.Double,System.Double)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: SetSize(double, double)
+  nameWithType: ModelBase.SetSize(double, double)
+  fullName: Dynamo.Graph.ModelBase.SetSize(double, double)
+  nameWithType.vb: ModelBase.SetSize(Double, Double)
+  fullName.vb: Dynamo.Graph.ModelBase.SetSize(Double, Double)
+  name.vb: SetSize(Double, Double)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.SetSize(System.Double,System.Double)
+    name: SetSize
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.SetSize(System.Double,System.Double)
+    name: SetSize
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Dispose
+  commentId: M:Dynamo.Graph.ModelBase.Dispose
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Dispose()
+  nameWithType: ModelBase.Dispose()
+  fullName: Dynamo.Graph.ModelBase.Dispose()
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+  commentId: M:Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.canceleventargs
+  name: OnDeletionStarted(CancelEventArgs)
+  nameWithType: ModelBase.OnDeletionStarted(CancelEventArgs)
+  fullName: Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+    name: OnDeletionStarted
+    isExternal: true
+  - name: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.canceleventargs
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.OnDeletionStarted(System.ComponentModel.CancelEventArgs)
+    name: OnDeletionStarted
+    isExternal: true
+  - name: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.canceleventargs
+  - name: )
+- uid: Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+  commentId: M:Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: UpdateValue(UpdateValueParams)
+  nameWithType: ModelBase.UpdateValue(UpdateValueParams)
+  fullName: Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+    name: UpdateValue
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.UpdateValueParams
+    name: UpdateValueParams
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.UpdateValue(Dynamo.Graph.UpdateValueParams)
+    name: UpdateValue
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Graph.UpdateValueParams
+    name: UpdateValueParams
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  commentId: M:Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Serialize(XmlDocument, SaveContext)
+  nameWithType: ModelBase.Serialize(XmlDocument, SaveContext)
+  fullName: Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument, Dynamo.Graph.SaveContext)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+    name: Serialize
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlDocument
+    name: XmlDocument
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Serialize(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+    name: Serialize
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlDocument
+    name: XmlDocument
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  commentId: M:Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Deserialize(XmlElement, SaveContext)
+  nameWithType: ModelBase.Deserialize(XmlElement, SaveContext)
+  fullName: Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement, Dynamo.Graph.SaveContext)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: Deserialize
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Deserialize(System.Xml.XmlElement,Dynamo.Graph.SaveContext)
+    name: Deserialize
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  commentId: M:Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: CreateElement(XmlDocument, SaveContext)
+  nameWithType: ModelBase.CreateElement(XmlDocument, SaveContext)
+  fullName: Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument, Dynamo.Graph.SaveContext)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+    name: CreateElement
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlDocument
+    name: XmlDocument
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.CreateElement(System.Xml.XmlDocument,Dynamo.Graph.SaveContext)
+    name: CreateElement
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlDocument
+    name: XmlDocument
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.SaveContext
+    name: SaveContext
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+  commentId: M:Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Log(ILogMessage)
+  nameWithType: ModelBase.Log(ILogMessage)
+  fullName: Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Logging.ILogMessage
+    name: ILogMessage
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Log(Dynamo.Logging.ILogMessage)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: Dynamo.Logging.ILogMessage
+    name: ILogMessage
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Log(System.String)
+  commentId: M:Dynamo.Graph.ModelBase.Log(System.String)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Log(string)
+  nameWithType: ModelBase.Log(string)
+  fullName: Dynamo.Graph.ModelBase.Log(string)
+  nameWithType.vb: ModelBase.Log(String)
+  fullName.vb: Dynamo.Graph.ModelBase.Log(String)
+  name.vb: Log(String)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Log(System.String)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Log(System.String)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Graph.ModelBase.Log(System.String,Dynamo.Logging.WarningLevel)
+  commentId: M:Dynamo.Graph.ModelBase.Log(System.String,Dynamo.Logging.WarningLevel)
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Log(string, WarningLevel)
+  nameWithType: ModelBase.Log(string, WarningLevel)
+  fullName: Dynamo.Graph.ModelBase.Log(string, Dynamo.Logging.WarningLevel)
+  nameWithType.vb: ModelBase.Log(String, WarningLevel)
+  fullName.vb: Dynamo.Graph.ModelBase.Log(String, Dynamo.Logging.WarningLevel)
+  name.vb: Log(String, WarningLevel)
+  spec.csharp:
+  - uid: Dynamo.Graph.ModelBase.Log(System.String,Dynamo.Logging.WarningLevel)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Logging.WarningLevel
+    name: WarningLevel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Graph.ModelBase.Log(System.String,Dynamo.Logging.WarningLevel)
+    name: Log
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Logging.WarningLevel
+    name: WarningLevel
+    isExternal: true
+  - name: )
+- uid: Dynamo.Graph.ModelBase.CenterX
+  commentId: P:Dynamo.Graph.ModelBase.CenterX
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: CenterX
+  nameWithType: ModelBase.CenterX
+  fullName: Dynamo.Graph.ModelBase.CenterX
+- uid: Dynamo.Graph.ModelBase.CenterY
+  commentId: P:Dynamo.Graph.ModelBase.CenterY
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: CenterY
+  nameWithType: ModelBase.CenterY
+  fullName: Dynamo.Graph.ModelBase.CenterY
+- uid: Dynamo.Graph.ModelBase.X
+  commentId: P:Dynamo.Graph.ModelBase.X
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: X
+  nameWithType: ModelBase.X
+  fullName: Dynamo.Graph.ModelBase.X
+- uid: Dynamo.Graph.ModelBase.Y
+  commentId: P:Dynamo.Graph.ModelBase.Y
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Y
+  nameWithType: ModelBase.Y
+  fullName: Dynamo.Graph.ModelBase.Y
+- uid: Dynamo.Graph.ModelBase.Position
+  commentId: P:Dynamo.Graph.ModelBase.Position
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Position
+  nameWithType: ModelBase.Position
+  fullName: Dynamo.Graph.ModelBase.Position
+- uid: Dynamo.Graph.ModelBase.Height
+  commentId: P:Dynamo.Graph.ModelBase.Height
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Height
+  nameWithType: ModelBase.Height
+  fullName: Dynamo.Graph.ModelBase.Height
+- uid: Dynamo.Graph.ModelBase.Width
+  commentId: P:Dynamo.Graph.ModelBase.Width
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Width
+  nameWithType: ModelBase.Width
+  fullName: Dynamo.Graph.ModelBase.Width
+- uid: Dynamo.Graph.ModelBase.Rect
+  commentId: P:Dynamo.Graph.ModelBase.Rect
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Rect
+  nameWithType: ModelBase.Rect
+  fullName: Dynamo.Graph.ModelBase.Rect
+- uid: Dynamo.Graph.ModelBase.IsSelected
+  commentId: P:Dynamo.Graph.ModelBase.IsSelected
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: IsSelected
+  nameWithType: ModelBase.IsSelected
+  fullName: Dynamo.Graph.ModelBase.IsSelected
+- uid: Dynamo.Graph.ModelBase.Disposed
+  commentId: E:Dynamo.Graph.ModelBase.Disposed
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: Disposed
+  nameWithType: ModelBase.Disposed
+  fullName: Dynamo.Graph.ModelBase.Disposed
+- uid: Dynamo.Graph.ModelBase.DeletionStarted
+  commentId: E:Dynamo.Graph.ModelBase.DeletionStarted
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: DeletionStarted
+  nameWithType: ModelBase.DeletionStarted
+  fullName: Dynamo.Graph.ModelBase.DeletionStarted
+- uid: Dynamo.Graph.ModelBase.MessageLogged
+  commentId: E:Dynamo.Graph.ModelBase.MessageLogged
+  parent: Dynamo.Graph.ModelBase
+  isExternal: true
+  name: MessageLogged
+  nameWithType: ModelBase.MessageLogged
+  fullName: Dynamo.Graph.ModelBase.MessageLogged
+- uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String)
+  commentId: M:Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String)
+  parent: Dynamo.Core.NotificationObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RaisePropertyChanged(string)
+  nameWithType: NotificationObject.RaisePropertyChanged(string)
+  fullName: Dynamo.Core.NotificationObject.RaisePropertyChanged(string)
+  nameWithType.vb: NotificationObject.RaisePropertyChanged(String)
+  fullName.vb: Dynamo.Core.NotificationObject.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String[])
+  commentId: M:Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String[])
+  parent: Dynamo.Core.NotificationObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RaisePropertyChanged(params string[])
+  nameWithType: NotificationObject.RaisePropertyChanged(params string[])
+  fullName: Dynamo.Core.NotificationObject.RaisePropertyChanged(params string[])
+  nameWithType.vb: NotificationObject.RaisePropertyChanged(ParamArray String())
+  fullName.vb: Dynamo.Core.NotificationObject.RaisePropertyChanged(ParamArray String())
+  name.vb: RaisePropertyChanged(ParamArray String())
+  spec.csharp:
+  - uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String[])
+    name: RaisePropertyChanged
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Dynamo.Core.NotificationObject.RaisePropertyChanged(System.String[])
+    name: RaisePropertyChanged
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Dynamo.Core.NotificationObject.PropertyChanged
+  commentId: E:Dynamo.Core.NotificationObject.PropertyChanged
+  parent: Dynamo.Core.NotificationObject
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: NotificationObject.PropertyChanged
+  fullName: Dynamo.Core.NotificationObject.PropertyChanged
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Dynamo.Graph.Nodes.NodeModel.DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  parent: DynamoForRevitNodeModels.Services.NodeModelsServices
+  definition: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  name: AddPorts(NodeModel, List<PortData>, PortType)
+  nameWithType: NodeModelsServices.AddPorts(NodeModel, List<PortData>, PortType)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>, Dynamo.Graph.Nodes.PortType)
+  nameWithType.vb: NodeModelsServices.AddPorts(NodeModel, List(Of PortData), PortType)
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData), Dynamo.Graph.Nodes.PortType)
+  name.vb: AddPorts(NodeModel, List(Of PortData), PortType)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+    name: AddPorts
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  - name: (
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortType
+    name: PortType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+    name: AddPorts
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  - name: (
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortType
+    name: PortType
+    isExternal: true
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Dynamo.Core
+  commentId: N:Dynamo.Core
+  isExternal: true
+  name: Dynamo.Core
+  nameWithType: Dynamo.Core
+  fullName: Dynamo.Core
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Core
+    name: Core
+    isExternal: true
+- uid: Dynamo.Graph
+  commentId: N:Dynamo.Graph
+  isExternal: true
+  name: Dynamo.Graph
+  nameWithType: Dynamo.Graph
+  fullName: Dynamo.Graph
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+- uid: Dynamo.Graph.Nodes
+  commentId: N:Dynamo.Graph.Nodes
+  isExternal: true
+  name: Dynamo.Graph.Nodes
+  nameWithType: Dynamo.Graph.Nodes
+  fullName: Dynamo.Graph.Nodes
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph.Nodes
+    name: Nodes
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph
+    name: Graph
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Graph.Nodes
+    name: Nodes
+    isExternal: true
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Dynamo.Selection
+  commentId: N:Dynamo.Selection
+  isExternal: true
+  name: Dynamo.Selection
+  nameWithType: Dynamo.Selection
+  fullName: Dynamo.Selection
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Selection
+    name: Selection
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Selection
+    name: Selection
+    isExternal: true
+- uid: Dynamo.Logging
+  commentId: N:Dynamo.Logging
+  isExternal: true
+  name: Dynamo.Logging
+  nameWithType: Dynamo.Logging
+  fullName: Dynamo.Logging
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Logging
+    name: Logging
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Logging
+    name: Logging
+    isExternal: true
+- uid: Dynamo.Visualization.IRenderPackageSource`1
+  commentId: T:Dynamo.Visualization.IRenderPackageSource`1
+  isExternal: true
+  name: IRenderPackageSource<T>
+  nameWithType: IRenderPackageSource<T>
+  fullName: Dynamo.Visualization.IRenderPackageSource<T>
+  nameWithType.vb: IRenderPackageSource(Of T)
+  fullName.vb: Dynamo.Visualization.IRenderPackageSource(Of T)
+  name.vb: IRenderPackageSource(Of T)
+  spec.csharp:
+  - uid: Dynamo.Visualization.IRenderPackageSource`1
+    name: IRenderPackageSource
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Dynamo.Visualization.IRenderPackageSource`1
+    name: IRenderPackageSource
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Dynamo.Visualization
+  commentId: N:Dynamo.Visualization
+  isExternal: true
+  name: Dynamo.Visualization
+  nameWithType: Dynamo.Visualization
+  fullName: Dynamo.Visualization
+  spec.csharp:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Visualization
+    name: Visualization
+    isExternal: true
+  spec.vb:
+  - uid: Dynamo
+    name: Dynamo
+    isExternal: true
+  - name: .
+  - uid: Dynamo.Visualization
+    name: Visualization
+    isExternal: true
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  commentId: M:DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  name: AddPorts(NodeModel, List<PortData>, PortType)
+  nameWithType: NodeModelsServices.AddPorts(NodeModel, List<PortData>, PortType)
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>, Dynamo.Graph.Nodes.PortType)
+  nameWithType.vb: NodeModelsServices.AddPorts(NodeModel, List(Of PortData), PortType)
+  fullName.vb: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel, System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData), Dynamo.Graph.Nodes.PortType)
+  name.vb: AddPorts(NodeModel, List(Of PortData), PortType)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+    name: AddPorts
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  - name: (
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortType
+    name: PortType
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)
+    name: AddPorts
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.NodeModelsServices.html#DynamoForRevitNodeModels_Services_NodeModelsServices_AddPorts_Dynamo_Graph_Nodes_NodeModel_System_Collections_Generic_List_Dynamo_Graph_Nodes_PortData__Dynamo_Graph_Nodes_PortType_
+  - name: (
+  - uid: Dynamo.Graph.Nodes.NodeModel
+    name: NodeModel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortType
+    name: PortType
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices
+  commentId: T:DynamoForRevitNodeModels.Services.NodeModelsServices
+  parent: DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html
+  name: NodeModelsServices
+  nameWithType: NodeModelsServices
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor*
+  commentId: Overload:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html#DynamoForRevitNodeModels_FunctionNodes_ElementParameterCreateByName__ctor
+  name: ElementParameterCreateByName
+  nameWithType: ElementParameterCreateByName.ElementParameterCreateByName
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ElementParameterCreateByName
+  nameWithType.vb: ElementParameterCreateByName.New
+  fullName.vb: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+  commentId: T:System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PortModel>
+  nameWithType: IEnumerable<PortModel>
+  fullName: System.Collections.Generic.IEnumerable<Dynamo.Graph.Nodes.PortModel>
+  nameWithType.vb: IEnumerable(Of PortModel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Dynamo.Graph.Nodes.PortModel)
+  name.vb: IEnumerable(Of PortModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortModel
+    name: PortModel
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeModelType
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeModelType
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBaseByResources_NodeModelType
+  name: NodeModelType
+  nameWithType: StandardNodeModelBaseByResources.NodeModelType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeModelType
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType*
+  commentId: Overload:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html#DynamoForRevitNodeModels_FunctionNodes_ElementParameterCreateByName_NodeModelType
+  name: NodeModelType
+  nameWithType: ElementParameterCreateByName.NodeModelType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeModelType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.ResourceType
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.ResourceType
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBaseByResources_ResourceType
+  name: ResourceType
+  nameWithType: StandardNodeModelBaseByResources.ResourceType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.ResourceType
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType*
+  commentId: Overload:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html#DynamoForRevitNodeModels_FunctionNodes_ElementParameterCreateByName_ResourceType
+  name: ResourceType
+  nameWithType: ElementParameterCreateByName.ResourceType
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.ResourceType
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.InputPortsData
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.InputPortsData
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBaseByResources_InputPortsData
+  name: InputPortsData
+  nameWithType: StandardNodeModelBaseByResources.InputPortsData
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.InputPortsData
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData*
+  commentId: Overload:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html#DynamoForRevitNodeModels_FunctionNodes_ElementParameterCreateByName_InputPortsData
+  name: InputPortsData
+  nameWithType: ElementParameterCreateByName.InputPortsData
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.InputPortsData
+- uid: System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+  commentId: T:System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PortData>
+  nameWithType: List<PortData>
+  fullName: System.Collections.Generic.List<Dynamo.Graph.Nodes.PortData>
+  nameWithType.vb: List(Of PortData)
+  fullName.vb: System.Collections.Generic.List(Of Dynamo.Graph.Nodes.PortData)
+  name.vb: List(Of PortData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dynamo.Graph.Nodes.PortData
+    name: PortData
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeFunction
+  commentId: P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeFunction
+  parent: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html#DynamoForRevitNodeModels_FunctionNodes_StandardNodeModelBaseByResources_NodeFunction
+  name: NodeFunction
+  nameWithType: StandardNodeModelBaseByResources.NodeFunction
+  fullName: DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeFunction
+- uid: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction*
+  commentId: Overload:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+  isExternal: true
+  href: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html#DynamoForRevitNodeModels_FunctionNodes_ElementParameterCreateByName_NodeFunction
+  name: NodeFunction
+  nameWithType: ElementParameterCreateByName.NodeFunction
+  fullName: DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.NodeFunction
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate

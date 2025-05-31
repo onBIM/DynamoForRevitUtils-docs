@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  commentId: T:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  id: NodeModelMetadataType
+  parent: DynamoForRevitNodeModels.Enumerations
+  children:
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortDescription
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortName
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortType
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeCategory
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeDescription
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeName
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeSearchTags
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortDescription
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortName
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortType
+  langs:
+  - csharp
+  - vb
+  name: NodeModelMetadataType
+  nameWithType: NodeModelMetadataType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  type: Enum
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: >-
+    <p>Enum that defines the attribute resource type</p>
+
+    <i>Used for searching resources in resx files that contains attributes values for NodeModels</i>
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum NodeModelMetadataType
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum NodeModelMetadataType
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeCategory
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeCategory
+  id: NodeCategory
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: NodeCategory
+  nameWithType: NodeModelMetadataType.NodeCategory
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeCategory
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node category attribute
+  example: []
+  syntax:
+    content: NodeCategory = 0
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeName
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeName
+  id: NodeName
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: NodeName
+  nameWithType: NodeModelMetadataType.NodeName
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeName
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node name attribute
+  example: []
+  syntax:
+    content: NodeName = 1
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeDescription
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeDescription
+  id: NodeDescription
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: NodeDescription
+  nameWithType: NodeModelMetadataType.NodeDescription
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeDescription
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node description attribute
+  example: []
+  syntax:
+    content: NodeDescription = 2
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeSearchTags
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeSearchTags
+  id: NodeSearchTags
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: NodeSearchTags
+  nameWithType: NodeModelMetadataType.NodeSearchTags
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeSearchTags
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node search tags attribute
+  example: []
+  syntax:
+    content: NodeSearchTags = 3
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortName
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortName
+  id: InPortName
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: InPortName
+  nameWithType: NodeModelMetadataType.InPortName
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortName
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node input port name attribute
+  example: []
+  syntax:
+    content: InPortName = 4
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortDescription
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortDescription
+  id: InPortDescription
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: InPortDescription
+  nameWithType: NodeModelMetadataType.InPortDescription
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortDescription
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node input port description attribute
+  example: []
+  syntax:
+    content: InPortDescription = 5
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortType
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortType
+  id: InPortType
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: InPortType
+  nameWithType: NodeModelMetadataType.InPortType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortType
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node input port type attribute
+  example: []
+  syntax:
+    content: InPortType = 6
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortName
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortName
+  id: OutPortName
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: OutPortName
+  nameWithType: NodeModelMetadataType.OutPortName
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortName
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node output port name attribute
+  example: []
+  syntax:
+    content: OutPortName = 7
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortDescription
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortDescription
+  id: OutPortDescription
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: OutPortDescription
+  nameWithType: NodeModelMetadataType.OutPortDescription
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortDescription
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: Node output port description attribute
+  example: []
+  syntax:
+    content: OutPortDescription = 8
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortType
+  commentId: F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortType
+  id: OutPortType
+  parent: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: OutPortType
+  nameWithType: NodeModelMetadataType.OutPortType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortType
+  type: Field
+  assemblies:
+  - DynamoForRevitNodeModels
+  namespace: DynamoForRevitNodeModels.Enumerations
+  summary: ''
+  example: []
+  syntax:
+    content: OutPortType = 9
+    return:
+      type: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+references:
+- uid: DynamoForRevitNodeModels.Enumerations
+  commentId: N:DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Enumerations
+  nameWithType: DynamoForRevitNodeModels.Enumerations
+  fullName: DynamoForRevitNodeModels.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  commentId: T:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  parent: DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.html
+  name: NodeModelMetadataType
+  nameWithType: NodeModelMetadataType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType

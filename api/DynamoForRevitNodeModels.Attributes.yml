@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Attributes
+  commentId: N:DynamoForRevitNodeModels.Attributes
+  id: DynamoForRevitNodeModels.Attributes
+  children:
+  - DynamoForRevitNodeModels.Attributes.DefaultValues
+  - DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute
+  - DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.Attributes
+  nameWithType: DynamoForRevitNodeModels.Attributes
+  fullName: DynamoForRevitNodeModels.Attributes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.Attributes.DefaultValues
+  commentId: T:DynamoForRevitNodeModels.Attributes.DefaultValues
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.DefaultValues.html
+  name: DefaultValues
+  nameWithType: DefaultValues
+  fullName: DynamoForRevitNodeModels.Attributes.DefaultValues
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute.html
+  name: NodeModelInPortsNamesAttribute
+  nameWithType: NodeModelInPortsNamesAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute.html
+  name: NodeModelInPortsDescriptionsAttribute
+  nameWithType: NodeModelInPortsDescriptionsAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute.html
+  name: NodeModelInPortsTypesAttribute
+  nameWithType: NodeModelInPortsTypesAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute.html
+  name: NodeModelOutPortsNamesAttribute
+  nameWithType: NodeModelOutPortsNamesAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute.html
+  name: NodeModelOutPortsDescriptionsAttribute
+  nameWithType: NodeModelOutPortsDescriptionsAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute.html
+  name: NodeModelOutPortsTypesAttribute
+  nameWithType: NodeModelOutPortsTypesAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute.html
+  name: NodeModelCategoryAttribute
+  nameWithType: NodeModelCategoryAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute.html
+  name: NodeModelDisplayNameAttribute
+  nameWithType: NodeModelDisplayNameAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute.html
+  name: NodeModelDescriptionAttribute
+  nameWithType: NodeModelDescriptionAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute
+- uid: DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute
+  commentId: T:DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute
+  parent: DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute.html
+  name: NodeModelSearchTagsAttribute
+  nameWithType: NodeModelSearchTagsAttribute
+  fullName: DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute
+- uid: DynamoForRevitNodeModels.Attributes
+  commentId: N:DynamoForRevitNodeModels.Attributes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Attributes
+  nameWithType: DynamoForRevitNodeModels.Attributes
+  fullName: DynamoForRevitNodeModels.Attributes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Attributes
+    name: Attributes
+    isExternal: true
+    href: DynamoForRevitNodeModels.Attributes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Attributes
+    name: Attributes
+    isExternal: true
+    href: DynamoForRevitNodeModels.Attributes.html

@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: NodeModelsFunctions.RevitNodes
+  commentId: T:NodeModelsFunctions.RevitNodes
+  id: RevitNodes
+  parent: NodeModelsFunctions
+  children:
+  - NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(System.Object)
+  - NodeModelsFunctions.RevitNodes.BuiltInToUIName(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: RevitNodes
+  nameWithType: RevitNodes
+  fullName: NodeModelsFunctions.RevitNodes
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Revit Node Models functions
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class RevitNodes
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module RevitNodes
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: NodeModelsFunctions.RevitNodes.BuiltInToUIName(System.Object)
+  commentId: M:NodeModelsFunctions.RevitNodes.BuiltInToUIName(System.Object)
+  id: BuiltInToUIName(System.Object)
+  parent: NodeModelsFunctions.RevitNodes
+  langs:
+  - csharp
+  - vb
+  name: BuiltInToUIName(object)
+  nameWithType: RevitNodes.BuiltInToUIName(object)
+  fullName: NodeModelsFunctions.RevitNodes.BuiltInToUIName(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Function to get UI name for BuiltInParameter or BuiltInCategory
+  example: []
+  syntax:
+    content: public static string BuiltInToUIName(object builtIn)
+    parameters:
+    - id: builtIn
+      type: System.Object
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function BuiltInToUIName(builtIn As Object) As String
+  overload: NodeModelsFunctions.RevitNodes.BuiltInToUIName*
+  nameWithType.vb: RevitNodes.BuiltInToUIName(Object)
+  fullName.vb: NodeModelsFunctions.RevitNodes.BuiltInToUIName(Object)
+  name.vb: BuiltInToUIName(Object)
+- uid: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(System.Object)
+  commentId: M:NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(System.Object)
+  id: BuiltInCategoryToDynamoCategory(System.Object)
+  parent: NodeModelsFunctions.RevitNodes
+  langs:
+  - csharp
+  - vb
+  name: BuiltInCategoryToDynamoCategory(object)
+  nameWithType: RevitNodes.BuiltInCategoryToDynamoCategory(object)
+  fullName: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Function to convert a BuiltInCategory to a Dynamo Category
+  remarks: 'NOTE: use <xref href="System.Object" data-throw-if-not-resolved="false"></xref> as input type to avoid that <xref href="Autodesk.Revit.DB.BuiltInCategory" data-throw-if-not-resolved="false"></xref> Enum appears in Dynamo Library'
+  example: []
+  syntax:
+    content: public static Category BuiltInCategoryToDynamoCategory(object bic)
+    parameters:
+    - id: bic
+      type: System.Object
+      description: The BuiltInCategory to convert
+    return:
+      type: Revit.Elements.Category
+      description: The converted Dynamo Category
+    content.vb: Public Shared Function BuiltInCategoryToDynamoCategory(bic As Object) As Category
+  overload: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory*
+  nameWithType.vb: RevitNodes.BuiltInCategoryToDynamoCategory(Object)
+  fullName.vb: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(Object)
+  name.vb: BuiltInCategoryToDynamoCategory(Object)
+references:
+- uid: NodeModelsFunctions
+  commentId: N:NodeModelsFunctions
+  isExternal: true
+  href: NodeModelsFunctions.html
+  name: NodeModelsFunctions
+  nameWithType: NodeModelsFunctions
+  fullName: NodeModelsFunctions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NodeModelsFunctions.RevitNodes.BuiltInToUIName*
+  commentId: Overload:NodeModelsFunctions.RevitNodes.BuiltInToUIName
+  isExternal: true
+  href: NodeModelsFunctions.RevitNodes.html#NodeModelsFunctions_RevitNodes_BuiltInToUIName_System_Object_
+  name: BuiltInToUIName
+  nameWithType: RevitNodes.BuiltInToUIName
+  fullName: NodeModelsFunctions.RevitNodes.BuiltInToUIName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BuiltInCategory
+  nameWithType: BuiltInCategory
+  fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory*
+  commentId: Overload:NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory
+  isExternal: true
+  href: NodeModelsFunctions.RevitNodes.html#NodeModelsFunctions_RevitNodes_BuiltInCategoryToDynamoCategory_System_Object_
+  name: BuiltInCategoryToDynamoCategory
+  nameWithType: RevitNodes.BuiltInCategoryToDynamoCategory
+  fullName: NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory
+- uid: Revit.Elements.Category
+  commentId: T:Revit.Elements.Category
+  parent: Revit.Elements
+  isExternal: true
+  name: Category
+  nameWithType: Category
+  fullName: Revit.Elements.Category
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: Revit.Elements
+  commentId: N:Revit.Elements
+  isExternal: true
+  name: Revit.Elements
+  nameWithType: Revit.Elements
+  fullName: Revit.Elements
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true

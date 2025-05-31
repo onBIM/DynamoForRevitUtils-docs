@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.Wrappers
+  commentId: N:DynamoForRevitUtils.Entities.Wrappers
+  id: DynamoForRevitUtils.Entities.Wrappers
+  children:
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
+  - DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
+  - DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Entities.Wrappers
+  nameWithType: DynamoForRevitUtils.Entities.Wrappers
+  fullName: DynamoForRevitUtils.Entities.Wrappers
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html
+  name: ElementWrapper
+  nameWithType: ElementWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.html
+  name: FamilyInstanceWrapper
+  nameWithType: FamilyInstanceWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
+  name: IElementParameterMap
+  nameWithType: IElementParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html
+  name: IElementWrapper
+  nameWithType: IElementWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+- uid: DynamoForRevitUtils.Entities.Wrappers
+  commentId: N:DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.Wrappers
+  nameWithType: DynamoForRevitUtils.Entities.Wrappers
+  fullName: DynamoForRevitUtils.Entities.Wrappers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html

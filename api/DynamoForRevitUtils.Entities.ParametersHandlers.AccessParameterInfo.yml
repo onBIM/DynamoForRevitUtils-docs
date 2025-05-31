@@ -1,0 +1,1195 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  id: AccessParameterInfo
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  children:
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(System.Object)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers(System.Text.StringBuilder)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  langs:
+  - csharp
+  - vb
+  name: AccessParameterInfo
+  nameWithType: AccessParameterInfo
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  summary: >-
+    Represents the data associated with accessing a parameter, including its value, a description,
+
+    and the result of the access operation.
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public record AccessParameterInfo : IEquatable<AccessParameterInfo>
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class AccessParameterInfo Implements IEquatable(Of AccessParameterInfo)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
+  id: '#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})'
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
+  nameWithType: AccessParameterInfo.AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, string?, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  summary: Constructs a new instance of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public AccessParameterInfo(ElementParameter parameter, string? description = null, AccessParameterResult? result = null)
+    parameters:
+    - id: parameter
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+      description: The element parameter used in the access operation.
+    - id: description
+      type: System.String
+      description: A description of the parameter access operation.
+    - id: result
+      type: System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
+      description: The result of the parameter access operation.
+    content.vb: Public Sub New(parameter As ElementParameter, description As String = Nothing, result As AccessParameterResult? = Nothing)
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">parameter</code> or <code class="paramref">description</code> is null.
+  nameWithType.vb: AccessParameterInfo.New(ElementParameter, String, AccessParameterResult?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, String, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
+  name.vb: New(ElementParameter, String, AccessParameterResult?)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
+  id: ToString
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AccessParameterInfo.ToString()
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers(System.Text.StringBuilder)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: AccessParameterInfo.PrintMembers(StringBuilder)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  syntax:
+    content: protected virtual bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function PrintMembers(builder As StringBuilder) As Boolean
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  id: op_Inequality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AccessParameterInfo?, AccessParameterInfo?)
+  nameWithType: AccessParameterInfo.operator !=(AccessParameterInfo?, AccessParameterInfo?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.operator !=(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo?, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo?)
+  type: Operator
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  syntax:
+    content: public static bool operator !=(AccessParameterInfo? left, AccessParameterInfo? right)
+    parameters:
+    - id: left
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    - id: right
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As AccessParameterInfo, right As AccessParameterInfo) As Boolean
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality*
+  nameWithType.vb: AccessParameterInfo.<>(AccessParameterInfo, AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.<>(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: <>(AccessParameterInfo, AccessParameterInfo)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  id: op_Equality(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AccessParameterInfo?, AccessParameterInfo?)
+  nameWithType: AccessParameterInfo.operator ==(AccessParameterInfo?, AccessParameterInfo?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.operator ==(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo?, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo?)
+  type: Operator
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  syntax:
+    content: public static bool operator ==(AccessParameterInfo? left, AccessParameterInfo? right)
+    parameters:
+    - id: left
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    - id: right
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As AccessParameterInfo, right As AccessParameterInfo) As Boolean
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality*
+  nameWithType.vb: AccessParameterInfo.=(AccessParameterInfo, AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.=(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: =(AccessParameterInfo, AccessParameterInfo)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode
+  id: GetHashCode
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AccessParameterInfo.GetHashCode()
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(System.Object)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: AccessParameterInfo.Equals(object?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(object?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals*
+  nameWithType.vb: AccessParameterInfo.Equals(Object)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(Object)
+  name.vb: Equals(Object)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  id: Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(AccessParameterInfo?)
+  nameWithType: AccessParameterInfo.Equals(AccessParameterInfo?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  example: []
+  syntax:
+    content: public virtual bool Equals(AccessParameterInfo? other)
+    parameters:
+    - id: other
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(other As AccessParameterInfo) As Boolean
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals*
+  implements:
+  - System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  nameWithType.vb: AccessParameterInfo.Equals(AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: Equals(AccessParameterInfo)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  id: '#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)'
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: AccessParameterInfo(AccessParameterInfo)
+  nameWithType: AccessParameterInfo.AccessParameterInfo(AccessParameterInfo)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  syntax:
+    content: protected AccessParameterInfo(AccessParameterInfo original)
+    parameters:
+    - id: original
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    content.vb: Protected Sub New(original As AccessParameterInfo)
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
+  nameWithType.vb: AccessParameterInfo.New(AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: New(AccessParameterInfo)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+  id: EqualityContract
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: AccessParameterInfo.EqualityContract
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  syntax:
+    content: protected virtual Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overridable ReadOnly Property EqualityContract As Type
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+  id: Parameter
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: Parameter
+  nameWithType: AccessParameterInfo.Parameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  summary: The value of the element parameter.
+  example: []
+  syntax:
+    content: public ElementParameter Parameter { get; set; }
+    parameters: []
+    return:
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+    content.vb: Public Property Parameter As ElementParameter
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+  id: Description
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: AccessParameterInfo.Description
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  summary: A description of the parameter.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description*
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+  id: Result
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: AccessParameterInfo.Result
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.ParametersHandlers
+  summary: The result of the parameter access operation.
+  example: []
+  syntax:
+    content: public AccessParameterResult Result { get; set; }
+    parameters: []
+    return:
+      type: DynamoForRevitUtils.Enumerations.AccessParameterResult
+    content.vb: Public Property Result As AccessParameterResult
+  overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result*
+references:
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers
+  commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.ParametersHandlers
+  nameWithType: DynamoForRevitUtils.Entities.ParametersHandlers
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  commentId: T:System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AccessParameterInfo>
+  nameWithType: IEquatable<AccessParameterInfo>
+  fullName: System.IEquatable<DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo>
+  nameWithType.vb: IEquatable(Of AccessParameterInfo)
+  fullName.vb: System.IEquatable(Of DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: IEquatable(Of AccessParameterInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  name: AccessParameterInfo
+  nameWithType: AccessParameterInfo
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_System_Nullable_DynamoForRevitUtils_Enumerations_AccessParameterResult__
+  name: AccessParameterInfo
+  nameWithType: AccessParameterInfo.AccessParameterInfo
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo
+  nameWithType.vb: AccessParameterInfo.New
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New
+  name.vb: New
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  name: ElementParameter
+  nameWithType: ElementParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
+  commentId: T:System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
+  parent: System
+  definition: System.Nullable`1
+  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  name: AccessParameterResult?
+  nameWithType: AccessParameterResult?
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult?
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
+    name: AccessParameterResult
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  - name: '?'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
+    name: AccessParameterResult
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_ToString
+  name: ToString
+  nameWithType: AccessParameterInfo.ToString
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: AccessParameterInfo.PrintMembers
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_op_Inequality_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_
+  name: operator !=
+  nameWithType: AccessParameterInfo.operator !=
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.operator !=
+  nameWithType.vb: AccessParameterInfo.<>
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_op_Inequality_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_op_Equality_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_
+  name: operator ==
+  nameWithType: AccessParameterInfo.operator ==
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.operator ==
+  nameWithType.vb: AccessParameterInfo.=
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.op_Equality*
+    name: ==
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_op_Equality_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_GetHashCode
+  name: GetHashCode
+  nameWithType: AccessParameterInfo.GetHashCode
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_Equals_System_Object_
+  name: Equals
+  nameWithType: AccessParameterInfo.Equals
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals
+- uid: System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  commentId: M:System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  parent: System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AccessParameterInfo)
+  nameWithType: IEquatable<AccessParameterInfo>.Equals(AccessParameterInfo)
+  fullName: System.IEquatable<DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo>.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  nameWithType.vb: IEquatable(Of AccessParameterInfo).Equals(AccessParameterInfo)
+  fullName.vb: System.IEquatable(Of DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo).Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  spec.csharp:
+  - uid: System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_EqualityContract
+  name: EqualityContract
+  nameWithType: AccessParameterInfo.EqualityContract
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_Parameter
+  name: Parameter
+  nameWithType: AccessParameterInfo.Parameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Parameter
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_Description
+  name: Description
+  nameWithType: AccessParameterInfo.Description
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_Result
+  name: Result
+  nameWithType: AccessParameterInfo.Result
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
+  commentId: T:DynamoForRevitUtils.Enumerations.AccessParameterResult
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  name: AccessParameterResult
+  nameWithType: AccessParameterResult
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html

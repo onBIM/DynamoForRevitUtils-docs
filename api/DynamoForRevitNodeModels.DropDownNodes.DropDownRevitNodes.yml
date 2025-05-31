@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  id: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  children:
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown.html
+  name: BuiltInCategoryDropDown
+  nameWithType: BuiltInCategoryDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown.html
+  name: BuiltInParameterDropDown
+  nameWithType: BuiltInParameterDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.html
+  name: DimensionTypesDropDown
+  nameWithType: DimensionTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.html
+  name: ElevationViewFamilyTypesDropDown
+  nameWithType: ElevationViewFamilyTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.html
+  name: FilledRegionTypesDropDown
+  nameWithType: FilledRegionTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.html
+  name: GridTypesDropDown
+  nameWithType: GridTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.html
+  name: LineStylesDropDown
+  nameWithType: LineStylesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.html
+  name: SectionViewFamilyTypesDropDown
+  nameWithType: SectionViewFamilyTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.html
+  name: TagTypesDropDown
+  nameWithType: TagTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.html
+  name: TextNoteTypesDropDown
+  nameWithType: TextNoteTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.html
+  name: ViewPortTypesDropDown
+  nameWithType: ViewPortTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.html
+  name: ViewTemplatesDropDown
+  nameWithType: ViewTemplatesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown.html
+  name: ViewTypesDropDown
+  nameWithType: ViewTypesDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+    name: DropDownRevitNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes
+    name: DropDownRevitNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.html

@@ -1,0 +1,869 @@
+### YamlMime:ManagedReference
+items:
+- uid: NodeModelsFunctions.Selection
+  commentId: T:NodeModelsFunctions.Selection
+  id: Selection
+  parent: NodeModelsFunctions
+  children:
+  - NodeModelsFunctions.Selection.BySelectionMethodAndCategories(System.Object,System.Collections.Generic.List{Revit.Elements.Category},System.Boolean,System.Boolean)
+  - NodeModelsFunctions.Selection.BySelectionMethodAndCategory(System.Object,Revit.Elements.Category,System.Boolean,System.Boolean)
+  - NodeModelsFunctions.Selection.GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)
+  - NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  - NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  - NodeModelsFunctions.Selection.ViewCollector(System.Boolean,System.Collections.Generic.List{Autodesk.Revit.DB.ViewType},System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Selection
+  nameWithType: Selection
+  fullName: NodeModelsFunctions.Selection
+  type: Class
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Functions to Selection Nodes
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class Selection
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module Selection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: NodeModelsFunctions.Selection.BySelectionMethodAndCategory(System.Object,Revit.Elements.Category,System.Boolean,System.Boolean)
+  commentId: M:NodeModelsFunctions.Selection.BySelectionMethodAndCategory(System.Object,Revit.Elements.Category,System.Boolean,System.Boolean)
+  id: BySelectionMethodAndCategory(System.Object,Revit.Elements.Category,System.Boolean,System.Boolean)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: BySelectionMethodAndCategory(object, Category, bool, bool)
+  nameWithType: Selection.BySelectionMethodAndCategory(object, Category, bool, bool)
+  fullName: NodeModelsFunctions.Selection.BySelectionMethodAndCategory(object, Revit.Elements.Category, bool, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Select Elements from given Category based on Selection Method
+  example: []
+  syntax:
+    content: public static SelectionResults? BySelectionMethodAndCategory(object selectionMethod, Category category, bool getLinkedElements = false, bool refresh = true)
+    parameters:
+    - id: selectionMethod
+      type: System.Object
+      description: Selection method
+    - id: category
+      type: Revit.Elements.Category
+      description: Category to filter selection
+    - id: getLinkedElements
+      type: System.Boolean
+      description: Choose whether get linked elements or not
+    - id: refresh
+      type: System.Boolean
+      description: Refresh selection
+    return:
+      type: DynamoForRevitUtils.Entities.SelectionResults
+      description: Selected Elements
+    content.vb: Public Shared Function BySelectionMethodAndCategory(selectionMethod As Object, category As Category, getLinkedElements As Boolean = False, refresh As Boolean = True) As SelectionResults
+  overload: NodeModelsFunctions.Selection.BySelectionMethodAndCategory*
+  nameWithType.vb: Selection.BySelectionMethodAndCategory(Object, Category, Boolean, Boolean)
+  fullName.vb: NodeModelsFunctions.Selection.BySelectionMethodAndCategory(Object, Revit.Elements.Category, Boolean, Boolean)
+  name.vb: BySelectionMethodAndCategory(Object, Category, Boolean, Boolean)
+- uid: NodeModelsFunctions.Selection.BySelectionMethodAndCategories(System.Object,System.Collections.Generic.List{Revit.Elements.Category},System.Boolean,System.Boolean)
+  commentId: M:NodeModelsFunctions.Selection.BySelectionMethodAndCategories(System.Object,System.Collections.Generic.List{Revit.Elements.Category},System.Boolean,System.Boolean)
+  id: BySelectionMethodAndCategories(System.Object,System.Collections.Generic.List{Revit.Elements.Category},System.Boolean,System.Boolean)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: BySelectionMethodAndCategories(object, List<Category>, bool, bool)
+  nameWithType: Selection.BySelectionMethodAndCategories(object, List<Category>, bool, bool)
+  fullName: NodeModelsFunctions.Selection.BySelectionMethodAndCategories(object, System.Collections.Generic.List<Revit.Elements.Category>, bool, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Select Elements from given Category based on Selection Method and
+  example: []
+  syntax:
+    content: public static SelectionResults? BySelectionMethodAndCategories(object selectionMethod, List<Category> categories, bool getLinkedElements = false, bool refresh = true)
+    parameters:
+    - id: selectionMethod
+      type: System.Object
+      description: Selection method
+    - id: categories
+      type: System.Collections.Generic.List{Revit.Elements.Category}
+      description: List of categories to filter selection
+    - id: getLinkedElements
+      type: System.Boolean
+      description: Choose whether get linked elements or not
+    - id: refresh
+      type: System.Boolean
+      description: Refresh selection
+    return:
+      type: DynamoForRevitUtils.Entities.SelectionResults
+      description: Selected Elements
+    content.vb: Public Shared Function BySelectionMethodAndCategories(selectionMethod As Object, categories As List(Of Category), getLinkedElements As Boolean = False, refresh As Boolean = True) As SelectionResults
+  overload: NodeModelsFunctions.Selection.BySelectionMethodAndCategories*
+  nameWithType.vb: Selection.BySelectionMethodAndCategories(Object, List(Of Category), Boolean, Boolean)
+  fullName.vb: NodeModelsFunctions.Selection.BySelectionMethodAndCategories(Object, System.Collections.Generic.List(Of Revit.Elements.Category), Boolean, Boolean)
+  name.vb: BySelectionMethodAndCategories(Object, List(Of Category), Boolean, Boolean)
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  commentId: M:NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  id: GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: GetSelectionResultsElements(SelectionResults, bool)
+  nameWithType: Selection.GetSelectionResultsElements(SelectionResults, bool)
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get Elements from Selection Results
+  example: []
+  syntax:
+    content: public static IList? GetSelectionResultsElements(SelectionResults selectionResults, bool groupByCategory = false)
+    parameters:
+    - id: selectionResults
+      type: DynamoForRevitUtils.Entities.SelectionResults
+      description: Selection results to get elements
+    - id: groupByCategory
+      type: System.Boolean
+      description: Set true to group elements by settings categories
+    return:
+      type: System.Collections.IList
+      description: ''
+    content.vb: Public Shared Function GetSelectionResultsElements(selectionResults As SelectionResults, groupByCategory As Boolean = False) As IList
+  overload: NodeModelsFunctions.Selection.GetSelectionResultsElements*
+  nameWithType.vb: Selection.GetSelectionResultsElements(SelectionResults, Boolean)
+  fullName.vb: NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults, Boolean)
+  name.vb: GetSelectionResultsElements(SelectionResults, Boolean)
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  commentId: M:NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  id: GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: GetSelectionResultsRevitLinkInstances(SelectionResults, bool)
+  nameWithType: Selection.GetSelectionResultsRevitLinkInstances(SelectionResults, bool)
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get Revit Link instances from Selection Results
+  example: []
+  syntax:
+    content: public static IList? GetSelectionResultsRevitLinkInstances(SelectionResults selectionResults, bool groupByCategory = false)
+    parameters:
+    - id: selectionResults
+      type: DynamoForRevitUtils.Entities.SelectionResults
+      description: Selection results to get Revit link instances
+    - id: groupByCategory
+      type: System.Boolean
+      description: Set true to group Revit link instances based on settings categories
+    return:
+      type: System.Collections.IList
+      description: ''
+    content.vb: Public Shared Function GetSelectionResultsRevitLinkInstances(selectionResults As SelectionResults, groupByCategory As Boolean = False) As IList
+  overload: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances*
+  nameWithType.vb: Selection.GetSelectionResultsRevitLinkInstances(SelectionResults, Boolean)
+  fullName.vb: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults, Boolean)
+  name.vb: GetSelectionResultsRevitLinkInstances(SelectionResults, Boolean)
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)
+  commentId: M:NodeModelsFunctions.Selection.GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)
+  id: GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: GetSelectionResultsActiveView(SelectionResults)
+  nameWithType: Selection.GetSelectionResultsActiveView(SelectionResults)
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Get Active view from Selection Results
+  example: []
+  syntax:
+    content: public static View GetSelectionResultsActiveView(SelectionResults selectionResults)
+    parameters:
+    - id: selectionResults
+      type: DynamoForRevitUtils.Entities.SelectionResults
+      description: ''
+    return:
+      type: Revit.Elements.Views.View
+      description: ''
+    content.vb: Public Shared Function GetSelectionResultsActiveView(selectionResults As SelectionResults) As View
+  overload: NodeModelsFunctions.Selection.GetSelectionResultsActiveView*
+- uid: NodeModelsFunctions.Selection.ViewCollector(System.Boolean,System.Collections.Generic.List{Autodesk.Revit.DB.ViewType},System.String,System.Boolean)
+  commentId: M:NodeModelsFunctions.Selection.ViewCollector(System.Boolean,System.Collections.Generic.List{Autodesk.Revit.DB.ViewType},System.String,System.Boolean)
+  id: ViewCollector(System.Boolean,System.Collections.Generic.List{Autodesk.Revit.DB.ViewType},System.String,System.Boolean)
+  parent: NodeModelsFunctions.Selection
+  langs:
+  - csharp
+  - vb
+  name: ViewCollector(bool, List<ViewType>, string, bool)
+  nameWithType: Selection.ViewCollector(bool, List<ViewType>, string, bool)
+  fullName: NodeModelsFunctions.Selection.ViewCollector(bool, System.Collections.Generic.List<Autodesk.Revit.DB.ViewType>, string, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitNodeModelsFunctions
+  namespace: NodeModelsFunctions
+  summary: Collects Views from active Document
+  example: []
+  syntax:
+    content: public static List<Element> ViewCollector(bool activeView, List<ViewType> viewTypes, string searchString, bool refresh = true)
+    parameters:
+    - id: activeView
+      type: System.Boolean
+      description: ''
+    - id: viewTypes
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.ViewType}
+      description: ''
+    - id: searchString
+      type: System.String
+      description: ''
+    - id: refresh
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Revit.Elements.Element}
+      description: ''
+    content.vb: Public Shared Function ViewCollector(activeView As Boolean, viewTypes As List(Of ViewType), searchString As String, refresh As Boolean = True) As List(Of Element)
+  overload: NodeModelsFunctions.Selection.ViewCollector*
+  nameWithType.vb: Selection.ViewCollector(Boolean, List(Of ViewType), String, Boolean)
+  fullName.vb: NodeModelsFunctions.Selection.ViewCollector(Boolean, System.Collections.Generic.List(Of Autodesk.Revit.DB.ViewType), String, Boolean)
+  name.vb: ViewCollector(Boolean, List(Of ViewType), String, Boolean)
+references:
+- uid: NodeModelsFunctions
+  commentId: N:NodeModelsFunctions
+  isExternal: true
+  href: NodeModelsFunctions.html
+  name: NodeModelsFunctions
+  nameWithType: NodeModelsFunctions
+  fullName: NodeModelsFunctions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NodeModelsFunctions.Selection.BySelectionMethodAndCategory*
+  commentId: Overload:NodeModelsFunctions.Selection.BySelectionMethodAndCategory
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_BySelectionMethodAndCategory_System_Object_Revit_Elements_Category_System_Boolean_System_Boolean_
+  name: BySelectionMethodAndCategory
+  nameWithType: Selection.BySelectionMethodAndCategory
+  fullName: NodeModelsFunctions.Selection.BySelectionMethodAndCategory
+- uid: Revit.Elements.Category
+  commentId: T:Revit.Elements.Category
+  parent: Revit.Elements
+  isExternal: true
+  name: Category
+  nameWithType: Category
+  fullName: Revit.Elements.Category
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DynamoForRevitUtils.Entities.SelectionResults
+  commentId: T:DynamoForRevitUtils.Entities.SelectionResults
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html
+  name: SelectionResults
+  nameWithType: SelectionResults
+  fullName: DynamoForRevitUtils.Entities.SelectionResults
+- uid: Revit.Elements
+  commentId: N:Revit.Elements
+  isExternal: true
+  name: Revit.Elements
+  nameWithType: Revit.Elements
+  fullName: Revit.Elements
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+- uid: DynamoForRevitUtils.Entities
+  commentId: N:DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities
+  nameWithType: DynamoForRevitUtils.Entities
+  fullName: DynamoForRevitUtils.Entities
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+- uid: NodeModelsFunctions.Selection.BySelectionMethodAndCategories*
+  commentId: Overload:NodeModelsFunctions.Selection.BySelectionMethodAndCategories
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_BySelectionMethodAndCategories_System_Object_System_Collections_Generic_List_Revit_Elements_Category__System_Boolean_System_Boolean_
+  name: BySelectionMethodAndCategories
+  nameWithType: Selection.BySelectionMethodAndCategories
+  fullName: NodeModelsFunctions.Selection.BySelectionMethodAndCategories
+- uid: System.Collections.Generic.List{Revit.Elements.Category}
+  commentId: T:System.Collections.Generic.List{Revit.Elements.Category}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Category>
+  nameWithType: List<Category>
+  fullName: System.Collections.Generic.List<Revit.Elements.Category>
+  nameWithType.vb: List(Of Category)
+  fullName.vb: System.Collections.Generic.List(Of Revit.Elements.Category)
+  name.vb: List(Of Category)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Revit.Elements.Category
+    name: Category
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Revit.Elements.Category
+    name: Category
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsElements*
+  commentId: Overload:NodeModelsFunctions.Selection.GetSelectionResultsElements
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_GetSelectionResultsElements_DynamoForRevitUtils_Entities_SelectionResults_System_Boolean_
+  name: GetSelectionResultsElements
+  nameWithType: Selection.GetSelectionResultsElements
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsElements
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances*
+  commentId: Overload:NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_GetSelectionResultsRevitLinkInstances_DynamoForRevitUtils_Entities_SelectionResults_System_Boolean_
+  name: GetSelectionResultsRevitLinkInstances
+  nameWithType: Selection.GetSelectionResultsRevitLinkInstances
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances
+- uid: NodeModelsFunctions.Selection.GetSelectionResultsActiveView*
+  commentId: Overload:NodeModelsFunctions.Selection.GetSelectionResultsActiveView
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_GetSelectionResultsActiveView_DynamoForRevitUtils_Entities_SelectionResults_
+  name: GetSelectionResultsActiveView
+  nameWithType: Selection.GetSelectionResultsActiveView
+  fullName: NodeModelsFunctions.Selection.GetSelectionResultsActiveView
+- uid: Revit.Elements.Views.View
+  commentId: T:Revit.Elements.Views.View
+  parent: Revit.Elements.Views
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Revit.Elements.Views.View
+- uid: Revit.Elements.Views
+  commentId: N:Revit.Elements.Views
+  isExternal: true
+  name: Revit.Elements.Views
+  nameWithType: Revit.Elements.Views
+  fullName: Revit.Elements.Views
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements.Views
+    name: Views
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements.Views
+    name: Views
+    isExternal: true
+- uid: NodeModelsFunctions.Selection.ViewCollector*
+  commentId: Overload:NodeModelsFunctions.Selection.ViewCollector
+  isExternal: true
+  href: NodeModelsFunctions.Selection.html#NodeModelsFunctions_Selection_ViewCollector_System_Boolean_System_Collections_Generic_List_Autodesk_Revit_DB_ViewType__System_String_System_Boolean_
+  name: ViewCollector
+  nameWithType: Selection.ViewCollector
+  fullName: NodeModelsFunctions.Selection.ViewCollector
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.ViewType}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.ViewType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ViewType>
+  nameWithType: List<ViewType>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.ViewType>
+  nameWithType.vb: List(Of ViewType)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.ViewType)
+  name.vb: List(Of ViewType)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.ViewType
+    name: ViewType
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ViewType
+    name: ViewType
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{Revit.Elements.Element}
+  commentId: T:System.Collections.Generic.List{Revit.Elements.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Revit.Elements.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Revit.Elements.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Revit.Elements.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Revit.Elements.Element
+    name: Element
+    isExternal: true
+  - name: )

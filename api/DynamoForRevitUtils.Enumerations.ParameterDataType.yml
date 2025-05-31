@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterDataType
+  id: ParameterDataType
+  parent: DynamoForRevitUtils.Enumerations
+  children:
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.Decimal
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.ElementId
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.Integer
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.Text
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.Undefined
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.YesNo
+  langs:
+  - csharp
+  - vb
+  name: ParameterDataType
+  nameWithType: ParameterDataType
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType
+  type: Enum
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Represents an undefined storage type for <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> values.
+  remarks: >-
+    This value is used as a default or placeholder to indicate that the data type
+
+    has not been set or is not recognized within the context of the <xref href="DynamoForRevitUtils.Enumerations.ParameterDataType" data-throw-if-not-resolved="false"></xref> enumeration.
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum ParameterDataType
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum ParameterDataType
+  extensionMethods:
+  - DynamoForRevitUtils.Enumerations.ParameterDataType.DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
+  id: Boolean
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: ParameterDataType.Boolean
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores boolean values.
+  example: []
+  syntax:
+    content: Boolean = 0
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.YesNo
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.YesNo
+  id: YesNo
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: YesNo
+  nameWithType: ParameterDataType.YesNo
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.YesNo
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores boolean values represented as Yes or No.
+  remarks: This member is used to indicate that the parameter accepts <xref href="DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: YesNo = 1
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Integer
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Integer
+  id: Integer
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: ParameterDataType.Integer
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.Integer
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores integer values.
+  remarks: >-
+    This member indicates that the parameter holds whole number data types.
+
+    It is used when the parameter requires discrete numeric values
+
+    within the context of Dynamo for Revit utilities.
+  example: []
+  syntax:
+    content: Integer = 2
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Decimal
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Decimal
+  id: Decimal
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: Decimal
+  nameWithType: ParameterDataType.Decimal
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.Decimal
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores numerical values, including decimals.
+  remarks: >-
+    This member is used to indicate that the parameter accepts floating-point
+
+    or real numbers within the context of Dynamo for Revit utilities.
+  example: []
+  syntax:
+    content: Decimal = 3
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Text
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Text
+  id: Text
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: ParameterDataType.Text
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.Text
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores text values.
+  remarks: >-
+    This member is used to indicate that the parameter accepts string-based data
+
+    within the context of Dynamo for Revit utilities.
+  example: []
+  syntax:
+    content: Text = 4
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.ElementId
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.ElementId
+  id: ElementId
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: ElementId
+  nameWithType: ParameterDataType.ElementId
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.ElementId
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies that the parameter stores an ElementId value.
+  remarks: >-
+    This member is used to represent parameters that are associated with references to other elements,
+
+    identified by their unique ElementId, within the context of Dynamo for Revit utilities.
+  example: []
+  syntax:
+    content: ElementId = 5
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Undefined
+  commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Undefined
+  id: Undefined
+  parent: DynamoForRevitUtils.Enumerations.ParameterDataType
+  langs:
+  - csharp
+  - vb
+  name: Undefined
+  nameWithType: ParameterDataType.Undefined
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType.Undefined
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Represents an undefined state for the data type of a parameter.
+  remarks: >-
+    This value serves as a placeholder to indicate that the parameter's data type
+
+    is either unspecified or unrecognized.
+  example: []
+  syntax:
+    content: Undefined = 6
+    return:
+      type: DynamoForRevitUtils.Enumerations.ParameterDataType
+references:
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  name: ElementParameter
+  nameWithType: ElementParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterDataType
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  name: ParameterDataType
+  nameWithType: ParameterDataType
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType.DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType
+  commentId: M:DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  parent: DynamoForRevitUtils.Services.Enumerations.Converters
+  definition: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  name: ToStorageType(ParameterDataType)
+  nameWithType: Converters.ToStorageType(ParameterDataType)
+  fullName: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+    name: ToStorageType
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  - name: (
+  - uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+    name: ParameterDataType
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+    name: ToStorageType
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  - name: (
+  - uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+    name: ParameterDataType
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers
+  commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.ParametersHandlers
+  nameWithType: DynamoForRevitUtils.Entities.ParametersHandlers
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+- uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  commentId: M:DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  name: ToStorageType(ParameterDataType)
+  nameWithType: Converters.ToStorageType(ParameterDataType)
+  fullName: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+    name: ToStorageType
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  - name: (
+  - uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+    name: ParameterDataType
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
+    name: ToStorageType
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.Converters.html#DynamoForRevitUtils_Services_Enumerations_Converters_ToStorageType_DynamoForRevitUtils_Enumerations_ParameterDataType_
+  - name: (
+  - uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+    name: ParameterDataType
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  - name: )
+- uid: DynamoForRevitUtils.Services.Enumerations.Converters
+  commentId: T:DynamoForRevitUtils.Services.Enumerations.Converters
+  parent: DynamoForRevitUtils.Services.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Enumerations.Converters.html
+  name: Converters
+  nameWithType: Converters
+  fullName: DynamoForRevitUtils.Services.Enumerations.Converters
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.Enumerations
+  commentId: N:DynamoForRevitUtils.Services.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Enumerations
+  nameWithType: DynamoForRevitUtils.Services.Enumerations
+  fullName: DynamoForRevitUtils.Services.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  commentId: T:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.html
+  name: ElementParameterYesNoValue
+  nameWithType: ElementParameterYesNoValue
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue

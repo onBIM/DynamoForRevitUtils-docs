@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  id: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  children:
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.html
+  name: ElementsDropDownBase<T>
+  nameWithType: ElementsDropDownBase<T>
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase<T>
+  nameWithType.vb: ElementsDropDownBase(Of T)
+  fullName.vb: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase(Of T)
+  name.vb: ElementsDropDownBase(Of T)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1
+    name: ElementsDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1
+    name: ElementsDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase-1.html
+  name: ElementTypesDropDownBase<TElementType>
+  nameWithType: ElementTypesDropDownBase<TElementType>
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase<TElementType>
+  nameWithType.vb: ElementTypesDropDownBase(Of TElementType)
+  fullName.vb: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase(Of TElementType)
+  name.vb: ElementTypesDropDownBase(Of TElementType)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1
+    name: ElementTypesDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase-1.html
+  - name: <
+  - name: TElementType
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1
+    name: ElementTypesDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElementType
+  - name: )
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase-1.html
+  name: EnumDropDownBase<T>
+  nameWithType: EnumDropDownBase<T>
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase<T>
+  nameWithType.vb: EnumDropDownBase(Of T)
+  fullName.vb: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase(Of T)
+  name.vb: EnumDropDownBase(Of T)
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1
+    name: EnumDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1
+    name: EnumDropDownBase
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.html
+  name: NodeModelDropDownBase
+  nameWithType: NodeModelDropDownBase
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+    name: DropDownBaseNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes
+    name: DropDownBaseNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.html

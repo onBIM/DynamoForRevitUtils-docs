@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters
+  commentId: N:DynamoForRevitUtils.Entities.PickSelectionFilters
+  id: DynamoForRevitUtils.Entities.PickSelectionFilters
+  children:
+  - DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter
+  - DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter
+  - DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter
+  - DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
+  - DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Entities.PickSelectionFilters
+  nameWithType: DynamoForRevitUtils.Entities.PickSelectionFilters
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter
+  commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.html
+  name: CategorySelectionFilter
+  nameWithType: CategorySelectionFilter
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter
+  commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter.html
+  name: MultiCategorySelectionFilter
+  nameWithType: MultiCategorySelectionFilter
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter
+  commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter.html
+  name: NoFilter
+  nameWithType: NoFilter
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
+  commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
+  parent: DynamoForRevitUtils.Entities.PickSelectionFilters
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.html
+  name: PickSelectionFilter
+  nameWithType: PickSelectionFilter
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter
+  commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.html
+  name: WallSelectionFilter
+  nameWithType: WallSelectionFilter
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter
+- uid: DynamoForRevitUtils.Entities.PickSelectionFilters
+  commentId: N:DynamoForRevitUtils.Entities.PickSelectionFilters
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.PickSelectionFilters
+  nameWithType: DynamoForRevitUtils.Entities.PickSelectionFilters
+  fullName: DynamoForRevitUtils.Entities.PickSelectionFilters
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.PickSelectionFilters
+    name: PickSelectionFilters
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.PickSelectionFilters.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.PickSelectionFilters
+    name: PickSelectionFilters
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.PickSelectionFilters.html

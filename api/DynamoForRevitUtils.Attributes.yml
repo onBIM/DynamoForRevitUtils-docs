@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Attributes
+  commentId: N:DynamoForRevitUtils.Attributes
+  id: DynamoForRevitUtils.Attributes
+  children:
+  - DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Attributes
+  nameWithType: DynamoForRevitUtils.Attributes
+  fullName: DynamoForRevitUtils.Attributes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
+  commentId: T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
+  isExternal: true
+  href: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.html
+  name: AssociatedParameterNameAttribute
+  nameWithType: AssociatedParameterNameAttribute
+  fullName: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute

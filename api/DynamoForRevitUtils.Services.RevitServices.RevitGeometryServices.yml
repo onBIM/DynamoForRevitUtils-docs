@@ -1,0 +1,913 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  id: RevitGeometryServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle(Autodesk.DesignScript.Geometry.Rectangle)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Plane)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint(Autodesk.Revit.DB.Plane,Autodesk.Revit.DB.XYZ)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves(Autodesk.Revit.DB.Face)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue(Autodesk.Revit.DB.XYZ,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox(Autodesk.Revit.DB.BoundingBoxXYZ)
+  langs:
+  - csharp
+  - vb
+  name: RevitGeometryServices
+  nameWithType: RevitGeometryServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Revit geometry tools
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class RevitGeometryServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module RevitGeometryServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  id: IsParallelTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsParallelTo(XYZ, XYZ, ushort)
+  nameWithType: RevitGeometryServices.IsParallelTo(XYZ, XYZ, ushort)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Verify if two vectors are parallel
+  example: []
+  syntax:
+    content: public static bool IsParallelTo(this XYZ vector, XYZ otherVector, ushort precision = 1)
+    parameters:
+    - id: vector
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: otherVector
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: precision
+      type: System.UInt16
+      description: A positive integer representing the rounding precision
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsParallelTo(vector As XYZ, otherVector As XYZ, precision As UShort = 1) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo*
+  nameWithType.vb: RevitGeometryServices.IsParallelTo(XYZ, XYZ, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, UShort)
+  name.vb: IsParallelTo(XYZ, XYZ, UShort)
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  id: IsPerpendicularTo(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsPerpendicularTo(XYZ, XYZ, ushort)
+  nameWithType: RevitGeometryServices.IsPerpendicularTo(XYZ, XYZ, ushort)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Verify if two vectors are perpendicular
+  example: []
+  syntax:
+    content: public static bool IsPerpendicularTo(this XYZ vector, XYZ otherVector, ushort precision = 1)
+    parameters:
+    - id: vector
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: otherVector
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: precision
+      type: System.UInt16
+      description: A positive integer representing the rounding precision
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsPerpendicularTo(vector As XYZ, otherVector As XYZ, precision As UShort = 1) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo*
+  nameWithType.vb: RevitGeometryServices.IsPerpendicularTo(XYZ, XYZ, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, UShort)
+  name.vb: IsPerpendicularTo(XYZ, XYZ, UShort)
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  id: GetMidPoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GetMidPoint(XYZ, XYZ)
+  nameWithType: RevitGeometryServices.GetMidPoint(XYZ, XYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the mid point between two points
+  example: []
+  syntax:
+    content: public static XYZ GetMidPoint(this XYZ point, XYZ otherPoint)
+    parameters:
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: otherPoint
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    content.vb: Public Shared Function GetMidPoint(point As XYZ, otherPoint As XYZ) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.Double)
+  id: ArePointsCollinear(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,System.Double)
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ArePointsCollinear(XYZ, XYZ, XYZ, double)
+  nameWithType: RevitGeometryServices.ArePointsCollinear(XYZ, XYZ, XYZ, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Evaluates if given three points are collinear by a given tolerance
+  example: []
+  syntax:
+    content: public static bool ArePointsCollinear(XYZ p1, XYZ p2, XYZ p3, double tolerance = 0.001)
+    parameters:
+    - id: p1
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: p2
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: p3
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: tolerance
+      type: System.Double
+      description: ''
+    return:
+      type: System.Boolean
+      description: Whether the three points are collinear or not
+    content.vb: Public Shared Function ArePointsCollinear(p1 As XYZ, p2 As XYZ, p3 As XYZ, tolerance As Double = 0.001) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear*
+  nameWithType.vb: RevitGeometryServices.ArePointsCollinear(XYZ, XYZ, XYZ, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Double)
+  name.vb: ArePointsCollinear(XYZ, XYZ, XYZ, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves(Autodesk.Revit.DB.Face)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves(Autodesk.Revit.DB.Face)
+  id: GetOuterCurves(Autodesk.Revit.DB.Face)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GetOuterCurves(Face)
+  nameWithType: RevitGeometryServices.GetOuterCurves(Face)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves(Autodesk.Revit.DB.Face)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get face outer curves
+  example: []
+  syntax:
+    content: public static CurveLoop? GetOuterCurves(this Face face)
+    parameters:
+    - id: face
+      type: Autodesk.Revit.DB.Face
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.CurveLoop
+      description: ''
+    content.vb: Public Shared Function GetOuterCurves(face As Face) As CurveLoop
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle(Autodesk.DesignScript.Geometry.Rectangle)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle(Autodesk.DesignScript.Geometry.Rectangle)
+  id: CreateByRectangle(Autodesk.DesignScript.Geometry.Rectangle)
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: CreateByRectangle(Rectangle)
+  nameWithType: RevitGeometryServices.CreateByRectangle(Rectangle)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle(Autodesk.DesignScript.Geometry.Rectangle)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Creates a BoundingBox based on rectangle
+  example: []
+  syntax:
+    content: public static BoundingBoxXYZ CreateByRectangle(Rectangle rectangle)
+    parameters:
+    - id: rectangle
+      type: Autodesk.DesignScript.Geometry.Rectangle
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.BoundingBoxXYZ
+      description: ''
+    content.vb: Public Shared Function CreateByRectangle(rectangle As Rectangle) As BoundingBoxXYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox(Autodesk.Revit.DB.BoundingBoxXYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox(Autodesk.Revit.DB.BoundingBoxXYZ)
+  id: ToProtoBoundingBox(Autodesk.Revit.DB.BoundingBoxXYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ToProtoBoundingBox(BoundingBoxXYZ)
+  nameWithType: RevitGeometryServices.ToProtoBoundingBox(BoundingBoxXYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox(Autodesk.Revit.DB.BoundingBoxXYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Converts a Revit API BoundingBoxXYZ to Dynamo Geometry BoundingBox
+  example: []
+  syntax:
+    content: public static BoundingBox ToProtoBoundingBox(this BoundingBoxXYZ bboxXYZ)
+    parameters:
+    - id: bboxXYZ
+      type: Autodesk.Revit.DB.BoundingBoxXYZ
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: ''
+    content.vb: Public Shared Function ToProtoBoundingBox(bboxXYZ As BoundingBoxXYZ) As BoundingBox
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Plane)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Plane)
+  id: DistanceToPlane(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Plane)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: DistanceToPlane(XYZ, Plane)
+  nameWithType: RevitGeometryServices.DistanceToPlane(XYZ, Plane)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Plane)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Calculates the distance between a point and a plane
+  example: []
+  syntax:
+    content: public static double DistanceToPlane(this XYZ point, Plane plane)
+    parameters:
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    - id: plane
+      type: Autodesk.Revit.DB.Plane
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function DistanceToPlane(point As XYZ, plane As Plane) As Double
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint(Autodesk.Revit.DB.Plane,Autodesk.Revit.DB.XYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint(Autodesk.Revit.DB.Plane,Autodesk.Revit.DB.XYZ)
+  id: DistanceToPoint(Autodesk.Revit.DB.Plane,Autodesk.Revit.DB.XYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: DistanceToPoint(Plane, XYZ)
+  nameWithType: RevitGeometryServices.DistanceToPoint(Plane, XYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint(Autodesk.Revit.DB.Plane, Autodesk.Revit.DB.XYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Calculates the distance between a plane and a point
+  example: []
+  syntax:
+    content: public static double DistanceToPoint(this Plane plane, XYZ point)
+    parameters:
+    - id: plane
+      type: Autodesk.Revit.DB.Plane
+      description: ''
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function DistanceToPoint(plane As Plane, point As XYZ) As Double
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint*
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue(Autodesk.Revit.DB.XYZ,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue(Autodesk.Revit.DB.XYZ,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  id: SwapCoordinateValue(Autodesk.Revit.DB.XYZ,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: SwapCoordinateValue(XYZ, Coordinate, double)
+  nameWithType: RevitGeometryServices.SwapCoordinateValue(XYZ, Coordinate, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue(Autodesk.Revit.DB.XYZ, DynamoForRevitUtils.Enumerations.Coordinate, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Swap a coordinate value of XYZ
+  example: []
+  syntax:
+    content: public static XYZ? SwapCoordinateValue(this XYZ xyz, Coordinate coordinate, double value)
+    parameters:
+    - id: xyz
+      type: Autodesk.Revit.DB.XYZ
+      description: Point to swap coordinate
+    - id: coordinate
+      type: DynamoForRevitUtils.Enumerations.Coordinate
+      description: Coordinate to swap
+    - id: value
+      type: System.Double
+      description: New value that will be used on swapped coordinate
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: Point with swapped coordinate
+    content.vb: Public Shared Function SwapCoordinateValue(xyz As XYZ, coordinate As Coordinate, value As Double) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if coordinate has an invalid value.
+  nameWithType.vb: RevitGeometryServices.SwapCoordinateValue(XYZ, Coordinate, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue(Autodesk.Revit.DB.XYZ, DynamoForRevitUtils.Enumerations.Coordinate, Double)
+  name.vb: SwapCoordinateValue(XYZ, Coordinate, Double)
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_IsParallelTo_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_System_UInt16_
+  name: IsParallelTo
+  nameWithType: RevitGeometryServices.IsParallelTo
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsParallelTo
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_IsPerpendicularTo_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_System_UInt16_
+  name: IsPerpendicularTo
+  nameWithType: RevitGeometryServices.IsPerpendicularTo
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.IsPerpendicularTo
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_GetMidPoint_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_
+  name: GetMidPoint
+  nameWithType: RevitGeometryServices.GetMidPoint
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetMidPoint
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_ArePointsCollinear_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_System_Double_
+  name: ArePointsCollinear
+  nameWithType: RevitGeometryServices.ArePointsCollinear
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ArePointsCollinear
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_GetOuterCurves_Autodesk_Revit_DB_Face_
+  name: GetOuterCurves
+  nameWithType: RevitGeometryServices.GetOuterCurves
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.GetOuterCurves
+- uid: Autodesk.Revit.DB.Face
+  commentId: T:Autodesk.Revit.DB.Face
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Face
+  nameWithType: Face
+  fullName: Autodesk.Revit.DB.Face
+- uid: Autodesk.Revit.DB.CurveLoop
+  commentId: T:Autodesk.Revit.DB.CurveLoop
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: CurveLoop
+  nameWithType: CurveLoop
+  fullName: Autodesk.Revit.DB.CurveLoop
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_CreateByRectangle_Autodesk_DesignScript_Geometry_Rectangle_
+  name: CreateByRectangle
+  nameWithType: RevitGeometryServices.CreateByRectangle
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.CreateByRectangle
+- uid: Autodesk.DesignScript.Geometry.Rectangle
+  commentId: T:Autodesk.DesignScript.Geometry.Rectangle
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: Autodesk.DesignScript.Geometry.Rectangle
+- uid: Autodesk.Revit.DB.BoundingBoxXYZ
+  commentId: T:Autodesk.Revit.DB.BoundingBoxXYZ
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BoundingBoxXYZ
+  nameWithType: BoundingBoxXYZ
+  fullName: Autodesk.Revit.DB.BoundingBoxXYZ
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_ToProtoBoundingBox_Autodesk_Revit_DB_BoundingBoxXYZ_
+  name: ToProtoBoundingBox
+  nameWithType: RevitGeometryServices.ToProtoBoundingBox
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.ToProtoBoundingBox
+- uid: Autodesk.DesignScript.Geometry.BoundingBox
+  commentId: T:Autodesk.DesignScript.Geometry.BoundingBox
+  parent: Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Autodesk.DesignScript.Geometry.BoundingBox
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_DistanceToPlane_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Plane_
+  name: DistanceToPlane
+  nameWithType: RevitGeometryServices.DistanceToPlane
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPlane
+- uid: Autodesk.Revit.DB.Plane
+  commentId: T:Autodesk.Revit.DB.Plane
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Plane
+  nameWithType: Plane
+  fullName: Autodesk.Revit.DB.Plane
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_DistanceToPoint_Autodesk_Revit_DB_Plane_Autodesk_Revit_DB_XYZ_
+  name: DistanceToPoint
+  nameWithType: RevitGeometryServices.DistanceToPoint
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.DistanceToPoint
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html#DynamoForRevitUtils_Services_RevitServices_RevitGeometryServices_SwapCoordinateValue_Autodesk_Revit_DB_XYZ_DynamoForRevitUtils_Enumerations_Coordinate_System_Double_
+  name: SwapCoordinateValue
+  nameWithType: RevitGeometryServices.SwapCoordinateValue
+  fullName: DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.SwapCoordinateValue
+- uid: DynamoForRevitUtils.Enumerations.Coordinate
+  commentId: T:DynamoForRevitUtils.Enumerations.Coordinate
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: DynamoForRevitUtils.Enumerations.Coordinate
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html

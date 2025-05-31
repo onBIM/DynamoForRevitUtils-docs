@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Enumerations
+  commentId: N:DynamoForRevitUtils.Services.Enumerations
+  id: DynamoForRevitUtils.Services.Enumerations
+  children:
+  - DynamoForRevitUtils.Services.Enumerations.Converters
+  - DynamoForRevitUtils.Services.Enumerations.EnumParser
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Enumerations
+  nameWithType: DynamoForRevitUtils.Services.Enumerations
+  fullName: DynamoForRevitUtils.Services.Enumerations
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Enumerations.Converters
+  commentId: T:DynamoForRevitUtils.Services.Enumerations.Converters
+  parent: DynamoForRevitUtils.Services.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Enumerations.Converters.html
+  name: Converters
+  nameWithType: Converters
+  fullName: DynamoForRevitUtils.Services.Enumerations.Converters
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  commentId: T:DynamoForRevitUtils.Services.Enumerations.EnumParser
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Enumerations.EnumParser.html
+  name: EnumParser
+  nameWithType: EnumParser
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser
+- uid: DynamoForRevitUtils.Services.Enumerations
+  commentId: N:DynamoForRevitUtils.Services.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Enumerations
+  nameWithType: DynamoForRevitUtils.Services.Enumerations
+  fullName: DynamoForRevitUtils.Services.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html

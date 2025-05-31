@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  id: DynamoForRevitNodeModels.Services
+  children:
+  - DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider
+  - DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  - DynamoForRevitNodeModels.Services.NodeModelsServices
+  - DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.html
+  name: DimensionTypeNameOverrider
+  nameWithType: DimensionTypeNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider
+- uid: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+  parent: DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html
+  name: IDropDownItemNameOverrider
+  nameWithType: IDropDownItemNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider
+- uid: DynamoForRevitNodeModels.Services.NodeModelsServices
+  commentId: T:DynamoForRevitNodeModels.Services.NodeModelsServices
+  parent: DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.NodeModelsServices.html
+  name: NodeModelsServices
+  nameWithType: NodeModelsServices
+  fullName: DynamoForRevitNodeModels.Services.NodeModelsServices
+- uid: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  commentId: T:DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+  isExternal: true
+  href: DynamoForRevitNodeModels.Services.TagTypeNameOverrider.html
+  name: TagTypeNameOverrider
+  nameWithType: TagTypeNameOverrider
+  fullName: DynamoForRevitNodeModels.Services.TagTypeNameOverrider
+- uid: DynamoForRevitNodeModels.Services
+  commentId: N:DynamoForRevitNodeModels.Services
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Services
+  nameWithType: DynamoForRevitNodeModels.Services
+  fullName: DynamoForRevitNodeModels.Services
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitNodeModels.Services.html

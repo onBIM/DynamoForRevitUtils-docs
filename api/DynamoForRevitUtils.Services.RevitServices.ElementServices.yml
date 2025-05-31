@@ -1,0 +1,2206 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ElementServices
+  id: ElementServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.Color)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.Element})
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Collections.Generic.List{Autodesk.Revit.DB.Solid}@,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Options,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.BuiltInCategory)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement(Autodesk.Revit.DB.Element)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.View,Autodesk.Revit.DB.OverrideGraphicSettings)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  langs:
+  - csharp
+  - vb
+  name: ElementServices
+  nameWithType: ElementServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Elements conversions
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ElementServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ElementServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Collections.Generic.List{Autodesk.Revit.DB.Solid}@,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Options,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Collections.Generic.List{Autodesk.Revit.DB.Solid}@,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Options,System.Double)
+  id: IsCutByView(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Collections.Generic.List{Autodesk.Revit.DB.Solid}@,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Options,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsCutByView(Element, View, out List<Solid>, RevitLinkInstance?, Options?, double)
+  nameWithType: ElementServices.IsCutByView(Element, View, out List<Solid>, RevitLinkInstance?, Options?, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.View, out System.Collections.Generic.List<Autodesk.Revit.DB.Solid>, Autodesk.Revit.DB.RevitLinkInstance?, Autodesk.Revit.DB.Options?, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Determines whether an element is cut by view plane or not
+  example: []
+  syntax:
+    content: public static bool IsCutByView(this Element element, View view, out List<Solid> solidsCut, RevitLinkInstance? linkInstance = null, Options? options = null, double tolerance = 0.001)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to test
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View to test if the element is cut by
+    - id: solidsCut
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Solid}
+      description: Solids cut by view plane
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: Link instance that the element belong. Leave null if the element is not linked.
+    - id: options
+      type: Autodesk.Revit.DB.Options
+      description: Geometry options to get element solid
+    - id: tolerance
+      type: System.Double
+      description: Tolerance in feet to get cut solid
+    return:
+      type: System.Boolean
+      description: Whether an element is cut by view plane or not
+    content.vb: Public Shared Function IsCutByView(element As Element, view As View, solidsCut As List(Of Solid), linkInstance As RevitLinkInstance = Nothing, options As Options = Nothing, tolerance As Double = 0.001) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView*
+  nameWithType.vb: ElementServices.IsCutByView(Element, View, List(Of Solid), RevitLinkInstance, Options, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.View, System.Collections.Generic.List(Of Autodesk.Revit.DB.Solid), Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Options, Double)
+  name.vb: IsCutByView(Element, View, List(Of Solid), RevitLinkInstance, Options, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.Element})
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.Element})
+  id: GetElementsBoundingBox(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.Element})
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetElementsBoundingBox(Document, List<Element>)
+  nameWithType: ElementServices.GetElementsBoundingBox(Document, List<Element>)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox(Autodesk.Revit.DB.Document, System.Collections.Generic.List<Autodesk.Revit.DB.Element>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get BoundingBox from Elements
+  example: []
+  syntax:
+    content: public static BoundingBoxXYZ GetElementsBoundingBox(Document doc, List<Element> elements)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: ''
+    - id: elements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.BoundingBoxXYZ
+      description: ''
+    content.vb: Public Shared Function GetElementsBoundingBox(doc As Document, elements As List(Of Element)) As BoundingBoxXYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox*
+  nameWithType.vb: ElementServices.GetElementsBoundingBox(Document, List(Of Element))
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox(Autodesk.Revit.DB.Document, System.Collections.Generic.List(Of Autodesk.Revit.DB.Element))
+  name.vb: GetElementsBoundingBox(Document, List(Of Element))
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,System.Double)
+  id: GetNearbyElements(Autodesk.Revit.DB.Element,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetNearbyElements(Element, List<BuiltInCategory>, Document?, double)
+  nameWithType: ElementServices.GetNearbyElements(Element, List<BuiltInCategory>, Document?, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element, System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>, Autodesk.Revit.DB.Document?, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: ''
+  example: []
+  syntax:
+    content: public static List<Element> GetNearbyElements(this Element element, List<BuiltInCategory> categories, Document? docToSearch = null, double searchDistance = 0)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    - id: categories
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+      description: ''
+    - id: docToSearch
+      type: Autodesk.Revit.DB.Document
+      description: ''
+    - id: searchDistance
+      type: System.Double
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+      description: ''
+    content.vb: Public Shared Function GetNearbyElements(element As Element, categories As List(Of BuiltInCategory), docToSearch As Document = Nothing, searchDistance As Double = 0) As List(Of Element)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: ElementServices.GetNearbyElements(Element, List(Of BuiltInCategory), Document, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element, System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory), Autodesk.Revit.DB.Document, Double)
+  name.vb: GetNearbyElements(Element, List(Of BuiltInCategory), Document, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased(Autodesk.Revit.DB.Element)
+  id: IsLineBased(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsLineBased(Element)
+  nameWithType: ElementServices.IsLineBased(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method that returns whether this element is line base or not
+  example: []
+  syntax:
+    content: public static bool IsLineBased(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsLineBased(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine(Autodesk.Revit.DB.Element)
+  id: GetLineBasedBoundLine(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetLineBasedBoundLine(Element)
+  nameWithType: ElementServices.GetLineBasedBoundLine(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to get line based element bound line
+  example: []
+  syntax:
+    content: public static Line GetLineBasedBoundLine(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.Line
+      description: ''
+    content.vb: Public Shared Function GetLineBasedBoundLine(element As Element) As Line
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection(Autodesk.Revit.DB.Element)
+  id: GetLineBasedDirection(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetLineBasedDirection(Element)
+  nameWithType: ElementServices.GetLineBasedDirection(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method that returns line based element direction
+  example: []
+  syntax:
+    content: public static XYZ GetLineBasedDirection(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    content.vb: Public Shared Function GetLineBasedDirection(element As Element) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
+  id: GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetSolids(Element, Options?)
+  nameWithType: ElementServices.GetSolids(Element, Options?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.Options?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to get element solids
+  example: []
+  syntax:
+    content: public static IEnumerable<Solid> GetSolids(this Element element, Options? options = null)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to get solids
+    - id: options
+      type: Autodesk.Revit.DB.Options
+      description: Geometry options to get element solids
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Solid}
+      description: ''
+    content.vb: Public Shared Function GetSolids(element As Element, options As Options = Nothing) As IEnumerable(Of Solid)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids*
+  nameWithType.vb: ElementServices.GetSolids(Element, Options)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.Options)
+  name.vb: GetSolids(Element, Options)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel(Autodesk.Revit.DB.Element)
+  id: GetLevel(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetLevel(Element)
+  nameWithType: ElementServices.GetLevel(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to get element level.
+  example: []
+  syntax:
+    content: public static Level GetLevel(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.Level
+      description: ''
+    content.vb: Public Shared Function GetLevel(element As Element) As Level
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  id: GetFacesByDirection(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetFacesByDirection(Element, Document, XYZ)
+  nameWithType: ElementServices.GetFacesByDirection(Element, Document, XYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to get element faces by direction
+  example: []
+  syntax:
+    content: public static List<Face> GetFacesByDirection(this Element element, Document doc, XYZ direction)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: ''
+    - id: direction
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+      description: ''
+    content.vb: Public Shared Function GetFacesByDirection(element As Element, doc As Document, direction As XYZ) As List(Of Face)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.BuiltInCategory)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.BuiltInCategory)
+  id: IsFromCategory(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.BuiltInCategory)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsFromCategory(Element, BuiltInCategory)
+  nameWithType: ElementServices.IsFromCategory(Element, BuiltInCategory)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.BuiltInCategory)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to check if an Element belongs to a given BuiltInCategory
+  example: []
+  syntax:
+    content: public static bool IsFromCategory(this Element element, BuiltInCategory bic)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to check
+    - id: bic
+      type: Autodesk.Revit.DB.BuiltInCategory
+      description: BuiltInCategory to compare
+    return:
+      type: System.Boolean
+      description: Whether Element belongs to given BuiltInCategory or not
+    content.vb: Public Shared Function IsFromCategory(element As Element, bic As BuiltInCategory) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement(Autodesk.Revit.DB.Element)
+  id: IsValidElement(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsValidElement(Element)
+  nameWithType: ElementServices.IsValidElement(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks if an Element is valid on its Document
+  example: []
+  syntax:
+    content: public static bool IsValidElement(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to check
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsValidElement(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement(Autodesk.Revit.DB.Element)
+  id: IsLinkedElement(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsLinkedElement(Element)
+  nameWithType: ElementServices.IsLinkedElement(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks whether an element is linked or not
+  example: []
+  syntax:
+    content: public static bool IsLinkedElement(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsLinkedElement(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
+  id: GetRooms(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetRooms(Element)
+  nameWithType: ElementServices.GetRooms(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    <p>Extension method to get Rooms which element is within</p>
+
+    <i>This method collects Rooms from Document in which the Element resides in</i>
+  example: []
+  syntax:
+    content: public static IEnumerable<Room> GetRooms(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room}
+      description: ''
+    content.vb: Public Shared Function GetRooms(element As Element) As IEnumerable(Of Room)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
+  id: GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetRooms(Element, IEnumerable<Room>)
+  nameWithType: ElementServices.GetRooms(Element, IEnumerable<Room>)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Architecture.Room>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    <p>Extension method to get Rooms which element is within</p>
+
+    <i>You need to provide Rooms to check</i>
+  example: []
+  syntax:
+    content: public static IEnumerable<Room> GetRooms(this Element element, IEnumerable<Room> roomsToCheck)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    - id: roomsToCheck
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room}
+      description: ''
+    content.vb: Public Shared Function GetRooms(element As Element, roomsToCheck As IEnumerable(Of Room)) As IEnumerable(Of Room)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms*
+  nameWithType.vb: ElementServices.GetRooms(Element, IEnumerable(Of Room))
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Architecture.Room))
+  name.vb: GetRooms(Element, IEnumerable(Of Room))
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint(Autodesk.Revit.DB.Element)
+  id: GetLocationAsPoint(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetLocationAsPoint(Element)
+  nameWithType: ElementServices.GetLocationAsPoint(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Extension method to get element location as point
+  example: []
+  syntax:
+    content: public static XYZ? GetLocationAsPoint(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: ''
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    content.vb: Public Shared Function GetLocationAsPoint(element As Element) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  id: GetBoundingBoxFilter(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetBoundingBoxFilter(Element, double, RevitLinkInstance?)
+  nameWithType: ElementServices.GetBoundingBoxFilter(Element, double, RevitLinkInstance?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter(Autodesk.Revit.DB.Element, double, Autodesk.Revit.DB.RevitLinkInstance?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Returns a BoundingBoxIntersectsFilter based on the bounding box of the element.
+  example: []
+  syntax:
+    content: public static BoundingBoxIntersectsFilter GetBoundingBoxFilter(this Element element, double offset = 0, RevitLinkInstance? linkInstance = null)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to get the bounding box filter for.
+    - id: offset
+      type: System.Double
+      description: The offset value to expand or shrink the bounding box.
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The link instance that the element belongs to. Leave null if the element is not linked.
+    return:
+      type: Autodesk.Revit.DB.BoundingBoxIntersectsFilter
+      description: A BoundingBoxIntersectsFilter based on the bounding box of the element.
+    content.vb: Public Shared Function GetBoundingBoxFilter(element As Element, offset As Double = 0, linkInstance As RevitLinkInstance = Nothing) As BoundingBoxIntersectsFilter
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter*
+  nameWithType.vb: ElementServices.GetBoundingBoxFilter(Element, Double, RevitLinkInstance)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter(Autodesk.Revit.DB.Element, Double, Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: GetBoundingBoxFilter(Element, Double, RevitLinkInstance)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  id: GetBoundingBox(Autodesk.Revit.DB.Element,System.Double,Autodesk.Revit.DB.RevitLinkInstance)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetBoundingBox(Element, double, RevitLinkInstance?)
+  nameWithType: ElementServices.GetBoundingBox(Element, double, RevitLinkInstance?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox(Autodesk.Revit.DB.Element, double, Autodesk.Revit.DB.RevitLinkInstance?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the bounding box of an element.
+  example: []
+  syntax:
+    content: public static BoundingBoxXYZ GetBoundingBox(this Element element, double offset = 0, RevitLinkInstance? linkInstance = null)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to get the bounding box of.
+    - id: offset
+      type: System.Double
+      description: The offset value to expand or shrink the bounding box. Default value is 0.
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: >-
+        The link instance that the element belongs to.
+
+        Leave null if the element is not linked. Default value is null.
+    return:
+      type: Autodesk.Revit.DB.BoundingBoxXYZ
+      description: The bounding box of the element.
+    content.vb: Public Shared Function GetBoundingBox(element As Element, offset As Double = 0, linkInstance As RevitLinkInstance = Nothing) As BoundingBoxXYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox*
+  nameWithType.vb: ElementServices.GetBoundingBox(Element, Double, RevitLinkInstance)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox(Autodesk.Revit.DB.Element, Double, Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: GetBoundingBox(Element, Double, RevitLinkInstance)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement(Autodesk.Revit.DB.Element)
+  id: IsAnnotationElement(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsAnnotationElement(Element)
+  nameWithType: ElementServices.IsAnnotationElement(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks whether an element is an Annotation Element or not
+  example: []
+  syntax:
+    content: public static bool IsAnnotationElement(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to check
+    return:
+      type: System.Boolean
+      description: Whether the element is an Annotation Element or not
+    content.vb: Public Shared Function IsAnnotationElement(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace(Autodesk.Revit.DB.Element)
+  id: IsModelInPlace(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsModelInPlace(Element)
+  nameWithType: ElementServices.IsModelInPlace(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks whether an element is Model In Place or not
+  example: []
+  syntax:
+    content: public static bool IsModelInPlace(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to check
+    return:
+      type: System.Boolean
+      description: Whether the element is Model in place or not
+    content.vb: Public Shared Function IsModelInPlace(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Double)
+  id: GetAnnotationOutline(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetAnnotationOutline(Element, View, double)
+  nameWithType: ElementServices.GetAnnotationOutline(Element, View, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.View, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get annotation element <xref href="Autodesk.Revit.DB.Outline" data-throw-if-not-resolved="false"></xref> projected on view plane
+  example: []
+  syntax:
+    content: public static Outline GetAnnotationOutline(this Element element, View view, double offset = 0)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Annotation element to get Outline in view
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View used to get element Outline
+    - id: offset
+      type: System.Double
+      description: Outline offset in Internal units
+    return:
+      type: Autodesk.Revit.DB.Outline
+      description: Annotation Outline
+    content.vb: Public Shared Function GetAnnotationOutline(element As Element, view As View, offset As Double = 0) As Outline
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline*
+  nameWithType.vb: ElementServices.GetAnnotationOutline(Element, View, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.View, Double)
+  name.vb: GetAnnotationOutline(Element, View, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.Color)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.Color)
+  id: CheckAnnotationsClashes(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.Color)
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: CheckAnnotationsClashes(IEnumerable<Element>, Color?)
+  nameWithType: ElementServices.CheckAnnotationsClashes(IEnumerable<Element>, Color?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>, Autodesk.Revit.DB.Color?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks if there is any clash between provided annotations.
+  remarks: Provided elements that are not in clash will have their overrides cleaned up.
+  example: []
+  syntax:
+    content: public static HashSet<Element> CheckAnnotationsClashes(IEnumerable<Element> annotationElements, Color? clashColor = null)
+    parameters:
+    - id: annotationElements
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+      description: Elements to clash test. Must be from Annotation Categories.
+    - id: clashColor
+      type: Autodesk.Revit.DB.Color
+      description: Color to set overrides in case elements are in clash. Leave null to not set overrides.
+    return:
+      type: System.Collections.Generic.HashSet{Autodesk.Revit.DB.Element}
+      description: Clashed elements
+    content.vb: Public Shared Function CheckAnnotationsClashes(annotationElements As IEnumerable(Of Element), clashColor As Color = Nothing) As HashSet(Of Element)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes*
+  nameWithType.vb: ElementServices.CheckAnnotationsClashes(IEnumerable(Of Element), Color)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element), Autodesk.Revit.DB.Color)
+  name.vb: CheckAnnotationsClashes(IEnumerable(Of Element), Color)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked(Autodesk.Revit.DB.Element)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked(Autodesk.Revit.DB.Element)
+  id: IsLinked(Autodesk.Revit.DB.Element)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: IsLinked(Element)
+  nameWithType: ElementServices.IsLinked(Element)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked(Autodesk.Revit.DB.Element)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Determines whether an element is on a linked model or not
+  example: []
+  syntax:
+    content: public static bool IsLinked(this Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to test
+    return:
+      type: System.Boolean
+      description: Whether the element is on a linked model
+    content.vb: Public Shared Function IsLinked(element As Element) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance)
+  id: BelongsToLinkedModel(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: BelongsToLinkedModel(Element, RevitLinkInstance)
+  nameWithType: ElementServices.BelongsToLinkedModel(Element, RevitLinkInstance)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.RevitLinkInstance)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Determines whether an element belongs to a linked model or not.
+  example: []
+  syntax:
+    content: public static bool BelongsToLinkedModel(this Element element, RevitLinkInstance linkInstance)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to check.
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The link instance to check if the element belongs to.
+    return:
+      type: System.Boolean
+      description: True if the element belongs to the linked model, otherwise false.
+    content.vb: Public Shared Function BelongsToLinkedModel(element As Element, linkInstance As RevitLinkInstance) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.View,Autodesk.Revit.DB.OverrideGraphicSettings)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.View,Autodesk.Revit.DB.OverrideGraphicSettings)
+  id: SetElementsOverrides(System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.View,Autodesk.Revit.DB.OverrideGraphicSettings)
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: SetElementsOverrides(List<Element>, View, OverrideGraphicSettings)
+  nameWithType: ElementServices.SetElementsOverrides(List<Element>, View, OverrideGraphicSettings)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List<Autodesk.Revit.DB.Element>, Autodesk.Revit.DB.View, Autodesk.Revit.DB.OverrideGraphicSettings)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Set elements overrides
+  example: []
+  syntax:
+    content: public static void SetElementsOverrides(List<Element> elements, View view, OverrideGraphicSettings overrideGraphicSettings)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+      description: ''
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: ''
+    - id: overrideGraphicSettings
+      type: Autodesk.Revit.DB.OverrideGraphicSettings
+      description: ''
+    content.vb: Public Shared Sub SetElementsOverrides(elements As List(Of Element), view As View, overrideGraphicSettings As OverrideGraphicSettings)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides*
+  nameWithType.vb: ElementServices.SetElementsOverrides(List(Of Element), View, OverrideGraphicSettings)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), Autodesk.Revit.DB.View, Autodesk.Revit.DB.OverrideGraphicSettings)
+  name.vb: SetElementsOverrides(List(Of Element), View, OverrideGraphicSettings)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+  id: HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
+  nameWithType: ElementServices.HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, out DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Check if an Element has a parameter by passing a <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> and
+
+    directly comparing <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.<xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name" data-throw-if-not-resolved="false"></xref> with Element
+
+    parameters names, to lookup for a match.
+  example: []
+  syntax:
+    content: public static bool HasParameter(this Element element, ElementParameter elementParameter, out AccessParameterInfo accessParameterInfo, Regex? regex = null)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to get parameter
+    - id: elementParameter
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+      description: Parameter data to get
+    - id: accessParameterInfo
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+      description: Stores parameter access results.
+    - id: regex
+      type: System.Text.RegularExpressions.Regex
+      description: >-
+        Regular expression to lookup parameter.
+
+        Set null to use <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.<xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name" data-throw-if-not-resolved="false"></xref>
+
+        property without regex (faster).
+    return:
+      type: System.Boolean
+      description: Whether the element is valid or not
+    content.vb: Public Shared Function HasParameter(element As Element, elementParameter As ElementParameter, accessParameterInfo As AccessParameterInfo, regex As Regex = Nothing) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*
+  nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex)
+  name.vb: HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  id: GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetParameters(Element, IEnumerable<ElementParameter>, AccessElementParameterOptions)
+  nameWithType: ElementServices.GetParameters(Element, IEnumerable<ElementParameter>, AccessElementParameterOptions)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Retrieves the parameters of a Revit element based on the specified list of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static IEnumerable<AccessParameterInfo> GetParameters(this Element element, IEnumerable<ElementParameter> elementParameters, AccessElementParameterOptions options)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The Revit element whose parameters are to be retrieved.
+    - id: elementParameters
+      type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
+      description: The array of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> instances that specify the parameters to retrieve.
+    - id: options
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      description: Options to get parameter.
+    return:
+      type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+      description: An enumerable collection of parameters matching the specified element parameters.
+    content.vb: Public Shared Function GetParameters(element As Element, elementParameters As IEnumerable(Of ElementParameter), options As AccessElementParameterOptions) As IEnumerable(Of AccessParameterInfo)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters*
+  nameWithType.vb: ElementServices.GetParameters(Element, IEnumerable(Of ElementParameter), AccessElementParameterOptions)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter), DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  name.vb: GetParameters(Element, IEnumerable(Of ElementParameter), AccessElementParameterOptions)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  id: GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: GetParameter(Element, ElementParameter, AccessElementParameterOptions)
+  nameWithType: ElementServices.GetParameter(Element, ElementParameter, AccessElementParameterOptions)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get Parameter from Element using Regex.
+  remarks: Element could be a Instance or a Type.
+  example: []
+  syntax:
+    content: public static AccessParameterInfo GetParameter(this Element element, ElementParameter elementParameter, AccessElementParameterOptions options)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element to get parameter
+    - id: elementParameter
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+      description: Parameter to get
+    - id: options
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      description: Options to get parameter.
+    return:
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+      description: Revit parameter from
+    content.vb: Public Shared Function GetParameter(element As Element, elementParameter As ElementParameter, options As AccessElementParameterOptions) As AccessParameterInfo
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  id: SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
+  langs:
+  - csharp
+  - vb
+  name: SetParameters(Element, AccessElementParameterOptions, params IEnumerable<ElementParameter>)
+  nameWithType: ElementServices.SetParameters(Element, AccessElementParameterOptions, params IEnumerable<ElementParameter>)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions, params System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Sets parameters for a specified Revit element based on the provided parameter collection and options.
+  example: []
+  syntax:
+    content: public static IEnumerable<AccessParameterInfo> SetParameters(this Element element, AccessElementParameterOptions options, params IEnumerable<ElementParameter> elementParameters)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Revit element to set parameters on.
+    - id: options
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      description: Settings or options that determine how the parameters are applied to the element.
+    - id: elementParameters
+      type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
+      description: Collection of parameters to be set on the element.
+    return:
+      type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+      description: A collection of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo" data-throw-if-not-resolved="false"></xref> objects containing details of the parameter setting results.
+    content.vb: Public Shared Function SetParameters(element As Element, options As AccessElementParameterOptions, elementParameters As IEnumerable(Of ElementParameter)) As IEnumerable(Of AccessParameterInfo)
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters*
+  nameWithType.vb: ElementServices.SetParameters(Element, AccessElementParameterOptions, IEnumerable(Of ElementParameter))
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter))
+  name.vb: SetParameters(Element, AccessElementParameterOptions, IEnumerable(Of ElementParameter))
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsCutByView_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_View_System_Collections_Generic_List_Autodesk_Revit_DB_Solid___Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Options_System_Double_
+  name: IsCutByView
+  nameWithType: ElementServices.IsCutByView
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView
+- uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Solid}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Solid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Solid>
+  nameWithType: List<Solid>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Solid>
+  nameWithType.vb: List(Of Solid)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Solid)
+  name.vb: List(Of Solid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
+- uid: Autodesk.Revit.DB.Options
+  commentId: T:Autodesk.Revit.DB.Options
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Options
+  nameWithType: Options
+  fullName: Autodesk.Revit.DB.Options
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetElementsBoundingBox_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_Element__
+  name: GetElementsBoundingBox
+  nameWithType: ElementServices.GetElementsBoundingBox
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetElementsBoundingBox
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.BoundingBoxXYZ
+  commentId: T:Autodesk.Revit.DB.BoundingBoxXYZ
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BoundingBoxXYZ
+  nameWithType: BoundingBoxXYZ
+  fullName: Autodesk.Revit.DB.BoundingBoxXYZ
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetNearbyElements_Autodesk_Revit_DB_Element_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__Autodesk_Revit_DB_Document_System_Double_
+  name: GetNearbyElements
+  nameWithType: ElementServices.GetNearbyElements
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BuiltInCategory>
+  nameWithType: List<BuiltInCategory>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: List(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: List(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsLineBased_Autodesk_Revit_DB_Element_
+  name: IsLineBased
+  nameWithType: ElementServices.IsLineBased
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLineBased
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetLineBasedBoundLine_Autodesk_Revit_DB_Element_
+  name: GetLineBasedBoundLine
+  nameWithType: ElementServices.GetLineBasedBoundLine
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedBoundLine
+- uid: Autodesk.Revit.DB.Line
+  commentId: T:Autodesk.Revit.DB.Line
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Line
+  nameWithType: Line
+  fullName: Autodesk.Revit.DB.Line
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetLineBasedDirection_Autodesk_Revit_DB_Element_
+  name: GetLineBasedDirection
+  nameWithType: ElementServices.GetLineBasedDirection
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetSolids_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_Options_
+  name: GetSolids
+  nameWithType: ElementServices.GetSolids
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Solid}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Solid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Solid>
+  nameWithType: IEnumerable<Solid>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Solid>
+  nameWithType.vb: IEnumerable(Of Solid)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Solid)
+  name.vb: IEnumerable(Of Solid)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetLevel_Autodesk_Revit_DB_Element_
+  name: GetLevel
+  nameWithType: ElementServices.GetLevel
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLevel
+- uid: Autodesk.Revit.DB.Level
+  commentId: T:Autodesk.Revit.DB.Level
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Level
+  nameWithType: Level
+  fullName: Autodesk.Revit.DB.Level
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetFacesByDirection_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_
+  name: GetFacesByDirection
+  nameWithType: ElementServices.GetFacesByDirection
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetFacesByDirection
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Face>
+  nameWithType: List<Face>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Face>
+  nameWithType.vb: List(Of Face)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Face)
+  name.vb: List(Of Face)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsFromCategory_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_BuiltInCategory_
+  name: IsFromCategory
+  nameWithType: ElementServices.IsFromCategory
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory
+- uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BuiltInCategory
+  nameWithType: BuiltInCategory
+  fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsValidElement_Autodesk_Revit_DB_Element_
+  name: IsValidElement
+  nameWithType: ElementServices.IsValidElement
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsLinkedElement_Autodesk_Revit_DB_Element_
+  name: IsLinkedElement
+  nameWithType: ElementServices.IsLinkedElement
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinkedElement
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetRooms_Autodesk_Revit_DB_Element_
+  name: GetRooms
+  nameWithType: ElementServices.GetRooms
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Room>
+  nameWithType: IEnumerable<Room>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Architecture.Room>
+  nameWithType.vb: IEnumerable(Of Room)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Architecture.Room)
+  name.vb: IEnumerable(Of Room)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Architecture.Room
+    name: Room
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Architecture.Room
+    name: Room
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetLocationAsPoint_Autodesk_Revit_DB_Element_
+  name: GetLocationAsPoint
+  nameWithType: ElementServices.GetLocationAsPoint
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetBoundingBoxFilter_Autodesk_Revit_DB_Element_System_Double_Autodesk_Revit_DB_RevitLinkInstance_
+  name: GetBoundingBoxFilter
+  nameWithType: ElementServices.GetBoundingBoxFilter
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBoxFilter
+- uid: Autodesk.Revit.DB.BoundingBoxIntersectsFilter
+  commentId: T:Autodesk.Revit.DB.BoundingBoxIntersectsFilter
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: BoundingBoxIntersectsFilter
+  nameWithType: BoundingBoxIntersectsFilter
+  fullName: Autodesk.Revit.DB.BoundingBoxIntersectsFilter
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetBoundingBox_Autodesk_Revit_DB_Element_System_Double_Autodesk_Revit_DB_RevitLinkInstance_
+  name: GetBoundingBox
+  nameWithType: ElementServices.GetBoundingBox
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetBoundingBox
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsAnnotationElement_Autodesk_Revit_DB_Element_
+  name: IsAnnotationElement
+  nameWithType: ElementServices.IsAnnotationElement
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsModelInPlace_Autodesk_Revit_DB_Element_
+  name: IsModelInPlace
+  nameWithType: ElementServices.IsModelInPlace
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace
+- uid: Autodesk.Revit.DB.Outline
+  commentId: T:Autodesk.Revit.DB.Outline
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Outline
+  nameWithType: Outline
+  fullName: Autodesk.Revit.DB.Outline
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetAnnotationOutline_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_View_System_Double_
+  name: GetAnnotationOutline
+  nameWithType: ElementServices.GetAnnotationOutline
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetAnnotationOutline
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_CheckAnnotationsClashes_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__Autodesk_Revit_DB_Color_
+  name: CheckAnnotationsClashes
+  nameWithType: ElementServices.CheckAnnotationsClashes
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.CheckAnnotationsClashes
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Element>
+  nameWithType: IEnumerable<Element>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>
+  nameWithType.vb: IEnumerable(Of Element)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element)
+  name.vb: IEnumerable(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.Color
+  commentId: T:Autodesk.Revit.DB.Color
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Autodesk.Revit.DB.Color
+- uid: System.Collections.Generic.HashSet{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.HashSet{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<Element>
+  nameWithType: HashSet<Element>
+  fullName: System.Collections.Generic.HashSet<Autodesk.Revit.DB.Element>
+  nameWithType.vb: HashSet(Of Element)
+  fullName.vb: System.Collections.Generic.HashSet(Of Autodesk.Revit.DB.Element)
+  name.vb: HashSet(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_IsLinked_Autodesk_Revit_DB_Element_
+  name: IsLinked
+  nameWithType: ElementServices.IsLinked
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.IsLinked
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_BelongsToLinkedModel_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_RevitLinkInstance_
+  name: BelongsToLinkedModel
+  nameWithType: ElementServices.BelongsToLinkedModel
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.BelongsToLinkedModel
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_SetElementsOverrides_System_Collections_Generic_List_Autodesk_Revit_DB_Element__Autodesk_Revit_DB_View_Autodesk_Revit_DB_OverrideGraphicSettings_
+  name: SetElementsOverrides
+  nameWithType: ElementServices.SetElementsOverrides
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides
+- uid: Autodesk.Revit.DB.OverrideGraphicSettings
+  commentId: T:Autodesk.Revit.DB.OverrideGraphicSettings
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: OverrideGraphicSettings
+  nameWithType: OverrideGraphicSettings
+  fullName: Autodesk.Revit.DB.OverrideGraphicSettings
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  name: ElementParameter
+  nameWithType: ElementParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Name
+  name: Name
+  nameWithType: ElementParameter.Name
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__System_Text_RegularExpressions_Regex_
+  name: HasParameter
+  nameWithType: ElementServices.HasParameter
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  name: AccessParameterInfo
+  nameWithType: AccessParameterInfo
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+- uid: System.Text.RegularExpressions.Regex
+  commentId: T:System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers
+  commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.ParametersHandlers
+  nameWithType: DynamoForRevitUtils.Entities.ParametersHandlers
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers
+    name: ParametersHandlers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.html
+- uid: System.Text.RegularExpressions
+  commentId: N:System.Text.RegularExpressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.RegularExpressions
+  nameWithType: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.RegularExpressions
+    name: RegularExpressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.RegularExpressions
+    name: RegularExpressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_Autodesk_Revit_DB_Element_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  name: GetParameters
+  nameWithType: ElementServices.GetParameters
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters
+- uid: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
+  commentId: T:System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ElementParameter>
+  nameWithType: IEnumerable<ElementParameter>
+  fullName: System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>
+  nameWithType.vb: IEnumerable(Of ElementParameter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)
+  name.vb: IEnumerable(Of ElementParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+    name: ElementParameter
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+    name: ElementParameter
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  - name: )
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html
+  name: AccessElementParameterOptions
+  nameWithType: AccessElementParameterOptions
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+- uid: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<AccessParameterInfo>
+  nameWithType: IEnumerable<AccessParameterInfo>
+  fullName: System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo>
+  nameWithType.vb: IEnumerable(Of AccessParameterInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: IEnumerable(Of AccessParameterInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+    name: AccessParameterInfo
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  name: GetParameter
+  nameWithType: ElementServices.GetParameter
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__
+  name: SetParameters
+  nameWithType: ElementServices.SetParameters
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters

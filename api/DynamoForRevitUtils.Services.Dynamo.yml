@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Dynamo
+  commentId: N:DynamoForRevitUtils.Services.Dynamo
+  id: DynamoForRevitUtils.Services.Dynamo
+  children:
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  - DynamoForRevitUtils.Services.Dynamo.JoinLinesServices
+  - DynamoForRevitUtils.Services.Dynamo.RevitElementsServices
+  - DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.Dynamo
+  nameWithType: DynamoForRevitUtils.Services.Dynamo
+  fullName: DynamoForRevitUtils.Services.Dynamo
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html
+  name: BoundingBoxServices
+  nameWithType: BoundingBoxServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html
+  name: DynamoGeometryServices
+  nameWithType: DynamoGeometryServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+- uid: DynamoForRevitUtils.Services.Dynamo.JoinLinesServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.JoinLinesServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.html
+  name: JoinLinesServices
+  nameWithType: JoinLinesServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.JoinLinesServices
+- uid: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.RevitElementsServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.html
+  name: RevitElementsServices
+  nameWithType: RevitElementsServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices
+- uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.TopographyServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.TopographyServices.html
+  name: TopographyServices
+  nameWithType: TopographyServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices

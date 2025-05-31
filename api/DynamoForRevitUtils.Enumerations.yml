@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  id: DynamoForRevitUtils.Enumerations
+  children:
+  - DynamoForRevitUtils.Enumerations.AccessParameterMode
+  - DynamoForRevitUtils.Enumerations.AccessParameterResult
+  - DynamoForRevitUtils.Enumerations.Coordinate
+  - DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  - DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  - DynamoForRevitUtils.Enumerations.ParameterDataType
+  - DynamoForRevitUtils.Enumerations.ParameterKind
+  - DynamoForRevitUtils.Enumerations.ParameterValidationResult
+  - DynamoForRevitUtils.Enumerations.RoofLineType
+  - DynamoForRevitUtils.Enumerations.SelectionMethod
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterMode
+  commentId: T:DynamoForRevitUtils.Enumerations.AccessParameterMode
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.AccessParameterMode.html
+  name: AccessParameterMode
+  nameWithType: AccessParameterMode
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterMode
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
+  commentId: T:DynamoForRevitUtils.Enumerations.AccessParameterResult
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  name: AccessParameterResult
+  nameWithType: AccessParameterResult
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: DynamoForRevitUtils.Enumerations.Coordinate
+  commentId: T:DynamoForRevitUtils.Enumerations.Coordinate
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: DynamoForRevitUtils.Enumerations.Coordinate
+- uid: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  commentId: T:DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.html
+  name: DoubleParameterConvertionMode
+  nameWithType: DoubleParameterConvertionMode
+  fullName: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  commentId: T:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.html
+  name: ElementParameterYesNoValue
+  nameWithType: ElementParameterYesNoValue
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+- uid: DynamoForRevitUtils.Enumerations.ParameterDataType
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterDataType
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterDataType.html
+  name: ParameterDataType
+  nameWithType: ParameterDataType
+  fullName: DynamoForRevitUtils.Enumerations.ParameterDataType
+- uid: DynamoForRevitUtils.Enumerations.ParameterKind
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterKind
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterKind.html
+  name: ParameterKind
+  nameWithType: ParameterKind
+  fullName: DynamoForRevitUtils.Enumerations.ParameterKind
+- uid: DynamoForRevitUtils.Enumerations.ParameterValidationResult
+  commentId: T:DynamoForRevitUtils.Enumerations.ParameterValidationResult
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ParameterValidationResult.html
+  name: ParameterValidationResult
+  nameWithType: ParameterValidationResult
+  fullName: DynamoForRevitUtils.Enumerations.ParameterValidationResult
+- uid: DynamoForRevitUtils.Enumerations.RoofLineType
+  commentId: T:DynamoForRevitUtils.Enumerations.RoofLineType
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.RoofLineType.html
+  name: RoofLineType
+  nameWithType: RoofLineType
+  fullName: DynamoForRevitUtils.Enumerations.RoofLineType
+- uid: DynamoForRevitUtils.Enumerations.SelectionMethod
+  commentId: T:DynamoForRevitUtils.Enumerations.SelectionMethod
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.SelectionMethod.html
+  name: SelectionMethod
+  nameWithType: SelectionMethod
+  fullName: DynamoForRevitUtils.Enumerations.SelectionMethod
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html

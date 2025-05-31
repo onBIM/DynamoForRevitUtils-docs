@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  id: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  children:
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown
+  - DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown.html
+  name: ParameterDataTypeDropDown
+  nameWithType: ParameterDataTypeDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown
+  commentId: T:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown
+  parent: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown.html
+  name: ParameterKindDropDown
+  nameWithType: ParameterKindDropDown
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown
+- uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  commentId: N:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  nameWithType: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  fullName: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+    name: DropDownElementParameterNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes
+    name: DropDownNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes
+    name: DropDownElementParameterNodes
+    isExternal: true
+    href: DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.html

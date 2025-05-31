@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../output/Release2025/",
+          "files": [
+            "DynamoForRevitUtils.dll"
+          ]
+        }
+      ],
+      "dest": "api",
+      "references": [
+        "../output/Release2025/CoreNodeModels.dll",
+        "../output/Release2025/CoreNodeModelsWpf.dll",
+        "../output/Release2025/DSCoreNodes.dll",
+        "../output/Release2025/DynamoCore.dll",
+        "../output/Release2025/DynamoCoreWpf.dll",
+        "../output/Release2025/DynamoServices.dll",
+        "../output/Release2025/DynamoUtilities.dll",
+        "../output/Release2025/GeometryColor.dll",
+        "../output/Release2025/MathNet.Numerics.dll",
+        "../output/Release2025/NewtonSoft.Json.dll",
+        "../output/Release2025/ProtoCore.dll",
+        "../output/Release2025/ProtoGeometry.dll",
+        "../output/Release2025/RevitAPI.dll",
+        "../output/Release2025/RevitAPIIFC.dll",
+        "../output/Release2025/RevitAPIUI.dll",
+        "../output/Release2025/RevitNodes.dll",
+        "../output/Release2025/RevitServices.dll"
+      ]
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "templates/singulinkfx",
+      "templates/singulinkfx-onbim"
+    ],
+    "globalMetadata": {
+      "_appName": "DynamoForRevitUtils - Docs",
+      "_appTitle": "DynamoForRevitUtils - Docs",
+      "_enableSearch": true,
+      "pdf": false,
+      "_appFaviconPath": "images/onbim-logo-128x128.png",
+      "_appLogoPath": "images/onbim-logo-128x128.png",
+      "_appFooter":"onBIM Technology",
+      "_copyrightFooter": "© onBIM Technology. All rights reserved.",
+      "_disableContribution": true
+    }
+  }
+}

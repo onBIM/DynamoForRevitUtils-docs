@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry
+  commentId: N:DynamoForRevitUtils.Entities.AbstractGeometry
+  id: DynamoForRevitUtils.Entities.AbstractGeometry
+  children:
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
+  - DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Entities.AbstractGeometry
+  nameWithType: DynamoForRevitUtils.Entities.AbstractGeometry
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.html
+  name: AbstractBoundingBox
+  nameWithType: AbstractBoundingBox
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem.html
+  name: AbstractCoordinateSystem
+  nameWithType: AbstractCoordinateSystem
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.html
+  name: AbstractGeometryBase<T>
+  nameWithType: AbstractGeometryBase<T>
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase<T>
+  nameWithType.vb: AbstractGeometryBase(Of T)
+  fullName.vb: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase(Of T)
+  name.vb: AbstractGeometryBase(Of T)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+    name: AbstractGeometryBase
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+    name: AbstractGeometryBase
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.html
+  name: AbstractVector
+  nameWithType: AbstractVector
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+  parent: DynamoForRevitUtils.Entities.AbstractGeometry
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.html
+  name: IAbstractGeometry
+  nameWithType: IAbstractGeometry
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry
+  commentId: N:DynamoForRevitUtils.Entities.AbstractGeometry
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.AbstractGeometry
+  nameWithType: DynamoForRevitUtils.Entities.AbstractGeometry
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry
+    name: AbstractGeometry
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry
+    name: AbstractGeometry
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.html

@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.EqualityComparers
+  commentId: N:DynamoForRevitUtils.Entities.EqualityComparers
+  id: DynamoForRevitUtils.Entities.EqualityComparers
+  children:
+  - DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer
+  - DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Entities.EqualityComparers
+  nameWithType: DynamoForRevitUtils.Entities.EqualityComparers
+  fullName: DynamoForRevitUtils.Entities.EqualityComparers
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer
+  commentId: T:DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.html
+  name: ElementComparer
+  nameWithType: ElementComparer
+  fullName: DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer
+- uid: DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer
+  commentId: T:DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.html
+  name: ElementReferenceComparer
+  nameWithType: ElementReferenceComparer
+  fullName: DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer

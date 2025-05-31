@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.MathServices
+  commentId: N:DynamoForRevitUtils.Services.MathServices
+  id: DynamoForRevitUtils.Services.MathServices
+  children:
+  - DynamoForRevitUtils.Services.MathServices.ArithmeticServices
+  - DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices
+  - DynamoForRevitUtils.Services.MathServices.RangeServices
+  - DynamoForRevitUtils.Services.MathServices.SequenceServices
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitUtils.Services.MathServices
+  nameWithType: DynamoForRevitUtils.Services.MathServices
+  fullName: DynamoForRevitUtils.Services.MathServices
+  type: Namespace
+  assemblies:
+  - DynamoForRevitUtils
+references:
+- uid: DynamoForRevitUtils.Services.MathServices.ArithmeticServices
+  commentId: T:DynamoForRevitUtils.Services.MathServices.ArithmeticServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.MathServices.ArithmeticServices.html
+  name: ArithmeticServices
+  nameWithType: ArithmeticServices
+  fullName: DynamoForRevitUtils.Services.MathServices.ArithmeticServices
+- uid: DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices
+  commentId: T:DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.html
+  name: LinearAlgebraServices
+  nameWithType: LinearAlgebraServices
+  fullName: DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices
+- uid: DynamoForRevitUtils.Services.MathServices.RangeServices
+  commentId: T:DynamoForRevitUtils.Services.MathServices.RangeServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.MathServices.RangeServices.html
+  name: RangeServices
+  nameWithType: RangeServices
+  fullName: DynamoForRevitUtils.Services.MathServices.RangeServices
+- uid: DynamoForRevitUtils.Services.MathServices.SequenceServices
+  commentId: T:DynamoForRevitUtils.Services.MathServices.SequenceServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.MathServices.SequenceServices.html
+  name: SequenceServices
+  nameWithType: SequenceServices
+  fullName: DynamoForRevitUtils.Services.MathServices.SequenceServices

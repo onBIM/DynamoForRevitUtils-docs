@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitNodeModels.Enumerations
+  commentId: N:DynamoForRevitNodeModels.Enumerations
+  id: DynamoForRevitNodeModels.Enumerations
+  children:
+  - DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  langs:
+  - csharp
+  - vb
+  name: DynamoForRevitNodeModels.Enumerations
+  nameWithType: DynamoForRevitNodeModels.Enumerations
+  fullName: DynamoForRevitNodeModels.Enumerations
+  type: Namespace
+  assemblies:
+  - DynamoForRevitNodeModels
+references:
+- uid: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  commentId: T:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+  parent: DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.html
+  name: NodeModelMetadataType
+  nameWithType: NodeModelMetadataType
+  fullName: DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType
+- uid: DynamoForRevitNodeModels.Enumerations
+  commentId: N:DynamoForRevitNodeModels.Enumerations
+  isExternal: true
+  href: DynamoForRevitNodeModels.html
+  name: DynamoForRevitNodeModels.Enumerations
+  nameWithType: DynamoForRevitNodeModels.Enumerations
+  fullName: DynamoForRevitNodeModels.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitNodeModels
+    name: DynamoForRevitNodeModels
+    isExternal: true
+    href: DynamoForRevitNodeModels.html
+  - name: .
+  - uid: DynamoForRevitNodeModels.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitNodeModels.Enumerations.html
