@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences
+  commentId: T:DynamoForRevitUtils.Entities.MEPCurveReferences
+  id: MEPCurveReferences
+  parent: DynamoForRevitUtils.Entities
+  children:
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+  - DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+  langs:
+  - csharp
+  - vb
+  name: MEPCurveReferences
+  nameWithType: MEPCurveReferences
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Class containing utils References from MEP Curves
+  example: []
+  syntax:
+    content: public class MEPCurveReferences
+    content.vb: Public Class MEPCurveReferences
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)
+  commentId: M:DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)
+  id: '#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)'
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: MEPCurveReferences(ReferenceArray, Curve, CoordinateSystem, List<Face>, ElementId)
+  nameWithType: MEPCurveReferences.MEPCurveReferences(ReferenceArray, Curve, CoordinateSystem, List<Face>, ElementId)
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.MEPCurveReferences(Autodesk.Revit.DB.ReferenceArray, Autodesk.Revit.DB.Curve, Autodesk.DesignScript.Geometry.CoordinateSystem, System.Collections.Generic.List<Autodesk.Revit.DB.Face>, Autodesk.Revit.DB.ElementId)
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Constructor for MEPCurveReferences
+  example: []
+  syntax:
+    content: public MEPCurveReferences(ReferenceArray refArray, Curve locationCurve, CoordinateSystem referenceCS, List<Face> endFaces, ElementId ownerId)
+    parameters:
+    - id: refArray
+      type: Autodesk.Revit.DB.ReferenceArray
+      description: Array of references
+    - id: locationCurve
+      type: Autodesk.Revit.DB.Curve
+      description: Location curve
+    - id: referenceCS
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+      description: Reference coordinate system
+    - id: endFaces
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+      description: End faces
+    - id: ownerId
+      type: Autodesk.Revit.DB.ElementId
+      description: Id of the MEPCurveReferences owner
+    content.vb: Public Sub New(refArray As ReferenceArray, locationCurve As Curve, referenceCS As CoordinateSystem, endFaces As List(Of Face), ownerId As ElementId)
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor*
+  nameWithType.vb: MEPCurveReferences.New(ReferenceArray, Curve, CoordinateSystem, List(Of Face), ElementId)
+  fullName.vb: DynamoForRevitUtils.Entities.MEPCurveReferences.New(Autodesk.Revit.DB.ReferenceArray, Autodesk.Revit.DB.Curve, Autodesk.DesignScript.Geometry.CoordinateSystem, System.Collections.Generic.List(Of Autodesk.Revit.DB.Face), Autodesk.Revit.DB.ElementId)
+  name.vb: New(ReferenceArray, Curve, CoordinateSystem, List(Of Face), ElementId)
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+  commentId: P:DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+  id: RefArray
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: RefArray
+  nameWithType: MEPCurveReferences.RefArray
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: <xref href="Autodesk.Revit.DB.ReferenceArray" data-throw-if-not-resolved="false"></xref> obtained from MEPCurve end faces
+  example: []
+  syntax:
+    content: public ReferenceArray RefArray { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.ReferenceArray
+    content.vb: Public Property RefArray As ReferenceArray
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray*
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+  commentId: P:DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+  id: LocationCurve
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: LocationCurve
+  nameWithType: MEPCurveReferences.LocationCurve
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: MEPCurve location curve
+  example: []
+  syntax:
+    content: public Curve LocationCurve { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Curve
+    content.vb: Public Property LocationCurve As Curve
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve*
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+  commentId: P:DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+  id: ReferenceCS
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: ReferenceCS
+  nameWithType: MEPCurveReferences.ReferenceCS
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: MEPCurve base coordinate system
+  example: []
+  syntax:
+    content: public CoordinateSystem ReferenceCS { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+    content.vb: Public Property ReferenceCS As CoordinateSystem
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS*
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+  commentId: P:DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+  id: EndFaces
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: EndFaces
+  nameWithType: MEPCurveReferences.EndFaces
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Extremity faces of MEPCurve
+  example: []
+  syntax:
+    content: public List<Face> EndFaces { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+    content.vb: Public Property EndFaces As List(Of Face)
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces*
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId
+  commentId: P:DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId
+  id: OwnerId
+  parent: DynamoForRevitUtils.Entities.MEPCurveReferences
+  langs:
+  - csharp
+  - vb
+  name: OwnerId
+  nameWithType: MEPCurveReferences.OwnerId
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: MEPCurve Id
+  example: []
+  syntax:
+    content: public ElementId OwnerId { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.ElementId
+    content.vb: Public Property OwnerId As ElementId
+  overload: DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId*
+references:
+- uid: DynamoForRevitUtils.Entities
+  commentId: N:DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities
+  nameWithType: DynamoForRevitUtils.Entities
+  fullName: DynamoForRevitUtils.Entities
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences__ctor_Autodesk_Revit_DB_ReferenceArray_Autodesk_Revit_DB_Curve_Autodesk_DesignScript_Geometry_CoordinateSystem_System_Collections_Generic_List_Autodesk_Revit_DB_Face__Autodesk_Revit_DB_ElementId_
+  name: MEPCurveReferences
+  nameWithType: MEPCurveReferences.MEPCurveReferences
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.MEPCurveReferences
+  nameWithType.vb: MEPCurveReferences.New
+  fullName.vb: DynamoForRevitUtils.Entities.MEPCurveReferences.New
+  name.vb: New
+- uid: Autodesk.Revit.DB.ReferenceArray
+  isExternal: true
+  name: ReferenceArray
+  nameWithType: ReferenceArray
+  fullName: Autodesk.Revit.DB.ReferenceArray
+- uid: Autodesk.Revit.DB.Curve
+  isExternal: true
+  name: Curve
+  nameWithType: Curve
+  fullName: Autodesk.Revit.DB.Curve
+- uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  isExternal: true
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: Autodesk.DesignScript.Geometry.CoordinateSystem
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Face}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Face>
+  nameWithType: List<Face>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Face>
+  nameWithType.vb: List(Of Face)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Face)
+  name.vb: List(Of Face)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences_RefArray
+  name: RefArray
+  nameWithType: MEPCurveReferences.RefArray
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.RefArray
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences_LocationCurve
+  name: LocationCurve
+  nameWithType: MEPCurveReferences.LocationCurve
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.LocationCurve
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences_ReferenceCS
+  name: ReferenceCS
+  nameWithType: MEPCurveReferences.ReferenceCS
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.ReferenceCS
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences_EndFaces
+  name: EndFaces
+  nameWithType: MEPCurveReferences.EndFaces
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.EndFaces
+- uid: DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId*
+  commentId: Overload:DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.MEPCurveReferences.html#DynamoForRevitUtils_Entities_MEPCurveReferences_OwnerId
+  name: OwnerId
+  nameWithType: MEPCurveReferences.OwnerId
+  fullName: DynamoForRevitUtils.Entities.MEPCurveReferences.OwnerId

@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  commentId: T:DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  id: DoubleParameterConvertionMode
+  parent: DynamoForRevitUtils.Enumerations
+  children:
+  - DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseActiveDocumentUnits
+  - DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseElementDocumentUnits
+  langs:
+  - csharp
+  - vb
+  name: DoubleParameterConvertionMode
+  nameWithType: DoubleParameterConvertionMode
+  fullName: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  type: Enum
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Specifies the modes of conversion for double parameters.
+  example: []
+  syntax:
+    content: public enum DoubleParameterConvertionMode
+    content.vb: Public Enum DoubleParameterConvertionMode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseActiveDocumentUnits
+  commentId: F:DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseActiveDocumentUnits
+  id: UseActiveDocumentUnits
+  parent: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  langs:
+  - csharp
+  - vb
+  name: UseActiveDocumentUnits
+  nameWithType: DoubleParameterConvertionMode.UseActiveDocumentUnits
+  fullName: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseActiveDocumentUnits
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: >-
+    Represents the option to use the current document display units
+
+    for convertion of a double parameter.
+  example: []
+  syntax:
+    content: UseActiveDocumentUnits = 0
+    return:
+      type: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+- uid: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseElementDocumentUnits
+  commentId: F:DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseElementDocumentUnits
+  id: UseElementDocumentUnits
+  parent: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  langs:
+  - csharp
+  - vb
+  name: UseElementDocumentUnits
+  nameWithType: DoubleParameterConvertionMode.UseElementDocumentUnits
+  fullName: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.UseElementDocumentUnits
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: >-
+    Represents the option to use the document display units
+
+    of an element for double parameter convertion.
+  example: []
+  syntax:
+    content: UseElementDocumentUnits = 1
+    return:
+      type: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+references:
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  commentId: T:DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.html
+  name: DoubleParameterConvertionMode
+  nameWithType: DoubleParameterConvertionMode
+  fullName: DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode

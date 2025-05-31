@@ -1,0 +1,1223 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  id: BoundingBoxServices
+  parent: DynamoForRevitUtils.Services.Dynamo
+  children:
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint(Autodesk.DesignScript.Geometry.BoundingBox,Autodesk.DesignScript.Geometry.Point)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox,System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)
+  - DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)
+  langs:
+  - csharp
+  - vb
+  name: BoundingBoxServices
+  nameWithType: BoundingBoxServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Dynamo BoundingBox utils
+  example: []
+  syntax:
+    content: public static class BoundingBoxServices
+    content.vb: Public Module BoundingBoxServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetCentroid(BoundingBox)
+  nameWithType: BoundingBoxServices.GetCentroid(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box centroid
+  example: []
+  syntax:
+    content: public static Point GetCentroid(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get centroid
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function GetCentroid(bbox As BoundingBox) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetBottomCenter(BoundingBox)
+  nameWithType: BoundingBoxServices.GetBottomCenter(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box bottom face center
+  example: []
+  syntax:
+    content: public static Point GetBottomCenter(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get bottom center
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function GetBottomCenter(bbox As BoundingBox) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetTopCenter(BoundingBox)
+  nameWithType: BoundingBoxServices.GetTopCenter(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box top face center
+  example: []
+  syntax:
+    content: public static Point GetTopCenter(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get top center
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function GetTopCenter(bbox As BoundingBox) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetSurfaces(BoundingBox)
+  nameWithType: BoundingBoxServices.GetSurfaces(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box surfaces
+  example: []
+  syntax:
+    content: public static List<Surface> GetSurfaces(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get surfaces
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetSurfaces(bbox As BoundingBox) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetBottomSurface(BoundingBox)
+  nameWithType: BoundingBoxServices.GetBottomSurface(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box bottom surface
+  example: []
+  syntax:
+    content: public static Surface GetBottomSurface(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get bottom surface
+    return:
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: ''
+    content.vb: Public Shared Function GetBottomSurface(bbox As BoundingBox) As Surface
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetTopSurface(BoundingBox)
+  nameWithType: BoundingBoxServices.GetTopSurface(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box bottom surface
+  example: []
+  syntax:
+    content: public static Surface GetTopSurface(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get top surface
+    return:
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: ''
+    content.vb: Public Shared Function GetTopSurface(bbox As BoundingBox) As Surface
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetVertices(BoundingBox)
+  nameWithType: BoundingBoxServices.GetVertices(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box vertices
+  example: []
+  syntax:
+    content: public static List<Point> GetVertices(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get vertices
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+      description: ''
+    content.vb: Public Shared Function GetVertices(bbox As BoundingBox) As List(Of Point)
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetEdges(BoundingBox)
+  nameWithType: BoundingBoxServices.GetEdges(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box edges
+  example: []
+  syntax:
+    content: public static List<Curve> GetEdges(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get edges
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Curve}
+      description: ''
+    content.vb: Public Shared Function GetEdges(bbox As BoundingBox) As List(Of Curve)
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetDiagonal(BoundingBox)
+  nameWithType: BoundingBoxServices.GetDiagonal(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box diagonal
+  remarks: >-
+    Main diagonal is the diagonal that starts at the bounding box min point and
+
+    ends at the bounding box max point.
+  example: []
+  syntax:
+    content: public static Line GetDiagonal(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get main diagonal
+    return:
+      type: Autodesk.DesignScript.Geometry.Line
+      description: ''
+    content.vb: Public Shared Function GetDiagonal(bbox As BoundingBox) As Line
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetBottomSurfaceDiagonal(BoundingBox)
+  nameWithType: BoundingBoxServices.GetBottomSurfaceDiagonal(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box bottom surface diagonal
+  remarks: >-
+    Bottom diagonal is the diagonal that starts at the bounding box min point and
+
+    ends at the bounding box max point projected on bottom surface.
+  example: []
+  syntax:
+    content: public static Line GetBottomSurfaceDiagonal(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get bottom surface diagonal
+    return:
+      type: Autodesk.DesignScript.Geometry.Line
+      description: ''
+    content.vb: Public Shared Function GetBottomSurfaceDiagonal(bbox As BoundingBox) As Line
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetOppositeBottomSurfaceDiagonal(BoundingBox)
+  nameWithType: BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box opposite bottom surface diagonal
+  remarks: >-
+    <p>Opposite bottom diagonal is the diagonal perpendicular to bottom diagonal.</p>
+
+    <p>Start point (max.X, min.Y, min.Z)</p>
+
+    <p>End point (min.X, max.Y, min.Z). </p>
+  example: []
+  syntax:
+    content: public static Line GetOppositeBottomSurfaceDiagonal(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get bottom surface diagonal
+    return:
+      type: Autodesk.DesignScript.Geometry.Line
+      description: ''
+    content.vb: Public Shared Function GetOppositeBottomSurfaceDiagonal(bbox As BoundingBox) As Line
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetWidth(BoundingBox)
+  nameWithType: BoundingBoxServices.GetWidth(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box diagonal width
+  example: []
+  syntax:
+    content: public static double GetWidth(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get width
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetWidth(bbox As BoundingBox) As Double
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetLength(BoundingBox)
+  nameWithType: BoundingBoxServices.GetLength(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box diagonal length
+  example: []
+  syntax:
+    content: public static double GetLength(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get length
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetLength(bbox As BoundingBox) As Double
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetHeight(BoundingBox)
+  nameWithType: BoundingBoxServices.GetHeight(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box diagonal height
+  example: []
+  syntax:
+    content: public static double GetHeight(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get height
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetHeight(bbox As BoundingBox) As Double
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: GetDiagonalLength(BoundingBox)
+  nameWithType: BoundingBoxServices.GetDiagonalLength(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get bounding box diagonal length
+  remarks: >-
+    Bottom diagonal is the diagonal that starts at the bounding box min point and
+
+    ends at the bounding box max point projected to the bottom surface.
+  example: []
+  syntax:
+    content: public static double GetDiagonalLength(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get diagonal length
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetDiagonalLength(bbox As BoundingBox) As Double
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: ToCoordinateSystem(BoundingBox)
+  nameWithType: BoundingBoxServices.ToCoordinateSystem(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Converts bounding box to coordinate system
+  example: []
+  syntax:
+    content: public static CoordinateSystem ToCoordinateSystem(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get coordinate system
+    return:
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+      description: ''
+    content.vb: Public Shared Function ToCoordinateSystem(bbox As BoundingBox) As CoordinateSystem
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox,System.Double)
+  id: Offset(Autodesk.DesignScript.Geometry.BoundingBox,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: Offset(BoundingBox, double)
+  nameWithType: BoundingBoxServices.Offset(BoundingBox, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Offset bounding box
+  example: []
+  syntax:
+    content: public static BoundingBox Offset(this BoundingBox bbox, double offset)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to get offset
+    - id: offset
+      type: System.Double
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: ''
+    content.vb: Public Shared Function Offset(bbox As BoundingBox, offset As Double) As BoundingBox
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset*
+  nameWithType.vb: BoundingBoxServices.Offset(BoundingBox, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset(Autodesk.DesignScript.Geometry.BoundingBox, Double)
+  name.vb: Offset(BoundingBox, Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint(Autodesk.DesignScript.Geometry.BoundingBox,Autodesk.DesignScript.Geometry.Point)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint(Autodesk.DesignScript.Geometry.BoundingBox,Autodesk.DesignScript.Geometry.Point)
+  id: AddPoint(Autodesk.DesignScript.Geometry.BoundingBox,Autodesk.DesignScript.Geometry.Point)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: AddPoint(BoundingBox, Point)
+  nameWithType: BoundingBoxServices.AddPoint(BoundingBox, Point)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint(Autodesk.DesignScript.Geometry.BoundingBox, Autodesk.DesignScript.Geometry.Point)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Expand bounding box using a point
+  example: []
+  syntax:
+    content: public static BoundingBox AddPoint(this BoundingBox bbox, Point point)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to offset by adding a point.
+    - id: point
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: ''
+    content.vb: Public Shared Function AddPoint(bbox As BoundingBox, point As Point) As BoundingBox
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint*
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)
+  id: ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices
+  langs:
+  - csharp
+  - vb
+  name: ToBoundingBoxXYZ(BoundingBox)
+  nameWithType: BoundingBoxServices.ToBoundingBoxXYZ(BoundingBox)
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ(Autodesk.DesignScript.Geometry.BoundingBox)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Converts a Dynamo Geometry BoundingBox to Revit API BoundingBoxXYZ
+  example: []
+  syntax:
+    content: public static BoundingBoxXYZ ToBoundingBoxXYZ(this BoundingBox bbox)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding box to convert
+    return:
+      type: Autodesk.Revit.DB.BoundingBoxXYZ
+      description: ''
+    content.vb: Public Shared Function ToBoundingBoxXYZ(bbox As BoundingBox) As BoundingBoxXYZ
+  overload: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ*
+references:
+- uid: DynamoForRevitUtils.Services.Dynamo
+  commentId: N:DynamoForRevitUtils.Services.Dynamo
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Dynamo
+  nameWithType: DynamoForRevitUtils.Services.Dynamo
+  fullName: DynamoForRevitUtils.Services.Dynamo
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetCentroid_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetCentroid
+  nameWithType: BoundingBoxServices.GetCentroid
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid
+- uid: Autodesk.DesignScript.Geometry.BoundingBox
+  isExternal: true
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Autodesk.DesignScript.Geometry.BoundingBox
+- uid: Autodesk.DesignScript.Geometry.Point
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Autodesk.DesignScript.Geometry.Point
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomCenter_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetBottomCenter
+  nameWithType: BoundingBoxServices.GetBottomCenter
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopCenter_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetTopCenter
+  nameWithType: BoundingBoxServices.GetTopCenter
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopCenter
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetSurfaces_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetSurfaces
+  nameWithType: BoundingBoxServices.GetSurfaces
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetSurfaces
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Surface>
+  nameWithType: List<Surface>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: List(Of Surface)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Surface)
+  name.vb: List(Of Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurface_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetBottomSurface
+  nameWithType: BoundingBoxServices.GetBottomSurface
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface
+- uid: Autodesk.DesignScript.Geometry.Surface
+  isExternal: true
+  name: Surface
+  nameWithType: Surface
+  fullName: Autodesk.DesignScript.Geometry.Surface
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetTopSurface_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetTopSurface
+  nameWithType: BoundingBoxServices.GetTopSurface
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetTopSurface
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetVertices_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetVertices
+  nameWithType: BoundingBoxServices.GetVertices
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetVertices
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Point>
+  nameWithType: List<Point>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Point>
+  nameWithType.vb: List(Of Point)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Point)
+  name.vb: List(Of Point)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Point
+    name: Point
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Point
+    name: Point
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetEdges_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetEdges
+  nameWithType: BoundingBoxServices.GetEdges
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetEdges
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Curve}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Curve}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Curve>
+  nameWithType: List<Curve>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Curve>
+  nameWithType.vb: List(Of Curve)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Curve)
+  name.vb: List(Of Curve)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Curve
+    name: Curve
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Curve
+    name: Curve
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetDiagonal
+  nameWithType: BoundingBoxServices.GetDiagonal
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal
+- uid: Autodesk.DesignScript.Geometry.Line
+  isExternal: true
+  name: Line
+  nameWithType: Line
+  fullName: Autodesk.DesignScript.Geometry.Line
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetBottomSurfaceDiagonal
+  nameWithType: BoundingBoxServices.GetBottomSurfaceDiagonal
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurfaceDiagonal
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetOppositeBottomSurfaceDiagonal_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetOppositeBottomSurfaceDiagonal
+  nameWithType: BoundingBoxServices.GetOppositeBottomSurfaceDiagonal
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetOppositeBottomSurfaceDiagonal
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetWidth_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetWidth
+  nameWithType: BoundingBoxServices.GetWidth
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetWidth
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetLength_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetLength
+  nameWithType: BoundingBoxServices.GetLength
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetLength
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetHeight_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetHeight
+  nameWithType: BoundingBoxServices.GetHeight
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetHeight
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_GetDiagonalLength_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: GetDiagonalLength
+  nameWithType: BoundingBoxServices.GetDiagonalLength
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonalLength
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToCoordinateSystem_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: ToCoordinateSystem
+  nameWithType: BoundingBoxServices.ToCoordinateSystem
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem
+- uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  isExternal: true
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: Autodesk.DesignScript.Geometry.CoordinateSystem
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_Offset_Autodesk_DesignScript_Geometry_BoundingBox_System_Double_
+  name: Offset
+  nameWithType: BoundingBoxServices.Offset
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.Offset
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_AddPoint_Autodesk_DesignScript_Geometry_BoundingBox_Autodesk_DesignScript_Geometry_Point_
+  name: AddPoint
+  nameWithType: BoundingBoxServices.AddPoint
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.AddPoint
+- uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html#DynamoForRevitUtils_Services_Dynamo_BoundingBoxServices_ToBoundingBoxXYZ_Autodesk_DesignScript_Geometry_BoundingBox_
+  name: ToBoundingBoxXYZ
+  nameWithType: BoundingBoxServices.ToBoundingBoxXYZ
+  fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ
+- uid: Autodesk.Revit.DB.BoundingBoxXYZ
+  isExternal: true
+  name: BoundingBoxXYZ
+  nameWithType: BoundingBoxXYZ
+  fullName: Autodesk.Revit.DB.BoundingBoxXYZ

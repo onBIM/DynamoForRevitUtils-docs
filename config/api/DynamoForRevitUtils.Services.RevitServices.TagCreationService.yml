@@ -1,0 +1,766 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  id: TagCreationService
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+  - DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+  langs:
+  - csharp
+  - vb
+  name: TagCreationService
+  nameWithType: TagCreationService
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Abstract base class for creating Tag creation services.
+  example: []
+  syntax:
+    content: public abstract class TagCreationService
+    content.vb: Public MustInherit Class TagCreationService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
+  id: '#ctor'
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: TagCreationService()
+  nameWithType: TagCreationService.TagCreationService()
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.TagCreationService()
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Constructor TagInfo class.
+  example: []
+  syntax:
+    content: protected TagCreationService()
+    content.vb: Protected Sub New()
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  nameWithType.vb: TagCreationService.New()
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.TagCreationService.New()
+  name.vb: New()
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  id: SetTagLocationAndHeadPositionOnFloorPlan(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: SetTagLocationAndHeadPositionOnFloorPlan(TagInfo)
+  nameWithType: TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan(TagInfo)
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Sets the tag location and head position on the Floor Plan.
+  example: []
+  syntax:
+    content: protected abstract void SetTagLocationAndHeadPositionOnFloorPlan(TagInfo tagInfo)
+    parameters:
+    - id: tagInfo
+      type: DynamoForRevitUtils.Services.RevitServices.TagInfo
+      description: >-
+        Information about the tag, including the element to tag, the owner view, the symbol id, offset,
+
+        link instance, and whether to add a leader.
+    content.vb: Protected MustOverride Sub SetTagLocationAndHeadPositionOnFloorPlan(tagInfo As TagInfo)
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan*
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  id: SetTagLocationAndHeadPositionOnSection(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: SetTagLocationAndHeadPositionOnSection(TagInfo)
+  nameWithType: TagCreationService.SetTagLocationAndHeadPositionOnSection(TagInfo)
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection(DynamoForRevitUtils.Services.RevitServices.TagInfo)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Sets the tag location and head position on a Section in Revit.
+  example: []
+  syntax:
+    content: protected abstract void SetTagLocationAndHeadPositionOnSection(TagInfo tagInfo)
+    parameters:
+    - id: tagInfo
+      type: DynamoForRevitUtils.Services.RevitServices.TagInfo
+      description: >-
+        Information about the tag, including the element to tag, the owner view, the symbol id, offset,
+
+        link instance, and whether to add a leader.
+    content.vb: Protected MustOverride Sub SetTagLocationAndHeadPositionOnSection(tagInfo As TagInfo)
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection*
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+  id: CreateTag
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: CreateTag()
+  nameWithType: TagCreationService.CreateTag()
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Creates a <xref href="Autodesk.Revit.DB.IndependentTag" data-throw-if-not-resolved="false"></xref> for this
+
+    Element on Revit active <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IndependentTag CreateTag()
+    return:
+      type: Autodesk.Revit.DB.IndependentTag
+      description: ''
+    content.vb: Public Function CreateTag() As IndependentTag
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag*
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+  commentId: P:DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+  id: _tagInfo
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: _tagInfo
+  nameWithType: TagCreationService._tagInfo
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Object representing information about a tag, including the element to tag, the owner view, the symbol id,
+
+    offset, link instance, and whether to add a leader.
+  example: []
+  syntax:
+    content: protected abstract TagInfo _tagInfo { get; set; }
+    parameters: []
+    return:
+      type: DynamoForRevitUtils.Services.RevitServices.TagInfo
+    content.vb: Protected MustOverride Property _tagInfo As TagInfo
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo*
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+  commentId: P:DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+  id: ValidCategories
+  parent: DynamoForRevitUtils.Services.RevitServices.TagCreationService
+  langs:
+  - csharp
+  - vb
+  name: ValidCategories
+  nameWithType: TagCreationService.ValidCategories
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: The valid categories for the Element.
+  example: []
+  syntax:
+    content: protected abstract List<BuiltInCategory> ValidCategories { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+    content.vb: Protected MustOverride ReadOnly Property ValidCategories As List(Of BuiltInCategory)
+  overload: DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories*
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService__ctor
+  name: TagCreationService
+  nameWithType: TagCreationService.TagCreationService
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.TagCreationService
+  nameWithType.vb: TagCreationService.New
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.TagCreationService.New
+  name.vb: New
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService_SetTagLocationAndHeadPositionOnFloorPlan_DynamoForRevitUtils_Services_RevitServices_TagInfo_
+  name: SetTagLocationAndHeadPositionOnFloorPlan
+  nameWithType: TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnFloorPlan
+- uid: DynamoForRevitUtils.Services.RevitServices.TagInfo
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.TagInfo
+  parent: DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagInfo.html
+  name: TagInfo
+  nameWithType: TagInfo
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagInfo
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService_SetTagLocationAndHeadPositionOnSection_DynamoForRevitUtils_Services_RevitServices_TagInfo_
+  name: SetTagLocationAndHeadPositionOnSection
+  nameWithType: TagCreationService.SetTagLocationAndHeadPositionOnSection
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection
+- uid: Autodesk.Revit.DB.IndependentTag
+  commentId: T:Autodesk.Revit.DB.IndependentTag
+  isExternal: true
+  name: IndependentTag
+  nameWithType: IndependentTag
+  fullName: Autodesk.Revit.DB.IndependentTag
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService_CreateTag
+  name: CreateTag
+  nameWithType: TagCreationService.CreateTag
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService__tagInfo
+  name: _tagInfo
+  nameWithType: TagCreationService._tagInfo
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
+- uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.TagCreationService.html#DynamoForRevitUtils_Services_RevitServices_TagCreationService_ValidCategories
+  name: ValidCategories
+  nameWithType: TagCreationService.ValidCategories
+  fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.ValidCategories
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BuiltInCategory>
+  nameWithType: List<BuiltInCategory>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: List(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: List(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

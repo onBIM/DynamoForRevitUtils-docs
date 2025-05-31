@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.GridServices
+  id: GridServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  - DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane(Autodesk.Revit.DB.Grid,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  langs:
+  - csharp
+  - vb
+  name: GridServices
+  nameWithType: GridServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Grid services.
+  example: []
+  syntax:
+    content: public static class GridServices
+    content.vb: Public Module GridServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid,System.Double)
+  id: GetDirection(Autodesk.Revit.DB.Grid,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.GridServices
+  langs:
+  - csharp
+  - vb
+  name: GetDirection(Grid, double)
+  nameWithType: GridServices.GetDirection(Grid, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get grid direction.
+  example: []
+  syntax:
+    content: public static XYZ GetDirection(this Grid grid, double parameter = 0.5)
+    parameters:
+    - id: grid
+      type: Autodesk.Revit.DB.Grid
+      description: Grid to get direction
+    - id: parameter
+      type: System.Double
+      description: >-
+        A value between 0 e 1 that represents the position of the point to evaluate along
+
+        the curve. The default value is 0.5, which is the midpoint of the curve.
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: >-
+        The direction of the grid at the given parameter. For not straight grids, the
+
+        direction is the tangent of the curve at the given parameter.
+    content.vb: Public Shared Function GetDirection(grid As Grid, parameter As Double = 0.5) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection*
+  nameWithType.vb: GridServices.GetDirection(Grid, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid, Double)
+  name.vb: GetDirection(Grid, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane(Autodesk.Revit.DB.Grid,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane(Autodesk.Revit.DB.Grid,System.Double)
+  id: GetPlane(Autodesk.Revit.DB.Grid,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.GridServices
+  langs:
+  - csharp
+  - vb
+  name: GetPlane(Grid, double)
+  nameWithType: GridServices.GetPlane(Grid, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane(Autodesk.Revit.DB.Grid, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get grid plane perpendicular to View where it is placed.
+  example: []
+  syntax:
+    content: public static Plane GetPlane(this Grid grid, double parameter = 0.5)
+    parameters:
+    - id: grid
+      type: Autodesk.Revit.DB.Grid
+      description: Grid to get plane
+    - id: parameter
+      type: System.Double
+      description: >-
+        A value between 0 e 1 that represents the position of the point to evaluate along
+
+        the curve. The default value is 0.5, which is the midpoint of the curve.
+    return:
+      type: Autodesk.Revit.DB.Plane
+      description: >-
+        The plane of the grid at the given parameter. For not straight grids, the plane is
+
+        the 'tangent' plane of the curve at the given parameter.
+    content.vb: Public Shared Function GetPlane(grid As Grid, parameter As Double = 0.5) As Plane
+  overload: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane*
+  nameWithType.vb: GridServices.GetPlane(Grid, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane(Autodesk.Revit.DB.Grid, Double)
+  name.vb: GetPlane(Grid, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  id: DistanceToPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.GridServices
+  langs:
+  - csharp
+  - vb
+  name: DistanceToPoint(Grid, XYZ)
+  nameWithType: GridServices.DistanceToPoint(Grid, XYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint(Autodesk.Revit.DB.Grid, Autodesk.Revit.DB.XYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get distance from grid to point in Internal Units.
+  example: []
+  syntax:
+    content: public static double DistanceToPoint(this Grid grid, XYZ xyz)
+    parameters:
+    - id: grid
+      type: Autodesk.Revit.DB.Grid
+      description: ''
+    - id: xyz
+      type: Autodesk.Revit.DB.XYZ
+      description: ''
+    return:
+      type: System.Double
+      description: Calculated distance in Internal Units
+    content.vb: Public Shared Function DistanceToPoint(grid As Grid, xyz As XYZ) As Double
+  overload: DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint*
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  id: ProjectPoint(Autodesk.Revit.DB.Grid,Autodesk.Revit.DB.XYZ)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.GridServices
+  langs:
+  - csharp
+  - vb
+  name: ProjectPoint(Grid, XYZ)
+  nameWithType: GridServices.ProjectPoint(Grid, XYZ)
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint(Autodesk.Revit.DB.Grid, Autodesk.Revit.DB.XYZ)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Projects a given point onto a grid.
+  example: []
+  syntax:
+    content: public static XYZ ProjectPoint(this Grid grid, XYZ point)
+    parameters:
+    - id: grid
+      type: Autodesk.Revit.DB.Grid
+      description: The grid to project the point onto.
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: The point to be projected onto the grid.
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: The projected point on the grid.
+    content.vb: Public Shared Function ProjectPoint(grid As Grid, point As XYZ) As XYZ
+  overload: DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint*
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.GridServices.html#DynamoForRevitUtils_Services_RevitServices_GridServices_GetDirection_Autodesk_Revit_DB_Grid_System_Double_
+  name: GetDirection
+  nameWithType: GridServices.GetDirection
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection
+- uid: Autodesk.Revit.DB.Grid
+  isExternal: true
+  name: Grid
+  nameWithType: Grid
+  fullName: Autodesk.Revit.DB.Grid
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.GridServices.html#DynamoForRevitUtils_Services_RevitServices_GridServices_GetPlane_Autodesk_Revit_DB_Grid_System_Double_
+  name: GetPlane
+  nameWithType: GridServices.GetPlane
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane
+- uid: Autodesk.Revit.DB.Plane
+  isExternal: true
+  name: Plane
+  nameWithType: Plane
+  fullName: Autodesk.Revit.DB.Plane
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.GridServices.html#DynamoForRevitUtils_Services_RevitServices_GridServices_DistanceToPoint_Autodesk_Revit_DB_Grid_Autodesk_Revit_DB_XYZ_
+  name: DistanceToPoint
+  nameWithType: GridServices.DistanceToPoint
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.DistanceToPoint
+- uid: DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.GridServices.html#DynamoForRevitUtils_Services_RevitServices_GridServices_ProjectPoint_Autodesk_Revit_DB_Grid_Autodesk_Revit_DB_XYZ_
+  name: ProjectPoint
+  nameWithType: GridServices.ProjectPoint
+  fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.ProjectPoint

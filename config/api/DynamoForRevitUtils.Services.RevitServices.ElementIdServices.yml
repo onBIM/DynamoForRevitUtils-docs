@@ -1,0 +1,560 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  id: ElementIdServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(System.Int64)
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(System.String,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue(Autodesk.Revit.DB.ElementId)
+  - DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  langs:
+  - csharp
+  - vb
+  name: ElementIdServices
+  nameWithType: ElementIdServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: ElementId Services
+  example: []
+  syntax:
+    content: public static class ElementIdServices
+    content.vb: Public Module ElementIdServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(System.Int64)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(System.Int64)
+  id: GetElementId(System.Int64)
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  langs:
+  - csharp
+  - vb
+  name: GetElementId(long)
+  nameWithType: ElementIdServices.GetElementId(long)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(long)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the ElementId besides the Revit version
+  example: []
+  syntax:
+    content: public static ElementId GetElementId(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+      description: The long value representing the ElementId.
+    return:
+      type: Autodesk.Revit.DB.ElementId
+      description: The ElementId corresponding to the provided long value.
+    content.vb: Public Shared Function GetElementId(id As Long) As ElementId
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId*
+  nameWithType.vb: ElementIdServices.GetElementId(Long)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(Long)
+  name.vb: GetElementId(Long)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue(Autodesk.Revit.DB.ElementId)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue(Autodesk.Revit.DB.ElementId)
+  id: GetValue(Autodesk.Revit.DB.ElementId)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  langs:
+  - csharp
+  - vb
+  name: GetValue(ElementId)
+  nameWithType: ElementIdServices.GetValue(ElementId)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue(Autodesk.Revit.DB.ElementId)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the value of the ElementId besides the Revit version
+  example: []
+  syntax:
+    content: public static long GetValue(this ElementId elementId)
+    parameters:
+    - id: elementId
+      type: Autodesk.Revit.DB.ElementId
+      description: The ElementId to retrieve the value from.
+    return:
+      type: System.Int64
+      description: The value of the ElementId.
+    content.vb: Public Shared Function GetValue(elementId As ElementId) As Long
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  id: IsValidId(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  langs:
+  - csharp
+  - vb
+  name: IsValidId(ElementId, Document)
+  nameWithType: ElementIdServices.IsValidId(ElementId, Document)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId(Autodesk.Revit.DB.ElementId, Autodesk.Revit.DB.Document)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Checks if an ElementId is valid on given Document
+  example: []
+  syntax:
+    content: public static bool IsValidId(this ElementId elementId, Document document)
+    parameters:
+    - id: elementId
+      type: Autodesk.Revit.DB.ElementId
+      description: ElementId to check
+    - id: document
+      type: Autodesk.Revit.DB.Document
+      description: Document to check
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsValidId(elementId As ElementId, document As Document) As Boolean
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId*
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  id: GetElement``1(Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  langs:
+  - csharp
+  - vb
+  name: GetElement<TCast>(ElementId, Document?)
+  nameWithType: ElementIdServices.GetElement<TCast>(ElementId, Document?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement<TCast>(Autodesk.Revit.DB.ElementId, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the element from its ElementId.
+  example: []
+  syntax:
+    content: 'public static TCast GetElement<TCast>(this ElementId id, Document? doc = null) where TCast : Element'
+    parameters:
+    - id: id
+      type: Autodesk.Revit.DB.ElementId
+      description: ElementId to get Element
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get Element. Leave null to get active document
+    typeParameters:
+    - id: TCast
+      description: Type derived from <xref href="Autodesk.Revit.DB.Element" data-throw-if-not-resolved="false"></xref> to cast the result
+    return:
+      type: '{TCast}'
+      description: Element correspondent to provided <code class="paramref">id</code>
+    content.vb: Public Shared Function GetElement(Of TCast As Element)(id As ElementId, doc As Document = Nothing) As TCast
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement*
+  nameWithType.vb: ElementIdServices.GetElement(Of TCast)(ElementId, Document)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement(Of TCast)(Autodesk.Revit.DB.ElementId, Autodesk.Revit.DB.Document)
+  name.vb: GetElement(Of TCast)(ElementId, Document)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(System.String,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement``1(System.String,Autodesk.Revit.DB.Document)
+  id: GetElement``1(System.String,Autodesk.Revit.DB.Document)
+  parent: DynamoForRevitUtils.Services.RevitServices.ElementIdServices
+  langs:
+  - csharp
+  - vb
+  name: GetElement<TCast>(string, Document?)
+  nameWithType: ElementIdServices.GetElement<TCast>(string, Document?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement<TCast>(string, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the element from its UniqueId.
+  example: []
+  syntax:
+    content: 'public static TCast GetElement<TCast>(string uniqueId, Document? doc = null) where TCast : Element'
+    parameters:
+    - id: uniqueId
+      type: System.String
+      description: UniqueId to get Element
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: Document to get Element. Leave null to get active document
+    typeParameters:
+    - id: TCast
+      description: Type derived from <xref href="Autodesk.Revit.DB.Element" data-throw-if-not-resolved="false"></xref> to cast the result
+    return:
+      type: '{TCast}'
+      description: Element correspondent to provided <code class="paramref">uniqueId</code>
+    content.vb: Public Shared Function GetElement(Of TCast As Element)(uniqueId As String, doc As Document = Nothing) As TCast
+  overload: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement*
+  nameWithType.vb: ElementIdServices.GetElement(Of TCast)(String, Document)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement(Of TCast)(String, Autodesk.Revit.DB.Document)
+  name.vb: GetElement(Of TCast)(String, Document)
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html#DynamoForRevitUtils_Services_RevitServices_ElementIdServices_GetElementId_System_Int64_
+  name: GetElementId
+  nameWithType: ElementIdServices.GetElementId
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html#DynamoForRevitUtils_Services_RevitServices_ElementIdServices_GetValue_Autodesk_Revit_DB_ElementId_
+  name: GetValue
+  nameWithType: ElementIdServices.GetValue
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html#DynamoForRevitUtils_Services_RevitServices_ElementIdServices_IsValidId_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_Document_
+  name: IsValidId
+  nameWithType: ElementIdServices.IsValidId
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Autodesk.Revit.DB.Element
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html#DynamoForRevitUtils_Services_RevitServices_ElementIdServices_GetElement__1_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_Document_
+  name: GetElement
+  nameWithType: ElementIdServices.GetElement
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElement
+- uid: '{TCast}'
+  commentId: '!:TCast'
+  definition: TCast
+  name: TCast
+  nameWithType: TCast
+  fullName: TCast
+- uid: TCast
+  name: TCast
+  nameWithType: TCast
+  fullName: TCast
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

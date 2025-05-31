@@ -1,0 +1,1373 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices
+  commentId: T:DynamoForRevitUtils.Services.RevitServices.WallServices
+  id: WallServices
+  parent: DynamoForRevitUtils.Services.RevitServices
+  children:
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation(Autodesk.Revit.DB.Wall,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine(Autodesk.Revit.DB.Wall,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid(Autodesk.Revit.DB.Wall,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall,System.Double)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.BuiltInCategory)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.Document)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace(Autodesk.Revit.DB.Wall)
+  - DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces(Autodesk.Revit.DB.Wall)
+  langs:
+  - csharp
+  - vb
+  name: WallServices
+  nameWithType: WallServices
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Class containing tools to deal with Revit Walls
+  example: []
+  syntax:
+    content: public static class WallServices
+    content.vb: Public Module WallServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
+  id: GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetJoinedElementsAtEnds(Wall)
+  nameWithType: WallServices.GetJoinedElementsAtEnds(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Getting joined elements at Wall ends
+  example: []
+  syntax:
+    content: public static Dictionary<string, List<Element>> GetJoinedElementsAtEnds(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: Wall to detect joined elements at ends
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+      description: Joined elements at ends
+    content.vb: Public Shared Function GetJoinedElementsAtEnds(wall As Wall) As Dictionary(Of String, List(Of Element))
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.BuiltInCategory)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.BuiltInCategory)
+  id: GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.BuiltInCategory)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetJoinedElementsAtEnds(Wall, BuiltInCategory)
+  nameWithType: WallServices.GetJoinedElementsAtEnds(Wall, BuiltInCategory)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall, Autodesk.Revit.DB.BuiltInCategory)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Getting joined elements at Wall ends from given <xref href="Autodesk.Revit.DB.BuiltInCategory" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static Dictionary<string, List<Element>> GetJoinedElementsAtEnds(this Wall wall, BuiltInCategory category)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: Wall to detect joined elements at ends
+    - id: category
+      type: Autodesk.Revit.DB.BuiltInCategory
+      description: Category to filter elements
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+      description: Joined elements at ends
+    content.vb: Public Shared Function GetJoinedElementsAtEnds(wall As Wall, category As BuiltInCategory) As Dictionary(Of String, List(Of Element))
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby(Autodesk.Revit.DB.Wall)
+  id: GetBasicWallsNearby(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetBasicWallsNearby(Wall)
+  nameWithType: WallServices.GetBasicWallsNearby(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Gets the Basic Walls nearby to the given wall
+  example: []
+  syntax:
+    content: public static List<Wall> GetBasicWallsNearby(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Wall}
+      description: List of Basic Walls nearby to provided wall
+    content.vb: Public Shared Function GetBasicWallsNearby(wall As Wall) As List(Of Wall)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces(Autodesk.Revit.DB.Wall)
+  id: GetExtremitiesSurfaces(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetExtremitiesSurfaces(Wall)
+  nameWithType: WallServices.GetExtremitiesSurfaces(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get extremities surfaces
+  example: []
+  syntax:
+    content: public static Dictionary<string, Surface> GetExtremitiesSurfaces(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetExtremitiesSurfaces(wall As Wall) As Dictionary(Of String, Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces(Autodesk.Revit.DB.Wall)
+  id: GetLateralSurfaces(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetLateralSurfaces(Wall)
+  nameWithType: WallServices.GetLateralSurfaces(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get lateral surfaces.
+  remarks: Lateral faces are those that are parallel to the wall axis
+  example: []
+  syntax:
+    content: public static List<Surface> GetLateralSurfaces(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetLateralSurfaces(wall As Wall) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces(Autodesk.Revit.DB.Wall)
+  id: GetVerticalSurfaces(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetVerticalSurfaces(Wall)
+  nameWithType: WallServices.GetVerticalSurfaces(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Gets vertical Surfaces of this Wall
+  example: []
+  syntax:
+    content: public static List<Surface> GetVerticalSurfaces(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetVerticalSurfaces(wall As Wall) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces(Autodesk.Revit.DB.Wall)
+  id: GetHorizontalSurfaces(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetHorizontalSurfaces(Wall)
+  nameWithType: WallServices.GetHorizontalSurfaces(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Gets horizontal Surfaces of this Wall
+  example: []
+  syntax:
+    content: public static List<Surface> GetHorizontalSurfaces(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetHorizontalSurfaces(wall As Wall) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace(Autodesk.Revit.DB.Wall)
+  id: GetTopFace(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetTopFace(Wall)
+  nameWithType: WallServices.GetTopFace(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get Top Face of this Wall
+  example: []
+  syntax:
+    content: public static Surface? GetTopFace(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: ''
+    content.vb: Public Shared Function GetTopFace(wall As Wall) As Surface
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface(Autodesk.Revit.DB.Wall)
+  id: GetBottomSurface(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetBottomSurface(Wall)
+  nameWithType: WallServices.GetBottomSurface(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get Bottom Face of this Wall
+  example: []
+  syntax:
+    content: public static Surface? GetBottomSurface(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: ''
+    content.vb: Public Shared Function GetBottomSurface(wall As Wall) As Surface
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces(Autodesk.Revit.DB.Wall)
+  id: GetFrontalSurfaces(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetFrontalSurfaces(Wall)
+  nameWithType: WallServices.GetFrontalSurfaces(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    <p>Gets the front faces associated with a wall.</p>
+
+    <remarks>
+
+    Some walls joined together may have their front face split.
+
+    Because of this, this method returns a list of faces.
+
+    </remarks>
+  example: []
+  syntax:
+    content: public static List<Surface> GetFrontalSurfaces(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetFrontalSurfaces(wall As Wall) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall,System.Double)
+  id: GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetFairwayVerticalSurfaces(Wall, double)
+  nameWithType: WallServices.GetFairwayVerticalSurfaces(Wall, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Get nearby vertical surfaces from this Wall. 
+
+    This could return this Wall extremity surfaces if 
+
+    there are not Walls joined at its ends.
+  remarks: <i>Only works for straight walls</i>
+  example: []
+  syntax:
+    content: public static List<Surface> GetFairwayVerticalSurfaces(this Wall wall, double searchDistance)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: Wall to get fairway vertical surfaces
+    - id: searchDistance
+      type: System.Double
+      description: Distance to search Vertical surfaces. Recommend to be major then most larger wall width
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: Fairway vertical surfaces from Wall
+    content.vb: Public Shared Function GetFairwayVerticalSurfaces(wall As Wall, searchDistance As Double) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces*
+  nameWithType.vb: WallServices.GetFairwayVerticalSurfaces(Wall, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces(Autodesk.Revit.DB.Wall, Double)
+  name.vb: GetFairwayVerticalSurfaces(Wall, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid(Autodesk.Revit.DB.Wall,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid(Autodesk.Revit.DB.Wall,System.Double)
+  id: GetExtendedSolid(Autodesk.Revit.DB.Wall,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedSolid(Wall, double)
+  nameWithType: WallServices.GetExtendedSolid(Wall, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid(Autodesk.Revit.DB.Wall, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Retrieves extended solid from this wall.
+
+    Extended solid is that one that comprehends the whole Wall extension.
+
+    Not only defined by its location line. Which includes joints with other Walls.
+  remarks: <i>Only works on straight walls</i>
+  example: []
+  syntax:
+    content: public static Solid? GetExtendedSolid(this Wall wall, double extents = 0)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    - id: extents
+      type: System.Double
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Solid
+      description: ''
+    content.vb: Public Shared Function GetExtendedSolid(wall As Wall, extents As Double = 0) As Solid
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid*
+  nameWithType.vb: WallServices.GetExtendedSolid(Wall, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid(Autodesk.Revit.DB.Wall, Double)
+  name.vb: GetExtendedSolid(Wall, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation(Autodesk.Revit.DB.Wall,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation(Autodesk.Revit.DB.Wall,System.Double)
+  id: GetExtendedLocation(Autodesk.Revit.DB.Wall,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedLocation(Wall, double)
+  nameWithType: WallServices.GetExtendedLocation(Wall, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation(Autodesk.Revit.DB.Wall, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Retrieves extended Location Line from this wall, translated to its base offset.
+
+    Extended Location Curve is that one that comprehends the whole Wall extension.
+
+    Not only defined by its location curve. Which includes joints with other Walls.
+  example: []
+  syntax:
+    content: public static Curve GetExtendedLocation(this Wall wall, double extents = 0)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    - id: extents
+      type: System.Double
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Curve
+      description: ''
+    content.vb: Public Shared Function GetExtendedLocation(wall As Wall, extents As Double = 0) As Curve
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation*
+  nameWithType.vb: WallServices.GetExtendedLocation(Wall, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation(Autodesk.Revit.DB.Wall, Double)
+  name.vb: GetExtendedLocation(Wall, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine(Autodesk.Revit.DB.Wall,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine(Autodesk.Revit.DB.Wall,System.Double)
+  id: GetExtendedLocationLine(Autodesk.Revit.DB.Wall,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedLocationLine(Wall, double)
+  nameWithType: WallServices.GetExtendedLocationLine(Wall, double)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine(Autodesk.Revit.DB.Wall, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: >-
+    Retrieves extended Location Line from this wall, translated to its base offset.
+
+    Extended Location Line is that one that comprehends the whole Wall extension.
+
+    Not only defined by its location line. Which includes joints with other Walls.
+  remarks: <i>Only works on straight walls</i>
+  example: []
+  syntax:
+    content: public static Line GetExtendedLocationLine(this Wall wall, double extents = 0)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: ''
+    - id: extents
+      type: System.Double
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Line
+      description: ''
+    content.vb: Public Shared Function GetExtendedLocationLine(wall As Wall, extents As Double = 0) As Line
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: WallServices.GetExtendedLocationLine(Wall, Double)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine(Autodesk.Revit.DB.Wall, Double)
+  name.vb: GetExtendedLocationLine(Wall, Double)
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation(Autodesk.Revit.DB.Wall)
+  id: GetPhysicalLocation(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetPhysicalLocation(Wall)
+  nameWithType: WallServices.GetPhysicalLocation(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Gets the Wall physical location curve based on its base offset
+  example: []
+  syntax:
+    content: public static Curve GetPhysicalLocation(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: Wall to get location
+    return:
+      type: Autodesk.DesignScript.Geometry.Curve
+      description: ''
+    content.vb: Public Shared Function GetPhysicalLocation(wall As Wall) As Curve
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation*
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.Document)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.Document)
+  id: GetParallelGrids(Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetParallelGrids(Wall, Document?)
+  nameWithType: WallServices.GetParallelGrids(Wall, Document?)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids(Autodesk.Revit.DB.Wall, Autodesk.Revit.DB.Document?)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Gets parallel grids to this straight Wall
+  remarks: <i>Only returns straight grids</i>
+  example: []
+  syntax:
+    content: public static List<Grid> GetParallelGrids(this Wall wall, Document? document = null)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: Wall to get straight parallel Grids
+    - id: document
+      type: Autodesk.Revit.DB.Document
+      description: Document to get grids
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Grid}
+      description: ''
+    content.vb: Public Shared Function GetParallelGrids(wall As Wall, document As Document = Nothing) As List(Of Grid)
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids*
+  nameWithType.vb: WallServices.GetParallelGrids(Wall, Document)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids(Autodesk.Revit.DB.Wall, Autodesk.Revit.DB.Document)
+  name.vb: GetParallelGrids(Wall, Document)
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid(Autodesk.Revit.DB.Wall)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid(Autodesk.Revit.DB.Wall)
+  id: GetProtoSolid(Autodesk.Revit.DB.Wall)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.RevitServices.WallServices
+  langs:
+  - csharp
+  - vb
+  name: GetProtoSolid(Wall)
+  nameWithType: WallServices.GetProtoSolid(Wall)
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid(Autodesk.Revit.DB.Wall)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.RevitServices
+  summary: Get the protosolid of a Wall.
+  remarks: >-
+    <p>
+
+    This method uses a different approach from ToProtoType() method.
+
+    It uses the Wall's physical location and dimensions to create a <xref href="Autodesk.DesignScript.Geometry.Solid" data-throw-if-not-resolved="false"></xref>. 
+
+    </p>
+
+    <b>The returned solid does not contains openings</b>, it is a simple extrusion of the Wall's location curve.
+
+    Use this method to analyze the Wall's geometry without considering its openings.
+  example: []
+  syntax:
+    content: public static Solid GetProtoSolid(this Wall wall)
+    parameters:
+    - id: wall
+      type: Autodesk.Revit.DB.Wall
+      description: The Wall to get the protosolid from.
+    return:
+      type: Autodesk.DesignScript.Geometry.Solid
+      description: The protosolid of the Wall.
+    content.vb: Public Shared Function GetProtoSolid(wall As Wall) As Solid
+  overload: DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid*
+references:
+- uid: DynamoForRevitUtils.Services.RevitServices
+  commentId: N:DynamoForRevitUtils.Services.RevitServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.RevitServices
+  nameWithType: DynamoForRevitUtils.Services.RevitServices
+  fullName: DynamoForRevitUtils.Services.RevitServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.RevitServices
+    name: RevitServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.RevitServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetJoinedElementsAtEnds_Autodesk_Revit_DB_Wall_
+  name: GetJoinedElementsAtEnds
+  nameWithType: WallServices.GetJoinedElementsAtEnds
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds
+- uid: Autodesk.Revit.DB.Wall
+  isExternal: true
+  name: Wall
+  nameWithType: Wall
+  fullName: Autodesk.Revit.DB.Wall
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, List<Element>>
+  nameWithType: Dictionary<string, List<Element>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Autodesk.Revit.DB.Element>>
+  nameWithType.vb: Dictionary(Of String, List(Of Element))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of Autodesk.Revit.DB.Element))
+  name.vb: Dictionary(Of String, List(Of Element))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Autodesk.Revit.DB.BuiltInCategory
+  isExternal: true
+  name: BuiltInCategory
+  nameWithType: BuiltInCategory
+  fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetBasicWallsNearby_Autodesk_Revit_DB_Wall_
+  name: GetBasicWallsNearby
+  nameWithType: WallServices.GetBasicWallsNearby
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBasicWallsNearby
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Wall}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Wall}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Wall>
+  nameWithType: List<Wall>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Wall>
+  nameWithType.vb: List(Of Wall)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Wall)
+  name.vb: List(Of Wall)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Wall
+    name: Wall
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Wall
+    name: Wall
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetExtremitiesSurfaces_Autodesk_Revit_DB_Wall_
+  name: GetExtremitiesSurfaces
+  nameWithType: WallServices.GetExtremitiesSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtremitiesSurfaces
+- uid: System.Collections.Generic.Dictionary{System.String,Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, Surface>
+  nameWithType: Dictionary<string, Surface>
+  fullName: System.Collections.Generic.Dictionary<string, Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: Dictionary(Of String, Surface)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Autodesk.DesignScript.Geometry.Surface)
+  name.vb: Dictionary(Of String, Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetLateralSurfaces_Autodesk_Revit_DB_Wall_
+  name: GetLateralSurfaces
+  nameWithType: WallServices.GetLateralSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetLateralSurfaces
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Surface>
+  nameWithType: List<Surface>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: List(Of Surface)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Surface)
+  name.vb: List(Of Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetVerticalSurfaces_Autodesk_Revit_DB_Wall_
+  name: GetVerticalSurfaces
+  nameWithType: WallServices.GetVerticalSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetVerticalSurfaces
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetHorizontalSurfaces_Autodesk_Revit_DB_Wall_
+  name: GetHorizontalSurfaces
+  nameWithType: WallServices.GetHorizontalSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetHorizontalSurfaces
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetTopFace_Autodesk_Revit_DB_Wall_
+  name: GetTopFace
+  nameWithType: WallServices.GetTopFace
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace
+- uid: Autodesk.DesignScript.Geometry.Surface
+  isExternal: true
+  name: Surface
+  nameWithType: Surface
+  fullName: Autodesk.DesignScript.Geometry.Surface
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetBottomSurface_Autodesk_Revit_DB_Wall_
+  name: GetBottomSurface
+  nameWithType: WallServices.GetBottomSurface
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetFrontalSurfaces_Autodesk_Revit_DB_Wall_
+  name: GetFrontalSurfaces
+  nameWithType: WallServices.GetFrontalSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFrontalSurfaces
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetFairwayVerticalSurfaces_Autodesk_Revit_DB_Wall_System_Double_
+  name: GetFairwayVerticalSurfaces
+  nameWithType: WallServices.GetFairwayVerticalSurfaces
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetFairwayVerticalSurfaces
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetExtendedSolid_Autodesk_Revit_DB_Wall_System_Double_
+  name: GetExtendedSolid
+  nameWithType: WallServices.GetExtendedSolid
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid
+- uid: Autodesk.DesignScript.Geometry.Solid
+  isExternal: true
+  name: Solid
+  nameWithType: Solid
+  fullName: Autodesk.DesignScript.Geometry.Solid
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetExtendedLocation_Autodesk_Revit_DB_Wall_System_Double_
+  name: GetExtendedLocation
+  nameWithType: WallServices.GetExtendedLocation
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation
+- uid: Autodesk.DesignScript.Geometry.Curve
+  isExternal: true
+  name: Curve
+  nameWithType: Curve
+  fullName: Autodesk.DesignScript.Geometry.Curve
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetExtendedLocationLine_Autodesk_Revit_DB_Wall_System_Double_
+  name: GetExtendedLocationLine
+  nameWithType: WallServices.GetExtendedLocationLine
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine
+- uid: Autodesk.DesignScript.Geometry.Line
+  isExternal: true
+  name: Line
+  nameWithType: Line
+  fullName: Autodesk.DesignScript.Geometry.Line
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetPhysicalLocation_Autodesk_Revit_DB_Wall_
+  name: GetPhysicalLocation
+  nameWithType: WallServices.GetPhysicalLocation
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetPhysicalLocation
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetParallelGrids_Autodesk_Revit_DB_Wall_Autodesk_Revit_DB_Document_
+  name: GetParallelGrids
+  nameWithType: WallServices.GetParallelGrids
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Grid}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Grid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Grid>
+  nameWithType: List<Grid>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Grid>
+  nameWithType.vb: List(Of Grid)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Grid)
+  name.vb: List(Of Grid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Grid
+    name: Grid
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Grid
+    name: Grid
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid*
+  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid
+  isExternal: true
+  href: DynamoForRevitUtils.Services.RevitServices.WallServices.html#DynamoForRevitUtils_Services_RevitServices_WallServices_GetProtoSolid_Autodesk_Revit_DB_Wall_
+  name: GetProtoSolid
+  nameWithType: WallServices.GetProtoSolid
+  fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetProtoSolid

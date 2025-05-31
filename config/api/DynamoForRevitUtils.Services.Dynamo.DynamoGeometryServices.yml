@@ -1,0 +1,1448 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  commentId: T:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  id: DynamoGeometryServices
+  parent: DynamoForRevitUtils.Services.Dynamo
+  children:
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point})
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces(Autodesk.DesignScript.Geometry.Mesh)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line})
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve(System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve})
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.BoundingBox,DSCore.Color,System.Boolean)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem,System.Double)
+  - DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Point,DSCore.Color,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: DynamoGeometryServices
+  nameWithType: DynamoGeometryServices
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Revit geometry tools
+  example: []
+  syntax:
+    content: public static class DynamoGeometryServices
+    content.vb: Public Module DynamoGeometryServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  id: IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsVertical(Surface, ushort)
+  nameWithType: DynamoGeometryServices.IsVertical(Surface, ushort)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Verify if a given surface is vertical
+  example: []
+  syntax:
+    content: public static bool IsVertical(this Surface surface, ushort approximation = 2)
+    parameters:
+    - id: surface
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: Surface to analyze
+    - id: approximation
+      type: System.UInt16
+      description: A positive integer representing the rounding precision
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsVertical(surface As Surface, approximation As UShort = 2) As Boolean
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical*
+  nameWithType.vb: DynamoGeometryServices.IsVertical(Surface, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface, UShort)
+  name.vb: IsVertical(Surface, UShort)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  id: IsHorizontal(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsHorizontal(Surface, ushort)
+  nameWithType: DynamoGeometryServices.IsHorizontal(Surface, ushort)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal(Autodesk.DesignScript.Geometry.Surface, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Verify if a given surface is horizontal
+  example: []
+  syntax:
+    content: public static bool IsHorizontal(this Surface surface, ushort approximation = 2)
+    parameters:
+    - id: surface
+      type: Autodesk.DesignScript.Geometry.Surface
+      description: Surface to analyze
+    - id: approximation
+      type: System.UInt16
+      description: A positive integer representing the rounding precision
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsHorizontal(surface As Surface, approximation As UShort = 2) As Boolean
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal*
+  nameWithType.vb: DynamoGeometryServices.IsHorizontal(Surface, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal(Autodesk.DesignScript.Geometry.Surface, UShort)
+  name.vb: IsHorizontal(Surface, UShort)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  id: IsParallelTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsParallelTo(Vector, Vector, ushort)
+  nameWithType: DynamoGeometryServices.IsParallelTo(Vector, Vector, ushort)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Vector, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Verify if two vectors are parallel
+  example: []
+  syntax:
+    content: public static bool IsParallelTo(this Vector vector, Vector otherVector, ushort approximation = 1)
+    parameters:
+    - id: vector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: ''
+    - id: otherVector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: ''
+    - id: approximation
+      type: System.UInt16
+      description: A positive integer representing the rounding precision
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsParallelTo(vector As Vector, otherVector As Vector, approximation As UShort = 1) As Boolean
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo*
+  nameWithType.vb: DynamoGeometryServices.IsParallelTo(Vector, Vector, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Vector, UShort)
+  name.vb: IsParallelTo(Vector, Vector, UShort)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  id: IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Vector,System.UInt16)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: IsPerpendicularTo(Vector, Vector, ushort)
+  nameWithType: DynamoGeometryServices.IsPerpendicularTo(Vector, Vector, ushort)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Vector, ushort)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Verify if two vectors are perpendicular
+  example: []
+  syntax:
+    content: public static bool IsPerpendicularTo(this Vector vector, Vector otherVector, ushort approximation = 1)
+    parameters:
+    - id: vector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: ''
+    - id: otherVector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: ''
+    - id: approximation
+      type: System.UInt16
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsPerpendicularTo(vector As Vector, otherVector As Vector, approximation As UShort = 1) As Boolean
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo*
+  nameWithType.vb: DynamoGeometryServices.IsPerpendicularTo(Vector, Vector, UShort)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Vector, UShort)
+  name.vb: IsPerpendicularTo(Vector, Vector, UShort)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point)
+  id: GetMidPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GetMidPoint(Point, Point)
+  nameWithType: DynamoGeometryServices.GetMidPoint(Point, Point)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint(Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.Point)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get the mid point between two points
+  example: []
+  syntax:
+    content: public static Point GetMidPoint(this Point point, Point otherPoint)
+    parameters:
+    - id: point
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    - id: otherPoint
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    content.vb: Public Shared Function GetMidPoint(point As Point, otherPoint As Point) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint*
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,System.Double)
+  id: ArePointsCollinear(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,System.Double)
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ArePointsCollinear(Point, Point, Point, double)
+  nameWithType: DynamoGeometryServices.ArePointsCollinear(Point, Point, Point, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear(Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.Point, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Evaluates if given three points are collinear by a given tolerance
+  example: []
+  syntax:
+    content: public static bool ArePointsCollinear(Point p1, Point p2, Point p3, double tolerance = 0.001)
+    parameters:
+    - id: p1
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    - id: p2
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    - id: p3
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    - id: tolerance
+      type: System.Double
+      description: ''
+    return:
+      type: System.Boolean
+      description: Whether the three points are collinear or not
+    content.vb: Public Shared Function ArePointsCollinear(p1 As Point, p2 As Point, p3 As Point, tolerance As Double = 0.001) As Boolean
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear*
+  nameWithType.vb: DynamoGeometryServices.ArePointsCollinear(Point, Point, Point, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear(Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.Point, Double)
+  name.vb: ArePointsCollinear(Point, Point, Point, Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point})
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point})
+  id: ComputeAverageCenterPoint(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point})
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ComputeAverageCenterPoint(List<Point>)
+  nameWithType: DynamoGeometryServices.ComputeAverageCenterPoint(List<Point>)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint(System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Point>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Computes the average center point from a list of points.
+  example: []
+  syntax:
+    content: public static Point ComputeAverageCenterPoint(List<Point> points)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+      description: The list of points
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: The average center point
+    content.vb: Public Shared Function ComputeAverageCenterPoint(points As List(Of Point)) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint*
+  nameWithType.vb: DynamoGeometryServices.ComputeAverageCenterPoint(List(Of Point))
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint(System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Point))
+  name.vb: ComputeAverageCenterPoint(List(Of Point))
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line})
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line})
+  id: ReorderLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line})
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ReorderLines(List<Line>)
+  nameWithType: DynamoGeometryServices.ReorderLines(List<Line>)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines(System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Line>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Reorders a list of lines based on their angle with respect to the average center point.
+  example: []
+  syntax:
+    content: public static List<Line> ReorderLines(List<Line> lines)
+    parameters:
+    - id: lines
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}
+      description: The list of lines to be reordered.
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}
+      description: A new list of lines reordered based on their angle.
+    content.vb: Public Shared Function ReorderLines(lines As List(Of Line)) As List(Of Line)
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines*
+  nameWithType.vb: DynamoGeometryServices.ReorderLines(List(Of Line))
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines(System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Line))
+  name.vb: ReorderLines(List(Of Line))
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Double)
+  id: GroupAlignedLines(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Double)
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GroupAlignedLines(List<Line>, double)
+  nameWithType: DynamoGeometryServices.GroupAlignedLines(List<Line>, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines(System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Line>, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Group aligned Lines by a given tolerance
+  example: []
+  syntax:
+    content: public static List<List<Line>> GroupAlignedLines(List<Line> lines, double tolerance)
+    parameters:
+    - id: lines
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}
+      description: ''
+    - id: tolerance
+      type: System.Double
+      description: ''
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}}
+      description: ''
+    content.vb: Public Shared Function GroupAlignedLines(lines As List(Of Line), tolerance As Double) As List(Of List(Of Line))
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines*
+  nameWithType.vb: DynamoGeometryServices.GroupAlignedLines(List(Of Line), Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines(System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Line), Double)
+  name.vb: GroupAlignedLines(List(Of Line), Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces(Autodesk.DesignScript.Geometry.Mesh)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces(Autodesk.DesignScript.Geometry.Mesh)
+  id: GetMeshSurfaces(Autodesk.DesignScript.Geometry.Mesh)
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GetMeshSurfaces(Mesh)
+  nameWithType: DynamoGeometryServices.GetMeshSurfaces(Mesh)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces(Autodesk.DesignScript.Geometry.Mesh)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Gets mesh surfaces
+  example: []
+  syntax:
+    content: public static List<Surface> GetMeshSurfaces(Mesh mesh)
+    parameters:
+    - id: mesh
+      type: Autodesk.DesignScript.Geometry.Mesh
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+      description: ''
+    content.vb: Public Shared Function GetMeshSurfaces(mesh As Mesh) As List(Of Surface)
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces*
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
+  id: GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: GetRelativeCoordinatesOfPoint(Point, CoordinateSystem)
+  nameWithType: DynamoGeometryServices.GetRelativeCoordinatesOfPoint(Point, CoordinateSystem)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point, Autodesk.DesignScript.Geometry.CoordinateSystem)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Get the coordinates of a point relative to a Coordinate System
+  example: []
+  syntax:
+    content: public static double[] GetRelativeCoordinatesOfPoint(Point point, CoordinateSystem cs)
+    parameters:
+    - id: point
+      type: Autodesk.DesignScript.Geometry.Point
+      description: ''
+    - id: cs
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+      description: ''
+    return:
+      type: System.Double[]
+      description: ''
+    content.vb: Public Shared Function GetRelativeCoordinatesOfPoint(point As Point, cs As CoordinateSystem) As Double()
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint*
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Point,DSCore.Color,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Point,DSCore.Color,System.Double)
+  id: Visualize(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Point,DSCore.Color,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: Visualize(Vector, Point, Color?, double)
+  nameWithType: DynamoGeometryServices.Visualize(Vector, Point, Color?, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Point, DSCore.Color?, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Generates a Vector visualization in Dynamo
+  example: []
+  syntax:
+    content: public static List<GeometryColor> Visualize(this Vector vector, Point origin, Color? color = null, double size = 1)
+    parameters:
+    - id: vector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: Vector to visualize
+    - id: origin
+      type: Autodesk.DesignScript.Geometry.Point
+      description: Point that represents the vector origin for visualization on 3D space.
+    - id: color
+      type: DSCore.Color
+      description: Color to vector visualization
+    - id: size
+      type: System.Double
+      description: The size of vector visualization
+    return:
+      type: System.Collections.Generic.List{Modifiers.GeometryColor}
+      description: Vector visualization
+    content.vb: Public Shared Function Visualize(vector As Vector, origin As Point, color As Color = Nothing, size As Double = 1) As List(Of GeometryColor)
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize*
+  nameWithType.vb: DynamoGeometryServices.Visualize(Vector, Point, Color, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.Vector, Autodesk.DesignScript.Geometry.Point, DSCore.Color, Double)
+  name.vb: Visualize(Vector, Point, Color, Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem,System.Double)
+  id: Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: Visualize(CoordinateSystem, double)
+  nameWithType: DynamoGeometryServices.Visualize(CoordinateSystem, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Generates a Coordinate System visualization in Dynamo
+  example: []
+  syntax:
+    content: public static List<GeometryColor> Visualize(this CoordinateSystem cs, double size = 1)
+    parameters:
+    - id: cs
+      type: Autodesk.DesignScript.Geometry.CoordinateSystem
+      description: Coordinate System to visualize
+    - id: size
+      type: System.Double
+      description: The size of Coordinate System visualization
+    return:
+      type: System.Collections.Generic.List{Modifiers.GeometryColor}
+      description: Coordinate System visualization
+    content.vb: Public Shared Function Visualize(cs As CoordinateSystem, size As Double = 1) As List(Of GeometryColor)
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize*
+  nameWithType.vb: DynamoGeometryServices.Visualize(CoordinateSystem, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.CoordinateSystem, Double)
+  name.vb: Visualize(CoordinateSystem, Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.BoundingBox,DSCore.Color,System.Boolean)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.BoundingBox,DSCore.Color,System.Boolean)
+  id: Visualize(Autodesk.DesignScript.Geometry.BoundingBox,DSCore.Color,System.Boolean)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: Visualize(BoundingBox, Color?, bool)
+  nameWithType: DynamoGeometryServices.Visualize(BoundingBox, Color?, bool)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.BoundingBox, DSCore.Color?, bool)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Generates a Bounding Box Visualization in Dynamo
+  example: []
+  syntax:
+    content: public static List<GeometryColor> Visualize(this BoundingBox bbox, Color? color = null, bool wireFrame = true)
+    parameters:
+    - id: bbox
+      type: Autodesk.DesignScript.Geometry.BoundingBox
+      description: Bounding Box to visualize
+    - id: color
+      type: DSCore.Color
+      description: Bounding Box visualization color
+    - id: wireFrame
+      type: System.Boolean
+      description: Whether Bounding Box visualization as wire frame or not
+    return:
+      type: System.Collections.Generic.List{Modifiers.GeometryColor}
+      description: Bounding Box visualization
+    content.vb: Public Shared Function Visualize(bbox As BoundingBox, color As Color = Nothing, wireFrame As Boolean = True) As List(Of GeometryColor)
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize*
+  nameWithType.vb: DynamoGeometryServices.Visualize(BoundingBox, Color, Boolean)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize(Autodesk.DesignScript.Geometry.BoundingBox, DSCore.Color, Boolean)
+  name.vb: Visualize(BoundingBox, Color, Boolean)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve(System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve})
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve(System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve})
+  id: ToPolyCurve(System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve})
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: ToPolyCurve(IEnumerable<Curve>)
+  nameWithType: DynamoGeometryServices.ToPolyCurve(IEnumerable<Curve>)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve(System.Collections.Generic.IEnumerable<Autodesk.DesignScript.Geometry.Curve>)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Converts an enumerable of DynamoGeometry.Curve to a DynamoGeometry.PolyCurve
+  example: []
+  syntax:
+    content: public static PolyCurve ToPolyCurve(this IEnumerable<Curve> curves)
+    parameters:
+    - id: curves
+      type: System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve}
+      description: ''
+    return:
+      type: Autodesk.DesignScript.Geometry.PolyCurve
+      description: ''
+    content.vb: Public Shared Function ToPolyCurve(curves As IEnumerable(Of Curve)) As PolyCurve
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve*
+  nameWithType.vb: DynamoGeometryServices.ToPolyCurve(IEnumerable(Of Curve))
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve(System.Collections.Generic.IEnumerable(Of Autodesk.DesignScript.Geometry.Curve))
+  name.vb: ToPolyCurve(IEnumerable(Of Curve))
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  id: SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: SwapCoordinateValue(Point, Coordinate, double)
+  nameWithType: DynamoGeometryServices.SwapCoordinateValue(Point, Coordinate, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point, DynamoForRevitUtils.Enumerations.Coordinate, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Swap a coordinate value of a point
+  example: []
+  syntax:
+    content: public static Point SwapCoordinateValue(this Point point, Coordinate coordinate, double value)
+    parameters:
+    - id: point
+      type: Autodesk.DesignScript.Geometry.Point
+      description: Point to swap coordinate
+    - id: coordinate
+      type: DynamoForRevitUtils.Enumerations.Coordinate
+      description: Coordinate to swap
+    - id: value
+      type: System.Double
+      description: New value that will be used on swapped coordinate
+    return:
+      type: Autodesk.DesignScript.Geometry.Point
+      description: Point with swapped coordinate
+    content.vb: Public Shared Function SwapCoordinateValue(point As Point, coordinate As Coordinate, value As Double) As Point
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if coordinate has an invalid value.
+  nameWithType.vb: DynamoGeometryServices.SwapCoordinateValue(Point, Coordinate, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Point, DynamoForRevitUtils.Enumerations.Coordinate, Double)
+  name.vb: SwapCoordinateValue(Point, Coordinate, Double)
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  id: SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector,DynamoForRevitUtils.Enumerations.Coordinate,System.Double)
+  isExtensionMethod: true
+  parent: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices
+  langs:
+  - csharp
+  - vb
+  name: SwapCoordinateValue(Vector, Coordinate, double)
+  nameWithType: DynamoGeometryServices.SwapCoordinateValue(Vector, Coordinate, double)
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector, DynamoForRevitUtils.Enumerations.Coordinate, double)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Dynamo
+  summary: Swap a coordinate value of a vector
+  example: []
+  syntax:
+    content: public static Vector SwapCoordinateValue(this Vector vector, Coordinate coordinate, double value)
+    parameters:
+    - id: vector
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: Vector to swap coordinate
+    - id: coordinate
+      type: DynamoForRevitUtils.Enumerations.Coordinate
+      description: Coordinate to swap
+    - id: value
+      type: System.Double
+      description: New value that will be used on swapped coordinate
+    return:
+      type: Autodesk.DesignScript.Geometry.Vector
+      description: Vector with swapped coordinate
+    content.vb: Public Shared Function SwapCoordinateValue(vector As Vector, coordinate As Coordinate, value As Double) As Vector
+  overload: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue*
+  nameWithType.vb: DynamoGeometryServices.SwapCoordinateValue(Vector, Coordinate, Double)
+  fullName.vb: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue(Autodesk.DesignScript.Geometry.Vector, DynamoForRevitUtils.Enumerations.Coordinate, Double)
+  name.vb: SwapCoordinateValue(Vector, Coordinate, Double)
+references:
+- uid: DynamoForRevitUtils.Services.Dynamo
+  commentId: N:DynamoForRevitUtils.Services.Dynamo
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Dynamo
+  nameWithType: DynamoForRevitUtils.Services.Dynamo
+  fullName: DynamoForRevitUtils.Services.Dynamo
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Dynamo
+    name: Dynamo
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Dynamo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_IsVertical_Autodesk_DesignScript_Geometry_Surface_System_UInt16_
+  name: IsVertical
+  nameWithType: DynamoGeometryServices.IsVertical
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical
+- uid: Autodesk.DesignScript.Geometry.Surface
+  isExternal: true
+  name: Surface
+  nameWithType: Surface
+  fullName: Autodesk.DesignScript.Geometry.Surface
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_IsHorizontal_Autodesk_DesignScript_Geometry_Surface_System_UInt16_
+  name: IsHorizontal
+  nameWithType: DynamoGeometryServices.IsHorizontal
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_IsParallelTo_Autodesk_DesignScript_Geometry_Vector_Autodesk_DesignScript_Geometry_Vector_System_UInt16_
+  name: IsParallelTo
+  nameWithType: DynamoGeometryServices.IsParallelTo
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo
+- uid: Autodesk.DesignScript.Geometry.Vector
+  isExternal: true
+  name: Vector
+  nameWithType: Vector
+  fullName: Autodesk.DesignScript.Geometry.Vector
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_IsPerpendicularTo_Autodesk_DesignScript_Geometry_Vector_Autodesk_DesignScript_Geometry_Vector_System_UInt16_
+  name: IsPerpendicularTo
+  nameWithType: DynamoGeometryServices.IsPerpendicularTo
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsPerpendicularTo
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_GetMidPoint_Autodesk_DesignScript_Geometry_Point_Autodesk_DesignScript_Geometry_Point_
+  name: GetMidPoint
+  nameWithType: DynamoGeometryServices.GetMidPoint
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint
+- uid: Autodesk.DesignScript.Geometry.Point
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Autodesk.DesignScript.Geometry.Point
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_ArePointsCollinear_Autodesk_DesignScript_Geometry_Point_Autodesk_DesignScript_Geometry_Point_Autodesk_DesignScript_Geometry_Point_System_Double_
+  name: ArePointsCollinear
+  nameWithType: DynamoGeometryServices.ArePointsCollinear
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ArePointsCollinear
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_ComputeAverageCenterPoint_System_Collections_Generic_List_Autodesk_DesignScript_Geometry_Point__
+  name: ComputeAverageCenterPoint
+  nameWithType: DynamoGeometryServices.ComputeAverageCenterPoint
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ComputeAverageCenterPoint
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Point>
+  nameWithType: List<Point>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Point>
+  nameWithType.vb: List(Of Point)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Point)
+  name.vb: List(Of Point)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Point
+    name: Point
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Point
+    name: Point
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_ReorderLines_System_Collections_Generic_List_Autodesk_DesignScript_Geometry_Line__
+  name: ReorderLines
+  nameWithType: DynamoGeometryServices.ReorderLines
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ReorderLines
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Line>
+  nameWithType: List<Line>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Line>
+  nameWithType.vb: List(Of Line)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Line)
+  name.vb: List(Of Line)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Line
+    name: Line
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Line
+    name: Line
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_GroupAlignedLines_System_Collections_Generic_List_Autodesk_DesignScript_Geometry_Line__System_Double_
+  name: GroupAlignedLines
+  nameWithType: DynamoGeometryServices.GroupAlignedLines
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GroupAlignedLines
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<List<Line>>
+  nameWithType: List<List<Line>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Line>>
+  nameWithType.vb: List(Of List(Of Line))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Line))
+  name.vb: List(Of List(Of Line))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Line
+    name: Line
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Line
+    name: Line
+    isExternal: true
+  - name: )
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_GetMeshSurfaces_Autodesk_DesignScript_Geometry_Mesh_
+  name: GetMeshSurfaces
+  nameWithType: DynamoGeometryServices.GetMeshSurfaces
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces
+- uid: Autodesk.DesignScript.Geometry.Mesh
+  commentId: '!:Autodesk.DesignScript.Geometry.Mesh'
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Autodesk.DesignScript.Geometry.Mesh
+- uid: System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  commentId: T:System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Surface>
+  nameWithType: List<Surface>
+  fullName: System.Collections.Generic.List<Autodesk.DesignScript.Geometry.Surface>
+  nameWithType.vb: List(Of Surface)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.DesignScript.Geometry.Surface)
+  name.vb: List(Of Surface)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Surface
+    name: Surface
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_GetRelativeCoordinatesOfPoint_Autodesk_DesignScript_Geometry_Point_Autodesk_DesignScript_Geometry_CoordinateSystem_
+  name: GetRelativeCoordinatesOfPoint
+  nameWithType: DynamoGeometryServices.GetRelativeCoordinatesOfPoint
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint
+- uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  isExternal: true
+  name: CoordinateSystem
+  nameWithType: CoordinateSystem
+  fullName: Autodesk.DesignScript.Geometry.CoordinateSystem
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_Visualize_Autodesk_DesignScript_Geometry_Vector_Autodesk_DesignScript_Geometry_Point_DSCore_Color_System_Double_
+  name: Visualize
+  nameWithType: DynamoGeometryServices.Visualize
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize
+- uid: DSCore.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: DSCore.Color
+- uid: System.Collections.Generic.List{Modifiers.GeometryColor}
+  commentId: T:System.Collections.Generic.List{Modifiers.GeometryColor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GeometryColor>
+  nameWithType: List<GeometryColor>
+  fullName: System.Collections.Generic.List<Modifiers.GeometryColor>
+  nameWithType.vb: List(Of GeometryColor)
+  fullName.vb: System.Collections.Generic.List(Of Modifiers.GeometryColor)
+  name.vb: List(Of GeometryColor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Modifiers.GeometryColor
+    name: GeometryColor
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Modifiers.GeometryColor
+    name: GeometryColor
+    isExternal: true
+  - name: )
+- uid: Autodesk.DesignScript.Geometry.BoundingBox
+  isExternal: true
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: Autodesk.DesignScript.Geometry.BoundingBox
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_ToPolyCurve_System_Collections_Generic_IEnumerable_Autodesk_DesignScript_Geometry_Curve__
+  name: ToPolyCurve
+  nameWithType: DynamoGeometryServices.ToPolyCurve
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.ToPolyCurve
+- uid: System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.DesignScript.Geometry.Curve}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Curve>
+  nameWithType: IEnumerable<Curve>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.DesignScript.Geometry.Curve>
+  nameWithType.vb: IEnumerable(Of Curve)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.DesignScript.Geometry.Curve)
+  name.vb: IEnumerable(Of Curve)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.DesignScript.Geometry.Curve
+    name: Curve
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.DesignScript.Geometry.Curve
+    name: Curve
+    isExternal: true
+  - name: )
+- uid: Autodesk.DesignScript.Geometry.PolyCurve
+  isExternal: true
+  name: PolyCurve
+  nameWithType: PolyCurve
+  fullName: Autodesk.DesignScript.Geometry.PolyCurve
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue*
+  commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html#DynamoForRevitUtils_Services_Dynamo_DynamoGeometryServices_SwapCoordinateValue_Autodesk_DesignScript_Geometry_Point_DynamoForRevitUtils_Enumerations_Coordinate_System_Double_
+  name: SwapCoordinateValue
+  nameWithType: DynamoGeometryServices.SwapCoordinateValue
+  fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.SwapCoordinateValue
+- uid: DynamoForRevitUtils.Enumerations.Coordinate
+  commentId: T:DynamoForRevitUtils.Enumerations.Coordinate
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.Coordinate.html
+  name: Coordinate
+  nameWithType: Coordinate
+  fullName: DynamoForRevitUtils.Enumerations.Coordinate
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html

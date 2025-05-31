@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  commentId: T:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  id: ElementParameterYesNoValue
+  parent: DynamoForRevitUtils.Enumerations
+  children:
+  - DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.No
+  - DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
+  langs:
+  - csharp
+  - vb
+  name: ElementParameterYesNoValue
+  nameWithType: ElementParameterYesNoValue
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  type: Enum
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Represents the possible values for a yes or no parameter in a Revit element.
+  example: []
+  syntax:
+    content: public enum ElementParameterYesNoValue
+    content.vb: Public Enum ElementParameterYesNoValue
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
+  commentId: F:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
+  id: Yes
+  parent: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  langs:
+  - csharp
+  - vb
+  name: Yes
+  nameWithType: ElementParameterYesNoValue.Yes
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Represents a "Yes" value in the context of ElementParameterYesNoValue
+  example: []
+  syntax:
+    content: Yes = 0
+    return:
+      type: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.No
+  commentId: F:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.No
+  id: No
+  parent: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  langs:
+  - csharp
+  - vb
+  name: No
+  nameWithType: ElementParameterYesNoValue.No
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.No
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Represents the "No" value in
+  example: []
+  syntax:
+    content: No = 1
+    return:
+      type: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+references:
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  commentId: T:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue
+  parent: DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.html
+  name: ElementParameterYesNoValue
+  nameWithType: ElementParameterYesNoValue
+  fullName: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue

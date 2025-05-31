@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  commentId: T:DynamoForRevitUtils.Services.Enumerations.EnumParser
+  id: EnumParser
+  parent: DynamoForRevitUtils.Services.Enumerations
+  children:
+  - DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(System.String,System.String,System.String)
+  - DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.Object)
+  - DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EnumParser
+  nameWithType: EnumParser
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Enumerations
+  summary: Class containing Enum Parsers
+  example: []
+  syntax:
+    content: public static class EnumParser
+    content.vb: Public Module EnumParser
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)
+  commentId: M:DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)
+  id: ByValue``1(System.String)
+  parent: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  langs:
+  - csharp
+  - vb
+  name: ByValue<T>(string)
+  nameWithType: EnumParser.ByValue<T>(string)
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue<T>(string)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Enumerations
+  summary: >-
+    <p>Generic parser for enums by string value</p>
+
+    <a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
+  example: []
+  syntax:
+    content: 'public static T ByValue<T>(string value) where T : struct, IComparable, IConvertible, IFormattable'
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function ByValue(Of T As {Structure, IComparable, IConvertible, IFormattable})(value As String) As T
+  overload: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
+  nameWithType.vb: EnumParser.ByValue(Of T)(String)
+  fullName.vb: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(Of T)(String)
+  name.vb: ByValue(Of T)(String)
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.Object)
+  id: ByValue``1(System.Object)
+  parent: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  langs:
+  - csharp
+  - vb
+  name: ByValue<T>(object)
+  nameWithType: EnumParser.ByValue<T>(object)
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue<T>(object)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Enumerations
+  summary: >-
+    <p>Generic parser for enums by object value</p>
+
+    <a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
+  example: []
+  syntax:
+    content: 'public static T ByValue<T>(object value) where T : struct, IComparable, IFormattable, IConvertible'
+    parameters:
+    - id: value
+      type: System.Object
+      description: Enum value to be casted
+    typeParameters:
+    - id: T
+      description: Enum Type
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function ByValue(Of T As {Structure, IComparable, IFormattable, IConvertible})(value As Object) As T
+  overload: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: EnumParser.ByValue(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(Of T)(Object)
+  name.vb: ByValue(Of T)(Object)
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(System.String,System.String,System.String)
+  commentId: M:DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(System.String,System.String,System.String)
+  id: ByValue(System.String,System.String,System.String)
+  parent: DynamoForRevitUtils.Services.Enumerations.EnumParser
+  langs:
+  - csharp
+  - vb
+  name: ByValue(string, string, string)
+  nameWithType: EnumParser.ByValue(string, string, string)
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(string, string, string)
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Services.Enumerations
+  summary: Generic Enum parser for enums used in Dropdown NodeModel
+  example: []
+  syntax:
+    content: public static object ByValue(string enumTypeFullName, string enumAssemblyPath, string value)
+    parameters:
+    - id: enumTypeFullName
+      type: System.String
+      description: >-
+        <p>Enum Type full name. Could be obtained using <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref> property.</p>
+
+        <i>Example:</i> <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator">typeof</a>(<xref href="Autodesk.Revit.DB.StorageType" data-throw-if-not-resolved="false"></xref>).<code>FullName</code>
+    - id: enumAssemblyPath
+      type: System.String
+      description: >-
+        <p>Enum Assembly path. Could be obtained using <xref href="Autodesk.Revit.DB.Location" data-throw-if-not-resolved="false"></xref> property.</p>
+
+        <i>Example:</i> <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator">typeof</a>(<xref href="Autodesk.Revit.DB.StorageType" data-throw-if-not-resolved="false"></xref>).<code>FullName</code>.<code>Location</code>
+    - id: value
+      type: System.String
+      description: Value to parse
+    return:
+      type: System.Object
+      description: Enum value as <xref href="System.Object" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Function ByValue(enumTypeFullName As String, enumAssemblyPath As String, value As String) As Object
+  overload: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown when is not possible to load enum Assembly, Type or field.
+  nameWithType.vb: EnumParser.ByValue(String, String, String)
+  fullName.vb: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(String, String, String)
+  name.vb: ByValue(String, String, String)
+references:
+- uid: DynamoForRevitUtils.Services.Enumerations
+  commentId: N:DynamoForRevitUtils.Services.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.Enumerations
+  nameWithType: DynamoForRevitUtils.Services.Enumerations
+  fullName: DynamoForRevitUtils.Services.Enumerations
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Services.Enumerations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
+  commentId: Overload:DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue
+  isExternal: true
+  href: DynamoForRevitUtils.Services.Enumerations.EnumParser.html#DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue__1_System_String_
+  name: ByValue
+  nameWithType: EnumParser.ByValue
+  fullName: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Type.FullName
+  commentId: P:System.Type.FullName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type.fullname
+  name: FullName
+  nameWithType: Type.FullName
+  fullName: System.Type.FullName
+- uid: Autodesk.Revit.DB.StorageType
+  commentId: T:Autodesk.Revit.DB.StorageType
+  isExternal: true
+  name: StorageType
+  nameWithType: StorageType
+  fullName: Autodesk.Revit.DB.StorageType
+- uid: Autodesk.Revit.DB.Location
+  commentId: T:Autodesk.Revit.DB.Location
+  isExternal: true

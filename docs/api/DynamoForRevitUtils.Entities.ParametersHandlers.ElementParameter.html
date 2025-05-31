@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ElementParameter | DynamoForRevitUtils - Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ElementParameter | DynamoForRevitUtils - Docs ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/onbim-logo-128x128.png" alt="DynamoForRevitUtils - Docs" class="logomark">
+              <span class="brand-title">DynamoForRevitUtils - Docs</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/onbim-logo-128x128.png" alt="DynamoForRevitUtils - Docs" class="logomark">
+                          <span class="brand-title">DynamoForRevitUtils - Docs</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  onBIM Technology
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter">
+
+
+
+  <h1 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" class="text-break">Class ElementParameter</h1>
+  <div class="markdown level0 summary"><p>Represents a parameter of a Revit element within the Dynamo for Revit utilities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ElementParameter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Entities.html">Entities</a>.<a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.html">ParametersHandlers</a></h6>
+  <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ElementParameter</code></pre>
+  </div>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class acts as a wrapper around Revit's <span class="xref">Autodesk.Revit.DB.Parameter</span> object
+and provides access to the parameter's metadata, value, and additional contextual information
+necessary in the Dynamo for Revit environment.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_Autodesk_Revit_DB_BuiltInParameter_DynamoForRevitUtils_Enumerations_ParameterDataType_DynamoForRevitUtils_Enumerations_ParameterKind_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(Autodesk.Revit.DB.BuiltInParameter,DynamoForRevitUtils.Enumerations.ParameterDataType,DynamoForRevitUtils.Enumerations.ParameterKind)">ElementParameter(BuiltInParameter, ParameterDataType, ParameterKind)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> that will be used for data manipulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementParameter(BuiltInParameter builtInParameter, ParameterDataType dataType, ParameterKind kind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuiltInParameter</span></td>
+        <td><span class="parametername">builtInParameter</span></td>
+        <td><p>The <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_BuiltInParameter">BuiltInParameter</a> representing this <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td><p><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a> <code>enum</code> that defines the data type of the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td><p><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a> <code>enum</code> that defines if the parameter is a type or instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown if the is not possible to get Revit UI name to <code class="paramref">builtInParameter</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_Autodesk_Revit_DB_Parameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(Autodesk.Revit.DB.Parameter)">ElementParameter(Parameter)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> from Revit parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementParameter(Parameter revitParameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Parameter</span></td>
+        <td><span class="parametername">revitParameter</span></td>
+        <td><p>Revit parameter to bound with the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_Autodesk_Revit_DB_Parameter_DynamoForRevitUtils_Enumerations_ParameterKind_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(Autodesk.Revit.DB.Parameter,DynamoForRevitUtils.Enumerations.ParameterKind)">ElementParameter(Parameter, ParameterKind)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> from Revit parameter and <a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementParameter(Parameter revitParameter, ParameterKind kind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Parameter</span></td>
+        <td><span class="parametername">revitParameter</span></td>
+        <td><p>Revit parameter to bound with the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td><p><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a> <code>enum</code> that defines if the parameter is a type or instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__ctor_System_String_DynamoForRevitUtils_Enumerations_ParameterDataType_DynamoForRevitUtils_Enumerations_ParameterKind_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(System.String,DynamoForRevitUtils.Enumerations.ParameterDataType,DynamoForRevitUtils.Enumerations.ParameterKind)">ElementParameter(string, ParameterDataType, ParameterKind)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> that will be used for data manipulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementParameter(string name, ParameterDataType dataType, ParameterKind kind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The parameter name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td><p><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a> <code>enum</code> that defines the data type of the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td><p><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a> <code>enum</code> that defines if the parameter is a type or instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown if the provided <code class="paramref">name</code> is <code>null</code> or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Invalid" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Invalid">Invalid</h4>
+  <div class="markdown level1 summary"><p>Gets an invalid instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> with undefined data type and parameter kind.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ElementParameter Invalid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><p>An <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> instance representing an invalid parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_BuiltInParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.BuiltInParameter*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_BuiltInParameter" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.BuiltInParameter">BuiltInParameter</h4>
+  <div class="markdown level1 summary"><p>A built-in parameter within a Revit element, used to reference predefined parameters
+in the Autodesk Revit API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuiltInParameter? BuiltInParameter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuiltInParameter</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DataType_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.DataType*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DataType" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.DataType">DataType</h4>
+  <div class="markdown level1 summary"><p>Represents the storage type of a parameter,
+indicating the data type that the parameter is expected to hold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterDataType DataType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Definition_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Definition*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Definition" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Definition">Definition</h4>
+  <div class="markdown level1 summary"><p>The Parameter Definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Definition Definition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Definition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Document_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Document*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Document" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Document">Document</h4>
+  <div class="markdown level1 summary"><p>Document which the Parameter owner Element resides in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Document Document { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Document</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Id_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Id*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Id" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The Parameter Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementId Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ElementId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_IsBuiltInParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.IsBuiltInParameter*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_IsBuiltInParameter" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.IsBuiltInParameter">IsBuiltInParameter</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the ElementParameter represents a built-in parameter in Revit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBuiltInParameter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Kind_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Kind*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Kind" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Kind">Kind</h4>
+  <div class="markdown level1 summary"><p>The Parameter Kind (Type or Instance)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterKind Kind { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterKind.html">ParameterKind</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Name_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Name" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name">Name</h4>
+  <div class="markdown level1 summary"><p>User defined name for this Parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_OwnerElement_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.OwnerElement*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_OwnerElement" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.OwnerElement">OwnerElement</h4>
+  <div class="markdown level1 summary"><p>The Parameter owner Element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Element OwnerElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_RevitParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.RevitParameter*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_RevitParameter" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.RevitParameter">RevitParameter</h4>
+  <div class="markdown level1 summary"><p>The Revit Parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Parameter RevitParameter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Parameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Spec_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Spec*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Spec" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Spec">Spec</h4>
+  <div class="markdown level1 summary"><p>Represents the <span class="xref">Autodesk.Revit.DB.SpecTypeId</span> associated with the parameter as human-readable label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Spec { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Spec_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The value depends on Revit language.</p>
+</div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SpecTypeId_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SpecTypeId*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SpecTypeId" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SpecTypeId">SpecTypeId</h4>
+  <div class="markdown level1 summary"><p>String representation of <span class="xref">Autodesk.Revit.DB.SpecTypeId</span> associated with the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpecTypeId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Unit_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Unit*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Unit" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Unit">Unit</h4>
+  <div class="markdown level1 summary"><p>Represents the <span class="xref">Autodesk.Revit.DB.UnitTypeId</span> associated with the parameter as human-readable label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Unit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Unit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The value depends on Revit language.</p>
+</div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_UnitTypeId_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.UnitTypeId*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_UnitTypeId" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.UnitTypeId">UnitTypeId</h4>
+  <div class="markdown level1 summary"><p>String representation of <span class="xref">Autodesk.Revit.DB.UnitTypeId</span> associated with the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UnitTypeId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Value_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Value*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Value" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Value of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Value_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Values of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> must be considered in Display Units.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>
+Thrown when the value to set is not valid for the <a class="xref" href="DynamoForRevitUtils.Enumerations.ParameterDataType.html">ParameterDataType</a> of the parameter.
+</p>
+Accepted types are:
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>,
+<a class="xref" href="DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.html">ElementParameterYesNoValue</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>,
+<span class="xref">Autodesk.Revit.DB.ElementId</span>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> class with the same name,
+data type, and kind as the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementParameter Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><p>A new <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> object with properties copied from the original instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Equals_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Equals*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Equals_System_Object_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Equals(System.Object)">Equals(object?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a></div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetDisplayUnits_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetDisplayUnits" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits">GetDisplayUnits()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the display units for the parameter based on its specification type
+and the document's unit settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GetUnitsResultData GetDisplayUnits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.GetUnitsResultData.html">GetUnitsResultData</a></td>
+        <td><p>A <a class="xref" href="DynamoForRevitUtils.Entities.GetUnitsResultData.html">GetUnitsResultData</a> object containing the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_UnitTypeId">UnitTypeId</a> or <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SpecTypeId">SpecTypeId</a>,
+a message describing the result, and the overall success or failure of the unit retrieval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetDisplayUnits_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SpecTypeId">SpecTypeId</a> is returned in case the parameter specification is not computable.</p>
+</div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetHashCode_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetHashCode*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetHashCode" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_ToString_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_ToString" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="operators">Operators
+</h3>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_op_Equality_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.op_Equality*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_op_Equality_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.op_Equality(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">operator ==(ElementParameter, ElementParameter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ElementParameter left, ElementParameter right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_op_Inequality_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.op_Inequality*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_op_Inequality_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.op_Inequality(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">operator !=(ElementParameter, ElementParameter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ElementParameter left, ElementParameter right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_">ObjectServices.TryCast&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; onBIM Technology. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

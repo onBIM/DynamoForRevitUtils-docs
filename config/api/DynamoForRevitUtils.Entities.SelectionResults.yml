@@ -1,0 +1,1101 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.SelectionResults
+  commentId: T:DynamoForRevitUtils.Entities.SelectionResults
+  id: SelectionResults
+  parent: DynamoForRevitUtils.Entities
+  children:
+  - DynamoForRevitUtils.Entities.SelectionResults.#ctor
+  - DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+  - DynamoForRevitUtils.Entities.SelectionResults.Elements
+  - DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory
+  - DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+  - DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+  - DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+  - DynamoForRevitUtils.Entities.SelectionResults.Settings
+  - DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
+  - DynamoForRevitUtils.Entities.SelectionResults.ToString
+  langs:
+  - csharp
+  - vb
+  name: SelectionResults
+  nameWithType: SelectionResults
+  fullName: DynamoForRevitUtils.Entities.SelectionResults
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Class containing Data of Selection
+  example: []
+  syntax:
+    content: public class SelectionResults
+    content.vb: Public Class SelectionResults
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
+  commentId: M:DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
+  id: ToDictionary
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: ToDictionary()
+  nameWithType: SelectionResults.ToDictionary()
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: >-
+    Converts SelectionResults to a dictionary where:
+
+    <ul><li>Key: Element (Selected element)</li><li>Value: RevitLinkInstance (All RevitLinkInstances which the element belongs to)</li></ul>
+  example: []
+  syntax:
+    content: public Dictionary<Element, RevitLinkInstance?> ToDictionary()
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance}
+      description: ''
+    content.vb: Public Function ToDictionary() As Dictionary(Of Element, RevitLinkInstance)
+  overload: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory
+  commentId: M:DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory
+  id: GroupByCategory
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: GroupByCategory()
+  nameWithType: SelectionResults.GroupByCategory()
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: >-
+    Returns a main List containing two lists:
+
+    <table><tbody><tr><td class="term">[0]</td><td class="description">Elements grouped by selected categories</td></tr><tr><td class="term">[1]</td><td class="description">RevitLinkInstances grouped by selected categories</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: protected IList GroupByCategory()
+    return:
+      type: System.Collections.IList
+      description: ''
+    content.vb: Protected Function GroupByCategory() As IList
+  overload: DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ToString
+  commentId: M:DynamoForRevitUtils.Entities.SelectionResults.ToString
+  id: ToString
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SelectionResults.ToString()
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ToString()
+  type: Method
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: DynamoForRevitUtils.Entities.SelectionResults.ToString*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.#ctor
+  commentId: M:DynamoForRevitUtils.Entities.SelectionResults.#ctor
+  id: '#ctor'
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: SelectionResults()
+  nameWithType: SelectionResults.SelectionResults()
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.SelectionResults()
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  syntax:
+    content: public SelectionResults()
+    content.vb: Public Sub New()
+  overload: DynamoForRevitUtils.Entities.SelectionResults.#ctor*
+  nameWithType.vb: SelectionResults.New()
+  fullName.vb: DynamoForRevitUtils.Entities.SelectionResults.New()
+  name.vb: New()
+- uid: DynamoForRevitUtils.Entities.SelectionResults.Elements
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.Elements
+  id: Elements
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: Elements
+  nameWithType: SelectionResults.Elements
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.Elements
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Elements selected
+  example: []
+  syntax:
+    content: public List<Element> Elements { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    content.vb: Public Property Elements As List(Of Element)
+  overload: DynamoForRevitUtils.Entities.SelectionResults.Elements*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+  id: GroupedElements
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: GroupedElements
+  nameWithType: SelectionResults.GroupedElements
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Elements grouped by selected categories
+  example: []
+  syntax:
+    content: public List<List<Element>>? GroupedElements { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+    content.vb: Public ReadOnly Property GroupedElements As List(Of List(Of Element))
+  overload: DynamoForRevitUtils.Entities.SelectionResults.GroupedElements*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+  id: GroupedRevitLinkInstances
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: GroupedRevitLinkInstances
+  nameWithType: SelectionResults.GroupedRevitLinkInstances
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: RevitLinkInstances grouped by selected categories
+  example: []
+  syntax:
+    content: public List<List<RevitLinkInstance?>>? GroupedRevitLinkInstances { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}}
+    content.vb: Public ReadOnly Property GroupedRevitLinkInstances As List(Of List(Of RevitLinkInstance))
+  overload: DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+  id: RevitLinkInstances
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: RevitLinkInstances
+  nameWithType: SelectionResults.RevitLinkInstances
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Link instance selected
+  example: []
+  syntax:
+    content: public List<RevitLinkInstance?> RevitLinkInstances { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}
+    content.vb: Public Property RevitLinkInstances As List(Of RevitLinkInstance)
+  overload: DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+  id: ActiveView
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: ActiveView
+  nameWithType: SelectionResults.ActiveView
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Active view
+  example: []
+  syntax:
+    content: public View ActiveView { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.View
+    content.vb: Public Property ActiveView As View
+  overload: DynamoForRevitUtils.Entities.SelectionResults.ActiveView*
+- uid: DynamoForRevitUtils.Entities.SelectionResults.Settings
+  commentId: P:DynamoForRevitUtils.Entities.SelectionResults.Settings
+  id: Settings
+  parent: DynamoForRevitUtils.Entities.SelectionResults
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: SelectionResults.Settings
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.Settings
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities
+  summary: Settings of Selection
+  example: []
+  syntax:
+    content: public SelectionSettings Settings { get; set; }
+    parameters: []
+    return:
+      type: DynamoForRevitUtils.Entities.SelectionSettings
+    content.vb: Public Property Settings As SelectionSettings
+  overload: DynamoForRevitUtils.Entities.SelectionResults.Settings*
+references:
+- uid: DynamoForRevitUtils.Entities
+  commentId: N:DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities
+  nameWithType: DynamoForRevitUtils.Entities
+  fullName: DynamoForRevitUtils.Entities
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_ToDictionary
+  name: ToDictionary
+  nameWithType: SelectionResults.ToDictionary
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
+- uid: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance}
+  commentId: T:System.Collections.Generic.Dictionary{Autodesk.Revit.DB.Element,Autodesk.Revit.DB.RevitLinkInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Element, RevitLinkInstance>
+  nameWithType: Dictionary<Element, RevitLinkInstance>
+  fullName: System.Collections.Generic.Dictionary<Autodesk.Revit.DB.Element, Autodesk.Revit.DB.RevitLinkInstance>
+  nameWithType.vb: Dictionary(Of Element, RevitLinkInstance)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Autodesk.Revit.DB.Element, Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: Dictionary(Of Element, RevitLinkInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_GroupByCategory
+  name: GroupByCategory
+  nameWithType: SelectionResults.GroupByCategory
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupByCategory
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ToString*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.ToString
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_ToString
+  name: ToString
+  nameWithType: SelectionResults.ToString
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DynamoForRevitUtils.Entities.SelectionResults.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults__ctor
+  name: SelectionResults
+  nameWithType: SelectionResults.SelectionResults
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.SelectionResults
+  nameWithType.vb: SelectionResults.New
+  fullName.vb: DynamoForRevitUtils.Entities.SelectionResults.New
+  name.vb: New
+- uid: DynamoForRevitUtils.Entities.SelectionResults.Elements*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.Elements
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_Elements
+  name: Elements
+  nameWithType: SelectionResults.Elements
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.Elements
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupedElements*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_GroupedElements
+  name: GroupedElements
+  nameWithType: SelectionResults.GroupedElements
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupedElements
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<List<Element>>
+  nameWithType: List<List<Element>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Autodesk.Revit.DB.Element>>
+  nameWithType.vb: List(Of List(Of Element))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Element))
+  name.vb: List(Of List(Of Element))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+  - name: )
+- uid: DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_GroupedRevitLinkInstances
+  name: GroupedRevitLinkInstances
+  nameWithType: SelectionResults.GroupedRevitLinkInstances
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.GroupedRevitLinkInstances
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<List<RevitLinkInstance>>
+  nameWithType: List<List<RevitLinkInstance>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Autodesk.Revit.DB.RevitLinkInstance>>
+  nameWithType.vb: List(Of List(Of RevitLinkInstance))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.RevitLinkInstance))
+  name.vb: List(Of List(Of RevitLinkInstance))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: )
+  - name: )
+- uid: DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_RevitLinkInstances
+  name: RevitLinkInstances
+  nameWithType: SelectionResults.RevitLinkInstances
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.RevitLinkInstances
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.RevitLinkInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<RevitLinkInstance>
+  nameWithType: List<RevitLinkInstance>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.RevitLinkInstance>
+  nameWithType.vb: List(Of RevitLinkInstance)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: List(Of RevitLinkInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.RevitLinkInstance
+    name: RevitLinkInstance
+    isExternal: true
+  - name: )
+- uid: DynamoForRevitUtils.Entities.SelectionResults.ActiveView*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_ActiveView
+  name: ActiveView
+  nameWithType: SelectionResults.ActiveView
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.ActiveView
+- uid: Autodesk.Revit.DB.View
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: DynamoForRevitUtils.Entities.SelectionResults.Settings*
+  commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.Settings
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionResults.html#DynamoForRevitUtils_Entities_SelectionResults_Settings
+  name: Settings
+  nameWithType: SelectionResults.Settings
+  fullName: DynamoForRevitUtils.Entities.SelectionResults.Settings
+- uid: DynamoForRevitUtils.Entities.SelectionSettings
+  commentId: T:DynamoForRevitUtils.Entities.SelectionSettings
+  parent: DynamoForRevitUtils.Entities
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.SelectionSettings.html
+  name: SelectionSettings
+  nameWithType: SelectionSettings
+  fullName: DynamoForRevitUtils.Entities.SelectionSettings

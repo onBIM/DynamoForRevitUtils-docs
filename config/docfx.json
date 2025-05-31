@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../external-libs/d4rvtutils/",
+          "files": [
+            "DynamoForRevitUtils.dll"
+          ]
+        }
+      ],
+      "dest": "api",
+      "references": [
+        "../external-libs/Revit2025/CoreNodeModels.dll",
+        "../external-libs/Revit2025/CoreNodeModelsWpf.dll",
+        "../external-libs/Revit2025/DSCoreNodes.dll",
+        "../external-libs/Revit2025/DynamoCore.dll",
+        "../external-libs/Revit2025/DynamoCoreWpf.dll",
+        "../external-libs/Revit2025/DynamoServices.dll",
+        "../external-libs/Revit2025/DynamoUtilities.dll",
+        "../external-libs/Revit2025/GeometryColor.dll",
+        "../external-libs/Revit2025/ProtoCore.dll",
+        "../external-libs/Revit2025/ProtoGeometry.dll",
+        "../external-libs/Revit2025/RevitAPI.dll",
+        "../external-libs/Revit2025/RevitAPIIFC.dll",
+        "../external-libs/Revit2025/RevitAPIUI.dll",
+        "../external-libs/Revit2025/RevitNodes.dll",
+        "../external-libs/Revit2025/RevitServices.dll",
+        "../external-libs/others/MathNet.Numerics.dll",
+        "../external-libs/others/NewtonSoft.Json.dll"
+      ]
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "../docs/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../docs",
+    "template": [
+      "default",
+      "templates/singulinkfx",
+      "templates/singulinkfx-onbim"
+    ],
+    "globalMetadata": {
+      "_appName": "DynamoForRevitUtils - Docs",
+      "_appTitle": "DynamoForRevitUtils - Docs",
+      "_enableSearch": true,
+      "pdf": false,
+      "_appFaviconPath": "images/onbim-logo-128x128.png",
+      "_appLogoPath": "images/onbim-logo-128x128.png",
+      "_appFooter":"onBIM Technology",
+      "_copyrightFooter": "© onBIM Technology. All rights reserved.",
+      "_disableContribution": true
+    }
+  }
+}

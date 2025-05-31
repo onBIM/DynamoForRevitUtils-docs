@@ -1,0 +1,2758 @@
+{
+  "source_base_path": "C:/Users/ricar/OneDrive/onBIM/myrepos/DynamoForRevitUtils-docs/config",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.DefaultValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.DefaultValues.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.DefaultValues",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.DefaultValues.yml\" sourcestartlinenumber=\"1\">Class containing all default values for the custom node models attributes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model category.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model description.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model IN ports descriptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model IN ports names.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model IN ports types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model OUT ports descriptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model OUT ports names.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model OUT ports types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to define the node model search tags.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase<TElementType>",
+      "Summary": "<p>Enum drop down for Revit ElementTypes Collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase<T>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase-1.yml\" sourcestartlinenumber=\"1\">Base class for ElementTypes drop down menu</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase<T>",
+      "Summary": "<p>Enum drop downs base class</p>\nReference: \"https://github.com/DynamoDS/DynamoRevit/blob/master/src/Libraries/RevitNodesUI/RevitDropDown.cs\"\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.yml\" sourcestartlinenumber=\"1\">Abstract base class for node models that represent drop-down Nodes.\nInherits from DSDropDownBase.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType",
+      "Summary": "<p>Enum that defines the attribute resource type</p>\n<i>Used for searching resources in resx files that contains attributes values for NodeModels</i>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Enumerations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Enumerations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Enumerations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BoundingBoxViewer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BoundingBoxViewer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.BoundingBoxViewer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BuiltInToUIName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.BuiltInToUIName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.BuiltInToUIName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CSVRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CSVRead.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.CSVRead",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.CSVRead.yml\" sourcestartlinenumber=\"1\">Node Model to read CSV file</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CSVWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CSVWrite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.CSVWrite",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.CSVWrite.yml\" sourcestartlinenumber=\"1\">Node Model to write CSV file</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CoordinateSystemViewer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.CoordinateSystemViewer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.CoordinateSystemViewer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByBuiltInParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByBuiltInParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByBuiltInParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterDataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterDataType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ElementParameterValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ElementParameterValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.yml\" sourcestartlinenumber=\"1\">Node model for getting selection results data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase",
+      "Summary": "<p>\n    Base class for DynamoForRevit NodeModels that are\n    functions like f(x1, x2, ..., xN) -&gt; y1, y2, ..., yM\n</p>\n<remarks><i>\n    The functions assigment to each output port must be implemented on child classes by\n    overriding BuildOutputAst method\n</i></remarks>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.yml\" sourcestartlinenumber=\"1\">Node model for Selection.ByMethodAndCategories node</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.yml\" sourcestartlinenumber=\"1\">Node model for Selection.ByMethod node</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.yml\" sourcestartlinenumber=\"1\">Base class for DynamoForRevit NodeModels that are functions like f(x1, x2, ..., xN) -&gt; result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.yml\" sourcestartlinenumber=\"1\">Base class for DynamoForRevit NodeModels that are functions like f(x1, x2, ..., xN) -&gt; result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StringFilterByRegex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.StringFilterByRegex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.StringFilterByRegex",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.TopographyGetSurfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.TopographyGetSurfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.TopographyGetSurfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.VectorViewer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.VectorViewer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.VectorViewer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ViewCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.ViewCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes.ViewCollector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.FunctionNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.FunctionNodes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.yml\" sourcestartlinenumber=\"1\">Class containing methods to overrides DimensionType name in the DropDown node</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.yml\" sourcestartlinenumber=\"1\">Interface to override the name of the element in the drop down menu</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Services.NodeModelsServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Services.NodeModelsServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Services.NodeModelsServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Services.NodeModelsServices.yml\" sourcestartlinenumber=\"1\">Several utilities for NodeModels</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Services.TagTypeNameOverrider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Services.TagTypeNameOverrider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Services.TagTypeNameOverrider",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitNodeModels.Services.TagTypeNameOverrider.yml\" sourcestartlinenumber=\"1\">Class containing methods to overrides TagType name in the DropDown node</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitNodeModels.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitNodeModels.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitNodeModels.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.yml\" sourcestartlinenumber=\"1\">An attribute to associate a property with a parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Constants.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Constants.Common.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Constants.Common",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Constants.Common.yml\" sourcestartlinenumber=\"1\">Common Constants</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.yml\" sourcestartlinenumber=\"1\">Abstract class for Abstract Bounding Box</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem.yml\" sourcestartlinenumber=\"1\">Abstract class for Abstract Coordinate System</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase<T>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase-1.yml\" sourcestartlinenumber=\"1\">Abstract class for Abstract Geometry</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.yml\" sourcestartlinenumber=\"1\">Abstract class for Abstract Vector</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.yml\" sourcestartlinenumber=\"1\">Interface for abstract geometry</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Axis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Axis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Axis",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Axis.yml\" sourcestartlinenumber=\"1\">Represents an axis in the DynamoForRevitUtils library.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.CompoundStructureLayersInfo",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.yml\" sourcestartlinenumber=\"1\">Class for storing information about <xref href=\"Autodesk.Revit.DB.WallType\" data-throw-if-not-resolved=\"false\"></xref> layers</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.CropRegionOffsetSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.CropRegionOffsetSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.CropRegionOffsetSettings",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.CropRegionOffsetSettings.yml\" sourcestartlinenumber=\"1\">Crop Region Offset Settings</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.yml\" sourcestartlinenumber=\"1\">Custom comparer for Revit Elements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.yml\" sourcestartlinenumber=\"1\">Custom comparer for Revit References obtained from Elements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.EqualityComparers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.EqualityComparers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.GetUnitsResultData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.GetUnitsResultData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.GetUnitsResultData",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.GetUnitsResultData.yml\" sourcestartlinenumber=\"1\">Represents the data resulting from an attempt to retrieve the unit type or specification ID\nalong with a description and result status.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.MEPCurveReferences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.MEPCurveReferences.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.MEPCurveReferences",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.MEPCurveReferences.yml\" sourcestartlinenumber=\"1\">Class containing utils References from MEP Curves</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.yml\" sourcestartlinenumber=\"1\">Represents options for retrieving parameters of elements using Dynamo for Revit utilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.yml\" sourcestartlinenumber=\"1\">Represents the data associated with accessing a parameter, including its value, a description,\nand the result of the access operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter of a Revit element within the Dynamo for Revit utilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.yml\" sourcestartlinenumber=\"1\">Class used to access properties from a <xref href=\"DynamoForRevitUtils.Entities.Wrappers.ElementWrapper\" data-throw-if-not-resolved=\"false\"></xref> using <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap<T>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.yml\" sourcestartlinenumber=\"1\">Object that holds element parameters</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.yml\" sourcestartlinenumber=\"1\">Represents a mapping item between a property name and an associated <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.ElementParameter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapper",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements. Provides\ncommon properties and methods for derived wrapper classes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.yml\" sourcestartlinenumber=\"1\">Represents a mapping between property names and their corresponding element parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapper",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an interface for wrapping Revit elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.yml\" sourcestartlinenumber=\"1\">Category selection filter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.PickSelectionFilters.MultiCategorySelectionFilter.yml\" sourcestartlinenumber=\"1\">Category selection filter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.PickSelectionFilters.NoFilter.yml\" sourcestartlinenumber=\"1\">Selection filter that allows all elements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.yml\" sourcestartlinenumber=\"1\">Base class for Pick Selection Filters</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.yml\" sourcestartlinenumber=\"1\">Wall selection filter based on WallKind</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.PickSelectionFilters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.PickSelectionFilters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Section.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Section.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Section",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Section.yml\" sourcestartlinenumber=\"1\">Object that holds information about a Revit Section View</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.SectionCreationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.SectionCreationData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.SectionCreationData",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.SectionCreationData.yml\" sourcestartlinenumber=\"1\">Object that holds data to create a Section View in Revit</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.SelectionResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.SelectionResults.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.SelectionResults",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.SelectionResults.yml\" sourcestartlinenumber=\"1\">Class containing Data of Selection</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.SelectionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.SelectionSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.SelectionSettings",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.SelectionSettings.yml\" sourcestartlinenumber=\"1\">Class containing Selection Data used in Revit UI Selection</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.WallElevation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.WallElevation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.WallElevation",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.WallElevation.yml\" sourcestartlinenumber=\"1\">Class containing data to create a Wall Elevation</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements. Provides\ncommon properties and methods for derived wrapper classes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract wrapper class for Revit family instances.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.yml\" sourcestartlinenumber=\"1\">Represents a mapping between property names and their corresponding element parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementWrapper",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an interface for wrapping Revit elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.AccessParameterInfo",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.AccessParameterInfo.yml\" sourcestartlinenumber=\"1\">Represents the data associated with accessing a parameter, including its value, a description,\nand the result of the access operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.AccessParameterMode",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.AccessParameterMode.yml\" sourcestartlinenumber=\"1\">Represents the mode of access for parameters within the Dynamo for Revit utilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.AccessParameterResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.AccessParameterResult",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.AccessParameterResult.yml\" sourcestartlinenumber=\"1\">Indicates that a parameter value has been successfully set.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.Coordinate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.Coordinate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.Coordinate",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.Coordinate.yml\" sourcestartlinenumber=\"1\">Enum to indicate the coordinate to be used</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.DoubleParameterConvertionMode.yml\" sourcestartlinenumber=\"1\">Specifies the modes of conversion for double parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.yml\" sourcestartlinenumber=\"1\">Represents the possible values for a yes or no parameter in a Revit element.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterDataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.ParameterDataType",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.ParameterDataType.yml\" sourcestartlinenumber=\"1\">Represents an undefined storage type for <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.ParameterKind",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.ParameterKind.yml\" sourcestartlinenumber=\"1\">Enum to define the kind of parameter</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.ParameterValidationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.ParameterValidationResult",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.ParameterValidationResult.yml\" sourcestartlinenumber=\"1\">Represents the validation options for a parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.RoofLineType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.RoofLineType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.RoofLineType",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.RoofLineType.yml\" sourcestartlinenumber=\"1\">Enum that defines Roof Line Types. Used in Roof Tiles Generator</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.SelectionMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.SelectionMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations.SelectionMethod",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.SelectionMethod.yml\" sourcestartlinenumber=\"1\">Enumeration containing Selection Methods for Selection Nodes usage</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Enumerations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Enumerations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Enumerations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Factories.AbstractGeometryFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Factories.AbstractGeometryFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Factories.AbstractGeometryFactory",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Factories.AbstractGeometryFactory.yml\" sourcestartlinenumber=\"1\">Factory class for Abstract Geometry</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Factories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Factories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Factories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collections.EnumerableServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collections.EnumerableServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collections.EnumerableServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collections.EnumerableServices.yml\" sourcestartlinenumber=\"1\">Provides utility methods for working with IEnumerable objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collections.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collections",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.CategoryCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.CategoryCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.CategoryCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.CategoryCollectors.yml\" sourcestartlinenumber=\"1\">Revit Categories collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.GenericCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.GenericCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.GenericCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.GenericCollectors.yml\" sourcestartlinenumber=\"1\">Generic Collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.LineStyleCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.LineStyleCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.LineStyleCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.LineStyleCollectors.yml\" sourcestartlinenumber=\"1\">Line Styles collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.PhaseCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.PhaseCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.PhaseCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.PhaseCollectors.yml\" sourcestartlinenumber=\"1\">Phases collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.RoomCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.RoomCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.RoomCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.RoomCollectors.yml\" sourcestartlinenumber=\"1\">Rooms collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.WallCollectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.WallCollectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors.WallCollectors",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Collectors.WallCollectors.yml\" sourcestartlinenumber=\"1\">Walls collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Collectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Collectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Collectors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.yml\" sourcestartlinenumber=\"1\">Dynamo BoundingBox utils</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.yml\" sourcestartlinenumber=\"1\">Revit geometry tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo.JoinLinesServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.yml\" sourcestartlinenumber=\"1\">Join Lines Services</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo.RevitElementsServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.yml\" sourcestartlinenumber=\"1\">Dynamo Elements Utils</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.TopographyServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.TopographyServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo.TopographyServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Dynamo.TopographyServices.yml\" sourcestartlinenumber=\"1\">Provides methods to work with Topography elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Dynamo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Dynamo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Dynamo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Enumerations.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Enumerations.Converters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Enumerations.Converters",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Enumerations.Converters.yml\" sourcestartlinenumber=\"1\">Provides methods for converting custom enumeration types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Enumerations.EnumParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Enumerations.EnumParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Enumerations.EnumParser",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Enumerations.EnumParser.yml\" sourcestartlinenumber=\"1\">Class containing Enum Parsers</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Enumerations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Enumerations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Enumerations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Files.CSV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Files.CSV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Files.CSV",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Files.CSV.yml\" sourcestartlinenumber=\"1\">Utils methods for read/write CSV files</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Files.Excel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Files.Excel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Files.Excel",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Files.Excel.yml\" sourcestartlinenumber=\"1\">Class containing utils for deal with Excel stuff</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Files.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Files",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.GenericServices.ObjectServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.GenericServices.ObjectServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.GenericServices.ObjectServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.GenericServices.ObjectServices.yml\" sourcestartlinenumber=\"1\">Generic services for objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.GenericServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.GenericServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.GenericServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.MathServices.ArithmeticServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.MathServices.ArithmeticServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.MathServices.ArithmeticServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.MathServices.ArithmeticServices.yml\" sourcestartlinenumber=\"1\">Arithmetic services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.yml\" sourcestartlinenumber=\"1\">Utils to perform linear algebra operations on Dynamo Geometry</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.MathServices.RangeServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.MathServices.RangeServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.MathServices.RangeServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.MathServices.RangeServices.yml\" sourcestartlinenumber=\"1\">Utils to generate numeric ranges</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.MathServices.SequenceServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.MathServices.SequenceServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.MathServices.SequenceServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.MathServices.SequenceServices.yml\" sourcestartlinenumber=\"1\">Utils to generate numeric sequences</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.MathServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.MathServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.MathServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Reflection.ReflectionServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Reflection.ReflectionServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Reflection.ReflectionServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.Reflection.ReflectionServices.yml\" sourcestartlinenumber=\"1\">Reflection services</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.Reflection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.Reflection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.CategoryServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.CategoryServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.CategoryServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.CategoryServices.yml\" sourcestartlinenumber=\"1\">Revit Categories services</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.DesignOptionServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.yml\" sourcestartlinenumber=\"1\">Design options collectors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.DocumentServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.DocumentServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.DocumentServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.DocumentServices.yml\" sourcestartlinenumber=\"1\">Document utils codes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ElementIdServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ElementIdServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.ElementIdServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.ElementIdServices.yml\" sourcestartlinenumber=\"1\">ElementId Services</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ElementServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ElementServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.ElementServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.ElementServices.yml\" sourcestartlinenumber=\"1\">Elements conversions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.yml\" sourcestartlinenumber=\"1\">Class that contains methods to work with Family Instances</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.GridServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.GridServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.GridServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.GridServices.yml\" sourcestartlinenumber=\"1\">Grid services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.yml\" sourcestartlinenumber=\"1\">Elements conversions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.LevelServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.LevelServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.LevelServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.LevelServices.yml\" sourcestartlinenumber=\"1\">Elements conversions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.MEPCurveServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.yml\" sourcestartlinenumber=\"1\">General utile for Revit Elements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.RevitGeometryServices.yml\" sourcestartlinenumber=\"1\">Revit geometry tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TagCreationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TagCreationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.TagCreationService",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.TagCreationService.yml\" sourcestartlinenumber=\"1\">Abstract base class for creating Tag creation services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TagInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TagInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.TagInfo",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.TagInfo.yml\" sourcestartlinenumber=\"1\">Represents information required for creating a new tag in Revit.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.TaskDialogServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.yml\" sourcestartlinenumber=\"1\">Services for Task Dialogs</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ViewServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.ViewServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.ViewServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.ViewServices.yml\" sourcestartlinenumber=\"1\">Class containing tools to deal with Revit Views</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.WallServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.WallServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices.WallServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.RevitServices.WallServices.yml\" sourcestartlinenumber=\"1\">Class containing tools to deal with Revit Walls</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.RevitServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.RevitServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.RevitServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.UnitsConversion.ConversionServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.yml\" sourcestartlinenumber=\"1\">Class for units conversion between Dynamo and Revit active document</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.yml\" sourcestartlinenumber=\"1\">Class containing specific conversion factors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.UnitsServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.UnitsServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.UnitsConversion.UnitsServices",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Services.UnitsConversion.UnitsServices.yml\" sourcestartlinenumber=\"1\">Class containing Spec types and Unit types</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Services.UnitsConversion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Services.UnitsConversion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.AbstractGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.AbstractGeometry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.AbstractGeometry",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.AbstractGeometry.yml\" sourcestartlinenumber=\"1\">Provides static methods for visualizing different types of geometries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.CSV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.CSV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.CSV",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.CSV.yml\" sourcestartlinenumber=\"1\">CSV Node Models functions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.DefaultInputs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.DefaultInputs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.DefaultInputs",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.DefaultInputs.yml\" sourcestartlinenumber=\"1\">Default inputs to use in nodes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.DropDown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.DropDown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.DropDown",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.DropDown.yml\" sourcestartlinenumber=\"1\">Functions to DropDown NodeModels</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.ElementParameterNodesFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.ElementParameterNodesFunctions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.ElementParameterNodesFunctions",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.ElementParameterNodesFunctions.yml\" sourcestartlinenumber=\"1\">Contains functions for creating and manipulating ElementParameter objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.RevitNodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.RevitNodes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.RevitNodes",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.RevitNodes.yml\" sourcestartlinenumber=\"1\">Revit Node Models functions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.Selection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.Selection",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.Selection.yml\" sourcestartlinenumber=\"1\">Functions to Selection Nodes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.TextFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.TextFunctions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.TextFunctions",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.TextFunctions.yml\" sourcestartlinenumber=\"1\">Functions to deal with text</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.Topography.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.Topography.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions.Topography",
+      "Summary": "<p sourcefile=\"api/NodeModelsFunctions.Topography.yml\" sourcestartlinenumber=\"1\">Topography functions to Node models</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NodeModelsFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NodeModelsFunctions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NodeModelsFunctions",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/onbim-logo-128x128.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/onbim-logo-128x128.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
