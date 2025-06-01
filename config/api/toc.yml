@@ -1,12 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: DynamoForRevitUtils.Attributes
-  name: DynamoForRevitUtils.Attributes
-  type: Namespace
-  items:
-  - uid: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
-    name: AssociatedParameterNameAttribute
-    type: Class
 - uid: DynamoForRevitUtils.Constants
   name: DynamoForRevitUtils.Constants
   type: Namespace
@@ -61,6 +54,9 @@ items:
   - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
     name: AbstractGeometryBase<T>
     type: Class
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+    name: AbstractGeometryFactory
+    type: Class
   - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
     name: AbstractVector
     type: Class
@@ -86,6 +82,9 @@ items:
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
     name: AccessParameterInfo
+    type: Class
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+    name: AssociatedElementParameterAttribute
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
     name: ElementParameter
@@ -168,13 +167,6 @@ items:
   - uid: DynamoForRevitUtils.Enumerations.SelectionMethod
     name: SelectionMethod
     type: Enum
-- uid: DynamoForRevitUtils.Factories
-  name: DynamoForRevitUtils.Factories
-  type: Namespace
-  items:
-  - uid: DynamoForRevitUtils.Factories.AbstractGeometryFactory
-    name: AbstractGeometryFactory
-    type: Class
 - uid: DynamoForRevitUtils.Services.Collections
   name: DynamoForRevitUtils.Services.Collections
   type: Namespace

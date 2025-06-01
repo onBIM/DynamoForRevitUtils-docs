@@ -7,6 +7,7 @@ items:
   - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox
   - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractCoordinateSystem
   - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
   - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
   - DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
   langs:
@@ -61,6 +62,13 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html
+  name: AbstractGeometryFactory
+  nameWithType: AbstractGeometryFactory
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
 - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
   commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
   isExternal: true

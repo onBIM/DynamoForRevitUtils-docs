@@ -4221,6 +4221,24 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase(Of T).abstractObject
   nameWithType: AbstractGeometryBase<T>.abstractObject
   nameWithType.vb: AbstractGeometryBase(Of T).abstractObject
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  name: AbstractGeometryFactory
+  href: api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  nameWithType: AbstractGeometryFactory
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  name: GetAbstractGeometryObject(DesignScriptEntity)
+  href: api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html#DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_GetAbstractGeometryObject_Autodesk_DesignScript_Geometry_DesignScriptEntity_
+  commentId: M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  nameWithType: AbstractGeometryFactory.GetAbstractGeometryObject(DesignScriptEntity)
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject*
+  name: GetAbstractGeometryObject
+  href: api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html#DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_GetAbstractGeometryObject_
+  commentId: Overload:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject
+  nameWithType: AbstractGeometryFactory.GetAbstractGeometryObject
 - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector
   name: AbstractVector
   href: api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.html
@@ -5505,6 +5523,42 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.<>
   nameWithType: AccessParameterInfo.operator !=
   nameWithType.vb: AccessParameterInfo.<>
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  name: AssociatedElementParameterAttribute
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  nameWithType: AssociatedElementParameterAttribute
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor(System.String)
+  name: AssociatedElementParameterAttribute(string)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html#DynamoForRevitUtils_Entities_ParametersHandlers_AssociatedElementParameterAttribute__ctor_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.AssociatedElementParameterAttribute(string)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.New(String)
+  nameWithType: AssociatedElementParameterAttribute.AssociatedElementParameterAttribute(string)
+  nameWithType.vb: AssociatedElementParameterAttribute.New(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor*
+  name: AssociatedElementParameterAttribute
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html#DynamoForRevitUtils_Entities_ParametersHandlers_AssociatedElementParameterAttribute__ctor_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor
+  name.vb: New
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.AssociatedElementParameterAttribute
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.New
+  nameWithType: AssociatedElementParameterAttribute.AssociatedElementParameterAttribute
+  nameWithType.vb: AssociatedElementParameterAttribute.New
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName
+  name: PropertyName
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html#DynamoForRevitUtils_Entities_ParametersHandlers_AssociatedElementParameterAttribute_PropertyName
+  commentId: P:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName
+  nameWithType: AssociatedElementParameterAttribute.PropertyName
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName*
+  name: PropertyName
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html#DynamoForRevitUtils_Entities_ParametersHandlers_AssociatedElementParameterAttribute_PropertyName_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName
+  nameWithType: AssociatedElementParameterAttribute.PropertyName
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   name: ElementParameter
   href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html

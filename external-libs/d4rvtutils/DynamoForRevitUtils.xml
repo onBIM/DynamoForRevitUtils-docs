@@ -4,26 +4,6 @@
         <name>DynamoForRevitUtils</name>
     </assembly>
     <members>
-        <member name="T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute">
-            <summary>
-            An attribute to associate a property with a parameter.
-            </summary>
-        </member>
-        <member name="P:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.PropertyName">
-            <summary>
-            Gets the name of the parameter property associated with the property.
-            </summary>
-        </member>
-        <member name="M:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.#ctor(System.String)">
-            <summary>
-            Used to link a property with another property in a <see cref="!:ElementParameterMap"/> object
-            that will be used to retrieve parameter values from a Revit element.
-            </summary>
-            <param name="propertyName">
-                <para>The name of the property to be associated with.</para>
-                Associated Property on <see cref="!:ElementParameterMap"/> must be of type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.
-            </param>
-        </member>
         <member name="T:DynamoForRevitUtils.Constants.Common">
             <summary>
             Common Constants
@@ -80,6 +60,18 @@
         </member>
         <member name="M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase`1.Visualize(Autodesk.DesignScript.Geometry.Point,System.Double,DSCore.Color,System.Boolean,System.Boolean)">
             <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory">
+            <summary>
+            Factory class for Abstract Geometry
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)">
+            <summary>
+            Get Abstract Geometry object from DesignScriptEntity
+            </summary>
+            <param name="designScriptEntity"></param>
+            <returns></returns>
         </member>
         <member name="T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector">
             <summary>
@@ -652,6 +644,22 @@
             Thrown when <paramref name="parameter"/> or <paramref name="description"/> is null.
             </exception>
         </member>
+        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute">
+            <summary>
+            Attribute used to create a bound between an <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> property
+            and a <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap"/> property
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName">
+            <summary>
+            Gets the name of the parameter property associated with the property.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor(System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute"/>
+            </summary>
+        </member>
         <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter">
             <summary>
             Represents a parameter of a Revit element within the Dynamo for Revit utilities.
@@ -861,7 +869,7 @@
             Class used to access properties from a <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>
             </summary>
             <remarks>
-            <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> must have properties with <see cref="T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute"/>
+            <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> must have properties with <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute"/>
             to map the property to the correspondent <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.
             </remarks>
             <example>
@@ -1488,24 +1496,22 @@
         </member>
         <member name="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper">
             <summary>
-            Represents an abstract base class for wrapping Revit elements. Provides
-            common properties and methods for derived wrapper classes.
+                Represents an abstract base class for wrapping Revit elements.
             </summary>
             <remarks>
             <para>
-            Use this class in conjunction with the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> 
-            <see cref="T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute" /> attribute to enhance the way you access element
-            parameters.
+                Use this class in conjunction with the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> and 
+            <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute" /> to enhance the way you access element parameters.
             </para>
             <para>
-            The <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> class represents the Revit Element and the
-            <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> represents the parameters of this element.
+                The <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> class represents the Revit Element and the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" />
+                represents the parameters of this element.
             </para>
             <para>
-            To use these classes together, proceed as follows:
+                To use these classes together, proceed as follows:
             <list type="number">
                 <item>
-                    Create classes derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> to represent specific characteristics
+                    Create a class derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> to represent specific characteristics
                     of the elements you want to represent.
                 </item>
                 <item>
@@ -1513,15 +1519,18 @@
                     from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> to represent element parameters.
                 </item>
                 <item>
-                    Use the <see cref="T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute" /> attribute to link properties of the class
-                    derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> with the properties of the class derived
-                    from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" />
+                    Use the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute" /> attribute to create a bound between
+                    properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> with the properties of the  <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" />
+                </item>
+                <item>
+                    Use <see cref="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterAccessor" /> in getters/setters of properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" />
+                    to get/set the values of the parameters, directly from/to the element instances in Revit.
                 </item>
             </list>
-            This way you will no longer need to worry about fetching parameters from elements every time
-            you need to get/set their values.
-            Use the properties of the class derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> normally and their values
-            will be automatically get/set from/to the element instances in Revit.
+                This way you will no longer need to worry about fetching parameters from elements every time
+                you need to get/set their values.
+                Use the properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> normally and their values
+                will be automatically get/set from/to the element instances in Revit.
             </para>
             </remarks>
             <example name="ElementWrapper">
@@ -1534,19 +1543,19 @@
                     params IEnumerable&lt;IElementParameterMap&gt; parameters
                 ) : base(element, parameters) { }
     
-                [AssociatedParameterName(nameof(CableTrayParameters.Comments))]
+                [AssociatedElementParameter(nameof(CableTrayParameters.Comments))]
                 public string Comments {
                     get =&gt; ParameterAccessor.GetStringValue();
                     set =&gt; ParameterAccessor.SetValue(value);
                 }
     
-                [AssociatedParameterName(nameof(CableTrayParameters.IDR))]
+                [AssociatedElementParameter(nameof(CableTrayParameters.IDR))]
                 public bool IDR {
                     get =&gt; ParameterAccessor.GetBoolValue();
                     set =&gt; ParameterAccessor.SetValue(value);
                 }
     
-                [AssociatedParameterName(nameof(CableTrayParameters.Elevation))]
+                [AssociatedElementParameter(nameof(CableTrayParameters.Elevation))]
                 public double Elevation {
                     get =&gt; ParameterAccessor.GetDoubleValue();
                     set =&gt; ParameterAccessor.SetValue(value, SpecTypeId.Length);
@@ -2010,18 +2019,6 @@
             <summary>
             Make selection nodes returns all objects from active view
             </summary>
-        </member>
-        <member name="T:DynamoForRevitUtils.Factories.AbstractGeometryFactory">
-            <summary>
-            Factory class for Abstract Geometry
-            </summary>
-        </member>
-        <member name="M:DynamoForRevitUtils.Factories.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)">
-            <summary>
-            Get Abstract Geometry object from DesignScriptEntity
-            </summary>
-            <param name="designScriptEntity"></param>
-            <returns></returns>
         </member>
         <member name="T:DynamoForRevitUtils.Services.Collections.EnumerableServices">
             <summary>

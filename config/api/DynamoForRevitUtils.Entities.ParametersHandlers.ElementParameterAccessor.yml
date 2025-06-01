@@ -28,7 +28,7 @@ items:
   namespace: DynamoForRevitUtils.Entities.ParametersHandlers
   summary: Class used to access properties from a <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" data-throw-if-not-resolved="false"></xref> using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>
   remarks: >-
-    <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" data-throw-if-not-resolved="false"></xref> must have properties with <xref href="DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute" data-throw-if-not-resolved="false"></xref>
+    <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" data-throw-if-not-resolved="false"></xref> must have properties with <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute" data-throw-if-not-resolved="false"></xref>
 
     to map the property to the correspondent <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.
   example:
@@ -455,13 +455,13 @@ references:
   name: ElementParameter
   nameWithType: ElementParameter
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-- uid: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
-  commentId: T:DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
   isExternal: true
-  href: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.html
-  name: AssociatedParameterNameAttribute
-  nameWithType: AssociatedParameterNameAttribute
-  fullName: DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html
+  name: AssociatedElementParameterAttribute
+  nameWithType: AssociatedElementParameterAttribute
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true

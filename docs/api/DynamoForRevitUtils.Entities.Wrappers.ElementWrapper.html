@@ -98,8 +98,7 @@
 
 
   <h1 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" class="text-break">Class ElementWrapper</h1>
-  <div class="markdown level0 summary"><p>Represents an abstract base class for wrapping Revit elements. Provides
-common properties and methods for derived wrapper classes.</p>
+  <div class="markdown level0 summary"><p>Represents an abstract base class for wrapping Revit elements.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -140,31 +139,32 @@ common properties and methods for derived wrapper classes.</p>
   </div>
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
-Use this class in conjunction with the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a> 
-<a class="xref" href="DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.html">AssociatedParameterNameAttribute</a> attribute to enhance the way you access element
-parameters.
+    Use this class in conjunction with the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a> and 
+<a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html">AssociatedElementParameterAttribute</a> to enhance the way you access element parameters.
 </p>
 <p>
-The <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> class represents the Revit Element and the
-<a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a> represents the parameters of this element.
+    The <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> class represents the Revit Element and the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a>
+    represents the parameters of this element.
 </p>
 <p>
-To use these classes together, proceed as follows:
+    To use these classes together, proceed as follows:
 <ol><li>
-        Create classes derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> to represent specific characteristics
+        Create a class derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> to represent specific characteristics
         of the elements you want to represent.
     </li><li>
         Create properties of type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> in classes derived
         from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a> to represent element parameters.
     </li><li>
-        Use the <a class="xref" href="DynamoForRevitUtils.Attributes.AssociatedParameterNameAttribute.html">AssociatedParameterNameAttribute</a> attribute to link properties of the class
-        derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> with the properties of the class derived
-        from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a>
+        Use the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html">AssociatedElementParameterAttribute</a> attribute to create a bound between
+        properties of the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> with the properties of the  <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a>
+    </li><li>
+        Use <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_ParameterAccessor">ParameterAccessor</a> in getters/setters of properties of the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a>
+        to get/set the values of the parameters, directly from/to the element instances in Revit.
     </li></ol>
-This way you will no longer need to worry about fetching parameters from elements every time
-you need to get/set their values.
-Use the properties of the class derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> normally and their values
-will be automatically get/set from/to the element instances in Revit.
+    This way you will no longer need to worry about fetching parameters from elements every time
+    you need to get/set their values.
+    Use the properties of the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.html">ElementWrapper</a> normally and their values
+    will be automatically get/set from/to the element instances in Revit.
 
 </div>
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_examples"><strong>Examples</strong></h5>
@@ -176,19 +176,19 @@ public class CableTrayWrapper : ElementWrapper
         params IEnumerable&lt;IElementParameterMap&gt; parameters
     ) : base(element, parameters) { }
 
-    [AssociatedParameterName(nameof(CableTrayParameters.Comments))]
+    [AssociatedElementParameter(nameof(CableTrayParameters.Comments))]
     public string Comments {
         get =&gt; ParameterAccessor.GetStringValue();
         set =&gt; ParameterAccessor.SetValue(value);
     }
 
-    [AssociatedParameterName(nameof(CableTrayParameters.IDR))]
+    [AssociatedElementParameter(nameof(CableTrayParameters.IDR))]
     public bool IDR {
         get =&gt; ParameterAccessor.GetBoolValue();
         set =&gt; ParameterAccessor.SetValue(value);
     }
 
-    [AssociatedParameterName(nameof(CableTrayParameters.Elevation))]
+    [AssociatedElementParameter(nameof(CableTrayParameters.Elevation))]
     public double Elevation {
         get =&gt; ParameterAccessor.GetDoubleValue();
         set =&gt; ParameterAccessor.SetValue(value, SpecTypeId.Length);

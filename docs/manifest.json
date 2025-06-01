@@ -1090,6 +1090,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.yml\" sourcestartlinenumber=\"1\">Factory class for Abstract Geometry</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.AbstractGeometry.AbstractVector.yml",
       "output": {
         ".html": {
@@ -1269,6 +1283,20 @@
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.yml\" sourcestartlinenumber=\"1\">Represents the data associated with accessing a parameter, including its value, a description,\nand the result of the access operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.yml\" sourcestartlinenumber=\"1\">Attribute used to create a bound between an <xref href=\"DynamoForRevitUtils.Entities.Wrappers.ElementWrapper\" data-throw-if-not-resolved=\"false\"></xref> property\nand a <xref href=\"DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap\" data-throw-if-not-resolved=\"false\"></xref> property</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1548,7 +1576,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper",
-      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements. Provides\ncommon properties and methods for derived wrapper classes.</p>\n"
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements.</p>\n"
     },
     {
       "type": "ManagedReference",

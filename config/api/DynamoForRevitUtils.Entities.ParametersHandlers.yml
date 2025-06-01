@@ -6,6 +6,7 @@ items:
   children:
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
@@ -36,6 +37,13 @@ references:
   name: AccessParameterInfo
   nameWithType: AccessParameterInfo
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html
+  name: AssociatedElementParameterAttribute
+  nameWithType: AssociatedElementParameterAttribute
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
