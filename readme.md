@@ -23,7 +23,7 @@ As pastas do projeto estão estruturadas conforme as configurações necessária
 Dentro da pasta **config** está um dos arquivos mais importantes, **docfx.json**. Esse arquivo possui as configurações
 usadas pelo Docfx para compilar o projeto.
 
-# Compilar o projeto usando o Docfx
+# Como compilar o projeto usando o Docfx
 
 Após atualizar o arquivo **DynamoForRevitUtils.dll** ou algum arquivo ***.md** do projeto,
 
