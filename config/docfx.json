@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "../external-libs/d4rvtutils/",
+          "src": "../external-libs/Release2025/",
           "files": [
             "DynamoForRevitUtils.dll"
           ]
@@ -12,23 +12,23 @@
       ],
       "dest": "api",
       "references": [
-        "../external-libs/Revit2025/CoreNodeModels.dll",
-        "../external-libs/Revit2025/CoreNodeModelsWpf.dll",
-        "../external-libs/Revit2025/DSCoreNodes.dll",
-        "../external-libs/Revit2025/DynamoCore.dll",
-        "../external-libs/Revit2025/DynamoCoreWpf.dll",
-        "../external-libs/Revit2025/DynamoServices.dll",
-        "../external-libs/Revit2025/DynamoUtilities.dll",
-        "../external-libs/Revit2025/GeometryColor.dll",
-        "../external-libs/Revit2025/ProtoCore.dll",
-        "../external-libs/Revit2025/ProtoGeometry.dll",
-        "../external-libs/Revit2025/RevitAPI.dll",
-        "../external-libs/Revit2025/RevitAPIIFC.dll",
-        "../external-libs/Revit2025/RevitAPIUI.dll",
-        "../external-libs/Revit2025/RevitNodes.dll",
-        "../external-libs/Revit2025/RevitServices.dll",
-        "../external-libs/others/MathNet.Numerics.dll",
-        "../external-libs/others/NewtonSoft.Json.dll"
+        "../external-libs/Release2025/CoreNodeModels.dll",
+        "../external-libs/Release2025/CoreNodeModelsWpf.dll",
+        "../external-libs/Release2025/DSCoreNodes.dll",
+        "../external-libs/Release2025/DynamoCore.dll",
+        "../external-libs/Release2025/DynamoCoreWpf.dll",
+        "../external-libs/Release2025/DynamoServices.dll",
+        "../external-libs/Release2025/DynamoUtilities.dll",
+        "../external-libs/Release2025/GeometryColor.dll",
+        "../external-libs/Release2025/ProtoCore.dll",
+        "../external-libs/Release2025/ProtoGeometry.dll",
+        "../external-libs/Release2025/RevitAPI.dll",
+        "../external-libs/Release2025/RevitAPIIFC.dll",
+        "../external-libs/Release2025/RevitAPIUI.dll",
+        "../external-libs/Release2025/RevitNodes.dll",
+        "../external-libs/Release2025/RevitServices.dll",
+        "../external-libs/Release2025/MathNet.Numerics.dll",
+        "../external-libs/Release2025/NewtonSoft.Json.dll"
       ]
     }
   ],
