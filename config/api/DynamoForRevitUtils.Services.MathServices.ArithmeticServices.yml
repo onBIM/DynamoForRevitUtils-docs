@@ -19,8 +19,14 @@ items:
   summary: Arithmetic services.
   example: []
   syntax:
-    content: public static class ArithmeticServices
-    content.vb: Public Module ArithmeticServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ArithmeticServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ArithmeticServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.MathServices.ArithmeticServices.GetDecimalPlaces(System.Decimal)
   commentId: M:DynamoForRevitUtils.Services.MathServices.ArithmeticServices.GetDecimalPlaces(System.Decimal)
   id: GetDecimalPlaces(System.Decimal)

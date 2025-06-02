@@ -23,8 +23,14 @@ items:
     <p>@5devene | dimitar.ven@gmail.com</p>
   example: []
   syntax:
-    content: public static class JoinLinesServices
-    content.vb: Public Module JoinLinesServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class JoinLinesServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module JoinLinesServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.JoinLinesIntoClosedPolyCurve(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Boolean)
   commentId: M:DynamoForRevitUtils.Services.Dynamo.JoinLinesServices.JoinLinesIntoClosedPolyCurve(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Boolean)
   id: JoinLinesIntoClosedPolyCurve(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Line},System.Boolean)
@@ -357,6 +369,8 @@ references:
   nameWithType: System
   fullName: System
 - uid: Autodesk.DesignScript.Geometry.PolyCurve
+  commentId: T:Autodesk.DesignScript.Geometry.PolyCurve
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: PolyCurve
   nameWithType: PolyCurve
@@ -426,6 +440,36 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

@@ -24,8 +24,14 @@ items:
   summary: Class containing tools to deal with Revit Views
   example: []
   syntax:
-    content: public static class ViewServices
-    content.vb: Public Module ViewServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ViewServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ViewServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,6 +42,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid(Autodesk.Revit.DB.View3D)
   id: GetCuboid(Autodesk.Revit.DB.View3D)
@@ -496,6 +508,7 @@ references:
   fullName: System
 - uid: Autodesk.DesignScript.Geometry.Cuboid
   commentId: T:Autodesk.DesignScript.Geometry.Cuboid
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Cuboid
   nameWithType: Cuboid
@@ -508,11 +521,72 @@ references:
   nameWithType: ViewServices.GetCuboid
   fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetCuboid
 - uid: Autodesk.Revit.DB.View3D
-  commentId: '!:Autodesk.Revit.DB.View3D'
+  commentId: T:Autodesk.Revit.DB.View3D
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View3D
   nameWithType: View3D
   fullName: Autodesk.Revit.DB.View3D
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane
   isExternal: true
@@ -521,11 +595,15 @@ references:
   nameWithType: ViewServices.GetPlane
   fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetPlane
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
 - uid: Autodesk.Revit.DB.Plane
+  commentId: T:Autodesk.Revit.DB.Plane
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Plane
   nameWithType: Plane
@@ -538,17 +616,49 @@ references:
   nameWithType: ViewServices.GetActiveUIView
   fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.GetActiveUIView
 - uid: Autodesk.Revit.UI.UIDocument
-  commentId: '!:Autodesk.Revit.UI.UIDocument'
+  commentId: T:Autodesk.Revit.UI.UIDocument
+  parent: Autodesk.Revit.UI
   isExternal: true
   name: UIDocument
   nameWithType: UIDocument
   fullName: Autodesk.Revit.UI.UIDocument
 - uid: Autodesk.Revit.UI.UIView
-  commentId: '!:Autodesk.Revit.UI.UIView'
+  commentId: T:Autodesk.Revit.UI.UIView
+  parent: Autodesk.Revit.UI
   isExternal: true
   name: UIView
   nameWithType: UIView
   fullName: Autodesk.Revit.UI.UIView
+- uid: Autodesk.Revit.UI
+  commentId: N:Autodesk.Revit.UI
+  isExternal: true
+  name: Autodesk.Revit.UI
+  nameWithType: Autodesk.Revit.UI
+  fullName: Autodesk.Revit.UI
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ViewServices.PickPointOnActive2DView
   isExternal: true
@@ -596,6 +706,8 @@ references:
     isExternal: true
   - name: '?'
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -636,7 +748,8 @@ references:
   nameWithType: ViewServices.TrySet2DViewPlaneAsWorkPlane
   fullName: DynamoForRevitUtils.Services.RevitServices.ViewServices.TrySet2DViewPlaneAsWorkPlane
 - uid: Autodesk.Revit.DB.ViewPlan
-  commentId: '!:Autodesk.Revit.DB.ViewPlan'
+  commentId: T:Autodesk.Revit.DB.ViewPlan
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewPlan
   nameWithType: ViewPlan

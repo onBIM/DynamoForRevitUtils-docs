@@ -109,8 +109,14 @@ items:
         };
     }</code></pre>
   syntax:
-    content: public class ElementWrapper
-    content.vb: Public Class ElementWrapper
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class ElementWrapper
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class ElementWrapper
   inheritance:
   - System.Object
   derivedClasses:
@@ -125,6 +131,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.#ctor(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})
   commentId: M:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.#ctor(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})
   id: '#ctor(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})'
@@ -717,6 +729,8 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.New
   name.vb: New
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -756,6 +770,36 @@ references:
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true

@@ -22,8 +22,14 @@ items:
   summary: Grid services.
   example: []
   syntax:
-    content: public static class GridServices
-    content.vb: Public Module GridServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class GridServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module GridServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +40,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid,System.Double)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection(Autodesk.Revit.DB.Grid,System.Double)
   id: GetDirection(Autodesk.Revit.DB.Grid,System.Double)
@@ -459,6 +471,8 @@ references:
   nameWithType: GridServices.GetDirection
   fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetDirection
 - uid: Autodesk.Revit.DB.Grid
+  commentId: T:Autodesk.Revit.DB.Grid
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Grid
   nameWithType: Grid
@@ -475,10 +489,42 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: XYZ
   nameWithType: XYZ
   fullName: Autodesk.Revit.DB.XYZ
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane
   isExternal: true
@@ -487,6 +533,8 @@ references:
   nameWithType: GridServices.GetPlane
   fullName: DynamoForRevitUtils.Services.RevitServices.GridServices.GetPlane
 - uid: Autodesk.Revit.DB.Plane
+  commentId: T:Autodesk.Revit.DB.Plane
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Plane
   nameWithType: Plane

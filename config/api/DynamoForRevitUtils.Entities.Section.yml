@@ -21,8 +21,14 @@ items:
   summary: Object that holds information about a Revit Section View
   example: []
   syntax:
-    content: public class Section
-    content.vb: Public Class Section
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class Section
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class Section
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.Section.Create(Autodesk.Revit.DB.Document,DynamoForRevitUtils.Entities.SectionCreationData,Autodesk.Revit.DB.ViewFamilyType,System.UInt16,System.Boolean,Autodesk.Revit.DB.View)
   commentId: M:DynamoForRevitUtils.Entities.Section.Create(Autodesk.Revit.DB.Document,DynamoForRevitUtils.Entities.SectionCreationData,Autodesk.Revit.DB.ViewFamilyType,System.UInt16,System.Boolean,Autodesk.Revit.DB.View)
   id: Create(Autodesk.Revit.DB.Document,DynamoForRevitUtils.Entities.SectionCreationData,Autodesk.Revit.DB.ViewFamilyType,System.UInt16,System.Boolean,Autodesk.Revit.DB.View)
@@ -530,6 +542,8 @@ references:
   nameWithType: Section.Create
   fullName: DynamoForRevitUtils.Entities.Section.Create
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -543,6 +557,8 @@ references:
   nameWithType: SectionCreationData
   fullName: DynamoForRevitUtils.Entities.SectionCreationData
 - uid: Autodesk.Revit.DB.ViewFamilyType
+  commentId: T:Autodesk.Revit.DB.ViewFamilyType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewFamilyType
   nameWithType: ViewFamilyType
@@ -570,6 +586,8 @@ references:
   fullName.vb: Boolean
   name.vb: Boolean
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
@@ -582,6 +600,36 @@ references:
   name: Section
   nameWithType: Section
   fullName: DynamoForRevitUtils.Entities.Section
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.Section.SectionView*
   commentId: Overload:DynamoForRevitUtils.Entities.Section.SectionView
   isExternal: true
@@ -590,6 +638,8 @@ references:
   nameWithType: Section.SectionView
   fullName: DynamoForRevitUtils.Entities.Section.SectionView
 - uid: Autodesk.Revit.DB.ViewSection
+  commentId: T:Autodesk.Revit.DB.ViewSection
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewSection
   nameWithType: ViewSection

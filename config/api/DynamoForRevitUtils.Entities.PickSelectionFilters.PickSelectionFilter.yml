@@ -24,8 +24,14 @@ items:
   summary: Base class for Pick Selection Filters
   example: []
   syntax:
-    content: 'public abstract class PickSelectionFilter : ISelectionFilter'
-    content.vb: Public MustInherit Class PickSelectionFilter Implements ISelectionFilter
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class PickSelectionFilter : ISelectionFilter
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class PickSelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   derivedClasses:
@@ -45,6 +51,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   commentId: M:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   id: AllowElement(Autodesk.Revit.DB.Element)
@@ -59,16 +71,22 @@ items:
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.PickSelectionFilters
+  summary: Override this pre-filter method to specify if the element should be permitted to be selected.
+  remarks: "        <p>If prompting the user to select an element from a Revit Link instance, the element passed here will be the link instance, not the selected linked element.\r\nAccess the linked element from Reference passed to the AllowReference() callback of ISelectionFilter.</p>\r\n        <p>If an exception is thrown from this method, the element will not be permitted to be selected.</p>"
   example: []
   syntax:
     content: public abstract bool AllowElement(Element elem)
     parameters:
     - id: elem
       type: Autodesk.Revit.DB.Element
+      description: A candidate element in selection operation.
     return:
       type: System.Boolean
+      description: Return true to allow the user to select this candidate element. Return false to prevent selection of this element.
     content.vb: Public MustOverride Function AllowElement(elem As Element) As Boolean
   overload: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement*
+  implements:
+  - Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
   commentId: M:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
   id: AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
@@ -83,18 +101,25 @@ items:
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.PickSelectionFilters
+  summary: Override this post-filter method to specify if a reference to a piece of geometry is permitted to be selected.
+  remarks: If an exception is thrown from this method, the element will not be permitted to be selected.
   example: []
   syntax:
     content: public abstract bool AllowReference(Reference reference, XYZ position)
     parameters:
     - id: reference
       type: Autodesk.Revit.DB.Reference
+      description: A candidate reference in selection operation.
     - id: position
       type: Autodesk.Revit.DB.XYZ
+      description: The 3D position of the mouse on the candidate reference.
     return:
       type: System.Boolean
+      description: Return true to allow the user to select this candidate reference. Return false to prevent selection of this candidate.
     content.vb: Public MustOverride Function AllowReference(reference As Reference, position As XYZ) As Boolean
   overload: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference*
+  implements:
+  - Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.#ctor
   commentId: M:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.#ctor
   id: '#ctor'
@@ -244,6 +269,8 @@ references:
   fullName.vb: Object
   name.vb: Object
 - uid: Autodesk.Revit.UI.Selection.ISelectionFilter
+  commentId: T:Autodesk.Revit.UI.Selection.ISelectionFilter
+  parent: Autodesk.Revit.UI.Selection
   isExternal: true
   name: ISelectionFilter
   nameWithType: ISelectionFilter
@@ -515,6 +542,44 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.UI.Selection
+  commentId: N:Autodesk.Revit.UI.Selection
+  isExternal: true
+  name: Autodesk.Revit.UI.Selection
+  nameWithType: Autodesk.Revit.UI.Selection
+  fullName: Autodesk.Revit.UI.Selection
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   isExternal: true
@@ -607,7 +672,34 @@ references:
   name: AllowElement
   nameWithType: PickSelectionFilter.AllowElement
   fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement
+- uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  commentId: M:Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  parent: Autodesk.Revit.UI.Selection.ISelectionFilter
+  isExternal: true
+  name: AllowElement(Element)
+  nameWithType: ISelectionFilter.AllowElement(Element)
+  fullName: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  spec.csharp:
+  - uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+    name: AllowElement
+    isExternal: true
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+    name: AllowElement
+    isExternal: true
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -623,6 +715,36 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference*
   commentId: Overload:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference
   isExternal: true
@@ -630,12 +752,51 @@ references:
   name: AllowReference
   nameWithType: PickSelectionFilter.AllowReference
   fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowReference
+- uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  commentId: M:Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  parent: Autodesk.Revit.UI.Selection.ISelectionFilter
+  isExternal: true
+  name: AllowReference(Reference, XYZ)
+  nameWithType: ISelectionFilter.AllowReference(Reference, XYZ)
+  fullName: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
+  spec.csharp:
+  - uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+    name: AllowReference
+    isExternal: true
+  - name: (
+  - uid: Autodesk.Revit.DB.Reference
+    name: Reference
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Autodesk.Revit.UI.Selection.ISelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+    name: AllowReference
+    isExternal: true
+  - name: (
+  - uid: Autodesk.Revit.DB.Reference
+    name: Reference
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
 - uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Reference
   nameWithType: Reference
   fullName: Autodesk.Revit.DB.Reference
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: XYZ
   nameWithType: XYZ

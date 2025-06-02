@@ -22,8 +22,14 @@ items:
   summary: Document utils codes
   example: []
   syntax:
-    content: public static class DocumentServices
-    content.vb: Public Module DocumentServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class DocumentServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module DocumentServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +40,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.DocumentServices.OpenDocument(System.String,Autodesk.Revit.UI.UIApplication)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.DocumentServices.OpenDocument(System.String,Autodesk.Revit.UI.UIApplication)
   id: OpenDocument(System.String,Autodesk.Revit.UI.UIApplication)
@@ -463,15 +475,79 @@ references:
   fullName.vb: String
   name.vb: String
 - uid: Autodesk.Revit.UI.UIApplication
+  commentId: T:Autodesk.Revit.UI.UIApplication
+  parent: Autodesk.Revit.UI
   isExternal: true
   name: UIApplication
   nameWithType: UIApplication
   fullName: Autodesk.Revit.UI.UIApplication
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.UI
+  commentId: N:Autodesk.Revit.UI
+  isExternal: true
+  name: Autodesk.Revit.UI
+  nameWithType: Autodesk.Revit.UI
+  fullName: Autodesk.Revit.UI
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.DocumentServices.BatchOpenDocuments*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.DocumentServices.BatchOpenDocuments
   isExternal: true

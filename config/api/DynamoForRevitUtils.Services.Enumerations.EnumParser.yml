@@ -21,8 +21,14 @@ items:
   summary: Class containing Enum Parsers
   example: []
   syntax:
-    content: public static class EnumParser
-    content.vb: Public Module EnumParser
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class EnumParser
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module EnumParser
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +39,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)
   commentId: M:DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)
   id: ByValue``1(System.String)
@@ -484,6 +496,7 @@ references:
   fullName: System.Type.FullName
 - uid: Autodesk.Revit.DB.StorageType
   commentId: T:Autodesk.Revit.DB.StorageType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: StorageType
   nameWithType: StorageType
@@ -491,3 +504,36 @@ references:
 - uid: Autodesk.Revit.DB.Location
   commentId: T:Autodesk.Revit.DB.Location
   isExternal: true
+  name: Location
+  nameWithType: Location
+  fullName: Autodesk.Revit.DB.Location
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true

@@ -28,8 +28,14 @@ items:
   summary: Class containing Selection Data used in Revit UI Selection
   example: []
   syntax:
-    content: public class SelectionSettings
-    content.vb: Public Class SelectionSettings
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class SelectionSettings
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class SelectionSettings
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,6 +47,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.SelectionSettings.#ctor(System.String,Autodesk.Revit.UI.Selection.ObjectType)
   commentId: M:DynamoForRevitUtils.Entities.SelectionSettings.#ctor(System.String,Autodesk.Revit.UI.Selection.ObjectType)
   id: '#ctor(System.String,Autodesk.Revit.UI.Selection.ObjectType)'
@@ -698,10 +710,50 @@ references:
   fullName.vb: String
   name.vb: String
 - uid: Autodesk.Revit.UI.Selection.ObjectType
+  commentId: T:Autodesk.Revit.UI.Selection.ObjectType
+  parent: Autodesk.Revit.UI.Selection
   isExternal: true
   name: ObjectType
   nameWithType: ObjectType
   fullName: Autodesk.Revit.UI.Selection.ObjectType
+- uid: Autodesk.Revit.UI.Selection
+  commentId: N:Autodesk.Revit.UI.Selection
+  isExternal: true
+  name: Autodesk.Revit.UI.Selection
+  nameWithType: Autodesk.Revit.UI.Selection
+  fullName: Autodesk.Revit.UI.Selection
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
   commentId: T:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
   parent: DynamoForRevitUtils.Entities.PickSelectionFilters
@@ -748,10 +800,42 @@ references:
     isExternal: true
     href: DynamoForRevitUtils.Entities.PickSelectionFilters.html
 - uid: Autodesk.Revit.DB.ElementFilter
+  commentId: T:Autodesk.Revit.DB.ElementFilter
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementFilter
   nameWithType: ElementFilter
   fullName: Autodesk.Revit.DB.ElementFilter
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.SelectionSettings.ShowElementsSelectionDialog*
   commentId: Overload:DynamoForRevitUtils.Entities.SelectionSettings.ShowElementsSelectionDialog
   isExternal: true
@@ -807,6 +891,9 @@ references:
 - uid: FilteredElementCollector
   commentId: T:FilteredElementCollector
   isExternal: true
+  name: FilteredElementCollector
+  nameWithType: FilteredElementCollector
+  fullName: FilteredElementCollector
 - uid: DynamoForRevitUtils.Entities.SelectionSettings.CollectorFilter*
   commentId: Overload:DynamoForRevitUtils.Entities.SelectionSettings.CollectorFilter
   isExternal: true

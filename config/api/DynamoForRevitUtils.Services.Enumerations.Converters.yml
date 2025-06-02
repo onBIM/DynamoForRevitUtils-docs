@@ -20,8 +20,14 @@ items:
   summary: Provides methods for converting custom enumeration types.
   example: []
   syntax:
-    content: public static class Converters
-    content.vb: Public Module Converters
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class Converters
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module Converters
   inheritance:
   - System.Object
   inheritedMembers:
@@ -32,6 +38,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
   commentId: M:DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
   id: ToStorageType(DynamoForRevitUtils.Enumerations.ParameterDataType)
@@ -381,6 +393,7 @@ references:
   fullName: DynamoForRevitUtils.Enumerations.ParameterDataType
 - uid: Autodesk.Revit.DB.StorageType
   commentId: T:Autodesk.Revit.DB.StorageType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: StorageType
   nameWithType: StorageType
@@ -426,6 +439,36 @@ references:
     name: Enumerations
     isExternal: true
     href: DynamoForRevitUtils.Enumerations.html
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Enumerations.Converters.ToParameterDataType*
   commentId: Overload:DynamoForRevitUtils.Services.Enumerations.Converters.ToParameterDataType
   isExternal: true

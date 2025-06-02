@@ -20,10 +20,22 @@ items:
   summary: Represents the possible values for a yes or no parameter in a Revit element.
   example: []
   syntax:
-    content: public enum ElementParameterYesNoValue
-    content.vb: Public Enum ElementParameterYesNoValue
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum ElementParameterYesNoValue
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum ElementParameterYesNoValue
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
   commentId: F:DynamoForRevitUtils.Enumerations.ElementParameterYesNoValue.Yes
   id: Yes

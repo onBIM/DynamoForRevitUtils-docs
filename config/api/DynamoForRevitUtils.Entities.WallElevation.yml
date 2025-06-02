@@ -37,8 +37,14 @@ items:
   summary: Class containing data to create a Wall Elevation
   example: []
   syntax:
-    content: public class WallElevation
-    content.vb: Public Class WallElevation
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class WallElevation
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class WallElevation
   inheritance:
   - System.Object
   inheritedMembers:
@@ -50,6 +56,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.WallElevation.#ctor(System.String,Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.ViewFamilyType,System.Double,System.Boolean,DynamoForRevitUtils.Entities.CropRegionOffsetSettings)
   commentId: M:DynamoForRevitUtils.Entities.WallElevation.#ctor(System.String,Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.ViewFamilyType,System.Double,System.Boolean,DynamoForRevitUtils.Entities.CropRegionOffsetSettings)
   id: '#ctor(System.String,Autodesk.Revit.DB.Wall,Autodesk.Revit.DB.ViewFamilyType,System.Double,System.Boolean,DynamoForRevitUtils.Entities.CropRegionOffsetSettings)'
@@ -916,11 +928,15 @@ references:
   fullName.vb: String
   name.vb: String
 - uid: Autodesk.Revit.DB.Wall
+  commentId: T:Autodesk.Revit.DB.Wall
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Wall
   nameWithType: Wall
   fullName: Autodesk.Revit.DB.Wall
 - uid: Autodesk.Revit.DB.ViewFamilyType
+  commentId: T:Autodesk.Revit.DB.ViewFamilyType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewFamilyType
   nameWithType: ViewFamilyType
@@ -955,6 +971,36 @@ references:
   name: CropRegionOffsetSettings
   nameWithType: CropRegionOffsetSettings
   fullName: DynamoForRevitUtils.Entities.CropRegionOffsetSettings
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.WallElevation.CreateElevationView*
   commentId: Overload:DynamoForRevitUtils.Entities.WallElevation.CreateElevationView
   isExternal: true
@@ -963,7 +1009,8 @@ references:
   nameWithType: WallElevation.CreateElevationView
   fullName: DynamoForRevitUtils.Entities.WallElevation.CreateElevationView
 - uid: Autodesk.Revit.DB.ViewPlan
-  commentId: '!:Autodesk.Revit.DB.ViewPlan'
+  commentId: T:Autodesk.Revit.DB.ViewPlan
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewPlan
   nameWithType: ViewPlan
@@ -980,6 +1027,8 @@ references:
   fullName.vb: Integer
   name.vb: Integer
 - uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: RevitLinkInstance
   nameWithType: RevitLinkInstance
@@ -1030,10 +1079,42 @@ references:
   nameWithType: WallElevation.WallNormal
   fullName: DynamoForRevitUtils.Entities.WallElevation.WallNormal
 - uid: Autodesk.DesignScript.Geometry.Vector
+  commentId: T:Autodesk.DesignScript.Geometry.Vector
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Vector
   nameWithType: Vector
   fullName: Autodesk.DesignScript.Geometry.Vector
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.WallElevation.WallBaseLine*
   commentId: Overload:DynamoForRevitUtils.Entities.WallElevation.WallBaseLine
   isExternal: true
@@ -1042,6 +1123,8 @@ references:
   nameWithType: WallElevation.WallBaseLine
   fullName: DynamoForRevitUtils.Entities.WallElevation.WallBaseLine
 - uid: Autodesk.DesignScript.Geometry.Line
+  commentId: T:Autodesk.DesignScript.Geometry.Line
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Line
   nameWithType: Line
@@ -1054,6 +1137,8 @@ references:
   nameWithType: WallElevation.WallLocationCurve
   fullName: DynamoForRevitUtils.Entities.WallElevation.WallLocationCurve
 - uid: Autodesk.DesignScript.Geometry.Curve
+  commentId: T:Autodesk.DesignScript.Geometry.Curve
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Curve
   nameWithType: Curve
@@ -1066,6 +1151,8 @@ references:
   nameWithType: WallElevation.WallMidPoint
   fullName: DynamoForRevitUtils.Entities.WallElevation.WallMidPoint
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
@@ -1148,6 +1235,8 @@ references:
   nameWithType: WallElevation.Elevation
   fullName: DynamoForRevitUtils.Entities.WallElevation.Elevation
 - uid: Autodesk.Revit.DB.ViewSection
+  commentId: T:Autodesk.Revit.DB.ViewSection
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ViewSection
   nameWithType: ViewSection
@@ -1160,7 +1249,8 @@ references:
   nameWithType: WallElevation.ElevationMarker
   fullName: DynamoForRevitUtils.Entities.WallElevation.ElevationMarker
 - uid: Autodesk.Revit.DB.ElevationMarker
-  commentId: '!:Autodesk.Revit.DB.ElevationMarker'
+  commentId: T:Autodesk.Revit.DB.ElevationMarker
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElevationMarker
   nameWithType: ElevationMarker

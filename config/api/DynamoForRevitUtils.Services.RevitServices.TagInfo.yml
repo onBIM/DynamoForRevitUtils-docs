@@ -31,8 +31,14 @@ items:
   summary: Represents information required for creating a new tag in Revit.
   example: []
   syntax:
-    content: public class TagInfo
-    content.vb: Public Class TagInfo
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class TagInfo
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class TagInfo
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,6 +51,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.TagInfo.#ctor(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementId,System.Double,Autodesk.Revit.DB.RevitLinkInstance,System.Boolean)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.TagInfo.#ctor(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementId,System.Double,Autodesk.Revit.DB.RevitLinkInstance,System.Boolean)
   id: '#ctor(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementId,System.Double,Autodesk.Revit.DB.RevitLinkInstance,System.Boolean)'
@@ -786,11 +798,15 @@ references:
   fullName.vb: DynamoForRevitUtils.Services.RevitServices.TagInfo.New
   name.vb: New
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
   fullName: Autodesk.Revit.DB.Element
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
@@ -807,6 +823,8 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: RevitLinkInstance
   nameWithType: RevitLinkInstance
@@ -822,6 +840,36 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.TagInfo.Element*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagInfo.Element
   isExternal: true
@@ -851,6 +899,8 @@ references:
   nameWithType: TagInfo.OwnerView
   fullName: DynamoForRevitUtils.Services.RevitServices.TagInfo.OwnerView
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
@@ -870,6 +920,8 @@ references:
   nameWithType: TagInfo.TagReference
   fullName: DynamoForRevitUtils.Services.RevitServices.TagInfo.TagReference
 - uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Reference
   nameWithType: Reference
@@ -896,6 +948,8 @@ references:
   nameWithType: TagInfo.Location
   fullName: DynamoForRevitUtils.Services.RevitServices.TagInfo.Location
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: XYZ
   nameWithType: XYZ

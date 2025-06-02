@@ -19,8 +19,14 @@ items:
   summary: General utile for Revit Elements
   example: []
   syntax:
-    content: public static class MEPCurveServices
-    content.vb: Public Module MEPCurveServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class MEPCurveServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module MEPCurveServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.GetReferences(Autodesk.Revit.DB.MEPCurve)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.GetReferences(Autodesk.Revit.DB.MEPCurve)
   id: GetReferences(Autodesk.Revit.DB.MEPCurve)
@@ -342,7 +354,8 @@ references:
   nameWithType: MEPCurveServices.GetReferences
   fullName: DynamoForRevitUtils.Services.RevitServices.MEPCurveServices.GetReferences
 - uid: Autodesk.Revit.DB.MEPCurve
-  commentId: '!:Autodesk.Revit.DB.MEPCurve'
+  commentId: T:Autodesk.Revit.DB.MEPCurve
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: MEPCurve
   nameWithType: MEPCurve
@@ -355,6 +368,36 @@ references:
   name: MEPCurveReferences
   nameWithType: MEPCurveReferences
   fullName: DynamoForRevitUtils.Entities.MEPCurveReferences
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities
   commentId: N:DynamoForRevitUtils.Entities
   isExternal: true

@@ -23,8 +23,14 @@ items:
   summary: Services for Task Dialogs
   example: []
   syntax:
-    content: public static class TaskDialogServices
-    content.vb: Public Module TaskDialogServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class TaskDialogServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module TaskDialogServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.ShowInformation(System.String,System.String,System.String)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.ShowInformation(System.String,System.String,System.String)
   id: ShowInformation(System.String,System.String,System.String)
@@ -565,8 +577,39 @@ references:
   nameWithType: TaskDialogServices.ShowMultiChoiceDialog
   fullName: DynamoForRevitUtils.Services.RevitServices.TaskDialogServices.ShowMultiChoiceDialog
 - uid: Autodesk.Revit.UI.TaskDialogResult
-  commentId: '!:Autodesk.Revit.UI.TaskDialogResult'
+  commentId: T:Autodesk.Revit.UI.TaskDialogResult
+  parent: Autodesk.Revit.UI
   isExternal: true
   name: TaskDialogResult
   nameWithType: TaskDialogResult
   fullName: Autodesk.Revit.UI.TaskDialogResult
+- uid: Autodesk.Revit.UI
+  commentId: N:Autodesk.Revit.UI
+  isExternal: true
+  name: Autodesk.Revit.UI
+  nameWithType: Autodesk.Revit.UI
+  fullName: Autodesk.Revit.UI
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true

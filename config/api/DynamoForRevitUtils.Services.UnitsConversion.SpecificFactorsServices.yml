@@ -21,8 +21,14 @@ items:
   summary: Class containing specific conversion factors
   example: []
   syntax:
-    content: public static class SpecificFactorsServices
-    content.vb: Public Module SpecificFactorsServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class SpecificFactorsServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module SpecificFactorsServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +39,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.KilogramsPerCubicMeter_To_KilogramsPerCubicFoot
   commentId: F:DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.KilogramsPerCubicMeter_To_KilogramsPerCubicFoot
   id: KilogramsPerCubicMeter_To_KilogramsPerCubicFoot
@@ -396,7 +408,39 @@ references:
   nameWithType: SpecificFactorsServices.GetMassDensityConversionFactorByDisplayUnits
   fullName: DynamoForRevitUtils.Services.UnitsConversion.SpecificFactorsServices.GetMassDensityConversionFactorByDisplayUnits
 - uid: Autodesk.Revit.DB.ForgeTypeId
+  commentId: T:Autodesk.Revit.DB.ForgeTypeId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ForgeTypeId
   nameWithType: ForgeTypeId
   fullName: Autodesk.Revit.DB.ForgeTypeId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true

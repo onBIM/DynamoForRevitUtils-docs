@@ -35,8 +35,14 @@ items:
   remarks: Axis are used to create Section Views in Revit.
   example: []
   syntax:
-    content: public class Axis
-    content.vb: Public Class Axis
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class Axis
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class Axis
   inheritance:
   - System.Object
   inheritedMembers:
@@ -49,6 +55,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.Axis.#ctor(System.String,System.Double,System.Double,System.Double,System.Double,System.Double)
   commentId: M:DynamoForRevitUtils.Entities.Axis.#ctor(System.String,System.Double,System.Double,System.Double,System.Double,System.Double)
   id: '#ctor(System.String,System.Double,System.Double,System.Double,System.Double,System.Double)'
@@ -906,11 +918,45 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
   fullName: Autodesk.DesignScript.Geometry.Point
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: Autodesk.DesignScript.Geometry.Line
+  commentId: T:Autodesk.DesignScript.Geometry.Line
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Line
   nameWithType: Line
@@ -1000,6 +1046,8 @@ references:
   nameWithType: Axis.Translate
   fullName: DynamoForRevitUtils.Entities.Axis.Translate
 - uid: Autodesk.DesignScript.Geometry.Vector
+  commentId: T:Autodesk.DesignScript.Geometry.Vector
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Vector
   nameWithType: Vector
@@ -1061,6 +1109,8 @@ references:
   nameWithType: Axis.CoordinateSystem
   fullName: DynamoForRevitUtils.Entities.Axis.CoordinateSystem
 - uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: CoordinateSystem
   nameWithType: CoordinateSystem

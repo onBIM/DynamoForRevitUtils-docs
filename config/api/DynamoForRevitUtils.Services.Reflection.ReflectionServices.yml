@@ -22,8 +22,14 @@ items:
   summary: Reflection services
   example: []
   syntax:
-    content: public static class ReflectionServices
-    content.vb: Public Module ReflectionServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ReflectionServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ReflectionServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +40,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Reflection.ReflectionServices.GetExecutingAssemblyPath
   commentId: M:DynamoForRevitUtils.Services.Reflection.ReflectionServices.GetExecutingAssemblyPath
   id: GetExecutingAssemblyPath

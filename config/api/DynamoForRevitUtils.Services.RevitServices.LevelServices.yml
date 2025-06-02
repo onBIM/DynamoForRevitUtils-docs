@@ -20,8 +20,14 @@ items:
   summary: Elements conversions
   example: []
   syntax:
-    content: public static class LevelServices
-    content.vb: Public Module LevelServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class LevelServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module LevelServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -32,6 +38,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.LevelServices.GetNearestLevel(Autodesk.Revit.DB.Level,System.Boolean)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.LevelServices.GetNearestLevel(Autodesk.Revit.DB.Level,System.Boolean)
   id: GetNearestLevel(Autodesk.Revit.DB.Level,System.Boolean)
@@ -388,6 +400,8 @@ references:
   nameWithType: LevelServices.GetNearestLevel
   fullName: DynamoForRevitUtils.Services.RevitServices.LevelServices.GetNearestLevel
 - uid: Autodesk.Revit.DB.Level
+  commentId: T:Autodesk.Revit.DB.Level
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Level
   nameWithType: Level
@@ -403,7 +417,39 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document

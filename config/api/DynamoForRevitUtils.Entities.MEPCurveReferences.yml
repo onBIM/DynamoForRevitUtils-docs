@@ -24,8 +24,14 @@ items:
   summary: Class containing utils References from MEP Curves
   example: []
   syntax:
-    content: public class MEPCurveReferences
-    content.vb: Public Class MEPCurveReferences
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class MEPCurveReferences
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class MEPCurveReferences
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +44,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)
   commentId: M:DynamoForRevitUtils.Entities.MEPCurveReferences.#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)
   id: '#ctor(Autodesk.Revit.DB.ReferenceArray,Autodesk.Revit.DB.Curve,Autodesk.DesignScript.Geometry.CoordinateSystem,System.Collections.Generic.List{Autodesk.Revit.DB.Face},Autodesk.Revit.DB.ElementId)'
@@ -594,16 +606,22 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.MEPCurveReferences.New
   name.vb: New
 - uid: Autodesk.Revit.DB.ReferenceArray
+  commentId: T:Autodesk.Revit.DB.ReferenceArray
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ReferenceArray
   nameWithType: ReferenceArray
   fullName: Autodesk.Revit.DB.ReferenceArray
 - uid: Autodesk.Revit.DB.Curve
+  commentId: T:Autodesk.Revit.DB.Curve
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Curve
   nameWithType: Curve
   fullName: Autodesk.Revit.DB.Curve
 - uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: CoordinateSystem
   nameWithType: CoordinateSystem
@@ -642,10 +660,72 @@ references:
     isExternal: true
   - name: )
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
   fullName: Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

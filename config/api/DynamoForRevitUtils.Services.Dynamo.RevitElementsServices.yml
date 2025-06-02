@@ -25,8 +25,14 @@ items:
   summary: Dynamo Elements Utils
   example: []
   syntax:
-    content: public static class RevitElementsServices
-    content.vb: Public Module RevitElementsServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class RevitElementsServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module RevitElementsServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,6 +43,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.UnwrapElement``1(Revit.Elements.Element)
   commentId: M:DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.UnwrapElement``1(Revit.Elements.Element)
   id: UnwrapElement``1(Revit.Elements.Element)
@@ -545,7 +557,8 @@ references:
   nameWithType: RevitElementsServices.UnwrapElement
   fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.UnwrapElement
 - uid: Revit.Elements.Element
-  commentId: '!:Revit.Elements.Element'
+  commentId: T:Revit.Elements.Element
+  parent: Revit.Elements
   isExternal: true
   name: Element
   nameWithType: Element
@@ -556,6 +569,28 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: Revit.Elements
+  commentId: N:Revit.Elements
+  isExternal: true
+  name: Revit.Elements
+  nameWithType: Revit.Elements
+  fullName: Revit.Elements
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
 - uid: T
   name: T
   nameWithType: T
@@ -582,12 +617,45 @@ references:
   nameWithType: RevitElementsServices.TryConvertToDSType
   fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.TryConvertToDSType
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
   fullName: Autodesk.Revit.DB.Element
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: Revit.Elements.Category
   commentId: T:Revit.Elements.Category
+  parent: Revit.Elements
   isExternal: true
   name: Category
   nameWithType: Category
@@ -600,6 +668,8 @@ references:
   nameWithType: RevitElementsServices.ToBuiltInCategory
   fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.ToBuiltInCategory
 - uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
@@ -619,15 +689,41 @@ references:
   nameWithType: RevitElementsServices.ToDynamoType
   fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.ToDynamoType
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Revit.Application.Document
+  commentId: T:Revit.Application.Document
+  parent: Revit.Application
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Revit.Application.Document
+- uid: Revit.Application
+  commentId: N:Revit.Application
+  isExternal: true
+  name: Revit.Application
+  nameWithType: Revit.Application
+  fullName: Revit.Application
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Application
+    name: Application
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Application
+    name: Application
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.ToRevitDocument*
   commentId: Overload:DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.ToRevitDocument
   isExternal: true
@@ -643,8 +739,39 @@ references:
   nameWithType: RevitElementsServices.GetProtoLocation
   fullName: DynamoForRevitUtils.Services.Dynamo.RevitElementsServices.GetProtoLocation
 - uid: Autodesk.DesignScript.Geometry.Geometry
-  commentId: '!:Autodesk.DesignScript.Geometry.Geometry'
+  commentId: T:Autodesk.DesignScript.Geometry.Geometry
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Geometry
   nameWithType: Geometry
   fullName: Autodesk.DesignScript.Geometry.Geometry
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true

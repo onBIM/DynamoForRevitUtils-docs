@@ -37,8 +37,14 @@ items:
   summary: Dynamo BoundingBox utils
   example: []
   syntax:
-    content: public static class BoundingBoxServices
-    content.vb: Public Module BoundingBoxServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class BoundingBoxServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module BoundingBoxServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -49,6 +55,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
   commentId: M:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
   id: GetCentroid(Autodesk.DesignScript.Geometry.BoundingBox)
@@ -891,15 +903,49 @@ references:
   nameWithType: BoundingBoxServices.GetCentroid
   fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetCentroid
 - uid: Autodesk.DesignScript.Geometry.BoundingBox
+  commentId: T:Autodesk.DesignScript.Geometry.BoundingBox
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: BoundingBox
   nameWithType: BoundingBox
   fullName: Autodesk.DesignScript.Geometry.BoundingBox
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
   fullName: Autodesk.DesignScript.Geometry.Point
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter*
   commentId: Overload:DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomCenter
   isExternal: true
@@ -1027,6 +1073,8 @@ references:
   nameWithType: BoundingBoxServices.GetBottomSurface
   fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetBottomSurface
 - uid: Autodesk.DesignScript.Geometry.Surface
+  commentId: T:Autodesk.DesignScript.Geometry.Surface
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Surface
   nameWithType: Surface
@@ -1126,6 +1174,8 @@ references:
   nameWithType: BoundingBoxServices.GetDiagonal
   fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.GetDiagonal
 - uid: Autodesk.DesignScript.Geometry.Line
+  commentId: T:Autodesk.DesignScript.Geometry.Line
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Line
   nameWithType: Line
@@ -1191,6 +1241,8 @@ references:
   nameWithType: BoundingBoxServices.ToCoordinateSystem
   fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToCoordinateSystem
 - uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: CoordinateSystem
   nameWithType: CoordinateSystem
@@ -1217,7 +1269,39 @@ references:
   nameWithType: BoundingBoxServices.ToBoundingBoxXYZ
   fullName: DynamoForRevitUtils.Services.Dynamo.BoundingBoxServices.ToBoundingBoxXYZ
 - uid: Autodesk.Revit.DB.BoundingBoxXYZ
+  commentId: T:Autodesk.Revit.DB.BoundingBoxXYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BoundingBoxXYZ
   nameWithType: BoundingBoxXYZ
   fullName: Autodesk.Revit.DB.BoundingBoxXYZ
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true

@@ -35,8 +35,14 @@ items:
   summary: Class containing tools to deal with Revit Walls
   example: []
   syntax:
-    content: public static class WallServices
-    content.vb: Public Module WallServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class WallServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module WallServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -47,6 +53,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
   id: GetJoinedElementsAtEnds(Autodesk.Revit.DB.Wall)
@@ -905,6 +917,8 @@ references:
   nameWithType: WallServices.GetJoinedElementsAtEnds
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetJoinedElementsAtEnds
 - uid: Autodesk.Revit.DB.Wall
+  commentId: T:Autodesk.Revit.DB.Wall
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Wall
   nameWithType: Wall
@@ -968,6 +982,36 @@ references:
     isExternal: true
   - name: )
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2
   isExternal: true
@@ -1040,6 +1084,8 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
@@ -1240,10 +1286,42 @@ references:
   nameWithType: WallServices.GetTopFace
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetTopFace
 - uid: Autodesk.DesignScript.Geometry.Surface
+  commentId: T:Autodesk.DesignScript.Geometry.Surface
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Surface
   nameWithType: Surface
   fullName: Autodesk.DesignScript.Geometry.Surface
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.WallServices.GetBottomSurface
   isExternal: true
@@ -1284,6 +1362,8 @@ references:
   nameWithType: WallServices.GetExtendedSolid
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedSolid
 - uid: Autodesk.DesignScript.Geometry.Solid
+  commentId: T:Autodesk.DesignScript.Geometry.Solid
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Solid
   nameWithType: Solid
@@ -1296,6 +1376,8 @@ references:
   nameWithType: WallServices.GetExtendedLocation
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocation
 - uid: Autodesk.DesignScript.Geometry.Curve
+  commentId: T:Autodesk.DesignScript.Geometry.Curve
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Curve
   nameWithType: Curve
@@ -1308,6 +1390,8 @@ references:
   nameWithType: WallServices.GetExtendedLocationLine
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetExtendedLocationLine
 - uid: Autodesk.DesignScript.Geometry.Line
+  commentId: T:Autodesk.DesignScript.Geometry.Line
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Line
   nameWithType: Line
@@ -1327,6 +1411,8 @@ references:
   nameWithType: WallServices.GetParallelGrids
   fullName: DynamoForRevitUtils.Services.RevitServices.WallServices.GetParallelGrids
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document

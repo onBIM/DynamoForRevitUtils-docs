@@ -23,8 +23,14 @@ items:
   summary: Generic Collectors
   example: []
   syntax:
-    content: public static class GenericCollectors
-    content.vb: Public Module GenericCollectors
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class GenericCollectors
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module GenericCollectors
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
   commentId: M:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
   id: GetAllElementsOfCategory``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)
@@ -496,6 +508,8 @@ references:
   nameWithType: System
   fullName: System
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -508,21 +522,29 @@ references:
   nameWithType: GenericCollectors.GetAllElementsOfCategory
   fullName: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementsOfCategory
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
   fullName: Autodesk.Revit.DB.BuiltInCategory
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
 - uid: Autodesk.Revit.DB.ElementFilter
+  commentId: T:Autodesk.Revit.DB.ElementFilter
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementFilter
   nameWithType: ElementFilter
@@ -556,6 +578,36 @@ references:
   - name: " "
   - name: TCast
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true
@@ -707,6 +759,9 @@ references:
 - uid: Autodesk.Revit.DB.ElementType
   commentId: T:Autodesk.Revit.DB.ElementType
   isExternal: true
+  name: ElementType
+  nameWithType: ElementType
+  fullName: Autodesk.Revit.DB.ElementType
 - uid: DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass*
   commentId: Overload:DynamoForRevitUtils.Services.Collectors.GenericCollectors.GetAllElementTypesOfClass
   isExternal: true

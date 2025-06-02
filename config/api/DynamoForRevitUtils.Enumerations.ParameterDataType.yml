@@ -29,11 +29,23 @@ items:
     has not been set or is not recognized within the context of the <xref href="DynamoForRevitUtils.Enumerations.ParameterDataType" data-throw-if-not-resolved="false"></xref> enumeration.
   example: []
   syntax:
-    content: public enum ParameterDataType
-    content.vb: Public Enum ParameterDataType
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum ParameterDataType
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum ParameterDataType
   extensionMethods:
   - DynamoForRevitUtils.Enumerations.ParameterDataType.DynamoForRevitUtils.Services.Enumerations.Converters.ToStorageType
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
   commentId: F:DynamoForRevitUtils.Enumerations.ParameterDataType.Boolean
   id: Boolean

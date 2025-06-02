@@ -662,6 +662,8 @@ references:
     isExternal: true
   - name: )
 - uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Reference
   nameWithType: Reference
@@ -708,6 +710,36 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.GetHashCode*
   commentId: Overload:DynamoForRevitUtils.Entities.EqualityComparers.ElementReferenceComparer.GetHashCode
   isExternal: true

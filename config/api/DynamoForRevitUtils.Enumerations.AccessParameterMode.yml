@@ -20,10 +20,22 @@ items:
   summary: Represents the mode of access for parameters within the Dynamo for Revit utilities.
   example: []
   syntax:
-    content: public enum AccessParameterMode
-    content.vb: Public Enum AccessParameterMode
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum AccessParameterMode
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum AccessParameterMode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.AccessParameterMode.ParameterOnly
   commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterMode.ParameterOnly
   id: ParameterOnly

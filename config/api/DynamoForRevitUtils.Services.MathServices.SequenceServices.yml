@@ -19,8 +19,14 @@ items:
   summary: Utils to generate numeric sequences
   example: []
   syntax:
-    content: public static class SequenceServices
-    content.vb: Public Module SequenceServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class SequenceServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module SequenceServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.MathServices.SequenceServices.ArithmeticProgression(System.Double,System.UInt16,System.Double)
   commentId: M:DynamoForRevitUtils.Services.MathServices.SequenceServices.ArithmeticProgression(System.Double,System.UInt16,System.Double)
   id: ArithmeticProgression(System.Double,System.UInt16,System.Double)

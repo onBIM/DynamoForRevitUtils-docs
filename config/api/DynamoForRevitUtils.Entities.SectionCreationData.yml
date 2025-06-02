@@ -27,8 +27,14 @@ items:
   summary: Object that holds data to create a Section View in Revit
   example: []
   syntax:
-    content: public class SectionCreationData
-    content.vb: Public Class SectionCreationData
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class SectionCreationData
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class SectionCreationData
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,6 +47,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.SectionCreationData.#ctor(DynamoForRevitUtils.Entities.Axis,System.Double,System.Double)
   commentId: M:DynamoForRevitUtils.Entities.SectionCreationData.#ctor(DynamoForRevitUtils.Entities.Axis,System.Double,System.Double)
   id: '#ctor(DynamoForRevitUtils.Entities.Axis,System.Double,System.Double)'

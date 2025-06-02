@@ -19,8 +19,14 @@ items:
   summary: Generic services for objects.
   example: []
   syntax:
-    content: public static class ObjectServices
-    content.vb: Public Module ObjectServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ObjectServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ObjectServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   id: TryCast``1(System.Object)

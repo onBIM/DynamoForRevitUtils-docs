@@ -24,8 +24,14 @@ items:
   summary: Represents options for retrieving parameters of elements using Dynamo for Revit utilities.
   example: []
   syntax:
-    content: public class AccessElementParameterOptions
-    content.vb: Public Class AccessElementParameterOptions
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class AccessElementParameterOptions
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class AccessElementParameterOptions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +44,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.#ctor
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.#ctor
   id: '#ctor'

@@ -21,10 +21,22 @@ items:
   summary: Represents an interface for wrapping Revit elements.
   example: []
   syntax:
-    content: public interface IElementWrapper
-    content.vb: Public Interface IElementWrapper
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public interface IElementWrapper
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Interface IElementWrapper
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
   id: Element
@@ -269,10 +281,42 @@ references:
   nameWithType: IElementWrapper.Element
   fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
   fullName: Autodesk.Revit.DB.Element
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps*
   commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
   isExternal: true

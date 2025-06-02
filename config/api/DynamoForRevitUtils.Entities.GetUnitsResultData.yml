@@ -26,8 +26,14 @@ items:
     along with a description and result status.
   example: []
   syntax:
-    content: public class GetUnitsResultData
-    content.vb: Public Class GetUnitsResultData
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class GetUnitsResultData
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class GetUnitsResultData
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,6 +46,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.GetUnitsResultData.#ctor(Autodesk.Revit.DB.ForgeTypeId,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
   commentId: M:DynamoForRevitUtils.Entities.GetUnitsResultData.#ctor(Autodesk.Revit.DB.ForgeTypeId,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
   id: '#ctor(Autodesk.Revit.DB.ForgeTypeId,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)'
@@ -591,9 +603,15 @@ references:
 - uid: Autodesk.Revit.DB.UnitTypeId
   commentId: T:Autodesk.Revit.DB.UnitTypeId
   isExternal: true
+  name: UnitTypeId
+  nameWithType: UnitTypeId
+  fullName: Autodesk.Revit.DB.UnitTypeId
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -612,6 +630,8 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.GetUnitsResultData.New
   name.vb: New
 - uid: Autodesk.Revit.DB.ForgeTypeId
+  commentId: T:Autodesk.Revit.DB.ForgeTypeId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ForgeTypeId
   nameWithType: ForgeTypeId
@@ -635,6 +655,36 @@ references:
   name: AccessParameterResult
   nameWithType: AccessParameterResult
   fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Enumerations
   commentId: N:DynamoForRevitUtils.Enumerations
   isExternal: true

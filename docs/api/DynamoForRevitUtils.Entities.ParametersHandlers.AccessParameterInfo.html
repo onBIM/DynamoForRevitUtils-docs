@@ -130,7 +130,8 @@ and the result of the access operation.</p>
   <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public record AccessParameterInfo : IEquatable&lt;AccessParameterInfo&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
+public record AccessParameterInfo : IEquatable&lt;AccessParameterInfo&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -160,13 +161,13 @@ and the result of the access operation.</p>
     </tbody>
   </table>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_System_Nullable_DynamoForRevitUtils_Enumerations_AccessParameterResult__" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})">AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)</h4>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_DynamoForRevitUtils_Enumerations_AccessParameterResult_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)">AccessParameterInfo(ElementParameter, string, AccessParameterResult)</h4>
   <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AccessParameterInfo(ElementParameter parameter, string? description = null, AccessParameterResult? result = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public AccessParameterInfo(ElementParameter parameter, string description, AccessParameterResult result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -191,25 +192,9 @@ and the result of the access operation.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.AccessParameterResult.html">AccessParameterResult</a>?</td>
+        <td><a class="xref" href="DynamoForRevitUtils.Enumerations.AccessParameterResult.html">AccessParameterResult</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>The result of the parameter access operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>Thrown when <code class="paramref">parameter</code> or <code class="paramref">description</code> is null.</p>
 </td>
       </tr>
     </tbody>

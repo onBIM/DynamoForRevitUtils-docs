@@ -28,8 +28,14 @@ items:
   summary: Crop Region Offset Settings
   example: []
   syntax:
-    content: public class CropRegionOffsetSettings
-    content.vb: Public Class CropRegionOffsetSettings
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class CropRegionOffsetSettings
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class CropRegionOffsetSettings
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,6 +47,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.CropRegionOffsetSettings.GetSymmetric(System.Double)
   commentId: M:DynamoForRevitUtils.Entities.CropRegionOffsetSettings.GetSymmetric(System.Double)
   id: GetSymmetric(System.Double)
@@ -717,20 +729,86 @@ references:
   nameWithType: CropRegionOffsetSettings.GetCropRegionShape
   fullName: DynamoForRevitUtils.Entities.CropRegionOffsetSettings.GetCropRegionShape
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
 - uid: Autodesk.DesignScript.Geometry.Line
+  commentId: T:Autodesk.DesignScript.Geometry.Line
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Line
   nameWithType: Line
   fullName: Autodesk.DesignScript.Geometry.Line
 - uid: Autodesk.Revit.DB.CurveLoop
+  commentId: T:Autodesk.Revit.DB.CurveLoop
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: CurveLoop
   nameWithType: CurveLoop
   fullName: Autodesk.Revit.DB.CurveLoop
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object

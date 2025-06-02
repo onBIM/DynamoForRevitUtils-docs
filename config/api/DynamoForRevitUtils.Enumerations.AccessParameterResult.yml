@@ -8,6 +8,7 @@ items:
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ElementNotFound
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidDataType
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidElementKind
+  - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidSpecTypeId
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidUnitTypeId
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidValue
@@ -15,6 +16,7 @@ items:
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ParameterFound
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ParameterNotFound
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.UnitFound
+  - DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueFound
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueNotFound
   - DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueSet
@@ -28,14 +30,29 @@ items:
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Enumerations
-  summary: Indicates that a parameter value has been successfully set.
-  remarks: This result is returned when the operation completes successfully and the parameter value is updated to the specified input.
+  summary: Represents an unspecified error encountered during the operation.
+  remarks: >-
+    This result indicates that the cause of the error could not be identified.
+
+    It is used as a fallback for unexpected or unknown failures.
   example: []
   syntax:
-    content: public enum AccessParameterResult
-    content.vb: Public Enum AccessParameterResult
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum AccessParameterResult
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum AccessParameterResult
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueFound
   commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueFound
   id: ValueFound
@@ -342,6 +359,49 @@ items:
     content: ValueSet = 12
     return:
       type: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  id: InvalidParameter
+  parent: DynamoForRevitUtils.Enumerations.AccessParameterResult
+  langs:
+  - csharp
+  - vb
+  name: InvalidParameter
+  nameWithType: AccessParameterResult.InvalidParameter
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: Indicates that the specified parameter is invalid or doesn't meet the required criteria.
+  example: []
+  syntax:
+    content: InvalidParameter = 13
+    return:
+      type: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  id: UnknownError
+  parent: DynamoForRevitUtils.Enumerations.AccessParameterResult
+  langs:
+  - csharp
+  - vb
+  name: UnknownError
+  nameWithType: AccessParameterResult.UnknownError
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  type: Field
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Enumerations
+  summary: >-
+    Represents a condition where an unknown error occurred during the operation.
+
+    This indicates an unspecified or unhandled issue when accessing or processing a parameter.
+  example: []
+  syntax:
+    content: UnknownError = 14
+    return:
+      type: DynamoForRevitUtils.Enumerations.AccessParameterResult
 references:
 - uid: DynamoForRevitUtils.Enumerations
   commentId: N:DynamoForRevitUtils.Enumerations
@@ -507,6 +567,12 @@ references:
 - uid: Autodesk.Revit.DB.UnitTypeId
   commentId: T:Autodesk.Revit.DB.UnitTypeId
   isExternal: true
+  name: UnitTypeId
+  nameWithType: UnitTypeId
+  fullName: Autodesk.Revit.DB.UnitTypeId
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId

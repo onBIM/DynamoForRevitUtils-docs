@@ -6,7 +6,7 @@ items:
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
   children:
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
-  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Description
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.EqualityContract
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Equals(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
@@ -34,8 +34,14 @@ items:
     and the result of the access operation.
   example: []
   syntax:
-    content: 'public record AccessParameterInfo : IEquatable<AccessParameterInfo>'
-    content.vb: Public Class AccessParameterInfo Implements IEquatable(Of AccessParameterInfo)
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public record AccessParameterInfo : IEquatable<AccessParameterInfo>
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class AccessParameterInfo Implements IEquatable(Of AccessParameterInfo)
   inheritance:
   - System.Object
   implements:
@@ -47,16 +53,22 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
-  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
-  id: '#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})'
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  id: '#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)'
   parent: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
   langs:
   - csharp
   - vb
-  name: AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
-  nameWithType: AccessParameterInfo.AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, string?, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
+  name: AccessParameterInfo(ElementParameter, string, AccessParameterResult)
+  nameWithType: AccessParameterInfo.AccessParameterInfo(ElementParameter, string, AccessParameterResult)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, string, DynamoForRevitUtils.Enumerations.AccessParameterResult)
   type: Constructor
   assemblies:
   - DynamoForRevitUtils
@@ -64,7 +76,7 @@ items:
   summary: Constructs a new instance of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public AccessParameterInfo(ElementParameter parameter, string? description = null, AccessParameterResult? result = null)
+    content: public AccessParameterInfo(ElementParameter parameter, string description, AccessParameterResult result)
     parameters:
     - id: parameter
       type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
@@ -73,17 +85,13 @@ items:
       type: System.String
       description: A description of the parameter access operation.
     - id: result
-      type: System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
+      type: DynamoForRevitUtils.Enumerations.AccessParameterResult
       description: The result of the parameter access operation.
-    content.vb: Public Sub New(parameter As ElementParameter, description As String = Nothing, result As AccessParameterResult? = Nothing)
+    content.vb: Public Sub New(parameter As ElementParameter, description As String, result As AccessParameterResult)
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Thrown when <code class="paramref">parameter</code> or <code class="paramref">description</code> is null.
-  nameWithType.vb: AccessParameterInfo.New(ElementParameter, String, AccessParameterResult?)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, String, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
-  name.vb: New(ElementParameter, String, AccessParameterResult?)
+  nameWithType.vb: AccessParameterInfo.New(ElementParameter, String, AccessParameterResult)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, String, DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  name.vb: New(ElementParameter, String, AccessParameterResult)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.ToString
   id: ToString
@@ -769,17 +777,10 @@ references:
   name: AccessParameterInfo
   nameWithType: AccessParameterInfo
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_System_Nullable_DynamoForRevitUtils_Enumerations_AccessParameterResult__
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_DynamoForRevitUtils_Enumerations_AccessParameterResult_
   name: AccessParameterInfo
   nameWithType: AccessParameterInfo.AccessParameterInfo
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo
@@ -805,54 +806,41 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
-  commentId: T:System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult}
-  parent: System
-  definition: System.Nullable`1
-  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
-  name: AccessParameterResult?
-  nameWithType: AccessParameterResult?
-  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult?
-  spec.csharp:
-  - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
-    name: AccessParameterResult
-    isExternal: true
-    href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
-  - name: '?'
-  spec.vb:
-  - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
-    name: AccessParameterResult
-    isExternal: true
-    href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
+  commentId: T:DynamoForRevitUtils.Enumerations.AccessParameterResult
+  parent: DynamoForRevitUtils.Enumerations
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
+  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
+  name: AccessParameterResult
+  nameWithType: AccessParameterResult
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult
+- uid: DynamoForRevitUtils.Enumerations
+  commentId: N:DynamoForRevitUtils.Enumerations
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Enumerations
+  nameWithType: DynamoForRevitUtils.Enumerations
+  fullName: DynamoForRevitUtils.Enumerations
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Enumerations
+    name: Enumerations
+    isExternal: true
+    href: DynamoForRevitUtils.Enumerations.html
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -1146,38 +1134,3 @@ references:
   name: Result
   nameWithType: AccessParameterInfo.Result
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.Result
-- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult
-  commentId: T:DynamoForRevitUtils.Enumerations.AccessParameterResult
-  parent: DynamoForRevitUtils.Enumerations
-  isExternal: true
-  href: DynamoForRevitUtils.Enumerations.AccessParameterResult.html
-  name: AccessParameterResult
-  nameWithType: AccessParameterResult
-  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult
-- uid: DynamoForRevitUtils.Enumerations
-  commentId: N:DynamoForRevitUtils.Enumerations
-  isExternal: true
-  href: DynamoForRevitUtils.html
-  name: DynamoForRevitUtils.Enumerations
-  nameWithType: DynamoForRevitUtils.Enumerations
-  fullName: DynamoForRevitUtils.Enumerations
-  spec.csharp:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Enumerations
-    name: Enumerations
-    isExternal: true
-    href: DynamoForRevitUtils.Enumerations.html
-  spec.vb:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Enumerations
-    name: Enumerations
-    isExternal: true
-    href: DynamoForRevitUtils.Enumerations.html

@@ -28,14 +28,20 @@ items:
     the base class to access properties of the derived class through reflection while maintaining type safety.
   example: []
   syntax:
-    content: 'public abstract class ElementParameterMap<T> : IElementParameterMap where T : ElementParameterMap<T>'
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class ElementParameterMap<T> : IElementParameterMap where T : ElementParameterMap<T>
     typeParameters:
     - id: T
       description: >-
         Defines the type of the derived class, which is used to access properties of the derived class
 
         at compile time.
-    content.vb: Public MustInherit Class ElementParameterMap(Of T As ElementParameterMap(Of T)) Implements IElementParameterMap
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class ElementParameterMap(Of T As ElementParameterMap(Of T)) Implements IElementParameterMap
   inheritance:
   - System.Object
   implements:
@@ -50,6 +56,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
   nameWithType.vb: ElementParameterMap(Of T)
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap(Of T)
   name.vb: ElementParameterMap(Of T)

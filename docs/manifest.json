@@ -1688,7 +1688,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Enumerations.AccessParameterResult",
-      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.AccessParameterResult.yml\" sourcestartlinenumber=\"1\">Indicates that a parameter value has been successfully set.</p>\n"
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Enumerations.AccessParameterResult.yml\" sourcestartlinenumber=\"1\">Represents an unspecified error encountered during the operation.</p>\n"
     },
     {
       "type": "ManagedReference",

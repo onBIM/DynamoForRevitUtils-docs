@@ -23,8 +23,14 @@ items:
   summary: ElementId Services
   example: []
   syntax:
-    content: public static class ElementIdServices
-    content.vb: Public Module ElementIdServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ElementIdServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ElementIdServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(System.Int64)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetElementId(System.Int64)
   id: GetElementId(System.Int64)
@@ -491,10 +503,42 @@ references:
   fullName.vb: Long
   name.vb: Long
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
   fullName: Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementIdServices.GetValue
   isExternal: true
@@ -510,6 +554,8 @@ references:
   nameWithType: ElementIdServices.IsValidId
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementIdServices.IsValidId
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -526,6 +572,8 @@ references:
   fullName.vb: Boolean
   name.vb: Boolean
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element

@@ -25,8 +25,14 @@ items:
   summary: Rooms collectors
   example: []
   syntax:
-    content: public static class RoomCollectors
-    content.vb: Public Module RoomCollectors
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class RoomCollectors
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module RoomCollectors
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,6 +43,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetAllValidRooms(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
   commentId: M:DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetAllValidRooms(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
   id: GetAllValidRooms(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
@@ -544,11 +556,15 @@ references:
   nameWithType: RoomCollectors.GetAllValidRooms
   fullName: DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetAllValidRooms
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
@@ -586,6 +602,36 @@ references:
     name: Room
     isExternal: true
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true
@@ -673,6 +719,8 @@ references:
   nameWithType: RoomCollectors.GetValidRoomsFromDesignOption
   fullName: DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetValidRoomsFromDesignOption
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
@@ -685,19 +733,22 @@ references:
   nameWithType: RoomCollectors.GetRoomFinishes
   fullName: DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetRoomFinishes
 - uid: Autodesk.Revit.DB.Architecture.Room
-  commentId: '!:Autodesk.Revit.DB.Architecture.Room'
+  commentId: T:Autodesk.Revit.DB.Architecture.Room
+  parent: Autodesk.Revit.DB.Architecture
   isExternal: true
   name: Room
   nameWithType: Room
   fullName: Autodesk.Revit.DB.Architecture.Room
 - uid: Autodesk.Revit.DB.SpatialElementGeometryCalculator
-  commentId: '!:Autodesk.Revit.DB.SpatialElementGeometryCalculator'
+  commentId: T:Autodesk.Revit.DB.SpatialElementGeometryCalculator
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: SpatialElementGeometryCalculator
   nameWithType: SpatialElementGeometryCalculator
   fullName: Autodesk.Revit.DB.SpatialElementGeometryCalculator
 - uid: Autodesk.Revit.DB.SubfaceType
-  commentId: '!:Autodesk.Revit.DB.SubfaceType'
+  commentId: T:Autodesk.Revit.DB.SubfaceType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: SubfaceType
   nameWithType: SubfaceType
@@ -746,6 +797,44 @@ references:
     name: Element
     isExternal: true
   - name: )
+- uid: Autodesk.Revit.DB.Architecture
+  commentId: N:Autodesk.Revit.DB.Architecture
+  isExternal: true
+  name: Autodesk.Revit.DB.Architecture
+  nameWithType: Autodesk.Revit.DB.Architecture
+  fullName: Autodesk.Revit.DB.Architecture
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB.Architecture
+    name: Architecture
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB.Architecture
+    name: Architecture
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetAllRoomSeparationLines*
   commentId: Overload:DynamoForRevitUtils.Services.Collectors.RoomCollectors.GetAllRoomSeparationLines
   isExternal: true

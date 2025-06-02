@@ -20,8 +20,14 @@ items:
   summary: Abstract class for Abstract Bounding Box
   example: []
   syntax:
-    content: 'public class AbstractBoundingBox : AbstractGeometryBase<BoundingBox>, IAbstractGeometry'
-    content.vb: Public Class AbstractBoundingBox Inherits AbstractGeometryBase(Of BoundingBox) Implements IAbstractGeometry
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class AbstractBoundingBox : AbstractGeometryBase<BoundingBox>, IAbstractGeometry
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class AbstractBoundingBox Inherits AbstractGeometryBase(Of BoundingBox) Implements IAbstractGeometry
   inheritance:
   - System.Object
   - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase{Autodesk.DesignScript.Geometry.BoundingBox}
@@ -38,6 +44,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.#ctor(Autodesk.DesignScript.Geometry.BoundingBox)
   commentId: M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.#ctor(Autodesk.DesignScript.Geometry.BoundingBox)
   id: '#ctor(Autodesk.DesignScript.Geometry.BoundingBox)'
@@ -608,10 +620,42 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.New
   name.vb: New
 - uid: Autodesk.DesignScript.Geometry.BoundingBox
+  commentId: T:Autodesk.DesignScript.Geometry.BoundingBox
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: BoundingBox
   nameWithType: BoundingBox
   fullName: Autodesk.DesignScript.Geometry.BoundingBox
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase{Autodesk.DesignScript.Geometry.BoundingBox}.Visualize(Autodesk.DesignScript.Geometry.Point,System.Double,DSCore.Color,System.Boolean,System.Boolean)
   commentId: M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase{Autodesk.DesignScript.Geometry.BoundingBox}.Visualize(Autodesk.DesignScript.Geometry.Point,System.Double,DSCore.Color,System.Boolean,System.Boolean)
   parent: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase{Autodesk.DesignScript.Geometry.BoundingBox}
@@ -697,6 +741,8 @@ references:
   nameWithType: AbstractBoundingBox.Visualize
   fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractBoundingBox.Visualize
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
@@ -713,6 +759,8 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: DSCore.Color
+  commentId: T:DSCore.Color
+  parent: DSCore
   isExternal: true
   name: Color
   nameWithType: Color
@@ -837,6 +885,12 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: DSCore
+  commentId: N:DSCore
+  isExternal: true
+  name: DSCore
+  nameWithType: DSCore
+  fullName: DSCore
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

@@ -21,8 +21,14 @@ items:
   summary: Represents a mapping item between a property name and an associated <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.ElementParameter" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: public class ElementParameterMapItem
-    content.vb: Public Class ElementParameterMapItem
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class ElementParameterMapItem
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class ElementParameterMapItem
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +41,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.#ctor
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.#ctor
   id: '#ctor'

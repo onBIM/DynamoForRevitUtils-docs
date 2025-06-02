@@ -31,8 +31,14 @@ items:
   summary: Class for units conversion between Dynamo and Revit active document
   example: []
   syntax:
-    content: public static class ConversionServices
-    content.vb: Public Module ConversionServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class ConversionServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module ConversionServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,6 +49,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
   commentId: M:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
   id: ConvertInternalToDisplayUnit(System.Double,Autodesk.Revit.DB.ForgeTypeId,Autodesk.Revit.DB.Document)
@@ -854,6 +866,9 @@ references:
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId
 - uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit*
   commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertInternalToDisplayUnit
   isExternal: true
@@ -873,15 +888,49 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: Autodesk.Revit.DB.ForgeTypeId
+  commentId: T:Autodesk.Revit.DB.ForgeTypeId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ForgeTypeId
   nameWithType: ForgeTypeId
   fullName: Autodesk.Revit.DB.ForgeTypeId
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit*
   commentId: Overload:DynamoForRevitUtils.Services.UnitsConversion.ConversionServices.ConvertDisplayToInternalUnit
   isExternal: true
@@ -892,6 +941,9 @@ references:
 - uid: Autodesk.Revit.DB.UnitTypeId
   commentId: T:Autodesk.Revit.DB.UnitTypeId
   isExternal: true
+  name: UnitTypeId
+  nameWithType: UnitTypeId
+  fullName: Autodesk.Revit.DB.UnitTypeId
 - uid: System.ArgumentException
   commentId: T:System.ArgumentException
   isExternal: true

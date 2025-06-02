@@ -99,17 +99,19 @@
 
 
   <h1 id="DynamoForRevitUtils_Enumerations_AccessParameterResult" data-uid="DynamoForRevitUtils.Enumerations.AccessParameterResult" class="text-break">Enum AccessParameterResult</h1>
-  <div class="markdown level0 summary"><p>Indicates that a parameter value has been successfully set.</p>
+  <div class="markdown level0 summary"><p>Represents an unspecified error encountered during the operation.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Enumerations.html">Enumerations</a></h6>
   <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
   <h5 id="DynamoForRevitUtils_Enumerations_AccessParameterResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum AccessParameterResult</code></pre>
+    <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
+public enum AccessParameterResult</code></pre>
   </div>
   <h5 id="DynamoForRevitUtils_Enumerations_AccessParameterResult_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This result is returned when the operation completes successfully and the parameter value is updated to the specified input.</p>
+  <div class="markdown level0 remarks"><p>This result indicates that the cause of the error could not be identified.
+It is used as a fallback for unexpected or unknown failures.</p>
 </div>
   <h3 id="fields">Fields
 </h3>
@@ -134,6 +136,11 @@
       <tr>
         <td id="DynamoForRevitUtils_Enumerations_AccessParameterResult_InvalidElementKind">InvalidElementKind</td>
         <td><p>Indicates that the specified element's kind is invalid for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DynamoForRevitUtils_Enumerations_AccessParameterResult_InvalidParameter">InvalidParameter</td>
+        <td><p>Indicates that the specified parameter is invalid or doesn't meet the required criteria.</p>
 </td>
       </tr>
       <tr>
@@ -170,6 +177,12 @@
         <td id="DynamoForRevitUtils_Enumerations_AccessParameterResult_UnitFound">UnitFound</td>
         <td><p>Represents a condition where the <span class="xref">Autodesk.Revit.DB.UnitTypeId</span> associated
 with a parameter was successfully identified.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DynamoForRevitUtils_Enumerations_AccessParameterResult_UnknownError">UnknownError</td>
+        <td><p>Represents a condition where an unknown error occurred during the operation.
+This indicates an unspecified or unhandled issue when accessing or processing a parameter.</p>
 </td>
       </tr>
       <tr>

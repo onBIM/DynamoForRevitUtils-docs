@@ -228,7 +228,8 @@
   <div><a class="xref" href="DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.html#DynamoForRevitUtils_Entities_PickSelectionFilters_PickSelectionFilter_AllowElement_Autodesk_Revit_DB_Element_">PickSelectionFilter.AllowElement(Element)</a></div>
   <a id="DynamoForRevitUtils_Entities_PickSelectionFilters_WallSelectionFilter_AllowReference_" data-uid="DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.AllowReference*"></a>
   <h4 id="DynamoForRevitUtils_Entities_PickSelectionFilters_WallSelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_" data-uid="DynamoForRevitUtils.Entities.PickSelectionFilters.WallSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)">AllowReference(Reference, XYZ)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Override this post-filter method to specify if a reference to a piece of geometry is permitted to be selected.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,12 +248,14 @@
       <tr>
         <td><span class="xref">Reference</span></td>
         <td><span class="parametername">reference</span></td>
-        <td></td>
+        <td><p>A candidate reference in selection operation.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">XYZ</span></td>
         <td><span class="parametername">position</span></td>
-        <td></td>
+        <td><p>The 3D position of the mouse on the candidate reference.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,12 +270,16 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>Return true to allow the user to select this candidate reference. Return false to prevent selection of this candidate.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.html#DynamoForRevitUtils_Entities_PickSelectionFilters_PickSelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_">PickSelectionFilter.AllowReference(Reference, XYZ)</a></div>
+  <h5 id="DynamoForRevitUtils_Entities_PickSelectionFilters_WallSelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If an exception is thrown from this method, the element will not be permitted to be selected.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Autodesk.Revit.UI.Selection.ISelectionFilter</span>

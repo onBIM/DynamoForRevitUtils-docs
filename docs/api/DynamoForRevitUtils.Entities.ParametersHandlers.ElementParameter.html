@@ -125,7 +125,8 @@
   <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ElementParameter</code></pre>
+    <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
+public class ElementParameter</code></pre>
   </div>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This class acts as a wrapper around Revit's <span class="xref">Autodesk.Revit.DB.Parameter</span> object
@@ -701,7 +702,12 @@ indicating the data type that the parameter is expected to hold.</p>
     </tbody>
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Value_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Values of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> must be considered in Display Units.</p>
+  <div class="markdown level1 remarks"><p>
+Values of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> must be considered in Display Units.
+</p>
+<p>
+    <p><strong>Automatic conversions are performed for:</strong></p><ul><li><b>Integer parameters</b> when double values that represent whole numbers are used.</li><li><b>Decimal parameters</b> when int values are used.</li></ul>
+
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">

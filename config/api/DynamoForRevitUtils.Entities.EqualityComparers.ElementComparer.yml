@@ -21,8 +21,14 @@ items:
   summary: Custom comparer for Revit Elements
   example: []
   syntax:
-    content: 'public class ElementComparer : IEqualityComparer<Element?>'
-    content.vb: Public Class ElementComparer Implements IEqualityComparer(Of Element)
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class ElementComparer : IEqualityComparer<Element?>
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class ElementComparer Implements IEqualityComparer(Of Element)
   inheritance:
   - System.Object
   implements:
@@ -37,6 +43,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.Equals(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Element)
   commentId: M:DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.Equals(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Element)
   id: Equals(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Element)
@@ -665,6 +677,8 @@ references:
     isExternal: true
   - name: )
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -711,6 +725,36 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.GetHashCode*
   commentId: Overload:DynamoForRevitUtils.Entities.EqualityComparers.ElementComparer.GetHashCode
   isExternal: true

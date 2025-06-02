@@ -23,10 +23,22 @@ items:
   summary: Represents the validation options for a parameter.
   example: []
   syntax:
-    content: public enum ParameterValidationResult
-    content.vb: Public Enum ParameterValidationResult
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum ParameterValidationResult
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum ParameterValidationResult
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.ParameterValidationResult.ValidValue
   commentId: F:DynamoForRevitUtils.Enumerations.ParameterValidationResult.ValidValue
   id: ValidValue

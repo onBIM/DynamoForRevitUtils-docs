@@ -20,8 +20,14 @@ items:
   summary: Represents an abstract wrapper class for Revit family instances.
   example: []
   syntax:
-    content: 'public abstract class FamilyInstanceWrapper : ElementWrapper'
-    content.vb: Public MustInherit Class FamilyInstanceWrapper Inherits ElementWrapper
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class FamilyInstanceWrapper : ElementWrapper
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class FamilyInstanceWrapper Inherits ElementWrapper
   inheritance:
   - System.Object
   - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
@@ -38,6 +44,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.#ctor(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})
   commentId: M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.#ctor(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})
   id: '#ctor(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})'
@@ -560,6 +572,8 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.New
   name.vb: New
 - uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: FamilyInstance
   nameWithType: FamilyInstance
@@ -599,6 +613,36 @@ references:
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true

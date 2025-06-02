@@ -35,8 +35,14 @@ items:
   summary: Revit geometry tools
   example: []
   syntax:
-    content: public static class DynamoGeometryServices
-    content.vb: Public Module DynamoGeometryServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class DynamoGeometryServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module DynamoGeometryServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -47,6 +53,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
   commentId: M:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
   id: IsVertical(Autodesk.DesignScript.Geometry.Surface,System.UInt16)
@@ -912,6 +924,8 @@ references:
   nameWithType: DynamoGeometryServices.IsVertical
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsVertical
 - uid: Autodesk.DesignScript.Geometry.Surface
+  commentId: T:Autodesk.DesignScript.Geometry.Surface
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Surface
   nameWithType: Surface
@@ -938,6 +952,36 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal*
   commentId: Overload:DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsHorizontal
   isExternal: true
@@ -953,6 +997,8 @@ references:
   nameWithType: DynamoGeometryServices.IsParallelTo
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.IsParallelTo
 - uid: Autodesk.DesignScript.Geometry.Vector
+  commentId: T:Autodesk.DesignScript.Geometry.Vector
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Vector
   nameWithType: Vector
@@ -972,6 +1018,8 @@ references:
   nameWithType: DynamoGeometryServices.GetMidPoint
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMidPoint
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
@@ -1201,7 +1249,8 @@ references:
   nameWithType: DynamoGeometryServices.GetMeshSurfaces
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetMeshSurfaces
 - uid: Autodesk.DesignScript.Geometry.Mesh
-  commentId: '!:Autodesk.DesignScript.Geometry.Mesh'
+  commentId: T:Autodesk.DesignScript.Geometry.Mesh
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Mesh
   nameWithType: Mesh
@@ -1247,6 +1296,8 @@ references:
   nameWithType: DynamoGeometryServices.GetRelativeCoordinatesOfPoint
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.GetRelativeCoordinatesOfPoint
 - uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: CoordinateSystem
   nameWithType: CoordinateSystem
@@ -1282,6 +1333,8 @@ references:
   nameWithType: DynamoGeometryServices.Visualize
   fullName: DynamoForRevitUtils.Services.Dynamo.DynamoGeometryServices.Visualize
 - uid: DSCore.Color
+  commentId: T:DSCore.Color
+  parent: DSCore
   isExternal: true
   name: Color
   nameWithType: Color
@@ -1319,7 +1372,15 @@ references:
     name: GeometryColor
     isExternal: true
   - name: )
+- uid: DSCore
+  commentId: N:DSCore
+  isExternal: true
+  name: DSCore
+  nameWithType: DSCore
+  fullName: DSCore
 - uid: Autodesk.DesignScript.Geometry.BoundingBox
+  commentId: T:Autodesk.DesignScript.Geometry.BoundingBox
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: BoundingBox
   nameWithType: BoundingBox
@@ -1365,6 +1426,8 @@ references:
     isExternal: true
   - name: )
 - uid: Autodesk.DesignScript.Geometry.PolyCurve
+  commentId: T:Autodesk.DesignScript.Geometry.PolyCurve
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: PolyCurve
   nameWithType: PolyCurve

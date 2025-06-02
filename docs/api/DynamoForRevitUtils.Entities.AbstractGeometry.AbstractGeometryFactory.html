@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class Excel | DynamoForRevitUtils - Docs </title>
+      <title>Class AbstractGeometryFactory | DynamoForRevitUtils - Docs </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class Excel | DynamoForRevitUtils - Docs ">
+      <meta name="title" content="Class AbstractGeometryFactory | DynamoForRevitUtils - Docs ">
       <meta name="generator" content="docfx ">
   
       <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
@@ -93,18 +93,18 @@
                         </div>
 
 
-                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Services.Files.Excel">
+                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory">
 
 
 
-  <h1 id="DynamoForRevitUtils_Services_Files_Excel" data-uid="DynamoForRevitUtils.Services.Files.Excel" class="text-break">Class Excel</h1>
-  <div class="markdown level0 summary"><p>Class containing utils for deal with Excel stuff</p>
+  <h1 id="DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory" data-uid="DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory" class="text-break">Class AbstractGeometryFactory</h1>
+  <div class="markdown level0 summary"><p>Factory class for Abstract Geometry</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Excel</span></div>
+    <div class="level1"><span class="xref">AbstractGeometryFactory</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -130,24 +130,23 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Services.html">Services</a>.<a class="xref" href="DynamoForRevitUtils.Services.Files.html">Files</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Entities.html">Entities</a>.<a class="xref" href="DynamoForRevitUtils.Entities.AbstractGeometry.html">AbstractGeometry</a></h6>
   <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
-  <h5 id="DynamoForRevitUtils_Services_Files_Excel_syntax">Syntax</h5>
+  <h5 id="DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
-public static class Excel</code></pre>
+public static class AbstractGeometryFactory</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
-  <a id="DynamoForRevitUtils_Services_Files_Excel_GetValidSheetName_" data-uid="DynamoForRevitUtils.Services.Files.Excel.GetValidSheetName*"></a>
-  <h4 id="DynamoForRevitUtils_Services_Files_Excel_GetValidSheetName_System_String_" data-uid="DynamoForRevitUtils.Services.Files.Excel.GetValidSheetName(System.String)">GetValidSheetName(string)</h4>
-  <div class="markdown level1 summary"><p>Gets valid Excel sheet name from input string</p>
-<p>Reference: <a href="https://www.excelcodex.com/2012/06/worksheets-naming-conventions/">https://www.excelcodex.com/2012/06/worksheets-naming-conventions/</a></p>
+  <a id="DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_GetAbstractGeometryObject_" data-uid="DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_GetAbstractGeometryObject_Autodesk_DesignScript_Geometry_DesignScriptEntity_" data-uid="DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)">GetAbstractGeometryObject(DesignScriptEntity)</h4>
+  <div class="markdown level1 summary"><p>Get Abstract Geometry object from DesignScriptEntity</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetValidSheetName(string inputString)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IAbstractGeometry GetAbstractGeometryObject(DesignScriptEntity designScriptEntity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -160,8 +159,8 @@ public static class Excel</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">inputString</span></td>
+        <td><span class="xref">DesignScriptEntity</span></td>
+        <td><span class="parametername">designScriptEntity</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -176,25 +175,8 @@ public static class Excel</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>Valid Excel sheet name</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>Throw if input string is not valid</p>
-</td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.html">IAbstractGeometry</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

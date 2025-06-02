@@ -19,8 +19,14 @@ items:
   summary: Walls collectors
   example: []
   syntax:
-    content: public static class WallCollectors
-    content.vb: Public Module WallCollectors
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class WallCollectors
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module WallCollectors
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Collectors.WallCollectors.GetBasic(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
   commentId: M:DynamoForRevitUtils.Services.Collectors.WallCollectors.GetBasic(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
   id: GetBasic(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)
@@ -348,11 +360,15 @@ references:
   nameWithType: WallCollectors.GetBasic
   fullName: DynamoForRevitUtils.Services.Collectors.WallCollectors.GetBasic
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
@@ -390,6 +406,36 @@ references:
     name: Wall
     isExternal: true
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

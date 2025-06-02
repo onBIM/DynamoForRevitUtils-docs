@@ -19,8 +19,14 @@ items:
   summary: Phases collectors
   example: []
   syntax:
-    content: public static class PhaseCollectors
-    content.vb: Public Module PhaseCollectors
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class PhaseCollectors
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module PhaseCollectors
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Collectors.PhaseCollectors.GetPhaseIdByName(Autodesk.Revit.DB.Document,System.String)
   commentId: M:DynamoForRevitUtils.Services.Collectors.PhaseCollectors.GetPhaseIdByName(Autodesk.Revit.DB.Document,System.String)
   id: GetPhaseIdByName(Autodesk.Revit.DB.Document,System.String)
@@ -348,6 +360,8 @@ references:
   nameWithType: PhaseCollectors.GetPhaseIdByName
   fullName: DynamoForRevitUtils.Services.Collectors.PhaseCollectors.GetPhaseIdByName
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -364,7 +378,39 @@ references:
   fullName.vb: String
   name.vb: String
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
   fullName: Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true

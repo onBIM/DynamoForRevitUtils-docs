@@ -24,8 +24,14 @@ items:
   summary: Abstract base class for creating Tag creation services.
   example: []
   syntax:
-    content: public abstract class TagCreationService
-    content.vb: Public MustInherit Class TagCreationService
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class TagCreationService
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class TagCreationService
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +44,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
   commentId: M:DynamoForRevitUtils.Services.RevitServices.TagCreationService.#ctor
   id: '#ctor'
@@ -636,11 +648,14 @@ references:
   fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.SetTagLocationAndHeadPositionOnSection
 - uid: Autodesk.Revit.DB.IndependentTag
   commentId: T:Autodesk.Revit.DB.IndependentTag
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: IndependentTag
   nameWithType: IndependentTag
   fullName: Autodesk.Revit.DB.IndependentTag
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -652,6 +667,36 @@ references:
   name: CreateTag
   nameWithType: TagCreationService.CreateTag
   fullName: DynamoForRevitUtils.Services.RevitServices.TagCreationService.CreateTag
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.TagCreationService._tagInfo
   isExternal: true

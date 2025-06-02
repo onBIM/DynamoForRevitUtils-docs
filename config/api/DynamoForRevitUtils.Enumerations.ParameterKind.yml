@@ -21,10 +21,22 @@ items:
   summary: Enum to define the kind of parameter
   example: []
   syntax:
-    content: public enum ParameterKind
-    content.vb: Public Enum ParameterKind
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum ParameterKind
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum ParameterKind
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.ParameterKind.Undefined
   commentId: F:DynamoForRevitUtils.Enumerations.ParameterKind.Undefined
   id: Undefined

@@ -40,8 +40,14 @@ items:
         set =&gt; ViewWrapper.ElementParameterAccessor.SetValue(value);
     }</code></pre>
   syntax:
-    content: public class ElementParameterAccessor
-    content.vb: Public Class ElementParameterAccessor
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class ElementParameterAccessor
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class ElementParameterAccessor
   inheritance:
   - System.Object
   inheritedMembers:
@@ -54,6 +60,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.#ctor(DynamoForRevitUtils.Entities.Wrappers.ElementWrapper)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.#ctor(DynamoForRevitUtils.Entities.Wrappers.ElementWrapper)
   id: '#ctor(DynamoForRevitUtils.Entities.Wrappers.ElementWrapper)'
@@ -968,10 +980,42 @@ references:
   nameWithType: ElementParameterAccessor.GetElementIdValue
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetElementIdValue
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
   fullName: Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetIntegerValue*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetIntegerValue
   isExternal: true
@@ -1011,6 +1055,9 @@ references:
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId
 - uid: System.InvalidOperationException
   commentId: T:System.InvalidOperationException
   isExternal: true
@@ -1026,6 +1073,8 @@ references:
   nameWithType: ElementParameterAccessor.SetValue
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue
 - uid: Autodesk.Revit.DB.ForgeTypeId
+  commentId: T:Autodesk.Revit.DB.ForgeTypeId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ForgeTypeId
   nameWithType: ForgeTypeId

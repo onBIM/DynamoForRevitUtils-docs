@@ -21,10 +21,22 @@ items:
   summary: Enum to indicate the coordinate to be used
   example: []
   syntax:
-    content: public enum Coordinate
-    content.vb: Public Enum Coordinate
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum Coordinate
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum Coordinate
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.Coordinate.X
   commentId: F:DynamoForRevitUtils.Enumerations.Coordinate.X
   id: X

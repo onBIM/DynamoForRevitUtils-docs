@@ -20,8 +20,14 @@ items:
   summary: Utils methods for read/write CSV files
   example: []
   syntax:
-    content: public static class CSV
-    content.vb: Public Module CSV
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class CSV
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module CSV
   inheritance:
   - System.Object
   inheritedMembers:
@@ -32,6 +38,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Files.CSV.ReadFileFromPath(System.String,System.String,System.Boolean,System.Boolean,System.Object,System.Object)
   commentId: M:DynamoForRevitUtils.Services.Files.CSV.ReadFileFromPath(System.String,System.String,System.Boolean,System.Boolean,System.Object,System.Object)
   id: ReadFileFromPath(System.String,System.String,System.Boolean,System.Boolean,System.Object,System.Object)

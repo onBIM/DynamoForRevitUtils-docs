@@ -1,32 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
-  commentId: T:DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
-  id: ImportInstanceServices
-  parent: DynamoForRevitUtils.Services.RevitServices
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
+  id: AbstractGeometryFactory
+  parent: DynamoForRevitUtils.Entities.AbstractGeometry
   children:
-  - DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel(Autodesk.Revit.DB.ImportInstance)
+  - DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
   langs:
   - csharp
   - vb
-  name: ImportInstanceServices
-  nameWithType: ImportInstanceServices
-  fullName: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+  name: AbstractGeometryFactory
+  nameWithType: AbstractGeometryFactory
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
   type: Class
   assemblies:
   - DynamoForRevitUtils
-  namespace: DynamoForRevitUtils.Services.RevitServices
-  summary: Elements conversions
+  namespace: DynamoForRevitUtils.Entities.AbstractGeometry
+  summary: Factory class for Abstract Geometry
   example: []
   syntax:
     content: >-
       [IsVisibleInDynamoLibrary(false)]
 
-      public static class ImportInstanceServices
+      public static class AbstractGeometryFactory
     content.vb: >-
       <IsVisibleInDynamoLibrary(False)>
 
-      Public Module ImportInstanceServices
+      Public Module AbstractGeometryFactory
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,72 +43,71 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-- uid: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel(Autodesk.Revit.DB.ImportInstance)
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel(Autodesk.Revit.DB.ImportInstance)
-  id: GetLevel(Autodesk.Revit.DB.ImportInstance)
-  isExtensionMethod: true
-  parent: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  commentId: M:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  id: GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
+  parent: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory
   langs:
   - csharp
   - vb
-  name: GetLevel(ImportInstance)
-  nameWithType: ImportInstanceServices.GetLevel(ImportInstance)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel(Autodesk.Revit.DB.ImportInstance)
+  name: GetAbstractGeometryObject(DesignScriptEntity)
+  nameWithType: AbstractGeometryFactory.GetAbstractGeometryObject(DesignScriptEntity)
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject(Autodesk.DesignScript.Geometry.DesignScriptEntity)
   type: Method
   assemblies:
   - DynamoForRevitUtils
-  namespace: DynamoForRevitUtils.Services.RevitServices
-  summary: Get the Level of a CAD Link
+  namespace: DynamoForRevitUtils.Entities.AbstractGeometry
+  summary: Get Abstract Geometry object from DesignScriptEntity
   example: []
   syntax:
-    content: public static Level? GetLevel(this ImportInstance cadLink)
+    content: public static IAbstractGeometry GetAbstractGeometryObject(DesignScriptEntity designScriptEntity)
     parameters:
-    - id: cadLink
-      type: Autodesk.Revit.DB.ImportInstance
+    - id: designScriptEntity
+      type: Autodesk.DesignScript.Geometry.DesignScriptEntity
       description: ''
     return:
-      type: Autodesk.Revit.DB.Level
+      type: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
       description: ''
-    content.vb: Public Shared Function GetLevel(cadLink As ImportInstance) As Level
-  overload: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel*
+    content.vb: Public Shared Function GetAbstractGeometryObject(designScriptEntity As DesignScriptEntity) As IAbstractGeometry
+  overload: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject*
 references:
-- uid: DynamoForRevitUtils.Services.RevitServices
-  commentId: N:DynamoForRevitUtils.Services.RevitServices
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry
+  commentId: N:DynamoForRevitUtils.Entities.AbstractGeometry
   isExternal: true
   href: DynamoForRevitUtils.html
-  name: DynamoForRevitUtils.Services.RevitServices
-  nameWithType: DynamoForRevitUtils.Services.RevitServices
-  fullName: DynamoForRevitUtils.Services.RevitServices
+  name: DynamoForRevitUtils.Entities.AbstractGeometry
+  nameWithType: DynamoForRevitUtils.Entities.AbstractGeometry
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry
   spec.csharp:
   - uid: DynamoForRevitUtils
     name: DynamoForRevitUtils
     isExternal: true
     href: DynamoForRevitUtils.html
   - name: .
-  - uid: DynamoForRevitUtils.Services
-    name: Services
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
     isExternal: true
-    href: DynamoForRevitUtils.Services.html
+    href: DynamoForRevitUtils.Entities.html
   - name: .
-  - uid: DynamoForRevitUtils.Services.RevitServices
-    name: RevitServices
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry
+    name: AbstractGeometry
     isExternal: true
-    href: DynamoForRevitUtils.Services.RevitServices.html
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.html
   spec.vb:
   - uid: DynamoForRevitUtils
     name: DynamoForRevitUtils
     isExternal: true
     href: DynamoForRevitUtils.html
   - name: .
-  - uid: DynamoForRevitUtils.Services
-    name: Services
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
     isExternal: true
-    href: DynamoForRevitUtils.Services.html
+    href: DynamoForRevitUtils.Entities.html
   - name: .
-  - uid: DynamoForRevitUtils.Services.RevitServices
-    name: RevitServices
+  - uid: DynamoForRevitUtils.Entities.AbstractGeometry
+    name: AbstractGeometry
     isExternal: true
-    href: DynamoForRevitUtils.Services.RevitServices.html
+    href: DynamoForRevitUtils.Entities.AbstractGeometry.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -346,54 +345,55 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel*
-  commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject*
+  commentId: Overload:DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject
   isExternal: true
-  href: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.html#DynamoForRevitUtils_Services_RevitServices_ImportInstanceServices_GetLevel_Autodesk_Revit_DB_ImportInstance_
-  name: GetLevel
-  nameWithType: ImportInstanceServices.GetLevel
-  fullName: DynamoForRevitUtils.Services.RevitServices.ImportInstanceServices.GetLevel
-- uid: Autodesk.Revit.DB.ImportInstance
-  commentId: T:Autodesk.Revit.DB.ImportInstance
-  parent: Autodesk.Revit.DB
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.html#DynamoForRevitUtils_Entities_AbstractGeometry_AbstractGeometryFactory_GetAbstractGeometryObject_Autodesk_DesignScript_Geometry_DesignScriptEntity_
+  name: GetAbstractGeometryObject
+  nameWithType: AbstractGeometryFactory.GetAbstractGeometryObject
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryFactory.GetAbstractGeometryObject
+- uid: Autodesk.DesignScript.Geometry.DesignScriptEntity
+  commentId: T:Autodesk.DesignScript.Geometry.DesignScriptEntity
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
-  name: ImportInstance
-  nameWithType: ImportInstance
-  fullName: Autodesk.Revit.DB.ImportInstance
-- uid: Autodesk.Revit.DB.Level
-  commentId: T:Autodesk.Revit.DB.Level
-  parent: Autodesk.Revit.DB
+  name: DesignScriptEntity
+  nameWithType: DesignScriptEntity
+  fullName: Autodesk.DesignScript.Geometry.DesignScriptEntity
+- uid: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+  commentId: T:DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+  parent: DynamoForRevitUtils.Entities.AbstractGeometry
   isExternal: true
-  name: Level
-  nameWithType: Level
-  fullName: Autodesk.Revit.DB.Level
-- uid: Autodesk.Revit.DB
-  commentId: N:Autodesk.Revit.DB
+  href: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry.html
+  name: IAbstractGeometry
+  nameWithType: IAbstractGeometry
+  fullName: DynamoForRevitUtils.Entities.AbstractGeometry.IAbstractGeometry
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
   isExternal: true
-  name: Autodesk.Revit.DB
-  nameWithType: Autodesk.Revit.DB
-  fullName: Autodesk.Revit.DB
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
   spec.csharp:
   - uid: Autodesk
     name: Autodesk
     isExternal: true
   - name: .
-  - uid: Autodesk.Revit
-    name: Revit
+  - uid: Autodesk.DesignScript
+    name: DesignScript
     isExternal: true
   - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
     isExternal: true
   spec.vb:
   - uid: Autodesk
     name: Autodesk
     isExternal: true
   - name: .
-  - uid: Autodesk.Revit
-    name: Revit
+  - uid: Autodesk.DesignScript
+    name: DesignScript
     isExternal: true
   - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
     isExternal: true

@@ -19,8 +19,14 @@ items:
   summary: Utils to perform linear algebra operations on Dynamo Geometry
   example: []
   syntax:
-    content: public static class LinearAlgebraServices
-    content.vb: Public Module LinearAlgebraServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class LinearAlgebraServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module LinearAlgebraServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
   commentId: M:DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
   id: GetRelativeCoordinatesOfPoint(Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.CoordinateSystem)
@@ -344,11 +356,15 @@ references:
   nameWithType: LinearAlgebraServices.GetRelativeCoordinatesOfPoint
   fullName: DynamoForRevitUtils.Services.MathServices.LinearAlgebraServices.GetRelativeCoordinatesOfPoint
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
   fullName: Autodesk.DesignScript.Geometry.Point
 - uid: Autodesk.DesignScript.Geometry.CoordinateSystem
+  commentId: T:Autodesk.DesignScript.Geometry.CoordinateSystem
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: CoordinateSystem
   nameWithType: CoordinateSystem
@@ -438,6 +454,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: System.ValueTuple`3
   commentId: T:System.ValueTuple`3
   name: (T1, T2, T3)

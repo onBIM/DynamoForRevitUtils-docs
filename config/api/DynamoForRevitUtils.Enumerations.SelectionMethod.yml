@@ -21,10 +21,22 @@ items:
   summary: Enumeration containing Selection Methods for Selection Nodes usage
   example: []
   syntax:
-    content: public enum SelectionMethod
-    content.vb: Public Enum SelectionMethod
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum SelectionMethod
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum SelectionMethod
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.SelectionMethod.Manual
   commentId: F:DynamoForRevitUtils.Enumerations.SelectionMethod.Manual
   id: Manual

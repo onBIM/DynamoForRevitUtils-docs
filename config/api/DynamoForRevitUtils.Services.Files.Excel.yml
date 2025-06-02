@@ -19,8 +19,14 @@ items:
   summary: Class containing utils for deal with Excel stuff
   example: []
   syntax:
-    content: public static class Excel
-    content.vb: Public Module Excel
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class Excel
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module Excel
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Files.Excel.GetValidSheetName(System.String)
   commentId: M:DynamoForRevitUtils.Services.Files.Excel.GetValidSheetName(System.String)
   id: GetValidSheetName(System.String)

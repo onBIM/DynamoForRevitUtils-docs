@@ -22,8 +22,14 @@ items:
   summary: Provides methods to work with Topography elements.
   example: []
   syntax:
-    content: public class TopographyServices
-    content.vb: Public Class TopographyServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class TopographyServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class TopographyServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,6 +42,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
   commentId: M:DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface(Revit.Elements.Topography)
   id: TopographyToPolySurface(Revit.Elements.Topography)
@@ -553,16 +565,71 @@ references:
   nameWithType: TopographyServices.TopographyToPolySurface
   fullName: DynamoForRevitUtils.Services.Dynamo.TopographyServices.TopographyToPolySurface
 - uid: Revit.Elements.Topography
+  commentId: T:Revit.Elements.Topography
+  parent: Revit.Elements
   isExternal: true
   name: Topography
   nameWithType: Topography
   fullName: Revit.Elements.Topography
 - uid: Autodesk.DesignScript.Geometry.PolySurface
-  commentId: '!:Autodesk.DesignScript.Geometry.PolySurface'
+  commentId: T:Autodesk.DesignScript.Geometry.PolySurface
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: PolySurface
   nameWithType: PolySurface
   fullName: Autodesk.DesignScript.Geometry.PolySurface
+- uid: Revit.Elements
+  commentId: N:Revit.Elements
+  isExternal: true
+  name: Revit.Elements
+  nameWithType: Revit.Elements
+  fullName: Revit.Elements
+  spec.csharp:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+  spec.vb:
+  - uid: Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Revit.Elements
+    name: Elements
+    isExternal: true
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces*
   commentId: Overload:DynamoForRevitUtils.Services.Dynamo.TopographyServices.GetTopographySurfaces
   isExternal: true
@@ -709,6 +776,8 @@ references:
     isExternal: true
   - name: )
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point

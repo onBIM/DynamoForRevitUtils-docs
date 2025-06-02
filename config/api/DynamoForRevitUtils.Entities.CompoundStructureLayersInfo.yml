@@ -49,8 +49,14 @@ items:
   remarks: '<p>Reference: https://apidocs.co/apps/revit/2020/dc1a081e-8dab-565f-145d-a429098d353c.htm</p>'
   example: []
   syntax:
-    content: public class CompoundStructureLayersInfo
-    content.vb: Public Class CompoundStructureLayersInfo
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class CompoundStructureLayersInfo
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class CompoundStructureLayersInfo
   inheritance:
   - System.Object
   inheritedMembers:
@@ -62,6 +68,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.#ctor(Autodesk.Revit.DB.HostObjAttributes)
   commentId: M:DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.#ctor(Autodesk.Revit.DB.HostObjAttributes)
   id: '#ctor(Autodesk.Revit.DB.HostObjAttributes)'
@@ -779,6 +791,9 @@ references:
 - uid: Autodesk.Revit.DB.WallType
   commentId: T:Autodesk.Revit.DB.WallType
   isExternal: true
+  name: WallType
+  nameWithType: WallType
+  fullName: Autodesk.Revit.DB.WallType
 - uid: DynamoForRevitUtils.Entities
   commentId: N:DynamoForRevitUtils.Entities
   isExternal: true
@@ -1156,36 +1171,111 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.New
   name.vb: New
 - uid: Autodesk.Revit.DB.HostObjAttributes
-  commentId: '!:Autodesk.Revit.DB.HostObjAttributes'
+  commentId: T:Autodesk.Revit.DB.HostObjAttributes
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: HostObjAttributes
   nameWithType: HostObjAttributes
   fullName: Autodesk.Revit.DB.HostObjAttributes
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: Autodesk.Revit.DB.Architecture.BuildingPad
-  commentId: '!:Autodesk.Revit.DB.Architecture.BuildingPad'
+  commentId: T:Autodesk.Revit.DB.Architecture.BuildingPad
+  parent: Autodesk.Revit.DB.Architecture
   isExternal: true
   name: BuildingPad
   nameWithType: BuildingPad
   fullName: Autodesk.Revit.DB.Architecture.BuildingPad
+- uid: Autodesk.Revit.DB.Architecture
+  commentId: N:Autodesk.Revit.DB.Architecture
+  isExternal: true
+  name: Autodesk.Revit.DB.Architecture
+  nameWithType: Autodesk.Revit.DB.Architecture
+  fullName: Autodesk.Revit.DB.Architecture
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB.Architecture
+    name: Architecture
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB.Architecture
+    name: Architecture
+    isExternal: true
 - uid: Autodesk.Revit.DB.Ceiling
-  commentId: '!:Autodesk.Revit.DB.Ceiling'
+  commentId: T:Autodesk.Revit.DB.Ceiling
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Ceiling
   nameWithType: Ceiling
   fullName: Autodesk.Revit.DB.Ceiling
 - uid: Autodesk.Revit.DB.Floor
-  commentId: '!:Autodesk.Revit.DB.Floor'
+  commentId: T:Autodesk.Revit.DB.Floor
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Floor
   nameWithType: Floor
   fullName: Autodesk.Revit.DB.Floor
 - uid: Autodesk.Revit.DB.RoofBase
-  commentId: '!:Autodesk.Revit.DB.RoofBase'
+  commentId: T:Autodesk.Revit.DB.RoofBase
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: RoofBase
   nameWithType: RoofBase
   fullName: Autodesk.Revit.DB.RoofBase
 - uid: Autodesk.Revit.DB.Wall
+  commentId: T:Autodesk.Revit.DB.Wall
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Wall
   nameWithType: Wall
@@ -1240,7 +1330,8 @@ references:
   nameWithType: CompoundStructureLayersInfo.Structure
   fullName: DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.Structure
 - uid: Autodesk.Revit.DB.CompoundStructure
-  commentId: '!:Autodesk.Revit.DB.CompoundStructure'
+  commentId: T:Autodesk.Revit.DB.CompoundStructure
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: CompoundStructure
   nameWithType: CompoundStructure

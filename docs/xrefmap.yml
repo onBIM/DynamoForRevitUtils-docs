@@ -5361,15 +5361,15 @@ references:
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
   nameWithType: AccessParameterInfo.AccessParameterInfo(AccessParameterInfo)
   nameWithType.vb: AccessParameterInfo.New(AccessParameterInfo)
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
-  name: AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
-  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_System_Nullable_DynamoForRevitUtils_Enumerations_AccessParameterResult__
-  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,System.Nullable{DynamoForRevitUtils.Enumerations.AccessParameterResult})
-  name.vb: New(ElementParameter, String, AccessParameterResult?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, string?, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, String, DynamoForRevitUtils.Enumerations.AccessParameterResult?)
-  nameWithType: AccessParameterInfo.AccessParameterInfo(ElementParameter, string?, AccessParameterResult?)
-  nameWithType.vb: AccessParameterInfo.New(ElementParameter, String, AccessParameterResult?)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  name: AccessParameterInfo(ElementParameter, string, AccessParameterResult)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_String_DynamoForRevitUtils_Enumerations_AccessParameterResult_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.String,DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  name.vb: New(ElementParameter, String, AccessParameterResult)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.AccessParameterInfo(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, string, DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.New(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, String, DynamoForRevitUtils.Enumerations.AccessParameterResult)
+  nameWithType: AccessParameterInfo.AccessParameterInfo(ElementParameter, string, AccessParameterResult)
+  nameWithType.vb: AccessParameterInfo.New(ElementParameter, String, AccessParameterResult)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.#ctor*
   name: AccessParameterInfo
   href: api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html#DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__ctor_
@@ -7585,6 +7585,12 @@ references:
   commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidElementKind
   fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidElementKind
   nameWithType: AccessParameterResult.InvalidElementKind
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  name: InvalidParameter
+  href: api/DynamoForRevitUtils.Enumerations.AccessParameterResult.html#DynamoForRevitUtils_Enumerations_AccessParameterResult_InvalidParameter
+  commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidParameter
+  nameWithType: AccessParameterResult.InvalidParameter
 - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.InvalidSpecTypeId
   name: InvalidSpecTypeId
   href: api/DynamoForRevitUtils.Enumerations.AccessParameterResult.html#DynamoForRevitUtils_Enumerations_AccessParameterResult_InvalidSpecTypeId
@@ -7627,6 +7633,12 @@ references:
   commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.UnitFound
   fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.UnitFound
   nameWithType: AccessParameterResult.UnitFound
+- uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  name: UnknownError
+  href: api/DynamoForRevitUtils.Enumerations.AccessParameterResult.html#DynamoForRevitUtils_Enumerations_AccessParameterResult_UnknownError
+  commentId: F:DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  fullName: DynamoForRevitUtils.Enumerations.AccessParameterResult.UnknownError
+  nameWithType: AccessParameterResult.UnknownError
 - uid: DynamoForRevitUtils.Enumerations.AccessParameterResult.ValueFound
   name: ValueFound
   href: api/DynamoForRevitUtils.Enumerations.AccessParameterResult.html#DynamoForRevitUtils_Enumerations_AccessParameterResult_ValueFound

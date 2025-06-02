@@ -22,8 +22,14 @@ items:
   summary: Provides utility methods for working with IEnumerable objects.
   example: []
   syntax:
-    content: public static class EnumerableServices
-    content.vb: Public Module EnumerableServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class EnumerableServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module EnumerableServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +40,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.Collections.EnumerableServices.HasAny``1(System.Collections.Generic.IEnumerable{``0})
   commentId: M:DynamoForRevitUtils.Services.Collections.EnumerableServices.HasAny``1(System.Collections.Generic.IEnumerable{``0})
   id: HasAny``1(System.Collections.Generic.IEnumerable{``0})

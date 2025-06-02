@@ -51,8 +51,14 @@ items:
     necessary in the Dynamo for Revit environment.
   example: []
   syntax:
-    content: public class ElementParameter
-    content.vb: Public Class ElementParameter
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class ElementParameter
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class ElementParameter
   inheritance:
   - System.Object
   inheritedMembers:
@@ -62,6 +68,12 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Invalid
   commentId: F:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Invalid
   id: Invalid
@@ -746,7 +758,16 @@ items:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.ParametersHandlers
   summary: Value of the parameter.
-  remarks: Values of type <xref href="System.Double" data-throw-if-not-resolved="false"></xref> must be considered in Display Units.
+  remarks: >-
+    <p>
+
+    Values of type <xref href="System.Double" data-throw-if-not-resolved="false"></xref> must be considered in Display Units.
+
+    </p>
+
+    <p>
+        <p><strong>Automatic conversions are performed for:</strong></p><ul><li><b>Integer parameters</b> when double values that represent whole numbers are used.</li><li><b>Decimal parameters</b> when int values are used.</li></ul>
+    </p>
   example: []
   syntax:
     content: public object Value { get; set; }
@@ -781,6 +802,7 @@ items:
 references:
 - uid: Autodesk.Revit.DB.Parameter
   commentId: T:Autodesk.Revit.DB.Parameter
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Parameter
   nameWithType: Parameter
@@ -1012,6 +1034,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1191,7 +1243,8 @@ references:
   nameWithType: ElementParameter.BuiltInParameter
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.BuiltInParameter
 - uid: Autodesk.Revit.DB.BuiltInParameter
-  commentId: '!:Autodesk.Revit.DB.BuiltInParameter'
+  commentId: T:Autodesk.Revit.DB.BuiltInParameter
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInParameter
   nameWithType: BuiltInParameter
@@ -1491,6 +1544,8 @@ references:
   nameWithType: ElementParameter.OwnerElement
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.OwnerElement
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -1503,6 +1558,8 @@ references:
   nameWithType: ElementParameter.Document
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Document
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -1515,7 +1572,8 @@ references:
   nameWithType: ElementParameter.Definition
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Definition
 - uid: Autodesk.Revit.DB.Definition
-  commentId: '!:Autodesk.Revit.DB.Definition'
+  commentId: T:Autodesk.Revit.DB.Definition
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Definition
   nameWithType: Definition
@@ -1528,6 +1586,8 @@ references:
   nameWithType: ElementParameter.Id
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Id
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
@@ -1535,6 +1595,9 @@ references:
 - uid: Autodesk.Revit.DB.UnitTypeId
   commentId: T:Autodesk.Revit.DB.UnitTypeId
   isExternal: true
+  name: UnitTypeId
+  nameWithType: UnitTypeId
+  fullName: Autodesk.Revit.DB.UnitTypeId
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.UnitTypeId*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.UnitTypeId
   isExternal: true
@@ -1545,6 +1608,9 @@ references:
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
+  name: SpecTypeId
+  nameWithType: SpecTypeId
+  fullName: Autodesk.Revit.DB.SpecTypeId
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SpecTypeId*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SpecTypeId
   isExternal: true

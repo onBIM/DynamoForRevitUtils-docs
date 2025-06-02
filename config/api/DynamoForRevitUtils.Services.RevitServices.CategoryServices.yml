@@ -25,8 +25,14 @@ items:
   summary: Revit Categories services
   example: []
   syntax:
-    content: public static class CategoryServices
-    content.vb: Public Module CategoryServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class CategoryServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module CategoryServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,6 +43,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToBuiltInCategory(Autodesk.Revit.DB.Category)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToBuiltInCategory(Autodesk.Revit.DB.Category)
   id: ToBuiltInCategory(Autodesk.Revit.DB.Category)
@@ -528,15 +540,49 @@ references:
   nameWithType: CategoryServices.ToBuiltInCategory
   fullName: DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToBuiltInCategory
 - uid: Autodesk.Revit.DB.Category
+  commentId: T:Autodesk.Revit.DB.Category
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Category
   nameWithType: Category
   fullName: Autodesk.Revit.DB.Category
 - uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
   fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToRevitCategory*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToRevitCategory
   isExternal: true
@@ -545,6 +591,8 @@ references:
   nameWithType: CategoryServices.ToRevitCategory
   fullName: DynamoForRevitUtils.Services.RevitServices.CategoryServices.ToRevitCategory
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
@@ -582,6 +630,8 @@ references:
   nameWithType: CategoryServices.GetElementId
   fullName: DynamoForRevitUtils.Services.RevitServices.CategoryServices.GetElementId
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId

@@ -21,8 +21,14 @@ items:
   summary: Utils to generate numeric ranges
   example: []
   syntax:
-    content: public static class RangeServices
-    content.vb: Public Module RangeServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class RangeServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module RangeServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +39,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.MathServices.RangeServices.StartEndStep(System.Double,System.Double,System.Double)
   commentId: M:DynamoForRevitUtils.Services.MathServices.RangeServices.StartEndStep(System.Double,System.Double,System.Double)
   id: StartEndStep(System.Double,System.Double,System.Double)

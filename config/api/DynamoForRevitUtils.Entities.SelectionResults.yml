@@ -28,8 +28,14 @@ items:
   summary: Class containing Data of Selection
   example: []
   syntax:
-    content: public class SelectionResults
-    content.vb: Public Class SelectionResults
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class SelectionResults
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class SelectionResults
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,6 +47,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
   commentId: M:DynamoForRevitUtils.Entities.SelectionResults.ToDictionary
   id: ToDictionary
@@ -1080,10 +1092,42 @@ references:
   nameWithType: SelectionResults.ActiveView
   fullName: DynamoForRevitUtils.Entities.SelectionResults.ActiveView
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: View
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.SelectionResults.Settings*
   commentId: Overload:DynamoForRevitUtils.Entities.SelectionResults.Settings
   isExternal: true

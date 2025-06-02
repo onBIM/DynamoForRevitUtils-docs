@@ -20,8 +20,14 @@ items:
   summary: Common Constants
   example: []
   syntax:
-    content: public static class Common
-    content.vb: Public Module Common
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class Common
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module Common
   inheritance:
   - System.Object
   inheritedMembers:
@@ -32,6 +38,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Constants.Common.PACKAGE_NAME
   commentId: F:DynamoForRevitUtils.Constants.Common.PACKAGE_NAME
   id: PACKAGE_NAME

@@ -19,8 +19,14 @@ items:
   summary: Design options collectors
   example: []
   syntax:
-    content: public static class DesignOptionServices
-    content.vb: Public Module DesignOptionServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class DesignOptionServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module DesignOptionServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -31,6 +37,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.GetActiveDesignOptionId(Autodesk.Revit.DB.Document)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.GetActiveDesignOptionId(Autodesk.Revit.DB.Document)
   id: GetActiveDesignOptionId(Autodesk.Revit.DB.Document)
@@ -340,12 +352,46 @@ references:
   nameWithType: DesignOptionServices.GetActiveDesignOptionId
   fullName: DynamoForRevitUtils.Services.RevitServices.DesignOptionServices.GetActiveDesignOptionId
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: ElementId
   nameWithType: ElementId
   fullName: Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true

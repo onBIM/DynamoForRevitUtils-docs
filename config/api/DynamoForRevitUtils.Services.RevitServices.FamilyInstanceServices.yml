@@ -24,8 +24,14 @@ items:
   summary: Class that contains methods to work with Family Instances
   example: []
   syntax:
-    content: public static class FamilyInstanceServices
-    content.vb: Public Module FamilyInstanceServices
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public static class FamilyInstanceServices
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Module FamilyInstanceServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,6 +42,12 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetSolidsFromGeometryObjects(System.Collections.Generic.List{Autodesk.Revit.DB.GeometryObject})
   commentId: M:DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetSolidsFromGeometryObjects(System.Collections.Generic.List{Autodesk.Revit.DB.GeometryObject})
   id: GetSolidsFromGeometryObjects(System.Collections.Generic.List{Autodesk.Revit.DB.GeometryObject})
@@ -499,6 +511,9 @@ references:
 - uid: Autodesk.Revit.DB.GeometryObject
   commentId: T:Autodesk.Revit.DB.GeometryObject
   isExternal: true
+  name: GeometryObject
+  nameWithType: GeometryObject
+  fullName: Autodesk.Revit.DB.GeometryObject
 - uid: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetSolidsFromGeometryObjects*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetSolidsFromGeometryObjects
   isExternal: true
@@ -638,6 +653,8 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Reference
   nameWithType: Reference
@@ -650,6 +667,8 @@ references:
   nameWithType: FamilyInstanceServices.GetReferenceByName
   fullName: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetReferenceByName
 - uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: FamilyInstance
   nameWithType: FamilyInstance
@@ -665,8 +684,39 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: Autodesk.Revit.DB.FamilyInstanceReferenceType
   commentId: T:Autodesk.Revit.DB.FamilyInstanceReferenceType
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: FamilyInstanceReferenceType
   nameWithType: FamilyInstanceReferenceType
@@ -759,12 +809,15 @@ references:
   nameWithType: FamilyInstanceServices.GetSolids
   fullName: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetSolids
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.DesignScript.Geometry.Cuboid
   commentId: T:Autodesk.DesignScript.Geometry.Cuboid
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Cuboid
   nameWithType: Cuboid
@@ -776,3 +829,33 @@ references:
   name: GetCuboid
   nameWithType: FamilyInstanceServices.GetCuboid
   fullName: DynamoForRevitUtils.Services.RevitServices.FamilyInstanceServices.GetCuboid
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true

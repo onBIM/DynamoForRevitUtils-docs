@@ -20,11 +20,17 @@ items:
   summary: Abstract class for Abstract Geometry
   example: []
   syntax:
-    content: 'public abstract class AbstractGeometryBase<T> : IAbstractGeometry where T : DesignScriptEntity'
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class AbstractGeometryBase<T> : IAbstractGeometry where T : DesignScriptEntity
     typeParameters:
     - id: T
       description: ''
-    content.vb: Public MustInherit Class AbstractGeometryBase(Of T As DesignScriptEntity) Implements IAbstractGeometry
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class AbstractGeometryBase(Of T As DesignScriptEntity) Implements IAbstractGeometry
   inheritance:
   - System.Object
   derivedClasses:
@@ -43,6 +49,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
   nameWithType.vb: AbstractGeometryBase(Of T)
   fullName.vb: DynamoForRevitUtils.Entities.AbstractGeometry.AbstractGeometryBase(Of T)
   name.vb: AbstractGeometryBase(Of T)
@@ -619,6 +631,8 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: Autodesk.DesignScript.Geometry.Point
+  commentId: T:Autodesk.DesignScript.Geometry.Point
+  parent: Autodesk.DesignScript.Geometry
   isExternal: true
   name: Point
   nameWithType: Point
@@ -635,6 +649,8 @@ references:
   fullName.vb: Double
   name.vb: Double
 - uid: DSCore.Color
+  commentId: T:DSCore.Color
+  parent: DSCore
   isExternal: true
   name: Color
   nameWithType: Color
@@ -683,6 +699,42 @@ references:
     name: GeometryColor
     isExternal: true
   - name: )
+- uid: Autodesk.DesignScript.Geometry
+  commentId: N:Autodesk.DesignScript.Geometry
+  isExternal: true
+  name: Autodesk.DesignScript.Geometry
+  nameWithType: Autodesk.DesignScript.Geometry
+  fullName: Autodesk.DesignScript.Geometry
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript
+    name: DesignScript
+    isExternal: true
+  - name: .
+  - uid: Autodesk.DesignScript.Geometry
+    name: Geometry
+    isExternal: true
+- uid: DSCore
+  commentId: N:DSCore
+  isExternal: true
+  name: DSCore
+  nameWithType: DSCore
+  fullName: DSCore
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

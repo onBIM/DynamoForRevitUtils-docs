@@ -23,10 +23,22 @@ items:
   summary: Enum that defines Roof Line Types. Used in Roof Tiles Generator
   example: []
   syntax:
-    content: public enum RoofLineType
-    content.vb: Public Enum RoofLineType
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public enum RoofLineType
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Enum RoofLineType
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Enumerations.RoofLineType.Hip
   commentId: F:DynamoForRevitUtils.Enumerations.RoofLineType.Hip
   id: Hip

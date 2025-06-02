@@ -21,8 +21,14 @@ items:
   summary: Category selection filter
   example: []
   syntax:
-    content: 'public class CategorySelectionFilter : PickSelectionFilter, ISelectionFilter'
-    content.vb: Public Class CategorySelectionFilter Inherits PickSelectionFilter Implements ISelectionFilter
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public class CategorySelectionFilter : PickSelectionFilter, ISelectionFilter
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public Class CategorySelectionFilter Inherits PickSelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   - DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
@@ -40,6 +46,12 @@ items:
   - System.Object.GetHashCode
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.#ctor(System.Boolean,Autodesk.Revit.DB.BuiltInCategory)
   commentId: M:DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.#ctor(System.Boolean,Autodesk.Revit.DB.BuiltInCategory)
   id: '#ctor(System.Boolean,Autodesk.Revit.DB.BuiltInCategory)'
@@ -187,6 +199,8 @@ references:
   nameWithType: PickSelectionFilter
   fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
 - uid: Autodesk.Revit.UI.Selection.ISelectionFilter
+  commentId: T:Autodesk.Revit.UI.Selection.ISelectionFilter
+  parent: Autodesk.Revit.UI.Selection
   isExternal: true
   name: ISelectionFilter
   nameWithType: ISelectionFilter
@@ -474,6 +488,44 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.UI.Selection
+  commentId: N:Autodesk.Revit.UI.Selection
+  isExternal: true
+  name: Autodesk.Revit.UI.Selection
+  nameWithType: Autodesk.Revit.UI.Selection
+  fullName: Autodesk.Revit.UI.Selection
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.UI.Selection
+    name: Selection
+    isExternal: true
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   isExternal: true
@@ -581,10 +633,42 @@ references:
   fullName.vb: Boolean
   name.vb: Boolean
 - uid: Autodesk.Revit.DB.BuiltInCategory
+  commentId: T:Autodesk.Revit.DB.BuiltInCategory
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
   fullName: Autodesk.Revit.DB.BuiltInCategory
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   commentId: M:DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   parent: DynamoForRevitUtils.Entities.PickSelectionFilters.PickSelectionFilter
@@ -621,6 +705,8 @@ references:
   nameWithType: CategorySelectionFilter.AllowElement
   fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.AllowElement
 - uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Element
   nameWithType: Element
@@ -671,11 +757,15 @@ references:
   nameWithType: CategorySelectionFilter.AllowReference
   fullName: DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter.AllowReference
 - uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: Reference
   nameWithType: Reference
   fullName: Autodesk.Revit.DB.Reference
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  parent: Autodesk.Revit.DB
   isExternal: true
   name: XYZ
   nameWithType: XYZ
