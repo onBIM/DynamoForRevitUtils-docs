@@ -1,0 +1,3017 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamoForRevitNodeModels</name>
+    </assembly>
+    <members>
+        <member name="T:DynamoForRevitNodeModels.Attributes.DefaultValues">
+            <summary>
+            Class containing all default values for the custom node models attributes.
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Attributes.DefaultValues.OVERALL_NODES_CATEGORY">
+            <summary>
+            Default node model category.
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Attributes.DefaultValues.SEARCH_TAGS">
+            <summary>
+            Default node models search tags.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute">
+            <summary>
+            Attribute used to define the node model IN ports names.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelInPortsNamesAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute">
+            <summary>
+            Attribute used to define the node model IN ports descriptions.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelInPortsDescriptionsAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute">
+            <summary>
+            Attribute used to define the node model IN ports types.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelInPortsTypesAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute">
+            <summary>
+            Attribute used to define the node model OUT ports names.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsNamesAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute">
+            <summary>
+            Attribute used to define the node model OUT ports descriptions.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsDescriptionsAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute">
+            <summary>
+            Attribute used to define the node model OUT ports types.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelOutPortsTypesAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute">
+            <summary>
+            Attribute used to define the node model category.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelCategoryAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute">
+            <summary>
+            Attribute used to define the node model name.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelDisplayNameAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute">
+            <summary>
+            Attribute used to define the node model description.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelDescriptionAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute">
+            <summary>
+            Attribute used to define the node model search tags.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Attributes.NodeModelSearchTagsAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nodeType">The type of NodeModel</param>
+            <param name="resourceType">Localized Resource type used to build node model</param>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1">
+            <summary>
+            Base class for ElementTypes drop down menu
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.NoItemsPrompt">
+            <summary>
+            No items prompt in case collector returns empty list
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.CollectedElements">
+            <summary>
+            Elements to show in the drop down menu
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.ItemNameOverrider">
+            <summary>
+            Item name overrider. Leave null to show element name as it is.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.#ctor(System.String)">
+            <summary>
+            Constructor of ElementType drop down NodeModel used by Dynamo UI.
+            </summary>
+            <param name="outportName"></param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.#ctor(System.String,System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <summary>
+            Constructor of ElementType drop down NodeModel used to create node in .dyn file which is in json format.
+            </summary>
+            <param name="outportName"></param>
+            <param name="inPorts">Obtained automatically by Dynamo Engine. No need to set in child.</param>
+            <param name="outPorts">Obtained automatically by Dynamo Engine. No need to set in child.</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.LoadDropDownItems">
+            <summary>
+            Populate Items in Drop down menu
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Assigns the selected value to the output ports
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementsDropDownBase`1.BuildOutputNode">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1">
+            <summary>
+            <para>Enum drop down for Revit ElementTypes Collectors</para>
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1.Filter">
+            <summary>
+            Function to be used as a filter to be applied to collected elements. Leave null to collect all elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1.CollectedElements">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.ElementTypesDropDownBase`1.#ctor(System.String,System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1">
+            <summary>
+            <para>Enum drop downs base class</para>
+            Reference: "https://github.com/DynamoDS/DynamoRevit/blob/master/src/Libraries/RevitNodesUI/RevitDropDown.cs"
+            </summary>
+            <typeparam name="T">Enum Type</typeparam>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1._enumType">
+            <summary>
+            Enum Type to be used
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.#ctor(System.String,System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.PopulateItemsCore(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.LoadDropDownItems">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Assign the selected Enumeration value to the output
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.EnumDropDownBase`1.BuildOutputNode">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase">
+            <summary>
+            Abstract base class for node models that represent drop-down Nodes.
+            Inherits from DSDropDownBase.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.#ctor(System.String)">
+            <summary>
+            Node Model constructor used by Dynamo UI
+            </summary>
+            <param name="outputName">Name of the output port</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.#ctor(System.String,System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <summary>
+            Node Model constructor used to add it to .dyn file which is in json format
+            </summary>
+            <param name="outputName">Name of the output port</param>
+            <param name="inPorts">Input ports</param>
+            <param name="outPorts">Output ports</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.CanBuildOutputAst(System.String,System.String)">
+            <summary>
+            Whether it have valid Enumeration values to the output
+            </summary>
+            <param name="itemValueToIgnore"></param>
+            <param name="selectedValueToIgnore"></param>
+            <returns>true is that there are valid values to output,false is that only a null value to output</returns>
+            <remarks>
+            <para>
+            This is needed because Items property changes are triggered several times.
+            Even when user clicks on down arrow.
+            </para>
+            <para>Method extracted from link below</para>
+            https://github.com/DynamoDS/DynamoRevit/blob/master/src/Libraries/RevitNodesUI/RevitDropDown.cs
+            <para>To resolve the issue</para>
+            https://github.com/DynamoDS/Dynamo/issues/10935
+            <para>Issue solution</para>
+            https://github.com/DynamoDS/DynamoRevit/pull/2349
+            </remarks>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.PopulateItemsCore(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.LoadDropDownItems">
+            <summary>
+            Override this method in child classes to load drop down items
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.BuildOutputNode">
+            <summary>
+            Builds and returns the output node for the drop-down node model.
+            </summary>
+            <returns>The output node.</returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownBaseNodes.NodeModelDropDownBase.GetOutputName(System.Type,System.Type)">
+            <summary>
+            Retrieves the name of the output port for a node model using the provided types.
+            </summary>
+            <param name="NodeModelType">The type of the node model.</param>
+            <param name="ResourceType">The type of the resource containing metadata for the node model.</param>
+            <returns>The name of the output port as a string.</returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterDataTypeDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownElementParameterNodes.ParameterKindDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.PopulateItemsCore(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.CultureInfoDropDown.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Assign the selected Enumeration value to the output
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.PopulateItemsCore(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownOtherNodes.EncodingDropDown.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Assign the selected Enumeration value to the output
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInCategoryDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.BuiltInParameterDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.DimensionTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ElevationViewFamilyTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.FilledRegionTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.GridTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.LineStylesDropDown.CollectedElements">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.SectionViewFamilyTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TagTypesDropDown.CollectedElements">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.TextNoteTypesDropDown.Filter">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewPortTypesDropDown.CollectedElements">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.NoItemsPrompt">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.ItemNameOverrider">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTemplatesDropDown.CollectedElements">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownRevitNodes.ViewTypesDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.#ctor">
+            <summary>
+            Constructor of Basic Colors drop down NodeModel used by Dynamo UI.
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <summary>
+            Constructor of ElementType drop down NodeModel used to create node in .dyn file which is in json format.
+            </summary>
+            <param name="inPorts">Obtained automatically by Dynamo Engine. No need to set in child.</param>
+            <param name="outPorts">Obtained automatically by Dynamo Engine. No need to set in child.</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.LoadDropDownItems">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.BuildOutputNode">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.BasicColorsDropDown.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Assigns the selected value to the output ports
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.DropDownNodes.DropDownSelectionNodes.SelectionMethodDropDown.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType">
+            <summary>
+            <para>Enum that defines the attribute resource type</para>
+            <i>Used for searching resources in resx files that contains attributes values for NodeModels</i>
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeCategory">
+            <summary>
+            Node category attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeName">
+            <summary>
+            Node name attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeDescription">
+            <summary>
+            Node description attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.NodeSearchTags">
+            <summary>
+            Node search tags attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortName">
+            <summary>
+            Node input port name attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortDescription">
+            <summary>
+            Node input port description attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.InPortType">
+            <summary>
+            Node input port type attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortName">
+            <summary>
+            Node output port name attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortDescription">
+            <summary>
+            Node output port description attribute
+            </summary>
+        </member>
+        <member name="F:DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType.OutPortType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BoundingBoxViewer.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BoundingBoxViewer.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CoordinateSystemViewer.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CoordinateSystemViewer.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.VectorViewer.InputPortsData">
+            <inheritdoc/>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.VectorViewer.NodeFunction">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.VectorViewer.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.VectorViewer.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.CSVRead">
+            <summary>
+            Node Model to read CSV file
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVRead.NodeModelType">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVRead.ResourceType">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVRead.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVRead.NodeFunction">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CSVRead.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CSVRead.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.CSVWrite">
+            <summary>
+            Node Model to write CSV file
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.NodeModelType">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.ResourceType">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.NodeFunction">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.CSVWrite.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByBuiltInParameter.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterCreateByBuiltInParameter.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterName.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterValue.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterValue.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterDataType.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterDataType.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterKind.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ElementParameterKind.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase">
+            <summary>
+            <para>
+                Base class for DynamoForRevit NodeModels that are
+                functions like f(x1, x2, ..., xN) -> y1, y2, ..., yM
+            </para>
+            <remarks><i>
+                The functions assigment to each output port must be implemented on child classes by
+                overriding BuildOutputAst method
+            </i></remarks>
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.NodeModelType">
+            <summary>
+            Type that represents the Node Model
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.ResourceType">
+            <summary>
+            Represents the type of resource used to define the Nodel Data, like node name, description, and ports data.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.InputPortsData">
+            <summary>
+            Data to create Input ports
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.OutPortsData">
+            <summary>
+            Data to create Output ports
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.NodeFunctions">
+            <summary>
+            Functions used to node execution
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.#ctor">
+            <summary>
+            Node Constructor to Dynamo Engine
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <summary>
+            <para>Constructs Node on DYN file, which is in JSON format.</para>
+            <i>Parameters cannot be renamed, since Dynamo Core uses they.</i>
+            </summary>
+            <param name="inPorts"></param>
+            <param name="outPorts"></param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.MultiReturnNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Build results to output ports
+            </summary>
+            <param name="inputAstNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BuiltInToUIName.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BuiltInToUIName.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.NodeModelType">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.ResourceType">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.BuiltInCategoryToDynamoCategory.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory">
+            <summary>
+            Node model for Selection.ByMethod node
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.NodeFunction">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategory.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories">
+            <summary>
+            Node model for Selection.ByMethodAndCategories node
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.NodeFunction">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.SelectionBySelectionMethodAndCategories.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData">
+            <summary>
+            Node model for getting selection results data.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.OutPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.NodeFunctions">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.GetSelectionResultsData.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ViewCollector.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.ViewCollector.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase">
+            <summary>
+            Base class for DynamoForRevit NodeModels that are functions like f(x1, x2, ..., xN) -> result
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.InputPortsData">
+            <summary>
+            Data to create Input ports
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.OutPortData">
+            <summary>
+            Data to create Output ports
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.NodeFunction">
+            <summary>
+            Function used to node execution
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.#ctor">
+            <summary>
+            Node Constructor to Dynamo Engine
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <summary>
+            <para>Constructs Node on DYN file, which is in JSON format.</para>
+            <i>Parameters cannot be renamed, since Dynamo Core uses they.</i>
+            </summary>
+            <param name="inPorts"></param>
+            <param name="outPorts"></param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBase.BuildOutputAst(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            Build results to output ports
+            </summary>
+            <param name="inputAstNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources">
+            <summary>
+            Base class for DynamoForRevit NodeModels that are functions like f(x1, x2, ..., xN) -> result
+            </summary>
+            <remarks>
+            <i>This class uses resource files (resx) to build ports</i>
+            </remarks>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeModelType">
+            <summary>
+            Type that represents the Node Model
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.ResourceType">
+            <summary>
+            Represents the type of resource used to define the Nodel Data, like node name, description, and ports data.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.InputPortsData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.OutPortData">
+            <inheritdoc />
+        </member>
+        <member name="P:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.NodeFunction">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StandardNodeModelBaseByResources.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StringFilterByRegex.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.StringFilterByRegex.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.TopographyGetSurfaces.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.FunctionNodes.TopographyGetSurfaces.#ctor(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel})">
+            <inheritdoc/>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterDataTypeDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all ParameterDataType&apos;s.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterDataTypeDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Parameter, Data, Type, ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterDataTypeDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterDataTypeDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterDataTypeDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterKindDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all ParameterKind&apos;s.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterKindDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Parameter, Kind, ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterKindDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterKindDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownElementParameterNodesResources.ParameterKindDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ParameterKind.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.CultureInfoDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available CultureInfo&apos;s.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.CultureInfoDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Culture, Info, CultureInfo, Locale, Language, Region.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.CultureInfoDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected CultureInfo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.CultureInfoDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to CultureInfo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.CultureInfoDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to CultureInfo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.EncodingDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available text encodings.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.EncodingDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Encoding, Text, Character, Charset, UTF, ASCII.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.EncodingDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected text encoding.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.EncodingDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to Encoding.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownOtherNodesResources.EncodingDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to Encoding.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInCategoryDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available Revit built-in categories.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInCategoryDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to BuiltInCategory, Category, Revit, Element, Type, Family.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInCategoryDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected Revit built-in category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInCategoryDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to BuiltInCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInCategoryDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to BuiltInCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInParameterDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available Revit built-in parameters.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInParameterDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to BuiltInParameter, Parameter, Revit, Element, Type, Family.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInParameterDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected Revit built-in parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInParameterDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to BuiltInParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.BuiltInParameterDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to BuiltInParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.DimensionTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available dimension types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.DimensionTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Dimension, Type, Revit, Element, Annotation.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.DimensionTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected dimension type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.DimensionTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to DimensionType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.DimensionTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to DimensionType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ElevationViewFamilyTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available elevation view family types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ElevationViewFamilyTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Elevation, View, Family, Type, ViewFamilyType, Revit.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ElevationViewFamilyTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected elevation view family type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ElevationViewFamilyTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ViewFamilyType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ElevationViewFamilyTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ViewFamilyType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.FilledRegionTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available filled region types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.FilledRegionTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to FilledRegion, Type, Revit, Element, Annotation, Region.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.FilledRegionTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected filled region type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.FilledRegionTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to FilledRegionType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.FilledRegionTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to FilledRegionType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.GridTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available grid types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.GridTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Grid, Type, Revit, Element, GridType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.GridTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected grid type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.GridTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to GridType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.GridTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to GridType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.LineStylesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available line styles in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.LineStylesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Line, Style, Graphics, Revit, Element, LineStyle.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.LineStylesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected line style.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.LineStylesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to GraphicsStyle.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.LineStylesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to GraphicsStyle.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.SectionViewFamilyTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available section view family types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.SectionViewFamilyTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Section, View, Family, Type, ViewFamilyType, Revit.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.SectionViewFamilyTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected section view family type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.SectionViewFamilyTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ViewFamilyType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.SectionViewFamilyTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ViewFamilyType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TagTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available tag types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TagTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Tag, Type, Revit, Element, FamilySymbol, Annotation.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TagTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected tag type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TagTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to FamilySymbol.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TagTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to FamilySymbol.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TextNoteTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available text note types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TextNoteTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to TextNote, Type, Revit, Element, Text, Annotation.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TextNoteTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected text note type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TextNoteTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to TextNoteType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.TextNoteTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to TextNoteType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewPortTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available viewport types in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewPortTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Viewport, Type, Revit, Element, Sheet, View.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewPortTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected viewport type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewPortTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ElementType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewPortTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTemplatesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available view templates in the document.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTemplatesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to View, Template, Revit, Element, ViewTemplate.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTemplatesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected view template.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTemplatesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to View.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTemplatesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to View.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTypesDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to List all available view types.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTypesDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to View, Type, ViewType, Revit, Element.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTypesDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected view type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTypesDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ViewType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownRevitNodesResources.ViewTypesDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ViewType.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.BasicColorsDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Provides a selection of basic colors for use in Dynamo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.BasicColorsDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Basic, Colors, Color, RGB, ARGB, Selection, Dropdown.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.BasicColorsDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected basic color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.BasicColorsDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to Color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.BasicColorsDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to Color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.SelectionMethodDropDown_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Provides selection methods for element selection operations.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.SelectionMethodDropDown_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Selection, Method, SelectionMethod, Element, Pick, Choose.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.SelectionMethodDropDown_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected selection method.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.SelectionMethodDropDown_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to SelectionMethod.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.DropDownNodesResources.DropDownSelectionNodesResources.SelectionMethodDropDown_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to SelectionMethod.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Abstract geometry to visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Color to view abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Whether visualize BoundingBox as wireframe or not.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortName_0">
+            <summary>
+              Looks up a localized string similar to bbox.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortName_1">
+            <summary>
+              Looks up a localized string similar to color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortName_2">
+            <summary>
+              Looks up a localized string similar to wireframe.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortType_0">
+            <summary>
+              Looks up a localized string similar to BoundingBox.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortType_1">
+            <summary>
+              Looks up a localized string similar to Color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_InPortType_2">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Visualize abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Boundingbox, box, bounding, viewer, visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Colorized abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.BoundingBoxViewer_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Abstract geometry to visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Coordinate system size.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortName_0">
+            <summary>
+              Looks up a localized string similar to cs.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortName_1">
+            <summary>
+              Looks up a localized string similar to size.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortType_0">
+            <summary>
+              Looks up a localized string similar to CoordinateSystem.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_InPortType_1">
+            <summary>
+              Looks up a localized string similar to double.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Visualize abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to CoordinateSystem, coordinate, system, viewer, visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Colorized abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.CoordinateSystemViewer_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Abstract geometry to visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Origin of the vector.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Color to visualize abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Size of the vector.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortName_0">
+            <summary>
+              Looks up a localized string similar to vector.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortName_1">
+            <summary>
+              Looks up a localized string similar to origin.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortName_2">
+            <summary>
+              Looks up a localized string similar to color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortName_3">
+            <summary>
+              Looks up a localized string similar to size.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortType_0">
+            <summary>
+              Looks up a localized string similar to Vector.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortType_1">
+            <summary>
+              Looks up a localized string similar to Point.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortType_2">
+            <summary>
+              Looks up a localized string similar to Color.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_InPortType_3">
+            <summary>
+              Looks up a localized string similar to double.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Visualize abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Vector, viewer, visualize.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Colorized abstract geometry.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.AbstractGeometryNodesResources.VectorViewer_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to GeometryColor[].
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Path to the CSV file to read.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Character used to separate values in the CSV file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Whether to transpose the data (swap rows and columns).
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Whether to read all values as strings.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_4">
+            <summary>
+              Looks up a localized string similar to Text encoding to use when reading the file. Leave null to use UTF-8.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_5">
+            <summary>
+              Looks up a localized string similar to Culture info for parsing values. Leave null to use CultureInfo.Invariant.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortDescription_6">
+            <summary>
+              Looks up a localized string similar to Whether to refresh and reload the file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_0">
+            <summary>
+              Looks up a localized string similar to filePath.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_1">
+            <summary>
+              Looks up a localized string similar to delimiter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_2">
+            <summary>
+              Looks up a localized string similar to transpose.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_3">
+            <summary>
+              Looks up a localized string similar to readAsString.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_4">
+            <summary>
+              Looks up a localized string similar to encodingObj.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_5">
+            <summary>
+              Looks up a localized string similar to cultureInfoObj.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortName_6">
+            <summary>
+              Looks up a localized string similar to refresh.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_1">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_2">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_3">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_4">
+            <summary>
+              Looks up a localized string similar to Encoding.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_5">
+            <summary>
+              Looks up a localized string similar to CultureInfo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_InPortType_6">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Read data from CSV file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to CSV, read, file, data, import, comma separated values.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Data read from the CSV file as a list of lists.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to data.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVRead_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to var[][].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Path where the CSV file will be written.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Data to write to the CSV file as a list of lists.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Character used to separate values in the CSV file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortName_0">
+            <summary>
+              Looks up a localized string similar to filePath.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortName_1">
+            <summary>
+              Looks up a localized string similar to data.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortName_2">
+            <summary>
+              Looks up a localized string similar to delimiter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortType_1">
+            <summary>
+              Looks up a localized string similar to var[][].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_InPortType_2">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Write data to CSV file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to CSV, write, file, data, export, comma separated values.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Path to the written CSV file.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to filePath.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.CSVNodesResources.CSVWrite_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Built-in parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Parameter data type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Parameter kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Parameter value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortName_0">
+            <summary>
+              Looks up a localized string similar to builtInParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortName_1">
+            <summary>
+              Looks up a localized string similar to dataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortName_2">
+            <summary>
+              Looks up a localized string similar to kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortName_3">
+            <summary>
+              Looks up a localized string similar to value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortType_0">
+            <summary>
+              Looks up a localized string similar to BuiltInParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortType_1">
+            <summary>
+              Looks up a localized string similar to ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortType_2">
+            <summary>
+              Looks up a localized string similar to ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_InPortType_3">
+            <summary>
+              Looks up a localized string similar to object.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Create element parameter by built-in parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, create, builtin, built-in.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Created element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByBuiltInParameter_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Parameter name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Parameter data type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Parameter kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Parameter value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortName_0">
+            <summary>
+              Looks up a localized string similar to name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortName_1">
+            <summary>
+              Looks up a localized string similar to dataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortName_2">
+            <summary>
+              Looks up a localized string similar to kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortName_3">
+            <summary>
+              Looks up a localized string similar to value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortType_1">
+            <summary>
+              Looks up a localized string similar to ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortType_2">
+            <summary>
+              Looks up a localized string similar to ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_InPortType_3">
+            <summary>
+              Looks up a localized string similar to object.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Create element parameter by name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, create, name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Created element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterCreateByName_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_InPortName_0">
+            <summary>
+              Looks up a localized string similar to elementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_InPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get element parameter data type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, datatype, data, type, get.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Parameter data type.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to dataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterDataType_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ParameterDataType.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_InPortName_0">
+            <summary>
+              Looks up a localized string similar to elementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_InPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get element parameter kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, kind, get.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Parameter kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to kind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterKind_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to ParameterKind.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_InPortName_0">
+            <summary>
+              Looks up a localized string similar to elementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_InPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get element parameter name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, name, get.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Parameter name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to name.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterName_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Element parameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_InPortName_0">
+            <summary>
+              Looks up a localized string similar to elementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_InPortType_0">
+            <summary>
+              Looks up a localized string similar to ElementParameter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get element parameter value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to element, parameter, value, get.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Parameter value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to value.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.ElementParameterNodesResources.ElementParameterValue_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to object.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to The BuiltInCategory to convert.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_InPortName_0">
+            <summary>
+              Looks up a localized string similar to bic.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_InPortType_0">
+            <summary>
+              Looks up a localized string similar to BuiltInCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Convert a BuiltInCategory to a Dynamo Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to BuiltInCategory, Category, Convert, Dynamo.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to The converted Dynamo Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInCategoryToDynamoCategory_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to BuiltInParameter or BuiltInCategory to get UI name for.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_InPortName_0">
+            <summary>
+              Looks up a localized string similar to builtIn.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_InPortType_0">
+            <summary>
+              Looks up a localized string similar to object.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get UI name for BuiltInParameter or BuiltInCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to BuiltIn, Parameter, Category, UI, Name, Label.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to UI name of the BuiltInParameter or BuiltInCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to uiName.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.RevitNodesResources.BuiltInToUIName_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selection results to extract data from.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Whether to group Elements and RevitLinkInstances by Category. If false, a flatten list of each one will be returned..
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortName_0">
+            <summary>
+              Looks up a localized string similar to selectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortName_1">
+            <summary>
+              Looks up a localized string similar to groupByCategory.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortType_0">
+            <summary>
+              Looks up a localized string similar to SelectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_InPortType_1">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Extract data from selection results.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Selection, results, data, extract, elements, links.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selected elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortDescription_1">
+            <summary>
+              Looks up a localized string similar to RevitLinkInstance that contain each selected Element.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Active view during selection.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to Element[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortName_1">
+            <summary>
+              Looks up a localized string similar to RevitLinkInstance[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortName_2">
+            <summary>
+              Looks up a localized string similar to ActiveView.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to Element[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortType_1">
+            <summary>
+              Looks up a localized string similar to RevitLinkInstance[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.GetSelectionResultsData_OutPortType_2">
+            <summary>
+              Looks up a localized string similar to View.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selection method to use.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Categories to filter elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Whether to get linked elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Refresh selection.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortName_0">
+            <summary>
+              Looks up a localized string similar to SelectionMethod.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortName_1">
+            <summary>
+              Looks up a localized string similar to Category[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortName_2">
+            <summary>
+              Looks up a localized string similar to getLinkedElements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortName_3">
+            <summary>
+              Looks up a localized string similar to refresh.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortType_0">
+            <summary>
+              Looks up a localized string similar to Selection Method.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortType_1">
+            <summary>
+              Looks up a localized string similar to Category[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortType_2">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_InPortType_3">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Select elements by selection method and multiple categories.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Selection, method, categories, select, elements, multiple.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Results of selection. Return Elements, RevivitLinkIntances and the ActiveView.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to SelectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategories_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to SelectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Selection method to use.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Category to filter elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Whether to get linked elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Refresh selection.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortName_0">
+            <summary>
+              Looks up a localized string similar to SelectionMethod.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortName_1">
+            <summary>
+              Looks up a localized string similar to Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortName_2">
+            <summary>
+              Looks up a localized string similar to getLinkedElements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortName_3">
+            <summary>
+              Looks up a localized string similar to refresh.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortType_0">
+            <summary>
+              Looks up a localized string similar to SelectionMethod.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortType_1">
+            <summary>
+              Looks up a localized string similar to Category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortType_2">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_InPortType_3">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Select elements by selection method and category.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Selection, method, category, select, elements.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Results of selection. Return Elements, RevivitLinkIntances and the ActiveView.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to SelectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.SelectionBySelectionMethodAndCategory_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to SelectionResults.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Whether to directly get Active View. If true, all other ports options will be discarted..
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to View types to filter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Search strings to filter view names.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Refresh view collecting..
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortName_0">
+            <summary>
+              Looks up a localized string similar to getActiveView.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortName_1">
+            <summary>
+              Looks up a localized string similar to ViewType[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortName_2">
+            <summary>
+              Looks up a localized string similar to searchString.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortName_3">
+            <summary>
+              Looks up a localized string similar to refresh.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortType_0">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortType_1">
+            <summary>
+              Looks up a localized string similar to ViewType[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortType_2">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_InPortType_3">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Collect views from the project.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to View, collector, collect, views, filter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Collected views.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to View[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.SelectionNodesResources.ViewCollector_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to View[].
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Input text to filter.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortDescription_1">
+            <summary>
+              Looks up a localized string similar to Regular expression pattern to match.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortDescription_2">
+            <summary>
+              Looks up a localized string similar to Whether to ignore case when matching.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortDescription_3">
+            <summary>
+              Looks up a localized string similar to Whether to consider multiline text. If false, text will be considered as single line.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortName_0">
+            <summary>
+              Looks up a localized string similar to text.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortName_1">
+            <summary>
+              Looks up a localized string similar to pattern.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortName_2">
+            <summary>
+              Looks up a localized string similar to ignoreCase.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortName_3">
+            <summary>
+              Looks up a localized string similar to multiLine.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortType_1">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortType_2">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_InPortType_3">
+            <summary>
+              Looks up a localized string similar to bool.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Filter strings using regular expression pattern.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to string, filter, regex, regular, expression, pattern, text.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Filtered string that match the pattern.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TextNodesResources.StringFilterByRegex_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to string.
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_InPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Topography element to extract surfaces from.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_InPortName_0">
+            <summary>
+              Looks up a localized string similar to Topography.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_InPortType_0">
+            <summary>
+              Looks up a localized string similar to Topography.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_NodeDescription">
+            <summary>
+              Looks up a localized string similar to Get surfaces from topography element.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_NodeSearchTags">
+            <summary>
+              Looks up a localized string similar to Topography, surface, get, terrain, ground.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_OutPortDescription_0">
+            <summary>
+              Looks up a localized string similar to Surfaces extracted from the topography.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_OutPortName_0">
+            <summary>
+              Looks up a localized string similar to Surface[].
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitNodeModels.Resources.LocalizedResources.FunctionNodesResources.TopographyNodesResources.TopographyGetSurfaces_OutPortType_0">
+            <summary>
+              Looks up a localized string similar to Surface[].
+            </summary>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider">
+            <summary>
+            Class containing methods to overrides DimensionType name in the DropDown node
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.Override(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.DimensionTypeNameOverrider.RemoveOverrides(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider">
+            <summary>
+            Interface to override the name of the element in the drop down menu
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.Override(System.Object)">
+            <summary>
+            Overrides the object name
+            </summary>
+            <param name="item">Object to override name</param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.IDropDownItemNameOverrider.RemoveOverrides(System.Object)">
+            <summary>
+            Remove overrides from object name
+            </summary>
+            <param name="item">Object to get original name</param>
+            <returns></returns>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Services.NodeModelsServices">
+            <summary>
+            Several utilities for NodeModels
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildInputDescription(Dynamo.Graph.Nodes.PortData)">
+            <summary>
+            Creates input port description in Dynamo fashion way 
+            </summary>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.BuildPortsByResources(System.Type,System.Type,Dynamo.Graph.Nodes.PortType,System.Int32)">
+            <summary>
+            Build NodeModel ports by resources
+            </summary>
+            <param name="nodeType"></param>
+            <param name="resourceType"></param>
+            <param name="portType"></param>
+            <param name="numberOfPorts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.AddPorts(Dynamo.Graph.Nodes.NodeModel,System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData},Dynamo.Graph.Nodes.PortType)">
+            <summary>
+            Add ports to NodeModel
+            </summary>
+            <param name="ownerNode"></param>
+            <param name="portsData"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.SetJsonNodeInputPortsDefaultValues(System.Collections.Generic.IEnumerable{Dynamo.Graph.Nodes.PortModel},System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})">
+            <summary>
+            <para>Method used by JSON constructor to set default values to input ports</para>
+            <remarks><i>Default values are made by using Associative Nodes in Dynamo API</i></remarks>
+            </summary>
+            <param name="jsonNodeInputPorts">Input ports from dyn file, which is in JSON format.</param>
+            <param name="inputPortsData">Input ports data from NodeModel class</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.GetNodeFunctionArgsFromInputPorts(System.Collections.Generic.List{ProtoCore.AST.AssociativeAST.AssociativeNode})">
+            <summary>
+            <para>Get NodeModel function arguments from input ports</para>
+            <remarks><i><b>Input ports must be ordered in the same order of the function arguments</b></i></remarks>
+            </summary>
+            <param name="inputAstNodes">Input ports as Associative nodes</param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices._getDefaultValuesFromInPortsData(System.Collections.Generic.List{Dynamo.Graph.Nodes.PortData})">
+            <summary>
+            <para>Get Default values defined in NodeModel class</para>
+            <remarks><i>Default values are made by using Associative Nodes in Dynamo API</i></remarks>
+            </summary>
+            <param name="inPortsData">Data associated with NodeModel input ports</param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices._setInputPortDefaultValueUsingReflection(Dynamo.Graph.Nodes.PortModel,ProtoCore.AST.AssociativeAST.AssociativeNode)">
+            <summary>
+            <para>Method that use Reflection to set PortModel property</para>
+            <i>Used on old Dynamo versions where property Default value is private</i>
+            </summary>
+            <param name="port">Port to set the Default value</param>
+            <param name="value">Default value to be assigned to the port</param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices._getDefaultValueByFunction(ProtoCore.AST.AssociativeAST.IdentifierListNode,System.String@,System.String@)">
+            <summary>
+            <para>Get default value function</para>
+            <i><b>Use only functions from class <see cref="T:NodeModelsFunctions.DefaultInputs"/></b></i>
+            </summary>
+            <param name="fxNode"></param>
+            <param name="dataType"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices._getResourceSet(System.Type)">
+            <summary>
+            Get a collection of resources from a resource type
+            </summary>
+            <param name="resourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadNodeResources(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType)">
+            <summary>
+            Load resources to be used in NodeModels attributes
+            </summary>
+            <param name="nodeType"><see cref="T:System.Type"/> of the NodeModel</param>
+            <param name="resourceType"><see cref="T:System.Type"/> of resource used to create ports</param>
+            <param name="metadataType">Enum that defines the node attribute used by resource</param>
+            <returns>
+            Array of strings containing the resources. If the resource type is not found, an empty array is returned.
+            </returns>
+            <remarks>
+            <para>Resources keys are not culture variable and they are in the format:</para>
+            &lt;nodeTypeName&gt;_&lt;attributeType&gt;_[portIndex]
+            <para></para>
+            To make this method works properly is needed to order ports by index.
+            </remarks>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.NodeModelsServices.LoadPortResourceByIndex(System.Type,System.Type,DynamoForRevitNodeModels.Enumerations.NodeModelMetadataType,System.Int32)">
+            <summary>
+            Load NodeModel Port resource by index
+            </summary>
+            <param name="nodeType"><see cref="T:System.Type"/> of the NodeModel</param>
+            <param name="resourceType"><see cref="T:System.Type"/> of resource used to create ports</param>
+            <param name="metadataType">Enum that defines the node attribute used by resource</param>
+            <param name="portIndex">In/out port zero based index</param>
+            <returns>
+            String containing the resource. If the resource type is not found, an empty string is returned.
+            </returns>
+            <remarks>
+            <para>Resources keys are not culture variable and they are in the format:</para>
+            &lt;nodeTypeName&gt;_&lt;attributeType&gt;_[portIndex]
+            </remarks>
+        </member>
+        <member name="T:DynamoForRevitNodeModels.Services.TagTypeNameOverrider">
+            <summary>
+            Class containing methods to overrides TagType name in the DropDown node
+            </summary>
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.Override(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:DynamoForRevitNodeModels.Services.TagTypeNameOverrider.RemoveOverrides(System.Object)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

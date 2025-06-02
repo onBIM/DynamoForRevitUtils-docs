@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamoForRevitNodeModelsFunctions</name>
+    </assembly>
+    <members>
+        <member name="T:NodeModelsFunctions.AbstractGeometry">
+            <summary>
+            Provides static methods for visualizing different types of geometries.
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.AbstractGeometry.BoundingBoxViewer(Autodesk.DesignScript.Geometry.BoundingBox,DSCore.Color,System.Boolean)">
+            <summary>
+            Visualizes a bounding box in the specified color and wireframe mode.
+            </summary>
+            <param name="boundingBox">The bounding box to visualize.</param>
+            <param name="color">The color of the bounding box.</param>
+            <param name="wireframe">Indicates whether to display the bounding box in wireframe mode. Default is false.</param>
+            <returns>A list of colorized geometries representing the visualization of the bounding box.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.AbstractGeometry.VectorViewer(Autodesk.DesignScript.Geometry.Vector,Autodesk.DesignScript.Geometry.Point,DSCore.Color,System.Double)">
+            <summary>
+            Visualizes a vector in 3D space.
+            </summary>
+            <param name="vector">The vector to visualize.</param>
+            <param name="origin">The origin point of the vector.</param>
+            <param name="color">The color of the vector visualization. If not specified, it defaults to red (255, 0, 0).</param>
+            <param name="size">The size of the vector visualization. Defaults to 1.</param>
+            <returns>A list of colorized geometries representing the vector visualization.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.AbstractGeometry.CoordinateSystemViewer(Autodesk.DesignScript.Geometry.CoordinateSystem,System.Double)">
+            <summary>
+            Generates a Coordinate System visualization in Dynamo.
+            </summary>
+            <param name="cs">The Coordinate System to visualize.</param>
+            <param name="size">The size of the Coordinate System visualization.</param>
+            <returns>A list of Coordinate System visualizations.</returns>
+        </member>
+        <member name="T:NodeModelsFunctions.CSV">
+            <summary>
+            CSV Node Models functions
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.CSV.Read(System.String,System.String,System.Boolean,System.Boolean,System.Object,System.Object,System.Boolean)">
+            <summary>
+                Imports data from a CSV (comma separated values) file, put the items into a list and 
+                transpose it if needed.
+            </summary>
+            <param name="filePath">CSV file to be converted into a list</param>
+            <param name="delimiter">CSV delimiter.</param>
+            <param name="transpose">Toggle to transpose the imported data</param>
+            <param name="readAsString">Choose whether read all file as string or not</param>
+            <param name="encodingObj">
+                <see cref="T:System.Text.Encoding"/> as object. Define the encoding to be used for reading the file.
+            </param>
+            <param name="cultureInfoObj">
+                <see cref="T:System.Globalization.CultureInfo"/> as object. Define the culture to be used for parsing the numbers.
+            </param>
+            <param name="refresh">Change value to refresh read.</param>
+            <returns name="list">List containing the items in the CSV file</returns>
+            <remarks>
+            <paramref name="cultureInfoObj"/> and <paramref name="encodingObj"/> parsed as object to avoid exposing the
+            <see cref="T:System.Globalization.CultureInfo"/> and <see cref="T:System.Text.Encoding"/> classes in the Dynamo Library.
+            </remarks>
+            <seealso href="https://github.com/DynamoDS/Dynamo/blob/master/src/Libraries/DSOffice/Excel.cs"/>
+        </member>
+        <member name="M:NodeModelsFunctions.CSV.Write(System.String,System.Object[][],System.String)">
+            <summary>
+            Function to write CSV file
+            </summary>
+            <param name="filePath"></param>
+            <param name="data"></param>
+            <param name="delimiter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeModelsFunctions.DefaultInputs">
+            <summary>
+            Default inputs to use in nodes
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetNull">
+            <summary>
+            Default null value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.NULL">
+            <summary>
+            Default null value
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetTrue">
+            <summary>
+            Default value boolean true
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.TRUE">
+            <summary>
+            Default value boolean true
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetFalse">
+            <summary>
+            Default value boolean false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.FALSE">
+            <summary>
+            Default value boolean false
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetEmptyString">
+            <summary>
+            Default value string empty
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.EMPTY_STRING">
+            <summary>
+            Default value string empty
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetZero">
+            <summary>
+            Default value double zero
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.ZERO">
+            <summary>
+            Default value double zero
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultColor">
+            <summary>
+            Default color to use in inputs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_COLOR">
+            <summary>
+            Default color to use in inputs
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetOrigin">
+            <summary>
+            Gets World origin
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.ORIGIN">
+            <summary>
+            Gets World origin
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetIdentity">
+            <summary>
+            Gets world coordinate system
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.IDENTITY">
+            <summary>
+            Gets world coordinate system
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultSelectionMethod">
+            <summary>
+            Get default selection method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_SELECTION_METHOD">
+            <summary>
+            Get default selection method
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultDataType">
+            <summary>
+            <para>Get default <see cref="T:Autodesk.Revit.DB.StorageType"/></para>
+            <i>Methods that returns <b>visible</b> <see langword="enum"/> to Dynamo must be return <see cref="T:System.Object"/> 
+            instead, in order to they don't appears on Library</i>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_STORAGE_TYPE">
+            <summary>
+            Get default <see cref="T:Autodesk.Revit.DB.StorageType"/>
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultParameterKind">
+            <summary>
+            Get default parameter kind
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_PARAMETER_KIND">
+            <summary>
+            Get default parameter kind
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultEncoding">
+            <summary>
+            Retrieves the default encoding used for reading or writing CSV files.
+            </summary>
+            <returns>
+            Default encoding object, typically UTF8.
+            </returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_ENCODING">
+            <summary>
+            Default encoding to use in inputs
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DefaultInputs.GetDefaultCultureInfo">
+            <summary>
+            Retrieves the default <see cref="T:System.Globalization.CultureInfo"/> used for parsing and formatting operations
+            within the CSV processing context.
+            </summary>
+            <returns name="cultureInfo">
+            Default <see cref="T:System.Globalization.CultureInfo"/> object, typically representing an invariant culture setting.
+            </returns>
+        </member>
+        <member name="F:NodeModelsFunctions.DefaultInputs.DEFAULT_CULTURE_INFO">
+            <summary>
+            Default culture info to use in inputs
+            </summary>
+        </member>
+        <member name="T:NodeModelsFunctions.DropDown">
+            <summary>
+            Functions to DropDown NodeModels
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.DropDown.EnumParserUsingReflection(System.String,System.String,System.String)">
+            <summary>
+                Enum parser using Reflection
+            </summary>
+            <remarks>
+                There are some restrictions to use this function on Dynamo Node Models:
+            <list type="bullet">
+                <item>Enums needs to be parsed as object to Dynamo don't see them</item>
+                <item>Dynamo API doesn't work with generics. Because of that reflection is used.</item>
+                <item>Function call needs to be made here on NodeModelFunctions assembly</item>
+            </list>
+            </remarks>
+            <param name="enumTypeFullName">Full name of enum type</param>
+            <param name="enumAssemblyPath">Full path of assembly that contains the enum</param>
+            <param name="value">Enum value to be parsed</param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.DropDown.GetElementByStrId(System.String)">
+            <summary>
+            Retrieves an element based on its string ID.
+            </summary>
+            <param name="strId">The string ID of the element.</param>
+            <remarks>
+                The string ID is different from the UniqueId. It is a string representation of the ElementId.
+            </remarks>
+            <returns>The element with the specified string ID, or null if no such element exists.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.DropDown.GetEncoding(System.Int32)">
+            <summary>
+            Retrieves an encoding by its codePage.
+            </summary>
+            <param name="codePage">The codePage of the encoding to retrieve.</param>
+            <returns>An <see cref="T:System.Text.Encoding"/> object corresponding to the specified codePage.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.DropDown.GetCulture(System.Int32)">
+            <summary>
+            Gets a CultureInfo object for the specified locale identifier (LCID).
+            </summary>
+            <param name="LCID">The locale identifier for the culture.</param>
+            <returns>A CultureInfo object corresponding to the given LCID.</returns>
+        </member>
+        <member name="T:NodeModelsFunctions.ElementParameterNodesFunctions">
+            <summary>
+            Contains functions for creating and manipulating ElementParameter objects.
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.CreateByName(System.String,DynamoForRevitUtils.Enumerations.ParameterDataType,DynamoForRevitUtils.Enumerations.ParameterKind,System.Object)">
+            <summary>
+            Creates a new ElementParameter instance by user input.
+            </summary>
+            <param name="name">The parameter name.</param>
+            <param name="dataType">The storage type of the parameter.</param>
+            <param name="kind">The kind of the parameter.</param>
+            <param name="value">The value of the parameter.</param>
+            <returns>A new ElementParameter instance.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.CreateByBuiltInParameter(System.Object,DynamoForRevitUtils.Enumerations.ParameterDataType,DynamoForRevitUtils.Enumerations.ParameterKind,System.Object)">
+            <summary>
+            Creates a new ElementParameter instance based on the provided input values.
+            </summary>
+            <param name="builtInParameter">The built-in parameter value to assign.</param>
+            <param name="dataType">The data type of the parameter.</param>
+            <param name="kind">The kind of the parameter, indicating its type or instance classification.</param>
+            <param name="value">The initial value of the parameter.</param>
+            <returns>A newly created ElementParameter instance with the specified properties.</returns>
+            <remarks>
+            <paramref name="builtInParameter"/> needs to be of Type <see cref="T:System.Object"/> to not be
+            expose <see cref="T:Autodesk.Revit.DB.BuiltInParameter"/> enum on Dynamo Library.
+            </remarks>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.GetName(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">
+            <summary>
+            Gets the name of a ElementParameter instance.
+            </summary>
+            <param name="elementParameter">The ElementParameter instance.</param>
+            <returns>The name of the ElementParameter instance.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.GetValue(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">
+            <summary>
+            Retrieves the value of the specified ElementParameter instance.
+            </summary>
+            <param name="elementParameter">The ElementParameter instance from which to get the value.</param>
+            <returns>The value of the specified ElementParameter instance.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.GetDataType(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">
+            <summary>
+            Retrieves the data type of the specified ElementParameter object.
+            </summary>
+            <param name="elementParameter">The ElementParameter instance for which the data type is to be retrieved.</param>
+            <returns>The data type of the given ElementParameter object.</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.ElementParameterNodesFunctions.GetKind(DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter)">
+            <summary>
+            Retrieves the kind of the specified ElementParameter instance.
+            </summary>
+            <param name="elementParameter">The ElementParameter instance from which to retrieve the kind.</param>
+            <returns>The kind of the specified ElementParameter instance.</returns>
+        </member>
+        <member name="T:NodeModelsFunctions.RevitNodes">
+            <summary>
+            Revit Node Models functions
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.RevitNodes.BuiltInToUIName(System.Object)">
+            <summary>
+            Function to get UI name for BuiltInParameter or BuiltInCategory
+            </summary>
+            <param name="builtIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.RevitNodes.BuiltInCategoryToDynamoCategory(System.Object)">
+            <summary>
+            Function to convert a BuiltInCategory to a Dynamo Category
+            </summary>
+            <param name="bic">The BuiltInCategory to convert</param>
+            <returns>The converted Dynamo Category</returns>
+            <remarks>
+            NOTE: use <see cref="T:System.Object"/> as input type to avoid that <see cref="T:Autodesk.Revit.DB.BuiltInCategory"/> Enum appears in Dynamo Library
+            </remarks>
+        </member>
+        <member name="T:NodeModelsFunctions.Selection">
+            <summary>
+            Functions to Selection Nodes
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.BySelectionMethodAndCategory(System.Object,Revit.Elements.Category,System.Boolean,System.Boolean)">
+            <summary>
+            Select Elements from given Category based on Selection Method
+            </summary>
+            <param name="selectionMethod">Selection method</param>
+            <param name="category">Category to filter selection</param>
+            <param name="getLinkedElements">Choose whether get linked elements or not</param>
+            <param name="refresh">Refresh selection</param>
+            <returns name="Element[]">Selected Elements</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.BySelectionMethodAndCategories(System.Object,System.Collections.Generic.List{Revit.Elements.Category},System.Boolean,System.Boolean)">
+            <summary>
+            Select Elements from given Category based on Selection Method and 
+            </summary>
+            <param name="selectionMethod">Selection method</param>
+            <param name="categories">List of categories to filter selection</param>
+            <param name="getLinkedElements">Choose whether get linked elements or not</param>
+            <param name="refresh">Refresh selection</param>
+            <returns name="Element[]">Selected Elements</returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.GetSelectionResultsElements(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)">
+            <summary>
+            Get Elements from Selection Results
+            </summary>
+            <param name="selectionResults">Selection results to get elements</param>
+            <param name="groupByCategory">Set true to group elements by settings categories</param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.GetSelectionResultsRevitLinkInstances(DynamoForRevitUtils.Entities.SelectionResults,System.Boolean)">
+            <summary>
+            Get Revit Link instances from Selection Results
+            </summary>
+            <param name="selectionResults">Selection results to get Revit link instances</param>
+            <param name="groupByCategory">Set true to group Revit link instances based on settings categories</param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.GetSelectionResultsActiveView(DynamoForRevitUtils.Entities.SelectionResults)">
+            <summary>
+            Get Active view from Selection Results
+            </summary>
+            <param name="selectionResults"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Selection.ViewCollector(System.Boolean,System.Collections.Generic.List{Autodesk.Revit.DB.ViewType},System.String,System.Boolean)">
+            <summary>
+            Collects Views from active Document
+            </summary>
+            <param name="activeView"></param>
+            <param name="viewTypes"></param>
+            <param name="searchString"></param>
+            <param name="refresh"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeModelsFunctions.TextFunctions">
+            <summary>
+            Functions to deal with text
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.TextFunctions.FilterTextByRegex(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Filter text by regular expression
+            </summary>
+            <param name="text"></param>
+            <param name="expression"></param>
+            <param name="ignoreCase"></param>
+            <param name="multiLine"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeModelsFunctions.Topography">
+            <summary>
+            Topography functions to Node models
+            </summary>
+        </member>
+        <member name="M:NodeModelsFunctions.Topography.GetSurfaces(Revit.Elements.Topography)">
+            <summary>
+            Function to get Topography surfaces
+            </summary>
+            <param name="topo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeModelsFunctions.Topography.PointsProject(System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Surface},System.Collections.Generic.List{Autodesk.DesignScript.Geometry.Point})">
+            <summary>
+            Function to project a point into a Topography surfaces list
+            </summary>
+            <param name="topoSurfaces"></param>
+            <param name="points"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
