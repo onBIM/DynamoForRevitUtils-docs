@@ -1314,6 +1314,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.yml\" sourcestartlinenumber=\"1\">Class used to access parameters on Revit elements, using the <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.yml",
       "output": {
         ".html": {
@@ -1566,6 +1580,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml",
       "output": {
         ".html": {
@@ -1577,6 +1605,20 @@
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for wrapping Revit elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.yml\" sourcestartlinenumber=\"1\">Represents an abstract wrapper class for Revit family instances.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1605,6 +1647,20 @@
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.yml\" sourcestartlinenumber=\"1\">Represents a mapping between property names and their corresponding element parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.yml\" sourcestartlinenumber=\"1\">Represents an interface for wrapping Revit elements.</p>\n"
     },
     {
       "type": "ManagedReference",

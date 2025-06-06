@@ -6,11 +6,11 @@ items:
   children:
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-  - DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1
+  - DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
   langs:
   - csharp
   - vb
@@ -37,13 +37,6 @@ references:
   name: AccessParameterInfo
   nameWithType: AccessParameterInfo
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.html
-  name: AssociatedElementParameterAttribute
-  nameWithType: AssociatedElementParameterAttribute
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
@@ -52,14 +45,34 @@ references:
   name: ElementParameter
   nameWithType: ElementParameter
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
-  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.html
-  name: ElementParameterAccessor
-  nameWithType: ElementParameterAccessor
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
+  name: ElementParameterAccessor<TParamMap>
+  nameWithType: ElementParameterAccessor<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap)
+  name.vb: ElementParameterAccessor(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+    name: ElementParameterAccessor
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+    name: ElementParameterAccessor
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1
   isExternal: true
@@ -95,6 +108,14 @@ references:
   name: ElementParameterMapItem
   nameWithType: ElementParameterMapItem
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html
+  name: IElementParameterMap
+  nameWithType: IElementParameterMap
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true

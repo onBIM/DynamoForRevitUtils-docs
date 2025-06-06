@@ -1003,7 +1003,7 @@ Leave null if the element is not linked. Default value is null.</p>
     </tbody>
   </table>
   <a id="DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*"></a>
-  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__System_Text_RegularExpressions_Regex_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)">HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)</h4>
+  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_Text_RegularExpressions_Regex_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)">HasParameter(Element, ElementParameter, Regex?, out AccessParameterInfo)</h4>
   <div class="markdown level1 summary"><p>Check if an Element has a parameter by passing a <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> and
 directly comparing <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a>.<a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Name">Name</a> with Element
 parameters names, to lookup for a match.</p>
@@ -1011,7 +1011,7 @@ parameters names, to lookup for a match.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool HasParameter(this Element element, ElementParameter elementParameter, out AccessParameterInfo accessParameterInfo, Regex? regex = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool HasParameter(this Element element, ElementParameter elementParameter, Regex? regex, out AccessParameterInfo accessParameterInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1036,17 +1036,17 @@ parameters names, to lookup for a match.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a></td>
-        <td><span class="parametername">accessParameterInfo</span></td>
-        <td><p>Stores parameter access results.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex">Regex</a></td>
         <td><span class="parametername">regex</span></td>
         <td><p>Regular expression to lookup parameter.
 Set null to use <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a>.<a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Name">Name</a>
 property without regex (faster).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a></td>
+        <td><span class="parametername">accessParameterInfo</span></td>
+        <td><p>Stores parameter access results.</p>
 </td>
       </tr>
     </tbody>

@@ -5709,6 +5709,18 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetHashCode
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetHashCode
   nameWithType: ElementParameter.GetHashCode
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  name: GetValueFromRevitParameter(AccessElementParameterOptions)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  nameWithType: ElementParameter.GetValueFromRevitParameter(AccessElementParameterOptions)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter*
+  name: GetValueFromRevitParameter
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter
+  nameWithType: ElementParameter.GetValueFromRevitParameter
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Id
   name: Id
   href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Id
@@ -5787,6 +5799,18 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.RevitParameter
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.RevitParameter
   nameWithType: ElementParameter.RevitParameter
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
+  name: SetValueToRevitParameter()
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SetValueToRevitParameter
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter()
+  nameWithType: ElementParameter.SetValueToRevitParameter()
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter*
+  name: SetValueToRevitParameter
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SetValueToRevitParameter_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
+  nameWithType: ElementParameter.SetValueToRevitParameter
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Spec
   name: Spec
   href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Spec
@@ -6045,6 +6069,135 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue
   nameWithType: ElementParameterAccessor.SetValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+  name: ElementParameterAccessor<TParamMap>
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+  name.vb: ElementParameterAccessor(Of TParamMap)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap)
+  nameWithType: ElementParameterAccessor<TParamMap>
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})
+  name: ElementParameterAccessor(IElementWrapper<TParamMap>)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_DynamoForRevitUtils_Entities_Wrappers_IElementWrapper__0__
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})
+  name.vb: New(IElementWrapper(Of TParamMap))
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.ElementParameterAccessor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).New(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap))
+  nameWithType: ElementParameterAccessor<TParamMap>.ElementParameterAccessor(IElementWrapper<TParamMap>)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).New(IElementWrapper(Of TParamMap))
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor*
+  name: ElementParameterAccessor
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor
+  name.vb: New
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.ElementParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).New
+  nameWithType: ElementParameterAccessor<TParamMap>.ElementParameterAccessor
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).New
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)
+  name: GetBoolValue(string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)
+  name.vb: GetBoolValue(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetBoolValue(string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetBoolValue(String)
+  nameWithType: ElementParameterAccessor<TParamMap>.GetBoolValue(string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetBoolValue(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue*
+  name: GetBoolValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetBoolValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetBoolValue
+  nameWithType: ElementParameterAccessor<TParamMap>.GetBoolValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetBoolValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)
+  name: GetDoubleValue(string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)
+  name.vb: GetDoubleValue(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetDoubleValue(string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetDoubleValue(String)
+  nameWithType: ElementParameterAccessor<TParamMap>.GetDoubleValue(string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetDoubleValue(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue*
+  name: GetDoubleValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetDoubleValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetDoubleValue
+  nameWithType: ElementParameterAccessor<TParamMap>.GetDoubleValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetDoubleValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)
+  name: GetElementIdValue(string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)
+  name.vb: GetElementIdValue(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetElementIdValue(string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetElementIdValue(String)
+  nameWithType: ElementParameterAccessor<TParamMap>.GetElementIdValue(string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetElementIdValue(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue*
+  name: GetElementIdValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetElementIdValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetElementIdValue
+  nameWithType: ElementParameterAccessor<TParamMap>.GetElementIdValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetElementIdValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)
+  name: GetIntegerValue(string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)
+  name.vb: GetIntegerValue(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetIntegerValue(string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetIntegerValue(String)
+  nameWithType: ElementParameterAccessor<TParamMap>.GetIntegerValue(string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetIntegerValue(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue*
+  name: GetIntegerValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetIntegerValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetIntegerValue
+  nameWithType: ElementParameterAccessor<TParamMap>.GetIntegerValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetIntegerValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)
+  name: GetStringValue(string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)
+  name.vb: GetStringValue(String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetStringValue(string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetStringValue(String)
+  nameWithType: ElementParameterAccessor<TParamMap>.GetStringValue(string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetStringValue(String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue*
+  name: GetStringValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.GetStringValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).GetStringValue
+  nameWithType: ElementParameterAccessor<TParamMap>.GetStringValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).GetStringValue
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)
+  name: SetValue(object, string?)
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_System_Object_System_String_
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)
+  name.vb: SetValue(Object, String)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.SetValue(object, string?)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).SetValue(Object, String)
+  nameWithType: ElementParameterAccessor<TParamMap>.SetValue(object, string?)
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).SetValue(Object, String)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue*
+  name: SetValue
+  href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParamMap>.SetValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParamMap).SetValue
+  nameWithType: ElementParameterAccessor<TParamMap>.SetValue
+  nameWithType.vb: ElementParameterAccessor(Of TParamMap).SetValue
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
   name: ElementParameterMapItem
   href: api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.html
@@ -7264,6 +7417,81 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterMaps
   fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterMaps
   nameWithType: ElementWrapper.ParameterMaps
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+  name: ElementWrapper<TParamMap>
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+  name.vb: ElementWrapper(Of TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap)
+  nameWithType: ElementWrapper<TParamMap>
+  nameWithType.vb: ElementWrapper(Of TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor(Autodesk.Revit.DB.Element,`0)
+  name: ElementWrapper(Element, TParamMap)
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1__ctor_Autodesk_Revit_DB_Element__0_
+  commentId: M:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor(Autodesk.Revit.DB.Element,`0)
+  name.vb: New(Element, TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ElementWrapper(Autodesk.Revit.DB.Element, TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).New(Autodesk.Revit.DB.Element, TParamMap)
+  nameWithType: ElementWrapper<TParamMap>.ElementWrapper(Element, TParamMap)
+  nameWithType.vb: ElementWrapper(Of TParamMap).New(Element, TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor*
+  name: ElementWrapper
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1__ctor_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor
+  name.vb: New
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ElementWrapper
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).New
+  nameWithType: ElementWrapper<TParamMap>.ElementWrapper
+  nameWithType.vb: ElementWrapper(Of TParamMap).New
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  name: Element
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
+  nameWithType: ElementWrapper<TParamMap>.Element
+  nameWithType.vb: ElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element*
+  name: Element
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
+  nameWithType: ElementWrapper<TParamMap>.Element
+  nameWithType.vb: ElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  name: ParameterAccessor
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor*
+  name: ParameterAccessor
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  name: ParameterMap
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
+  nameWithType: ElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap*
+  name: ParameterMap
+  href: api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
+  nameWithType: ElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
   name: FamilyInstanceWrapper
   href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.html
@@ -7300,6 +7528,49 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.FamilyInstance
   fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.FamilyInstance
   nameWithType: FamilyInstanceWrapper.FamilyInstance
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  name: FamilyInstanceWrapper<TParamMap>
+  href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  name.vb: FamilyInstanceWrapper(Of TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap)
+  nameWithType: FamilyInstanceWrapper<TParamMap>
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
+  name: FamilyInstanceWrapper(FamilyInstance, TParamMap)
+  href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_
+  commentId: M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
+  name.vb: New(FamilyInstance, TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(Autodesk.Revit.DB.FamilyInstance, TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New(Autodesk.Revit.DB.FamilyInstance, TParamMap)
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(FamilyInstance, TParamMap)
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New(FamilyInstance, TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*
+  name: FamilyInstanceWrapper
+  href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor
+  name.vb: New
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  name: FamilyInstance
+  href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*
+  name: FamilyInstance
+  href: api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
   name: IElementParameterMap
   href: api/DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
@@ -7360,6 +7631,47 @@ references:
   commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
   fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps
   nameWithType: IElementWrapper.ParameterMaps
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+  name: IElementWrapper<TParamMap>
+  href: api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+  name.vb: IElementWrapper(Of TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
+  nameWithType: IElementWrapper<TParamMap>
+  nameWithType.vb: IElementWrapper(Of TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
+  name: Element
+  href: api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).Element
+  nameWithType: IElementWrapper<TParamMap>.Element
+  nameWithType.vb: IElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element*
+  name: Element
+  href: api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_Element_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).Element
+  nameWithType: IElementWrapper<TParamMap>.Element
+  nameWithType.vb: IElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
+  name: ParameterMap
+  href: api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_ParameterMap
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).ParameterMap
+  nameWithType: IElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: IElementWrapper(Of TParamMap).ParameterMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap*
+  name: ParameterMap
+  href: api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_ParameterMap_
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).ParameterMap
+  nameWithType: IElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: IElementWrapper(Of TParamMap).ParameterMap
 - uid: DynamoForRevitUtils.Enumerations
   name: DynamoForRevitUtils.Enumerations
   href: api/DynamoForRevitUtils.Enumerations.html
@@ -9733,15 +10045,15 @@ references:
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids
   nameWithType: ElementServices.GetSolids
-- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
-  name: HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
-  href: api/DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__System_Text_RegularExpressions_Regex_
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
-  name.vb: HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, out DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex?)
-  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex)
-  nameWithType: ElementServices.HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
-  nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
+  name: HasParameter(Element, ElementParameter, Regex?, out AccessParameterInfo)
+  href: api/DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_Text_RegularExpressions_Regex_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
+  name.vb: HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, System.Text.RegularExpressions.Regex?, out DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, System.Text.RegularExpressions.Regex, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  nameWithType: ElementServices.HasParameter(Element, ElementParameter, Regex?, out AccessParameterInfo)
+  nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*
   name: HasParameter
   href: api/DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_

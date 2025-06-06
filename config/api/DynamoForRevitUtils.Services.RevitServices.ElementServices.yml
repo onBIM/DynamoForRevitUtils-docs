@@ -22,7 +22,7 @@ items:
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
-  - DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsAnnotationElement(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsCutByView(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,System.Collections.Generic.List{Autodesk.Revit.DB.Solid}@,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Options,System.Double)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsFromCategory(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.BuiltInCategory)
@@ -856,17 +856,17 @@ items:
   nameWithType.vb: ElementServices.SetElementsOverrides(List(Of Element), View, OverrideGraphicSettings)
   fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), Autodesk.Revit.DB.View, Autodesk.Revit.DB.OverrideGraphicSettings)
   name.vb: SetElementsOverrides(List(Of Element), View, OverrideGraphicSettings)
-- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
-  id: HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
+  id: HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)
   isExtensionMethod: true
   parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
   langs:
   - csharp
   - vb
-  name: HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
-  nameWithType: ElementServices.HasParameter(Element, ElementParameter, out AccessParameterInfo, Regex?)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, out DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex?)
+  name: HasParameter(Element, ElementParameter, Regex?, out AccessParameterInfo)
+  nameWithType: ElementServices.HasParameter(Element, ElementParameter, Regex?, out AccessParameterInfo)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, System.Text.RegularExpressions.Regex?, out DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -879,7 +879,7 @@ items:
     parameters names, to lookup for a match.
   example: []
   syntax:
-    content: public static bool HasParameter(this Element element, ElementParameter elementParameter, out AccessParameterInfo accessParameterInfo, Regex? regex = null)
+    content: public static bool HasParameter(this Element element, ElementParameter elementParameter, Regex? regex, out AccessParameterInfo accessParameterInfo)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
@@ -887,9 +887,6 @@ items:
     - id: elementParameter
       type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
       description: Parameter data to get
-    - id: accessParameterInfo
-      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-      description: Stores parameter access results.
     - id: regex
       type: System.Text.RegularExpressions.Regex
       description: >-
@@ -898,14 +895,17 @@ items:
         Set null to use <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.<xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name" data-throw-if-not-resolved="false"></xref>
 
         property without regex (faster).
+    - id: accessParameterInfo
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+      description: Stores parameter access results.
     return:
       type: System.Boolean
       description: Whether the element is valid or not
-    content.vb: Public Shared Function HasParameter(element As Element, elementParameter As ElementParameter, accessParameterInfo As AccessParameterInfo, regex As Regex = Nothing) As Boolean
+    content.vb: Public Shared Function HasParameter(element As Element, elementParameter As ElementParameter, regex As Regex, accessParameterInfo As AccessParameterInfo) As Boolean
   overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*
-  nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
-  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo, System.Text.RegularExpressions.Regex)
-  name.vb: HasParameter(Element, ElementParameter, AccessParameterInfo, Regex)
+  nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, System.Text.RegularExpressions.Regex, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
+  name.vb: HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
   commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
   id: GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
@@ -2011,18 +2011,10 @@ references:
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter
   isExternal: true
-  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__System_Text_RegularExpressions_Regex_
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_HasParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_System_Text_RegularExpressions_Regex_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterInfo__
   name: HasParameter
   nameWithType: ElementServices.HasParameter
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
-  parent: DynamoForRevitUtils.Entities.ParametersHandlers
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
-  name: AccessParameterInfo
-  nameWithType: AccessParameterInfo
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
 - uid: System.Text.RegularExpressions.Regex
   commentId: T:System.Text.RegularExpressions.Regex
   parent: System.Text.RegularExpressions
@@ -2031,6 +2023,14 @@ references:
   name: Regex
   nameWithType: Regex
   fullName: System.Text.RegularExpressions.Regex
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html
+  name: AccessParameterInfo
+  nameWithType: AccessParameterInfo
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true

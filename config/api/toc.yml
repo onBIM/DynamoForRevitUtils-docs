@@ -83,14 +83,11 @@ items:
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
     name: AccessParameterInfo
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute
-    name: AssociatedElementParameterAttribute
-    type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
     name: ElementParameter
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor
-    name: ElementParameterAccessor
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
+    name: ElementParameterAccessor<TParamMap>
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
     name: ElementParameterMapItem
@@ -98,6 +95,9 @@ items:
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1
     name: ElementParameterMap<T>
     type: Class
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
+    name: IElementParameterMap
+    type: Interface
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters
   name: DynamoForRevitUtils.Entities.PickSelectionFilters
   type: Namespace
@@ -121,17 +121,14 @@ items:
   name: DynamoForRevitUtils.Entities.Wrappers
   type: Namespace
   items:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper
-    name: ElementWrapper
+  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+    name: ElementWrapper<TParamMap>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper
-    name: FamilyInstanceWrapper
+  - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+    name: FamilyInstanceWrapper<TParamMap>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
-    name: IElementParameterMap
-    type: Interface
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
-    name: IElementWrapper
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+    name: IElementWrapper<TParamMap>
     type: Interface
 - uid: DynamoForRevitUtils.Enumerations
   name: DynamoForRevitUtils.Enumerations

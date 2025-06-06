@@ -149,7 +149,7 @@ items:
     </p>
   example: []
   syntax:
-    content: public ForgeTypeId UnitTypeOrSpecId { get; set; }
+    content: public ForgeTypeId? UnitTypeOrSpecId { get; set; }
     parameters: []
     return:
       type: Autodesk.Revit.DB.ForgeTypeId

@@ -390,7 +390,7 @@ indicating the data type that the parameter is expected to hold.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Definition Definition { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Definition? Definition { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -414,7 +414,7 @@ indicating the data type that the parameter is expected to hold.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Document Document { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Document? Document { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -438,7 +438,7 @@ indicating the data type that the parameter is expected to hold.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ElementId Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ElementId? Id { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -534,7 +534,7 @@ indicating the data type that the parameter is expected to hold.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Element OwnerElement { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Element? OwnerElement { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -558,7 +558,7 @@ indicating the data type that the parameter is expected to hold.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Parameter RevitParameter { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Parameter? RevitParameter { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -859,6 +859,77 @@ a message describing the result, and the overall success or failure of the unit 
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">GetValueFromRevitParameter(AccessElementParameterOptions)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the value of a Revit parameter based on the provided options and the parameter's data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessParameterInfo GetValueFromRevitParameter(AccessElementParameterOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>An instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a>
+that specifies how the Revit parameter value should be accessed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a></td>
+        <td><p>Returns an <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a> object containing the status,
+result, and description of the parameter access operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SetValueToRevitParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_SetValueToRevitParameter" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter">SetValueToRevitParameter()</h4>
+  <div class="markdown level1 summary"><p>Sets the value of a Revit parameter based on the provided options and the parameter's data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessParameterInfo SetValueToRevitParameter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a></td>
+        <td><p>Returns an <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo.html">AccessParameterInfo</a> object containing the status,
+result, and description of the parameter value setting operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_ToString_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_ToString" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>

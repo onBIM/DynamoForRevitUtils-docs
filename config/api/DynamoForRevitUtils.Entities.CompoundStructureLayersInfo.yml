@@ -46,7 +46,6 @@ items:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities
   summary: Class for storing information about <xref href="Autodesk.Revit.DB.WallType" data-throw-if-not-resolved="false"></xref> layers
-  remarks: '<p>Reference: https://apidocs.co/apps/revit/2020/dc1a081e-8dab-565f-145d-a429098d353c.htm</p>'
   example: []
   syntax:
     content: >-
@@ -57,6 +56,10 @@ items:
       <IsVisibleInDynamoLibrary(False)>
 
       Public Class CompoundStructureLayersInfo
+  seealso:
+  - linkType: HRef
+    linkId: https://apidocs.co/apps/revit/2026/dc1a081e-8dab-565f-145d-a429098d353c.htm#
+    altText: Revit API Docs - CompoundStructure Class
   inheritance:
   - System.Object
   inheritedMembers:

@@ -1,0 +1,800 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  id: FamilyInstanceWrapper`1
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  children:
+  - DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
+  - DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstanceWrapper<TParamMap>
+  nameWithType: FamilyInstanceWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>
+  type: Class
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents an abstract wrapper class for Revit family instances.
+  example: []
+  syntax:
+    content: >-
+      [IsVisibleInDynamoLibrary(false)]
+
+      public abstract class FamilyInstanceWrapper<TParamMap> : ElementWrapper<TParamMap>, IElementWrapper<TParamMap> where TParamMap : IElementParameterMap
+    typeParameters:
+    - id: TParamMap
+    content.vb: >-
+      <IsVisibleInDynamoLibrary(False)>
+
+      Public MustInherit Class FamilyInstanceWrapper(Of TParamMap As IElementParameterMap) Inherits ElementWrapper(Of TParamMap) Implements IElementWrapper(Of TParamMap)
+  inheritance:
+  - System.Object
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  implements:
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TParamMap}}
+  inheritedMembers:
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.Element
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterMap
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterAccessor
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  attributes:
+  - type: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute
+    ctor: Autodesk.DesignScript.Runtime.IsVisibleInDynamoLibraryAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap)
+  name.vb: FamilyInstanceWrapper(Of TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
+  commentId: M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
+  id: '#ctor(Autodesk.Revit.DB.FamilyInstance,`0)'
+  parent: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstanceWrapper(FamilyInstance, TParamMap)
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(FamilyInstance, TParamMap)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(Autodesk.Revit.DB.FamilyInstance, TParamMap)
+  type: Constructor
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Constructs a new instance of <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected FamilyInstanceWrapper(FamilyInstance famInst, TParamMap parameterMap)
+    parameters:
+    - id: famInst
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601.FamilyInstance" data-throw-if-not-resolved="false"></xref> to be wrapped.
+    - id: parameterMap
+      type: '{TParamMap}'
+      description: The parameter associated with the family instance.
+    content.vb: Protected Sub New(famInst As FamilyInstance, parameterMap As TParamMap)
+  overload: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">famInst</code> is null.
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New(FamilyInstance, TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New(Autodesk.Revit.DB.FamilyInstance, TParamMap)
+  name.vb: New(FamilyInstance, TParamMap)
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  id: FamilyInstance
+  parent: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents the wrapped <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601.FamilyInstance" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public FamilyInstance FamilyInstance { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.FamilyInstance
+    content.vb: Public ReadOnly Property FamilyInstance As FamilyInstance
+  overload: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+references:
+- uid: DynamoForRevitUtils.Entities.Wrappers
+  commentId: N:DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.Wrappers
+  nameWithType: DynamoForRevitUtils.Entities.Wrappers
+  fullName: DynamoForRevitUtils.Entities.Wrappers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  name: ElementWrapper<TParamMap>
+  nameWithType: ElementWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>
+  nameWithType.vb: ElementWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap)
+  name.vb: ElementWrapper(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+    name: ElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+    name: ElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TParamMap}}
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0}
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  definition: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  name: IElementWrapper<TParamMap>
+  nameWithType: IElementWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
+  nameWithType.vb: IElementWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
+  name.vb: IElementWrapper(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+    name: IElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+    name: IElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.Element
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element
+  name: Element
+  nameWithType: ElementWrapper<TParamMap>.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
+  nameWithType.vb: ElementWrapper(Of TParamMap).Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterMap
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.ParameterMap
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap
+  name: ParameterMap
+  nameWithType: ElementWrapper<TParamMap>.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterAccessor
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.ParameterAccessor
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor
+  name: ParameterAccessor
+  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  name: ElementWrapper<TParamMap>
+  nameWithType: ElementWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>
+  nameWithType.vb: ElementWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap)
+  name.vb: ElementWrapper(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+    name: ElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
+    name: ElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  name: IElementWrapper<TParamMap>
+  nameWithType: IElementWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
+  nameWithType.vb: IElementWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
+  name.vb: IElementWrapper(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+    name: IElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
+    name: IElementWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element
+  name: Element
+  nameWithType: ElementWrapper<TParamMap>.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
+  nameWithType.vb: ElementWrapper(Of TParamMap).Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap
+  name: ParameterMap
+  nameWithType: ElementWrapper<TParamMap>.ParameterMap
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor
+  name: ParameterAccessor
+  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
+  name: FamilyInstanceWrapper<TParamMap>
+  nameWithType: FamilyInstanceWrapper<TParamMap>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap)
+  name.vb: FamilyInstanceWrapper(Of TParamMap)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+    name: FamilyInstanceWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
+  - name: <
+  - name: TParamMap
+  - name: '>'
+  spec.vb:
+  - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
+    name: FamilyInstanceWrapper
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TParamMap
+  - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance
+  name: FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_
+  name: FamilyInstanceWrapper
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New
+  name.vb: New
+- uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: '{TParamMap}'
+  commentId: '!:TParamMap'
+  definition: TParamMap
+  name: TParamMap
+  nameWithType: TParamMap
+  fullName: TParamMap
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: TParamMap
+  name: TParamMap
+  nameWithType: TParamMap
+  fullName: TParamMap
+- uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance
+  name: FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance

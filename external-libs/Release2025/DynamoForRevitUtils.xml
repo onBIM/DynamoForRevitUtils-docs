@@ -216,9 +216,9 @@
             <summary>
             Class for storing information about <see cref="T:Autodesk.Revit.DB.WallType"/> layers
             </summary>
-            <remarks>
-            <para>Reference: https://apidocs.co/apps/revit/2020/dc1a081e-8dab-565f-145d-a429098d353c.htm</para>
-            </remarks>
+            <seealso href="https://apidocs.co/apps/revit/2026/dc1a081e-8dab-565f-145d-a429098d353c.htm#">
+            Revit API Docs - CompoundStructure Class
+            </seealso>
         </member>
         <member name="P:DynamoForRevitUtils.Entities.CompoundStructureLayersInfo.Structure">
             <summary>
@@ -641,22 +641,6 @@
             The result of the parameter access operation.
             </param>
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute">
-            <summary>
-            Attribute used to create a bound between an <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> property
-            and a <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap"/> property
-            </summary>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.PropertyName">
-            <summary>
-            Gets the name of the parameter property associated with the property.
-            </summary>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.#ctor(System.String)">
-            <summary>
-            Creates a new instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute"/>
-            </summary>
-        </member>
         <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter">
             <summary>
             Represents a parameter of a Revit element within the Dynamo for Revit utilities.
@@ -885,138 +869,178 @@
         <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString">
             <inheritdoc/>
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">
             <summary>
-            Class used to access properties from a <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>
+                Retrieves the value of a Revit parameter based on the provided options and the parameter's data type.
+            </summary>
+            <param name="options">
+                An instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions"/>
+                that specifies how the Revit parameter value should be accessed.
+            </param>
+            <returns>
+                Returns an <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo"/> object containing the status,
+                result, and description of the parameter access operation.
+            </returns>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter">
+            <summary>
+                Sets the value of a Revit parameter based on the provided options and the parameter's data type.
+            </summary>
+            <returns>
+                Returns an <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo"/> object containing the status,
+                result, and description of the parameter value setting operation.
+            </returns>
+        </member>
+        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1">
+            <summary>
+            Class used to access parameters on Revit elements, using the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
             </summary>
             <remarks>
-            <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/> must have properties with <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute"/>
-            to map the property to the correspondent <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.
+            <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> must have properties of Type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> with same names
+            as properties on the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>
             </remarks>
             <example>
+            How to use on getters and setters of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/> properties.
             <code type="csharp">
-            [AssociatedParameterPropertyName(nameof(ViewCommonParameters.DetailNumber))]
             public string DetailNumber {
-                get => ViewWrapper.ElementParameterAccessor.GetStringValue();
-                set => ViewWrapper.ElementParameterAccessor.SetValue(value);
+                get => ParameterAccessor.GetStringValue();
+                set => ParameterAccessor.SetValue(value);
             }
             </code>
             </example>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.#ctor(DynamoForRevitUtils.Entities.Wrappers.ElementWrapper)">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})">
             <summary>
-            Creates a new instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor"/> using the given FamilyInstanceWrapper.
+            Creates a new instance of ElementParameterAccessor using the given FamilyInstanceWrapper.
             </summary>
             <param name="elementWrapper">The FamilyInstanceWrapper to get parameters from.</param>
             <exception cref="T:System.ArgumentNullException">Thrown when the familyInstanceWrapper is null.</exception>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetDoubleValue(System.String)">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)">
             <summary>
-            Retrieves the double value of a property using its name to get the correspondent
-            <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> class.
+                Retrieves the <see cref="T:System.Double"/> value of parameter in Revit Element, converted to display units,
+                by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
             </summary>
-            <param name="propertyName">The name of the property.</param>
+            <param name="propertyName">
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
+            </param>
             <remarks>
-            <b>Property name must be the same as the parameter name without the suffix "Parameter".</b>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
             </remarks>
-            <returns>The value of the property as a double.</returns>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetStringValue(System.String)">
-            <summary>
-            Retrieves the string value of a property using its name to get the correspondent
-            <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> class.
-            </summary>
-            <param name="propertyName">The name of the property.</param>
-            <remarks>
-            <b>Property name must be the same as the parameter name without the suffix "Parameter".</b>
-            </remarks>
-            <returns>The value of the property as a double.</returns>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetElementIdValue(System.String)">
-            <summary>
-            Retrieves the element ID value for a specified property of the given Revit instance.
-            </summary>
-            <param name="propertyName">The name of the property to get the element ID value from. If not specified, the caller's name is used.</param>
-            <returns>The element ID value associated with the specified property, or null if the property does not exist or has no associated element ID.</returns>
-            <remarks>
-            <b>Property name must be the same as the parameter name without the suffix "Parameter".</b>
-            </remarks>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetIntegerValue(System.String)">
-            <summary>
-            Retrieves the integer value of a specified property using the associated Revit parameter.
-            </summary>
-            <param name="propertyName">The name of the property to retrieve the integer value for. This is optional and defaults to the caller's name.</param>
-            <returns>The integer value of the specified property based on its Revit parameter.</returns>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.GetBoolValue(System.String)">
-            <summary>
-            Retrieves the boolean value of the parameter mapped to the given property name.
-            </summary>
-            <param name="propertyName">The name of the property associated with the parameter. Defaults to the caller member name if not provided.</param>
             <returns>
-            A boolean value indicating the parameter's value. Returns true if the integer representation of the parameter equals 1, otherwise false.
+                <see cref="T:System.Double"/> value retrivied from Revit Element parameter, converted to display units.
             </returns>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue(System.Double,Autodesk.Revit.DB.ForgeTypeId,System.String)">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)">
             <summary>
-            Sets a double value to the parameter associated with the specified property.
+                Retrieves the <see cref="T:System.String"/> value of parameter in Revit Element,
+                by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
             </summary>
-            <param name="value">The double value to set on the parameter.</param>
-            <param name="specTypeId">
-            <see cref="T:Autodesk.Revit.DB.SpecTypeId"/> used to convert the value to the correct unit.
-            </param>
             <param name="propertyName">
-            The name of the property to which the value will be set.
-            Defaults to the caller member's name if not provided.
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
             </param>
-            <exception cref="T:System.InvalidOperationException">The parameter is read-only</exception>
+            <remarks>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
+            </remarks>
+            <returns>
+                <see cref="T:System.String"/> value retrivied from Revit Element parameter.
+            </returns>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue(System.String,System.String)">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)">
             <summary>
-            Sets the string value of a parameter associated with the specified property.
+                Retrieves the <see cref="T:Autodesk.Revit.DB.ElementId"/> value of parameter in Revit Element,
+                by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
             </summary>
-            <param name="value">The string value to set.</param>
             <param name="propertyName">
-            The name of the property associated with the parameter. This is optional and will be
-            automatically provided by the caller's member name if not explicitly specified.
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
             </param>
+            <remarks>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
+            </remarks>
+            <returns>
+                <see cref="T:Autodesk.Revit.DB.ElementId"/> value retrivied from Revit Element parameter.
+            </returns>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)">
+            <summary>
+                Retrieves the <see cref="T:System.Int32"/> value of parameter in Revit Element,
+                by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
+            </summary>
+            <param name="propertyName">
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
+            </param>
+            <remarks>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
+            </remarks>
+            <returns>
+                <see cref="T:System.Int32"/> value retrivied from Revit Element parameter.
+            </returns>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)">
+            <summary>
+                Retrieves the <see cref="T:System.Boolean"/> value of parameter in Revit Element,
+                by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
+            </summary>
+            <param name="propertyName">
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
+            </param>
+            <remarks>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
+            </remarks>
+            <returns>
+                <see cref="T:System.Boolean"/> value retrivied from Revit Element parameter.
+            </returns>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)">
+            <summary>
+                Sets the value of parameter in Revit Element, automatically
+                converting from display units to internal, by using <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class.
+            </summary>
+            <param name="value">
+                Value to be set on parameter.
+            </param>
+            <param name="propertyName">
+                The name of corresponding property on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> class
+            </param>
+            <remarks>
+            <para>
+                It is recommended that the property name on <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> be the same as the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, but this is not required. If the property name on
+                <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1"/> is different from the property on
+                <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>, then you need to specify it.
+            </para>
+            </remarks>
             <exception cref="T:System.InvalidOperationException">
-            The parameter is read-only, or the parameter is not a shared parameter,
-            or the shared parameter has HideWhenNoValue set to false.
+                The parameter is read-only
             </exception>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue(Autodesk.Revit.DB.ElementId,System.String)">
-            <summary>
-            Sets the ElementId value of a parameter associated with the specified property.
-            </summary>
-            <param name="value">The ElementId to set on the parameter.</param>
-            <param name="propertyName">
-            The name of the property associated with the parameter.
-            The default is the caller's name.
-            </param>
-            <exception cref="T:System.InvalidOperationException">The parameter is read-only</exception>
-            <exception cref="T:System.ArgumentNullException">Value must be a finite number.</exception>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue(System.Int32,System.String)">
-            <summary>
-            Sets the integer value of the parameter associated with the specified property.
-            </summary>
-            <param name="value">The integer value to set.</param>
-            <param name="propertyName">
-            The name of the property whose associated parameter will be set.
-            If null, the caller member name will be used.
-            </param>
-            <exception cref="T:System.ArgumentNullException">Thrown when the property name is null or empty.</exception> 
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.SetValue(System.Boolean,System.String)">
-            <summary>
-            Sets the value of a property tied to a <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> on the associated <see cref="F:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor._elementWrapper"/>.
-            </summary>
-            <param name="value">The value to be set for the specified property.</param>
-            <param name="propertyName">The name of the property to set the value for. If not explicitly provided, it will use the caller's name.</param>
-            <exception cref="T:System.ArgumentNullException">Thrown when the propertyName is null or empty.</exception>
-            <exception cref="T:System.InvalidOperationException">Thrown if the property cannot be mapped to a valid parameter in <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.</exception>
+            <exception cref="T:System.InvalidOperationException">
+                <see cref="T:Autodesk.Revit.DB.SpecTypeId"/> of the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> is null.
+            </exception>
         </member>
         <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1">
             <summary>
@@ -1052,6 +1076,32 @@
             This property is used in mapping items to associate a specific property with an
             instance of <see cref="P:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem.ElementParameter"/>.
             </summary>
+        </member>
+        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap">
+            <summary>
+            Represents a mapping between property names and their corresponding element parameters.
+            </summary>
+            <remarks>
+            This interface provides functionality to retrieve a collection of mappings that
+            represent the relationship between property names and element parameters.
+            It is intended to be implemented by classes to handle specific mappings.
+            </remarks>
+        </member>
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems">
+            <summary>
+            Retrieves a collection of items that represent the mapping between property names
+            and corresponding element parameters in an element parameter map.
+            </summary>
+            <returns>
+            A collection of `ElementParameterMapItem` representing the mappings.
+            </returns>
+            <remarks>
+            The method inspects the properties of the implementing type to identify
+            properties of type `ElementParameter` and adds them to the list of map items.
+            </remarks>
+            <exception cref="T:System.Exception">
+            Throw if no properties of type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> are found.
+            </exception>
         </member>
         <member name="T:DynamoForRevitUtils.Entities.PickSelectionFilters.CategorySelectionFilter">
             <summary>
@@ -1515,94 +1565,111 @@
         <member name="M:DynamoForRevitUtils.Entities.WallElevation.ToString">
             <inheritdoc />
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper">
+        <member name="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1">
             <summary>
                 Represents an abstract base class for wrapping Revit elements.
             </summary>
             <remarks>
             <para>
-                Use this class in conjunction with the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> and 
-            <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute" /> to enhance the way you access element parameters.
+                Use this class in conjunction with the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1" />
+                to enhance the way you access element parameters.
             </para>
             <para>
-                The <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> class represents the Revit Element and the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" />
-                represents the parameters of this element.
+                The <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" /> class represents the Revit Element
+                and the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1" /> represents the parameters of this element.
             </para>
             <para>
                 To use these classes together, proceed as follows:
             <list type="number">
                 <item>
-                    Create a class derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> to represent specific characteristics
+                    Create a class derived from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" /> to represent specific characteristics
                     of the elements you want to represent.
                 </item>
                 <item>
-                    Create properties of type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" /> in classes derived
-                    from <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" /> to represent element parameters.
+                    Create properties in <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" /> with primitive Types or
+                    <see cref="T:Autodesk.Revit.DB.ElementId" /> Type to represent the elements data.
+                </item>.
+                <item>
+                    Create properties of Type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" /> in a class derived
+                    from <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1" />. It is recommended that properties have the
+                    same names as in <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" /> created on step one, but it is not required.
                 </item>
                 <item>
-                    Use the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute" /> attribute to create a bound between
-                    properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> with the properties of the  <see cref="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap" />
-                </item>
-                <item>
-                    Use <see cref="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterAccessor" /> in getters/setters of properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" />
-                    to get/set the values of the parameters, directly from/to the element instances in Revit.
-                </item>
+                    Use <see cref="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor" /> within the getters and setters of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" />
+                    properties to retrieve and assign parameter values directly from and to Revit element instances.
+                </item>/
             </list>
                 This way you will no longer need to worry about fetching parameters from elements every time
                 you need to get/set their values.
-                Use the properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper" /> normally and their values
+                Use the properties of the <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" /> normally and their values
                 will be automatically get/set from/to the element instances in Revit.
             </para>
             </remarks>
             <example name="ElementWrapper">
         <code language="csharp">
-            [IsVisibleInDynamoLibrary(false)]
-            public class CableTrayWrapper : ElementWrapper
+            public class CableTrayFittingWrapper : ElementWrapper&lt;CableTrayFittingParameters&gt;
             {
-                internal CableTrayWrapper(
-                    Element element,
-                    params IEnumerable&lt;IElementParameterMap&gt; parameters
-                ) : base(element, parameters) { }
-    
-                [AssociatedElementParameter(nameof(CableTrayParameters.Comments))]
+                internal CableTrayFittingWrapper(
+                    Autodesk.Revit.DB.Element element,
+                    CableTrayFittingParameters parameterMap
+                ) : base(element, parameterMap) { }
+            
                 public string Comments {
                     get =&gt; ParameterAccessor.GetStringValue();
                     set =&gt; ParameterAccessor.SetValue(value);
                 }
     
-                [AssociatedElementParameter(nameof(CableTrayParameters.IDR))]
                 public bool IDR {
                     get =&gt; ParameterAccessor.GetBoolValue();
                     set =&gt; ParameterAccessor.SetValue(value);
                 }
     
-                [AssociatedElementParameter(nameof(CableTrayParameters.Elevation))]
                 public double Elevation {
                     get =&gt; ParameterAccessor.GetDoubleValue();
-                    set =&gt; ParameterAccessor.SetValue(value, SpecTypeId.Length);
+                    set =&gt; ParameterAccessor.SetValue(value);
+                }
+    
+                // Point to a property with other name in the CableTrayFittingParameters
+                public ElementId EleId {
+                    get =&gt; ParameterAccessor.GetElementIdValue(
+                        nameof(CableTrayFittingParameters.EleIdParam)
+                    );
+                    set =&gt; ParameterAccessor.SetValue(
+                        value, 
+                        nameof(CableTrayFittingParameters.EleIdParam)
+                    );
                 }
             }
         </code>
     </example>
             <example name="ElementParameterMap">
         <code language="csharp">
-            public class CableTrayParameters : ElementParameterMap&lt;CableTrayParameters&gt;
+            public class CableTrayFittingParameters : ElementParameterMap&lt;CableTrayFittingParameters&gt;
             {
-                // Properties should be public. Recommended to be init.
-                public ElementParameter Comments { get; init; }
+                // It is recommended that properties in this class 
+                // have the same name to corresponding 
+                // properties of ElementWrapper, but is not required.
     
-                public ElementParameter IDR { get; init; }
+                // Notice the Type of properties here must be of Type ElementParameter
+
+                public ElementParameter DiffPropName { get; set; }
     
-                public ElementParameter Elevation { get; init; }
+                public ElementParameter IDR { get; set; }
     
-                // Constructor made private to not appear in Dynamo Library
-                private CableTrayParameters() { }
+                public ElementParameter Elevation { get; set; }
+            
+                public ElementParameter EleIdParam { get; set; }
+            
+                // Constructor made internal to not appear in Dynamo Library, 
+                // but still accessible from other classes.
+                internal CableTrayFittingParameters() { }
     
-                // Static constructor shown as Dynamo Node in Library
-                public static CableTrayParameters Create(
+                // Static constructor shown as Dynamo Node in Library.
+                // Used to allow users customize parameters used.
+                public static CableTrayFittingParameters Create(
                     ElementParameter comments,
                     ElementParameter idr,
-                    ElementParameter elevation
+                ElementParameter elevation
                 ) =&gt; new()
                 {
                     Comments = comments,
@@ -1613,87 +1680,59 @@
         </code>
     </example>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.#ctor(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})">
+        <member name="M:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor(Autodesk.Revit.DB.Element,`0)">
             <summary>
-            Constructs a new instance of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper"/>.
+            Constructs a new instance of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1"/>.
             </summary>
-            <param name="element">The <see cref="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.Element"/> to be wrapped.</param>
-            <param name="parameterMaps">The parameter indexers associated with the element.</param>
+            <param name="element">The <see cref="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element"/> to be wrapped.</param>
+            <param name="parameterMap">The parameter indexers associated with the element.</param>
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.Element">
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element">
             <inheritdoc />
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterMaps">
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap">
             <inheritdoc />
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper.ParameterAccessor">
-            <inheritdoc />
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor">
+            <summary>
+            Provides access to manipulate and retrieve parameter values of a
+            Revit element through the associated element wrapper.
+            </summary>
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper">
+        <member name="T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1">
             <summary>
             Represents an abstract wrapper class for Revit family instances.
             </summary>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.#ctor(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap})">
+        <member name="M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)">
             <summary>
-            Constructs a new instance of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper"/>.
+            Constructs a new instance of <see cref="T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1"/>.
             </summary>
-            <param name="famInst">The <see cref="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.FamilyInstance"/> to be wrapped.</param>
-            <param name="parameterMaps">The parameter associated with the family instance.</param>
+            <param name="famInst">The <see cref="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance"/> to be wrapped.</param>
+            <param name="parameterMap">The parameter associated with the family instance.</param>
             <exception cref="T:System.ArgumentNullException">
             Thrown when <paramref name="famInst"/> is null.
             </exception>
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.FamilyInstance">
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance">
             <summary>
-            Represents the wrapped <see cref="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper.FamilyInstance"/>.
+            Represents the wrapped <see cref="P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance"/>.
             </summary>
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap">
-            <summary>
-            Represents a mapping between property names and their corresponding element parameters.
-            </summary>
-            <remarks>
-            This interface provides functionality to retrieve a collection of mappings that
-            represent the relationship between property names and element parameters.
-            It is intended to be implemented by classes to handle specific mappings.
-            </remarks>
-        </member>
-        <member name="M:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems">
-            <summary>
-            Retrieves a collection of items that represent the mapping between property names
-            and corresponding element parameters in an element parameter map.
-            </summary>
-            <returns>
-            A collection of `ElementParameterMapItem` representing the mappings.
-            </returns>
-            <remarks>
-            The method inspects the properties of the implementing type to identify
-            properties of type `ElementParameter` and adds them to the list of map items.
-            </remarks>
-            <exception cref="T:System.Exception">
-            Throw if no properties of type <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> are found.
-            </exception>
-        </member>
-        <member name="T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper">
+        <member name="T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1">
             <summary>
             Represents an interface for wrapping Revit elements.
             </summary>
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element">
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element">
             <summary>
             Represents the Revit Element associated with this wrapper object.
             </summary>
         </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps">
+        <member name="P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap">
             <summary>
-            Parameter indexers associated with the element.
-            </summary>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor">
-            <summary>
-            Provides access to manipulate and retrieve parameter values of a
-            Revit element through the associated element wrapper.
+            Provides access to the mapping between property names and their associated parameters
+            of the Revit element within this wrapper object.
             </summary>
         </member>
         <member name="T:DynamoForRevitUtils.Enumerations.AccessParameterMode">
@@ -3405,7 +3444,7 @@
             <param name="view"></param>
             <param name="overrideGraphicSettings"></param>
         </member>
-        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@,System.Text.RegularExpressions.Regex)">
+        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,System.Text.RegularExpressions.Regex,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo@)">
             <summary>
                 Check if an Element has a parameter by passing a <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> and
                 directly comparing <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.<see cref="P:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Name"/> with Element

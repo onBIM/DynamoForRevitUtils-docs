@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class EnumParser | DynamoForRevitUtils - Docs </title>
+      <title>Class FamilyInstanceWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class EnumParser | DynamoForRevitUtils - Docs ">
+      <meta name="title" content="Class FamilyInstanceWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs ">
       <meta name="generator" content="docfx ">
   
       <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
@@ -93,21 +93,35 @@
                         </div>
 
 
-                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser">
+                    <article class="content wrap" id="_content" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1">
 
 
 
-  <h1 id="DynamoForRevitUtils_Services_Enumerations_EnumParser" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser" class="text-break">Class EnumParser</h1>
-  <div class="markdown level0 summary"><p>Class containing Enum Parsers</p>
+  <h1 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1" class="text-break">Class FamilyInstanceWrapper&lt;TParamMap&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents an abstract wrapper class for Revit family instances.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">EnumParser</span></div>
+    <div class="level1"><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper</a>&lt;TParamMap&gt;</div>
+    <div class="level2"><span class="xref">FamilyInstanceWrapper&lt;TParamMap&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TParamMap&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element">ElementWrapper&lt;TParamMap&gt;.Element</a>
+    </div>
+    <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap">ElementWrapper&lt;TParamMap&gt;.ParameterMap</a>
+    </div>
+    <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor">ElementWrapper&lt;TParamMap&gt;.ParameterAccessor</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
@@ -130,23 +144,38 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Services.html">Services</a>.<a class="xref" href="DynamoForRevitUtils.Services.Enumerations.html">Enumerations</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Entities.html">Entities</a>.<a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.html">Wrappers</a></h6>
   <h6><strong>Assembly</strong>: DynamoForRevitUtils.dll</h6>
-  <h5 id="DynamoForRevitUtils_Services_Enumerations_EnumParser_syntax">Syntax</h5>
+  <h5 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
-public static class EnumParser</code></pre>
+public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt;TParamMap&gt;, IElementWrapper&lt;TParamMap&gt; where TParamMap : IElementParameterMap</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TParamMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
 </h3>
-  <a id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*"></a>
-  <h4 id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue_System_String_System_String_System_String_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(System.String,System.String,System.String)">ByValue(string, string, string)</h4>
-  <div class="markdown level1 summary"><p>Generic Enum parser for enums used in Dropdown NodeModel</p>
+  <a id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)">FamilyInstanceWrapper(FamilyInstance, TParamMap)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html">FamilyInstanceWrapper&lt;TParamMap&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object ByValue(string enumTypeFullName, string enumAssemblyPath, string value)</code></pre>
+    <pre><code class="lang-csharp hljs">protected FamilyInstanceWrapper(FamilyInstance famInst, TParamMap parameterMap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -159,39 +188,15 @@ public static class EnumParser</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">enumTypeFullName</span></td>
-        <td><p>Enum Type full name. Could be obtained using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type.fullname">FullName</a> property.</p>
-<i>Example:</i> <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator">typeof</a>(<span class="xref">Autodesk.Revit.DB.StorageType</span>).<code>FullName</code>
+        <td><span class="xref">FamilyInstance</span></td>
+        <td><span class="parametername">famInst</span></td>
+        <td><p>The <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance">FamilyInstance</a> to be wrapped.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">enumAssemblyPath</span></td>
-        <td><p>Enum Assembly path. Could be obtained using <span class="xref">Autodesk.Revit.DB.Location</span> property.</p>
-<i>Example:</i> <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator">typeof</a>(<span class="xref">Autodesk.Revit.DB.StorageType</span>).<code>FullName</code>.<code>Location</code>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value to parse</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><p>Enum value as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+        <td><span class="xref">TParamMap</span></td>
+        <td><span class="parametername">parameterMap</span></td>
+        <td><p>The parameter associated with the family instance.</p>
 </td>
       </tr>
     </tbody>
@@ -206,41 +211,24 @@ public static class EnumParser</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><p>Thrown when is not possible to load enum Assembly, Type or field.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when <code class="paramref">famInst</code> is null.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*"></a>
-  <h4 id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue__1_System_Object_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.Object)">ByValue&lt;T&gt;(object)</h4>
-  <div class="markdown level1 summary"><p>Generic parser for enums by object value</p>
-<a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
+  <h3 id="properties">Properties
+</h3>
+  <a id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance">FamilyInstance</h4>
+  <div class="markdown level1 summary"><p>Represents the wrapped <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance">FamilyInstance</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T ByValue&lt;T&gt;(object value) where T : struct, IFormattable, IComparable, IConvertible</code></pre>
+    <pre><code class="lang-csharp hljs">public FamilyInstance FamilyInstance { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Enum value to be casted</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -250,103 +238,19 @@ public static class EnumParser</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">FamilyInstance</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Enum Type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*"></a>
-  <h4 id="DynamoForRevitUtils_Services_Enumerations_EnumParser_ByValue__1_System_String_" data-uid="DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue``1(System.String)">ByValue&lt;T&gt;(string)</h4>
-  <div class="markdown level1 summary"><p>Generic parser for enums by string value</p>
-<a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T ByValue&lt;T&gt;(string value) where T : struct, IConvertible, IComparable, IFormattable</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper&lt;TParamMap&gt;</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_">ObjectServices.TryCast&lt;T&gt;(object)</a>
+  </div>
 
 </article>
                 </div>

@@ -45,7 +45,7 @@ items:
   inheritance:
   - System.Object
   implements:
-  - DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+  - DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -100,7 +100,7 @@ items:
     commentId: T:System.Exception
     description: Throw if no properties of type <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> are found.
   implements:
-  - DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems
+  - DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems
   nameWithType.vb: ElementParameterMap(Of T).GetItems()
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap(Of T).GetItems()
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1.#ctor
@@ -173,14 +173,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
-  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
-  parent: DynamoForRevitUtils.Entities.Wrappers
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html
   name: IElementParameterMap
   nameWithType: IElementParameterMap
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -448,43 +448,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: DynamoForRevitUtils.Entities.Wrappers
-  commentId: N:DynamoForRevitUtils.Entities.Wrappers
-  isExternal: true
-  href: DynamoForRevitUtils.html
-  name: DynamoForRevitUtils.Entities.Wrappers
-  nameWithType: DynamoForRevitUtils.Entities.Wrappers
-  fullName: DynamoForRevitUtils.Entities.Wrappers
-  spec.csharp:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities
-    name: Entities
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities.Wrappers
-    name: Wrappers
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.html
-  spec.vb:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities
-    name: Entities
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities.Wrappers
-    name: Wrappers
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.html
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   isExternal: true
@@ -594,26 +557,26 @@ references:
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap<T>.GetItems
   nameWithType.vb: ElementParameterMap(Of T).GetItems
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap(Of T).GetItems
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems
-  commentId: M:DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems
-  parent: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
   isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html#DynamoForRevitUtils_Entities_Wrappers_IElementParameterMap_GetItems
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html#DynamoForRevitUtils_Entities_ParametersHandlers_IElementParameterMap_GetItems
   name: GetItems()
   nameWithType: IElementParameterMap.GetItems()
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems()
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems()
   spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems
     name: GetItems
     isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html#DynamoForRevitUtils_Entities_Wrappers_IElementParameterMap_GetItems
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html#DynamoForRevitUtils_Entities_ParametersHandlers_IElementParameterMap_GetItems
   - name: (
   - name: )
   spec.vb:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.GetItems
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.GetItems
     name: GetItems
     isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html#DynamoForRevitUtils_Entities_Wrappers_IElementParameterMap_GetItems
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap.html#DynamoForRevitUtils_Entities_ParametersHandlers_IElementParameterMap_GetItems
   - name: (
   - name: )
 - uid: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem}

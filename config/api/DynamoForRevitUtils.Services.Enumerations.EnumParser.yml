@@ -65,7 +65,7 @@ items:
     <a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
   example: []
   syntax:
-    content: 'public static T ByValue<T>(string value) where T : struct, IComparable, IConvertible, IFormattable'
+    content: 'public static T ByValue<T>(string value) where T : struct, IConvertible, IComparable, IFormattable'
     parameters:
     - id: value
       type: System.String
@@ -76,7 +76,7 @@ items:
     return:
       type: '{T}'
       description: ''
-    content.vb: Public Shared Function ByValue(Of T As {Structure, IComparable, IConvertible, IFormattable})(value As String) As T
+    content.vb: Public Shared Function ByValue(Of T As {Structure, IConvertible, IComparable, IFormattable})(value As String) As T
   overload: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
   nameWithType.vb: EnumParser.ByValue(Of T)(String)
   fullName.vb: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue(Of T)(String)
@@ -101,7 +101,7 @@ items:
     <a href="https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum">https://stackoverflow.com/questions/79126/create-generic-method-constraining-t-to-an-enum</a>
   example: []
   syntax:
-    content: 'public static T ByValue<T>(object value) where T : struct, IComparable, IFormattable, IConvertible'
+    content: 'public static T ByValue<T>(object value) where T : struct, IFormattable, IComparable, IConvertible'
     parameters:
     - id: value
       type: System.Object
@@ -112,7 +112,7 @@ items:
     return:
       type: '{T}'
       description: ''
-    content.vb: Public Shared Function ByValue(Of T As {Structure, IComparable, IFormattable, IConvertible})(value As Object) As T
+    content.vb: Public Shared Function ByValue(Of T As {Structure, IFormattable, IComparable, IConvertible})(value As Object) As T
   overload: DynamoForRevitUtils.Services.Enumerations.EnumParser.ByValue*
   exceptions:
   - type: System.ArgumentException
