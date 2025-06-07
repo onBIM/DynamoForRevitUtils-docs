@@ -248,12 +248,14 @@ public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TPara
     public static CableTrayFittingParameters Create(
         ElementParameter comments,
         ElementParameter idr,
-    ElementParameter elevation
+        ElementParameter elevation,
+        ElementParameter eleId,
     ) =&gt; new()
     {
         Comments = comments,
         IDR = idr,
-        Elevation = elevation
+        Elevation = elevation,
+        EleIdParam = eleId,
     };
 }</code></pre>
 
