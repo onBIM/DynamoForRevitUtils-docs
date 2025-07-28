@@ -17,8 +17,8 @@ items:
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLineBasedDirection(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetLocationAsPoint(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetNearbyElements(Autodesk.Revit.DB.Element,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,System.Double)
-  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetRooms(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Architecture.Room})
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.GetSolids(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Options)
@@ -32,7 +32,7 @@ items:
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsModelInPlace(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.IsValidElement(Autodesk.Revit.DB.Element)
   - DynamoForRevitUtils.Services.RevitServices.ElementServices.SetElementsOverrides(System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.View,Autodesk.Revit.DB.OverrideGraphicSettings)
-  - DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  - DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
   langs:
   - csharp
   - vb
@@ -906,17 +906,17 @@ items:
   nameWithType.vb: ElementServices.HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
   fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.HasParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, System.Text.RegularExpressions.Regex, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo)
   name.vb: HasParameter(Element, ElementParameter, Regex, AccessParameterInfo)
-- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  id: GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  id: GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   isExtensionMethod: true
   parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
   langs:
   - csharp
   - vb
-  name: GetParameters(Element, IEnumerable<ElementParameter>, AccessElementParameterOptions)
-  nameWithType: ElementServices.GetParameters(Element, IEnumerable<ElementParameter>, AccessElementParameterOptions)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  name: GetParameters(Element, IEnumerable<ElementParameter>, AccessParameterOptions)
+  nameWithType: ElementServices.GetParameters(Element, IEnumerable<ElementParameter>, AccessParameterOptions)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -924,7 +924,7 @@ items:
   summary: Retrieves the parameters of a Revit element based on the specified list of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static IEnumerable<AccessParameterInfo> GetParameters(this Element element, IEnumerable<ElementParameter> elementParameters, AccessElementParameterOptions options)
+    content: public static IEnumerable<AccessParameterInfo> GetParameters(this Element element, IEnumerable<ElementParameter> elementParameters, AccessParameterOptions options)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
@@ -933,27 +933,27 @@ items:
       type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
       description: The array of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> instances that specify the parameters to retrieve.
     - id: options
-      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
       description: Options to get parameter.
     return:
       type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
       description: An enumerable collection of parameters matching the specified element parameters.
-    content.vb: Public Shared Function GetParameters(element As Element, elementParameters As IEnumerable(Of ElementParameter), options As AccessElementParameterOptions) As IEnumerable(Of AccessParameterInfo)
+    content.vb: Public Shared Function GetParameters(element As Element, elementParameters As IEnumerable(Of ElementParameter), options As AccessParameterOptions) As IEnumerable(Of AccessParameterInfo)
   overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters*
-  nameWithType.vb: ElementServices.GetParameters(Element, IEnumerable(Of ElementParameter), AccessElementParameterOptions)
-  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter), DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  name.vb: GetParameters(Element, IEnumerable(Of ElementParameter), AccessElementParameterOptions)
-- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  id: GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  nameWithType.vb: ElementServices.GetParameters(Element, IEnumerable(Of ElementParameter), AccessParameterOptions)
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter), DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  name.vb: GetParameters(Element, IEnumerable(Of ElementParameter), AccessParameterOptions)
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  id: GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   isExtensionMethod: true
   parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
   langs:
   - csharp
   - vb
-  name: GetParameter(Element, ElementParameter, AccessElementParameterOptions)
-  nameWithType: ElementServices.GetParameter(Element, ElementParameter, AccessElementParameterOptions)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  name: GetParameter(Element, ElementParameter, AccessParameterOptions)
+  nameWithType: ElementServices.GetParameter(Element, ElementParameter, AccessParameterOptions)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -962,7 +962,7 @@ items:
   remarks: Element could be a Instance or a Type.
   example: []
   syntax:
-    content: public static AccessParameterInfo GetParameter(this Element element, ElementParameter elementParameter, AccessElementParameterOptions options)
+    content: public static AccessParameterInfo GetParameter(this Element element, ElementParameter elementParameter, AccessParameterOptions options)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
@@ -971,24 +971,24 @@ items:
       type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
       description: Parameter to get
     - id: options
-      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
       description: Options to get parameter.
     return:
       type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
       description: Revit parameter from
-    content.vb: Public Shared Function GetParameter(element As Element, elementParameter As ElementParameter, options As AccessElementParameterOptions) As AccessParameterInfo
+    content.vb: Public Shared Function GetParameter(element As Element, elementParameter As ElementParameter, options As AccessParameterOptions) As AccessParameterInfo
   overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter*
-- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
-  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
-  id: SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+- uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  commentId: M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
+  id: SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})
   isExtensionMethod: true
   parent: DynamoForRevitUtils.Services.RevitServices.ElementServices
   langs:
   - csharp
   - vb
-  name: SetParameters(Element, AccessElementParameterOptions, params IEnumerable<ElementParameter>)
-  nameWithType: ElementServices.SetParameters(Element, AccessElementParameterOptions, params IEnumerable<ElementParameter>)
-  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions, params System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>)
+  name: SetParameters(Element, AccessParameterOptions, params IEnumerable<ElementParameter>)
+  nameWithType: ElementServices.SetParameters(Element, AccessParameterOptions, params IEnumerable<ElementParameter>)
+  fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions, params System.Collections.Generic.IEnumerable<DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter>)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -996,13 +996,13 @@ items:
   summary: Sets parameters for a specified Revit element based on the provided parameter collection and options.
   example: []
   syntax:
-    content: public static IEnumerable<AccessParameterInfo> SetParameters(this Element element, AccessElementParameterOptions options, params IEnumerable<ElementParameter> elementParameters)
+    content: public static IEnumerable<AccessParameterInfo> SetParameters(this Element element, AccessParameterOptions options, params IEnumerable<ElementParameter> elementParameters)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
       description: Revit element to set parameters on.
     - id: options
-      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
       description: Settings or options that determine how the parameters are applied to the element.
     - id: elementParameters
       type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter}
@@ -1010,11 +1010,11 @@ items:
     return:
       type: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
       description: A collection of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo" data-throw-if-not-resolved="false"></xref> objects containing details of the parameter setting results.
-    content.vb: Public Shared Function SetParameters(element As Element, options As AccessElementParameterOptions, elementParameters As IEnumerable(Of ElementParameter)) As IEnumerable(Of AccessParameterInfo)
+    content.vb: Public Shared Function SetParameters(element As Element, options As AccessParameterOptions, elementParameters As IEnumerable(Of ElementParameter)) As IEnumerable(Of AccessParameterInfo)
   overload: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters*
-  nameWithType.vb: ElementServices.SetParameters(Element, AccessElementParameterOptions, IEnumerable(Of ElementParameter))
-  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter))
-  name.vb: SetParameters(Element, AccessElementParameterOptions, IEnumerable(Of ElementParameter))
+  nameWithType.vb: ElementServices.SetParameters(Element, AccessParameterOptions, IEnumerable(Of ElementParameter))
+  fullName.vb: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element, DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions, System.Collections.Generic.IEnumerable(Of DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter))
+  name.vb: SetParameters(Element, AccessParameterOptions, IEnumerable(Of ElementParameter))
 references:
 - uid: DynamoForRevitUtils.Services.RevitServices
   commentId: N:DynamoForRevitUtils.Services.RevitServices
@@ -2108,7 +2108,7 @@ references:
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters
   isExternal: true
-  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_Autodesk_Revit_DB_Element_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_Autodesk_Revit_DB_Element_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_
   name: GetParameters
   nameWithType: ElementServices.GetParameters
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters
@@ -2147,14 +2147,14 @@ references:
     isExternal: true
     href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
   - name: )
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html
-  name: AccessElementParameterOptions
-  nameWithType: AccessElementParameterOptions
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html
+  name: AccessParameterOptions
+  nameWithType: AccessParameterOptions
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
 - uid: System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
   commentId: T:System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo}
   parent: System.Collections.Generic
@@ -2193,14 +2193,14 @@ references:
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter
   isExternal: true
-  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_
   name: GetParameter
   nameWithType: ElementServices.GetParameter
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter
 - uid: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters*
   commentId: Overload:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters
   isExternal: true
-  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__
+  href: DynamoForRevitUtils.Services.RevitServices.ElementServices.html#DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__
   name: SetParameters
   nameWithType: ElementServices.SetParameters
   fullName: DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters

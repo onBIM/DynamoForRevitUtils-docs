@@ -10,14 +10,14 @@ items:
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(Autodesk.Revit.DB.Parameter,DynamoForRevitUtils.Enumerations.ParameterKind)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.#ctor(System.String,DynamoForRevitUtils.Enumerations.ParameterDataType,DynamoForRevitUtils.Enumerations.ParameterKind)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.BuiltInParameter
-  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone
+  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(System.Boolean)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.DataType
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Definition
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Document
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Equals(System.Object)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetHashCode
-  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Id
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Invalid
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.IsBuiltInParameter
@@ -229,32 +229,36 @@ items:
   nameWithType.vb: ElementParameter.New(BuiltInParameter, ParameterDataType, ParameterKind)
   fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.New(Autodesk.Revit.DB.BuiltInParameter, DynamoForRevitUtils.Enumerations.ParameterDataType, DynamoForRevitUtils.Enumerations.ParameterKind)
   name.vb: New(BuiltInParameter, ParameterDataType, ParameterKind)
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone
-  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone
-  id: Clone
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(System.Boolean)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(System.Boolean)
+  id: Clone(System.Boolean)
   parent: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   langs:
   - csharp
   - vb
-  name: Clone()
-  nameWithType: ElementParameter.Clone()
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone()
+  name: Clone(bool)
+  nameWithType: ElementParameter.Clone(bool)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(bool)
   type: Method
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.ParametersHandlers
-  summary: >-
-    Creates a new instance of the <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> class with the same name,
-
-    data type, and kind as the current instance.
+  summary: Creates a deep copy of the current ElementParameter instance with the option to preserve the value.
   example: []
   syntax:
-    content: public ElementParameter Clone()
+    content: public ElementParameter Clone(bool cloneValue = false)
+    parameters:
+    - id: cloneValue
+      type: System.Boolean
+      description: Determines whether the value of the parameter should also be cloned. Default value is false
     return:
       type: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-      description: A new <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> object with properties copied from the original instance.
-    content.vb: Public Function Clone() As ElementParameter
+      description: A new instance of ElementParameter that is a copy of the current instance
+    content.vb: Public Function Clone(cloneValue As Boolean = False) As ElementParameter
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone*
+  nameWithType.vb: ElementParameter.Clone(Boolean)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(Boolean)
+  name.vb: Clone(Boolean)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits
   id: GetDisplayUnits
@@ -415,16 +419,16 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString*
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
-  id: GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
+  id: GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   parent: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   langs:
   - csharp
   - vb
-  name: GetValueFromRevitParameter(AccessElementParameterOptions)
-  nameWithType: ElementParameter.GetValueFromRevitParameter(AccessElementParameterOptions)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)
+  name: GetValueFromRevitParameter(AccessParameterOptions)
+  nameWithType: ElementParameter.GetValueFromRevitParameter(AccessParameterOptions)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -432,12 +436,12 @@ items:
   summary: Retrieves the value of a Revit parameter based on the provided options and the parameter's data type.
   example: []
   syntax:
-    content: public AccessParameterInfo GetValueFromRevitParameter(AccessElementParameterOptions options)
+    content: public AccessParameterInfo GetValueFromRevitParameter(AccessParameterOptions options)
     parameters:
     - id: options
-      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+      type: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
       description: >-
-        An instance of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions" data-throw-if-not-resolved="false"></xref>
+        An instance of <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions" data-throw-if-not-resolved="false"></xref>
 
         that specifies how the Revit parameter value should be accessed.
     return:
@@ -446,7 +450,7 @@ items:
         Returns an <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo" data-throw-if-not-resolved="false"></xref> object containing the status,
 
         result, and description of the parameter access operation.
-    content.vb: Public Function GetValueFromRevitParameter(options As AccessElementParameterOptions) As AccessParameterInfo
+    content.vb: Public Function GetValueFromRevitParameter(options As AccessParameterOptions) As AccessParameterInfo
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter*
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.SetValueToRevitParameter
@@ -1313,10 +1317,21 @@ references:
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone_System_Boolean_
   name: Clone
   nameWithType: ElementParameter.Clone
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: DynamoForRevitUtils.Entities.GetUnitsResultData
   commentId: T:DynamoForRevitUtils.Entities.GetUnitsResultData
   parent: DynamoForRevitUtils.Entities
@@ -1413,17 +1428,6 @@ references:
   name: Equals
   nameWithType: ElementParameter.Equals
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Equals
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -1531,14 +1535,14 @@ references:
   name: ToString
   nameWithType: ElementParameter.ToString
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html
-  name: AccessElementParameterOptions
-  nameWithType: AccessElementParameterOptions
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html
+  name: AccessParameterOptions
+  nameWithType: AccessParameterOptions
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
@@ -1550,7 +1554,7 @@ references:
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_
   name: GetValueFromRevitParameter
   nameWithType: ElementParameter.GetValueFromRevitParameter
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter

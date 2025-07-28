@@ -753,13 +753,13 @@ Leave null if the element is not linked. Default value is null.</p>
     </tbody>
   </table>
   <a id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter*"></a>
-  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">GetParameter(Element, ElementParameter, AccessElementParameterOptions)</h4>
+  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">GetParameter(Element, ElementParameter, AccessParameterOptions)</h4>
   <div class="markdown level1 summary"><p>Get Parameter from Element using Regex.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AccessParameterInfo GetParameter(this Element element, ElementParameter elementParameter, AccessElementParameterOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public static AccessParameterInfo GetParameter(this Element element, ElementParameter elementParameter, AccessParameterOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -784,7 +784,7 @@ Leave null if the element is not linked. Default value is null.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a></td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html">AccessParameterOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to get parameter.</p>
 </td>
@@ -807,17 +807,17 @@ Leave null if the element is not linked. Default value is null.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions__remarks">Remarks</h5>
+  <h5 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameter_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Element could be a Instance or a Type.</p>
 </div>
   <a id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters*"></a>
-  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_Autodesk_Revit_DB_Element_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">GetParameters(Element, IEnumerable&lt;ElementParameter&gt;, AccessElementParameterOptions)</h4>
+  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_GetParameters_Autodesk_Revit_DB_Element_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">GetParameters(Element, IEnumerable&lt;ElementParameter&gt;, AccessParameterOptions)</h4>
   <div class="markdown level1 summary"><p>Retrieves the parameters of a Revit element based on the specified list of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;AccessParameterInfo&gt; GetParameters(this Element element, IEnumerable&lt;ElementParameter&gt; elementParameters, AccessElementParameterOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;AccessParameterInfo&gt; GetParameters(this Element element, IEnumerable&lt;ElementParameter&gt; elementParameters, AccessParameterOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -842,7 +842,7 @@ Leave null if the element is not linked. Default value is null.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a></td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html">AccessParameterOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Options to get parameter.</p>
 </td>
@@ -1479,13 +1479,13 @@ property without regex (faster).</p>
     </tbody>
   </table>
   <a id="DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters*"></a>
-  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})">SetParameters(Element, AccessElementParameterOptions, params IEnumerable&lt;ElementParameter&gt;)</h4>
+  <h4 id="DynamoForRevitUtils_Services_RevitServices_ElementServices_SetParameters_Autodesk_Revit_DB_Element_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_System_Collections_Generic_IEnumerable_DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter__" data-uid="DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})">SetParameters(Element, AccessParameterOptions, params IEnumerable&lt;ElementParameter&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets parameters for a specified Revit element based on the provided parameter collection and options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;AccessParameterInfo&gt; SetParameters(this Element element, AccessElementParameterOptions options, params IEnumerable&lt;ElementParameter&gt; elementParameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;AccessParameterInfo&gt; SetParameters(this Element element, AccessParameterOptions options, params IEnumerable&lt;ElementParameter&gt; elementParameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1504,7 +1504,7 @@ property without regex (faster).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a></td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html">AccessParameterOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>Settings or options that determine how the parameters are applied to the element.</p>
 </td>

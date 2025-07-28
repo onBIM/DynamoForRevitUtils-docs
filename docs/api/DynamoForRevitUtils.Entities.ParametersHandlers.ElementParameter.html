@@ -737,15 +737,32 @@ Accepted types are:
   <h3 id="methods">Methods
 </h3>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone">Clone()</h4>
-  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> class with the same name,
-data type, and kind as the current instance.</p>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_Clone_System_Boolean_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(System.Boolean)">Clone(bool)</h4>
+  <div class="markdown level1 summary"><p>Creates a deep copy of the current ElementParameter instance with the option to preserve the value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ElementParameter Clone()</code></pre>
+    <pre><code class="lang-csharp hljs">public ElementParameter Clone(bool cloneValue = false)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">cloneValue</span></td>
+        <td><p>Determines whether the value of the parameter should also be cloned. Default value is false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -757,7 +774,7 @@ data type, and kind as the current instance.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></td>
-        <td><p>A new <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> object with properties copied from the original instance.</p>
+        <td><p>A new instance of ElementParameter that is a copy of the current instance</p>
 </td>
       </tr>
     </tbody>
@@ -860,13 +877,13 @@ a message describing the result, and the overall success or failure of the unit 
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessElementParameterOptions_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">GetValueFromRevitParameter(AccessElementParameterOptions)</h4>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameter_GetValueFromRevitParameter_DynamoForRevitUtils_Entities_ParametersHandlers_AccessParameterOptions_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">GetValueFromRevitParameter(AccessParameterOptions)</h4>
   <div class="markdown level1 summary"><p>Retrieves the value of a Revit parameter based on the provided options and the parameter's data type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AccessParameterInfo GetValueFromRevitParameter(AccessElementParameterOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public AccessParameterInfo GetValueFromRevitParameter(AccessParameterOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -879,9 +896,9 @@ a message describing the result, and the overall success or failure of the unit 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a></td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html">AccessParameterOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td><p>An instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html">AccessElementParameterOptions</a>
+        <td><p>An instance of <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html">AccessParameterOptions</a>
 that specifies how the Revit parameter value should be accessed.</p>
 </td>
       </tr>

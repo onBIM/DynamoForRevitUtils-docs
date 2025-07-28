@@ -4,8 +4,8 @@ items:
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
   id: DynamoForRevitUtils.Entities.ParametersHandlers
   children:
-  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+  - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
@@ -21,14 +21,6 @@ items:
   assemblies:
   - DynamoForRevitUtils
 references:
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
-  parent: DynamoForRevitUtils.Entities.ParametersHandlers
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.html
-  name: AccessElementParameterOptions
-  nameWithType: AccessElementParameterOptions
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
@@ -37,6 +29,14 @@ references:
   name: AccessParameterInfo
   nameWithType: AccessParameterInfo
   fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html
+  name: AccessParameterOptions
+  nameWithType: AccessParameterOptions
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   parent: DynamoForRevitUtils.Entities.ParametersHandlers

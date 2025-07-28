@@ -77,11 +77,11 @@ items:
   name: DynamoForRevitUtils.Entities.ParametersHandlers
   type: Namespace
   items:
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions
-    name: AccessElementParameterOptions
-    type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo
     name: AccessParameterInfo
+    type: Class
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
+    name: AccessParameterOptions
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
     name: ElementParameter

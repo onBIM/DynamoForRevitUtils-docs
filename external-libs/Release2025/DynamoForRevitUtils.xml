@@ -557,55 +557,6 @@
             <param name="endFaces">End faces</param>
             <param name="ownerId">Id of the MEPCurveReferences owner</param>
         </member>
-        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions">
-            <summary>
-            Represents options for retrieving parameters of elements using Dynamo for Revit utilities.
-            </summary>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.AccessMode">
-            <summary>
-            Gets the mode of access for parameters, specifying how parameters are handled
-            when retrieving element parameter options.
-            </summary>
-            <remarks>
-            The <c>mode</c> property defines the behavior for accessing parameters, such as whether
-            only the parameter itself is retrieved or the parameter along with its value.
-            </remarks>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.DoubleParameterConvertionMode">
-            <summary>
-            Defines the mode of conversion for double-type parameter values in Dynamo for Revit utilities.
-            </summary>
-            <remarks>
-            The conversion mode determines how double parameters are interpreted,
-            especially in relation to document-specific units or unconverted values.
-            </remarks>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.Regex">
-            <summary>
-            Gets the regular expression (Regex) used to filter or match parameters during the process of
-            retrieving element parameters. A null value indicates that no filtering will occur based on a
-            regular expression.
-            </summary>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.CheckIfValueContainsInvalidChars">
-            <summary>
-            Specifies whether to validate string values for invalid characters when retrieving element parameters.
-            </summary>
-            <remarks>
-            Invalid chars are line breaks or tabs ('\n', '\t', '\r')
-            </remarks>
-        </member>
-        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions.GetElementIdValueAsString">
-            <summary>
-            Determines whether element IDs should be retrieved and represented as string values
-            when accessing parameter values.
-            </summary>
-            <remarks>
-            This property specifies if the values of the element IDs are formatted as strings
-            during the retrieval process, providing a flexible way to handle these identifiers.
-            </remarks>
-        </member>
         <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterInfo">
             <summary>
             Represents the data associated with accessing a parameter, including its value, a description,
@@ -640,6 +591,55 @@
             <param name="result">
             The result of the parameter access operation.
             </param>
+        </member>
+        <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions">
+            <summary>
+            Represents options for retrieving parameters of elements using Dynamo for Revit utilities.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.Mode">
+            <summary>
+            Gets the mode of access for parameters, specifying how parameters are handled
+            when retrieving element parameter options.
+            </summary>
+            <remarks>
+            The <c>mode</c> property defines the behavior for accessing parameters, such as whether
+            only the parameter itself is retrieved or the parameter along with its value.
+            </remarks>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.DoubleParameterConvertionMode">
+            <summary>
+            Defines the mode of conversion for double-type parameter values in Dynamo for Revit utilities.
+            </summary>
+            <remarks>
+            The conversion mode determines how double parameters are interpreted,
+            especially in relation to document-specific units or unconverted values.
+            </remarks>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.Regex">
+            <summary>
+            Gets the regular expression (Regex) used to filter or match parameters during the process of
+            retrieving element parameters. A null value indicates that no filtering will occur based on a
+            regular expression.
+            </summary>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.CheckIfValueContainsInvalidChars">
+            <summary>
+            Specifies whether to validate string values for invalid characters when retrieving element parameters.
+            </summary>
+            <remarks>
+            Invalid chars are line breaks or tabs ('\n', '\t', '\r')
+            </remarks>
+        </member>
+        <member name="P:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.GetElementIdValueAsString">
+            <summary>
+            Determines whether element IDs should be retrieved and represented as string values
+            when accessing parameter values.
+            </summary>
+            <remarks>
+            This property specifies if the values of the element IDs are formatted as strings
+            during the retrieval process, providing a flexible way to handle these identifiers.
+            </remarks>
         </member>
         <member name="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter">
             <summary>
@@ -824,14 +824,14 @@
             Thrown if the is not possible to get Revit UI name to <paramref name="builtInParameter"/>.
             </exception>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.Clone(System.Boolean)">
             <summary>
-            Creates a new instance of the <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> class with the same name,
-            data type, and kind as the current instance.
+            Creates a deep copy of the current ElementParameter instance with the option to preserve the value.
             </summary>
-            <returns>
-            A new <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/> object with properties copied from the original instance.
-            </returns>
+            <param name="cloneValue">
+            Determines whether the value of the parameter should also be cloned. Default value is false
+            </param>
+            <returns>A new instance of ElementParameter that is a copy of the current instance</returns>
         </member>
         <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetDisplayUnits">
             <summary>
@@ -869,12 +869,12 @@
         <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.ToString">
             <inheritdoc/>
         </member>
-        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">
+        <member name="M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.GetValueFromRevitParameter(DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">
             <summary>
                 Retrieves the value of a Revit parameter based on the provided options and the parameter's data type.
             </summary>
             <param name="options">
-                An instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions"/>
+                An instance of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions"/>
                 that specifies how the Revit parameter value should be accessed.
             </param>
             <returns>
@@ -3462,7 +3462,7 @@
             <param name="accessParameterInfo">Stores parameter access results.</param>
             <returns>Whether the element is valid or not</returns>
         </member>
-        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">
+        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameters(Autodesk.Revit.DB.Element,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter},DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">
             <summary>
             Retrieves the parameters of a Revit element based on the specified list of <see cref="T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter"/>.
             </summary>
@@ -3473,7 +3473,7 @@
             <param name="options">Options to get parameter.</param>
             <returns>An enumerable collection of parameters matching the specified element parameters.</returns>
         </member>
-        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions)">
+        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.GetParameter(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions)">
             <summary>
             Get Parameter from Element using Regex.
             </summary>
@@ -3485,7 +3485,7 @@
             </remarks>
             <returns>Revit parameter from </returns>
         </member>
-        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessElementParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})">
+        <member name="M:DynamoForRevitUtils.Services.RevitServices.ElementServices.SetParameters(Autodesk.Revit.DB.Element,DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions,System.Collections.Generic.IEnumerable{DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter})">
             <summary>
             Sets parameters for a specified Revit element based on the provided parameter collection and options.
             </summary>

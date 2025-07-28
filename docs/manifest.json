@@ -1286,6 +1286,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions.yml\" sourcestartlinenumber=\"1\">Represents options for retrieving parameters of elements using Dynamo for Revit utilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.AssociatedElementParameterAttribute.yml",
       "output": {
         ".html": {
