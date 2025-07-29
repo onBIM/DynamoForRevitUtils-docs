@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  id: IFamilyInstanceWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  children:
+  - DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  langs:
+  - csharp
+  - vb
+  name: IFamilyInstanceWrapper
+  nameWithType: IFamilyInstanceWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  type: Interface
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents a wrapper for a Revit <xref href="Autodesk.Revit.DB.FamilyInstance" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    This interface is used to encapsulate the underlying Revit <xref href="Autodesk.Revit.DB.FamilyInstance" data-throw-if-not-resolved="false"></xref>,
+
+    without parameters.
+  example: []
+  syntax:
+    content: public interface IFamilyInstanceWrapper
+    content.vb: Public Interface IFamilyInstanceWrapper
+  extensionMethods:
+  - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+- uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  id: FamilyInstance
+  parent: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstance
+  nameWithType: IFamilyInstanceWrapper.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  type: Property
+  assemblies:
+  - DynamoForRevitUtils
+  namespace: DynamoForRevitUtils.Entities.Wrappers
+  summary: Represents the <xref href="Autodesk.Revit.DB.FamilyInstance" data-throw-if-not-resolved="false"></xref> associated with this wrapper.
+  example: []
+  syntax:
+    content: FamilyInstance FamilyInstance { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.FamilyInstance
+    content.vb: ReadOnly Property FamilyInstance As FamilyInstance
+  overload: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance*
+references:
+- uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: DynamoForRevitUtils.Entities.Wrappers
+  commentId: N:DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Entities.Wrappers
+  nameWithType: DynamoForRevitUtils.Entities.Wrappers
+  fullName: DynamoForRevitUtils.Entities.Wrappers
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities
+    name: Entities
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.html
+  - name: .
+  - uid: DynamoForRevitUtils.Entities.Wrappers
+    name: Wrappers
+    isExternal: true
+    href: DynamoForRevitUtils.Entities.Wrappers.html
+- uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  definition: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  name: TryCast<T>(object)
+  nameWithType: ObjectServices.TryCast<T>(object)
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast<T>(object)
+  nameWithType.vb: ObjectServices.TryCast(Of T)(Object)
+  fullName.vb: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast(Of T)(Object)
+  name.vb: TryCast(Of T)(Object)
+  spec.csharp:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
+    name: TryCast
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html#DynamoForRevitUtils_Services_GenericServices_ObjectServices_TryCast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  commentId: T:DynamoForRevitUtils.Services.GenericServices.ObjectServices
+  parent: DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.Services.GenericServices.ObjectServices.html
+  name: ObjectServices
+  nameWithType: ObjectServices
+  fullName: DynamoForRevitUtils.Services.GenericServices.ObjectServices
+- uid: DynamoForRevitUtils.Services.GenericServices
+  commentId: N:DynamoForRevitUtils.Services.GenericServices
+  isExternal: true
+  href: DynamoForRevitUtils.html
+  name: DynamoForRevitUtils.Services.GenericServices
+  nameWithType: DynamoForRevitUtils.Services.GenericServices
+  fullName: DynamoForRevitUtils.Services.GenericServices
+  spec.csharp:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+  spec.vb:
+  - uid: DynamoForRevitUtils
+    name: DynamoForRevitUtils
+    isExternal: true
+    href: DynamoForRevitUtils.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services
+    name: Services
+    isExternal: true
+    href: DynamoForRevitUtils.Services.html
+  - name: .
+  - uid: DynamoForRevitUtils.Services.GenericServices
+    name: GenericServices
+    isExternal: true
+    href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IFamilyInstanceWrapper_FamilyInstance
+  name: FamilyInstance
+  nameWithType: IFamilyInstanceWrapper.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
