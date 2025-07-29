@@ -87,17 +87,17 @@ items:
     name: ElementParameter
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
-    name: ElementParameterAccessor<TParamMap>
+    name: ElementParameterAccessor<TWrapperParams>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMapItem
-    name: ElementParameterMapItem
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
+    name: ElementWrapperParameters<T>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap`1
-    name: ElementParameterMap<T>
-    type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameterMap
-    name: IElementParameterMap
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
+    name: IElementWrapperParameters
     type: Interface
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
+    name: WrapperPropertyParameterBinding
+    type: Class
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters
   name: DynamoForRevitUtils.Entities.PickSelectionFilters
   type: Namespace
@@ -122,13 +122,19 @@ items:
   type: Namespace
   items:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-    name: ElementWrapper<TParamMap>
+    name: ElementWrapper<TWrapperParams>
     type: Class
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
-    name: FamilyInstanceWrapper<TParamMap>
+    name: FamilyInstanceWrapper<TWrapperParams>
     type: Class
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+    name: IElementWrapper
+    type: Interface
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper<TParamMap>
+    name: IElementWrapper<TWrapperParams>
+    type: Interface
+  - uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+    name: IFamilyInstanceWrapper
     type: Interface
 - uid: DynamoForRevitUtils.Enumerations
   name: DynamoForRevitUtils.Enumerations

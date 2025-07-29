@@ -5,31 +5,33 @@ items:
   id: IElementWrapper`1
   parent: DynamoForRevitUtils.Entities.Wrappers
   children:
-  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
-  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
   langs:
   - csharp
   - vb
-  name: IElementWrapper<TParamMap>
-  nameWithType: IElementWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
+  name: IElementWrapper<TWrapperParams>
+  nameWithType: IElementWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
   type: Interface
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.Wrappers
-  summary: Represents an interface for wrapping Revit elements.
+  summary: Interface used to represents an Revit element wrapper with it parameters
   example: []
   syntax:
     content: >-
       [IsVisibleInDynamoLibrary(false)]
 
-      public interface IElementWrapper<TParamMap> where TParamMap : IElementParameterMap
+      public interface IElementWrapper<TWrapperParams> : IElementWrapper where TWrapperParams : IElementWrapperParameters
     typeParameters:
-    - id: TParamMap
+    - id: TWrapperParams
+      description: Represents the type of this wrapper parameters
     content.vb: >-
       <IsVisibleInDynamoLibrary(False)>
 
-      Public Interface IElementWrapper(Of TParamMap As IElementParameterMap)
+      Public Interface IElementWrapper(Of TWrapperParams As IElementWrapperParameters) Inherits IElementWrapper
+  inheritedMembers:
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
   extensionMethods:
   - System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
   attributes:
@@ -38,62 +40,34 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: IElementWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
-  name.vb: IElementWrapper(Of TParamMap)
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
-  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
-  id: Element
+  nameWithType.vb: IElementWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
+  name.vb: IElementWrapper(Of TWrapperParams)
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
+  id: Parameters
   parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
   langs:
   - csharp
   - vb
-  name: Element
-  nameWithType: IElementWrapper<TParamMap>.Element
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.Element
+  name: Parameters
+  nameWithType: IElementWrapper<TWrapperParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>.Parameters
   type: Property
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.Wrappers
-  summary: Represents the Revit Element associated with this wrapper object.
+  summary: Provides access to the parameters associated with this wrapper.
   example: []
   syntax:
-    content: Element Element { get; }
+    content: TWrapperParams Parameters { get; }
     parameters: []
     return:
-      type: Autodesk.Revit.DB.Element
-    content.vb: ReadOnly Property Element As Element
-  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element*
-  nameWithType.vb: IElementWrapper(Of TParamMap).Element
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).Element
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
-  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
-  id: ParameterMap
-  parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-  langs:
-  - csharp
-  - vb
-  name: ParameterMap
-  nameWithType: IElementWrapper<TParamMap>.ParameterMap
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.ParameterMap
-  type: Property
-  assemblies:
-  - DynamoForRevitUtils
-  namespace: DynamoForRevitUtils.Entities.Wrappers
-  summary: >-
-    Provides access to the mapping between property names and their associated parameters
-
-    of the Revit element within this wrapper object.
-  example: []
-  syntax:
-    content: TParamMap ParameterMap { get; }
-    parameters: []
-    return:
-      type: '{TParamMap}'
-    content.vb: ReadOnly Property ParameterMap As TParamMap
-  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap*
-  nameWithType.vb: IElementWrapper(Of TParamMap).ParameterMap
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).ParameterMap
+      type: '{TWrapperParams}'
+    content.vb: ReadOnly Property Parameters As TWrapperParams
+  overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters*
+  nameWithType.vb: IElementWrapper(Of TWrapperParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams).Parameters
 references:
 - uid: DynamoForRevitUtils.Entities.Wrappers
   commentId: N:DynamoForRevitUtils.Entities.Wrappers
@@ -132,6 +106,14 @@ references:
     name: Wrappers
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.html
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
+  parent: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_Element
+  name: Element
+  nameWithType: IElementWrapper.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
 - uid: System.Object.DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   parent: DynamoForRevitUtils.Services.GenericServices.ObjectServices
@@ -173,6 +155,14 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html
+  name: IElementWrapper
+  nameWithType: IElementWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   isExternal: true
@@ -258,68 +248,22 @@ references:
     name: GenericServices
     isExternal: true
     href: DynamoForRevitUtils.Services.GenericServices.html
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element*
-  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters*
+  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
   isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_Element
-  name: Element
-  nameWithType: IElementWrapper<TParamMap>.Element
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.Element
-  nameWithType.vb: IElementWrapper(Of TParamMap).Element
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).Element
-- uid: Autodesk.Revit.DB.Element
-  commentId: T:Autodesk.Revit.DB.Element
-  parent: Autodesk.Revit.DB
-  isExternal: true
-  name: Element
-  nameWithType: Element
-  fullName: Autodesk.Revit.DB.Element
-- uid: Autodesk.Revit.DB
-  commentId: N:Autodesk.Revit.DB
-  isExternal: true
-  name: Autodesk.Revit.DB
-  nameWithType: Autodesk.Revit.DB
-  fullName: Autodesk.Revit.DB
-  spec.csharp:
-  - uid: Autodesk
-    name: Autodesk
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit
-    name: Revit
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
-    isExternal: true
-  spec.vb:
-  - uid: Autodesk
-    name: Autodesk
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit
-    name: Revit
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
-    isExternal: true
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap*
-  commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.ParameterMap
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_ParameterMap
-  name: ParameterMap
-  nameWithType: IElementWrapper<TParamMap>.ParameterMap
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>.ParameterMap
-  nameWithType.vb: IElementWrapper(Of TParamMap).ParameterMap
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap).ParameterMap
-- uid: '{TParamMap}'
-  commentId: '!:TParamMap'
-  definition: TParamMap
-  name: TParamMap
-  nameWithType: TParamMap
-  fullName: TParamMap
-- uid: TParamMap
-  name: TParamMap
-  nameWithType: TParamMap
-  fullName: TParamMap
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_Parameters
+  name: Parameters
+  nameWithType: IElementWrapper<TWrapperParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>.Parameters
+  nameWithType.vb: IElementWrapper(Of TWrapperParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams).Parameters
+- uid: '{TWrapperParams}'
+  commentId: '!:TWrapperParams'
+  definition: TWrapperParams
+  name: TWrapperParams
+  nameWithType: TWrapperParams
+  fullName: TWrapperParams
+- uid: TWrapperParams
+  name: TWrapperParams
+  nameWithType: TWrapperParams
+  fullName: TWrapperParams

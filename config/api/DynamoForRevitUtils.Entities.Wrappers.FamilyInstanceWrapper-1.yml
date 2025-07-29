@@ -10,35 +10,38 @@ items:
   langs:
   - csharp
   - vb
-  name: FamilyInstanceWrapper<TParamMap>
-  nameWithType: FamilyInstanceWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>
+  name: FamilyInstanceWrapper<TWrapperParams>
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>
   type: Class
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.Wrappers
-  summary: Represents an abstract wrapper class for Revit family instances.
+  summary: Represents a wrapper for Revit <xref href="Autodesk.Revit.DB.FamilyInstance" data-throw-if-not-resolved="false"></xref> with your parameters.
   example: []
   syntax:
     content: >-
       [IsVisibleInDynamoLibrary(false)]
 
-      public abstract class FamilyInstanceWrapper<TParamMap> : ElementWrapper<TParamMap>, IElementWrapper<TParamMap> where TParamMap : IElementParameterMap
+      public abstract class FamilyInstanceWrapper<TWrapperParams> : ElementWrapper<TWrapperParams>, IElementWrapper<TWrapperParams>, IElementWrapper, IFamilyInstanceWrapper where TWrapperParams : IElementWrapperParameters
     typeParameters:
-    - id: TParamMap
+    - id: TWrapperParams
+      description: Represents the type of this wrapper parameters
     content.vb: >-
       <IsVisibleInDynamoLibrary(False)>
 
-      Public MustInherit Class FamilyInstanceWrapper(Of TParamMap As IElementParameterMap) Inherits ElementWrapper(Of TParamMap) Implements IElementWrapper(Of TParamMap)
+      Public MustInherit Class FamilyInstanceWrapper(Of TWrapperParams As IElementWrapperParameters) Inherits ElementWrapper(Of TWrapperParams) Implements IElementWrapper(Of TWrapperParams), IElementWrapper, IFamilyInstanceWrapper
   inheritance:
   - System.Object
-  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}
   implements:
-  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TParamMap}}
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TWrapperParams}}
+  - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  - DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
   inheritedMembers:
-  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.Element
-  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterMap
-  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterAccessor
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.Element
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.Parameters
+  - DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.ParameterAccessor
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ToString
@@ -54,9 +57,9 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap)
-  name.vb: FamilyInstanceWrapper(Of TParamMap)
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams)
+  name.vb: FamilyInstanceWrapper(Of TWrapperParams)
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
   commentId: M:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)
   id: '#ctor(Autodesk.Revit.DB.FamilyInstance,`0)'
@@ -64,9 +67,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FamilyInstanceWrapper(FamilyInstance, TParamMap)
-  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(FamilyInstance, TParamMap)
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper(Autodesk.Revit.DB.FamilyInstance, TParamMap)
+  name: FamilyInstanceWrapper(FamilyInstance, TWrapperParams)
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>.FamilyInstanceWrapper(FamilyInstance, TWrapperParams)
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>.FamilyInstanceWrapper(Autodesk.Revit.DB.FamilyInstance, TWrapperParams)
   type: Constructor
   assemblies:
   - DynamoForRevitUtils
@@ -74,23 +77,23 @@ items:
   summary: Constructs a new instance of <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected FamilyInstanceWrapper(FamilyInstance famInst, TParamMap parameterMap)
+    content: protected FamilyInstanceWrapper(FamilyInstance famInst, TWrapperParams parameters)
     parameters:
     - id: famInst
       type: Autodesk.Revit.DB.FamilyInstance
       description: The <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601.FamilyInstance" data-throw-if-not-resolved="false"></xref> to be wrapped.
-    - id: parameterMap
-      type: '{TParamMap}'
+    - id: parameters
+      type: '{TWrapperParams}'
       description: The parameter associated with the family instance.
-    content.vb: Protected Sub New(famInst As FamilyInstance, parameterMap As TParamMap)
+    content.vb: Protected Sub New(famInst As FamilyInstance, parameters As TWrapperParams)
   overload: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: Thrown when <code class="paramref">famInst</code> is null.
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New(FamilyInstance, TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New(Autodesk.Revit.DB.FamilyInstance, TParamMap)
-  name.vb: New(FamilyInstance, TParamMap)
+    description: Thrown when <code class="paramref">famInst</code> or <code class="paramref">parameters</code> is null.
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams).New(FamilyInstance, TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams).New(Autodesk.Revit.DB.FamilyInstance, TWrapperParams)
+  name.vb: New(FamilyInstance, TWrapperParams)
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
   id: FamilyInstance
@@ -99,13 +102,13 @@ items:
   - csharp
   - vb
   name: FamilyInstance
-  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
   type: Property
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.Wrappers
-  summary: Represents the wrapped <xref href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper%601.FamilyInstance" data-throw-if-not-resolved="false"></xref>.
+  summary: Represents the <xref href="Autodesk.Revit.DB.FamilyInstance" data-throw-if-not-resolved="false"></xref> associated with this wrapper.
   example: []
   syntax:
     content: public FamilyInstance FamilyInstance { get; }
@@ -114,9 +117,18 @@ items:
       type: Autodesk.Revit.DB.FamilyInstance
     content.vb: Public ReadOnly Property FamilyInstance As FamilyInstance
   overload: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  implements:
+  - DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
 references:
+- uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
 - uid: DynamoForRevitUtils.Entities.Wrappers
   commentId: N:DynamoForRevitUtils.Entities.Wrappers
   isExternal: true
@@ -165,24 +177,24 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}
   parent: DynamoForRevitUtils.Entities.Wrappers
   definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  name: ElementWrapper<TParamMap>
-  nameWithType: ElementWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>
-  nameWithType.vb: ElementWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap)
-  name.vb: ElementWrapper(Of TParamMap)
+  name: ElementWrapper<TWrapperParams>
+  nameWithType: ElementWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>
+  nameWithType.vb: ElementWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams)
+  name.vb: ElementWrapper(Of TWrapperParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
     name: ElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
   - name: <
-  - name: TParamMap
+  - name: TWrapperParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
@@ -192,26 +204,26 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TParamMap
+  - name: TWrapperParams
   - name: )
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TParamMap}}
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TWrapperParams}}
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0}
   parent: DynamoForRevitUtils.Entities.Wrappers
   definition: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
   href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  name: IElementWrapper<TParamMap>
-  nameWithType: IElementWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
-  nameWithType.vb: IElementWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
-  name.vb: IElementWrapper(Of TParamMap)
+  name: IElementWrapper<TWrapperParams>
+  nameWithType: IElementWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
+  nameWithType.vb: IElementWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
+  name.vb: IElementWrapper(Of TWrapperParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
     name: IElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
   - name: <
-  - name: TParamMap
+  - name: TWrapperParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
@@ -221,38 +233,54 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TParamMap
+  - name: TWrapperParams
   - name: )
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html
+  name: IElementWrapper
+  nameWithType: IElementWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
+- uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  parent: DynamoForRevitUtils.Entities.Wrappers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.html
+  name: IFamilyInstanceWrapper
+  nameWithType: IFamilyInstanceWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.Element
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.Element
-  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}
   definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element
   name: Element
-  nameWithType: ElementWrapper<TParamMap>.Element
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
-  nameWithType.vb: ElementWrapper(Of TParamMap).Element
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterMap
-  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.ParameterMap
-  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
-  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
-  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap
-  name: ParameterMap
-  nameWithType: ElementWrapper<TParamMap>.ParameterMap
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
-  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}.ParameterAccessor
+  nameWithType: ElementWrapper<TWrapperParams>.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.Element
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.Parameters
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.Parameters
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}
+  definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Parameters
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Parameters
+  name: Parameters
+  nameWithType: ElementWrapper<TWrapperParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.Parameters
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).Parameters
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}.ParameterAccessor
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{`0}.ParameterAccessor
-  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TParamMap}}
+  parent: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper{{TWrapperParams}}
   definition: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor
   name: ParameterAccessor
-  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
-  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+  nameWithType: ElementWrapper<TWrapperParams>.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).ParameterAccessor
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -513,6 +541,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: Autodesk.Revit.DB
+  commentId: N:Autodesk.Revit.DB
+  isExternal: true
+  name: Autodesk.Revit.DB
+  nameWithType: Autodesk.Revit.DB
+  fullName: Autodesk.Revit.DB
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Autodesk.Revit.DB
+    name: DB
+    isExternal: true
 - uid: System
   commentId: N:System
   isExternal: true
@@ -524,19 +582,19 @@ references:
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  name: ElementWrapper<TParamMap>
-  nameWithType: ElementWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>
-  nameWithType.vb: ElementWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap)
-  name.vb: ElementWrapper(Of TParamMap)
+  name: ElementWrapper<TWrapperParams>
+  nameWithType: ElementWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>
+  nameWithType.vb: ElementWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams)
+  name.vb: ElementWrapper(Of TWrapperParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
     name: ElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
   - name: <
-  - name: TParamMap
+  - name: TWrapperParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
@@ -546,25 +604,25 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TParamMap
+  - name: TWrapperParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  name: IElementWrapper<TParamMap>
-  nameWithType: IElementWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParamMap>
-  nameWithType.vb: IElementWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParamMap)
-  name.vb: IElementWrapper(Of TParamMap)
+  name: IElementWrapper<TWrapperParams>
+  nameWithType: IElementWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
+  nameWithType.vb: IElementWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
+  name.vb: IElementWrapper(Of TWrapperParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
     name: IElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
   - name: <
-  - name: TParamMap
+  - name: TWrapperParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
@@ -574,35 +632,35 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TParamMap
+  - name: TWrapperParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element
   name: Element
-  nameWithType: ElementWrapper<TParamMap>.Element
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.Element
-  nameWithType.vb: ElementWrapper(Of TParamMap).Element
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).Element
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
-  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap
+  nameWithType: ElementWrapper<TWrapperParams>.Element
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.Element
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).Element
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).Element
+- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Parameters
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Parameters
   isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap
-  name: ParameterMap
-  nameWithType: ElementWrapper<TParamMap>.ParameterMap
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterMap
-  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterMap
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterMap
+  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Parameters
+  name: Parameters
+  nameWithType: ElementWrapper<TWrapperParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.Parameters
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).Parameters
 - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterAccessor
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor
   name: ParameterAccessor
-  nameWithType: ElementWrapper<TParamMap>.ParameterAccessor
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParamMap>.ParameterAccessor
-  nameWithType.vb: ElementWrapper(Of TParamMap).ParameterAccessor
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParamMap).ParameterAccessor
+  nameWithType: ElementWrapper<TWrapperParams>.ParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>.ParameterAccessor
+  nameWithType.vb: ElementWrapper(Of TWrapperParams).ParameterAccessor
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams).ParameterAccessor
 - uid: DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   commentId: M:DynamoForRevitUtils.Services.GenericServices.ObjectServices.TryCast``1(System.Object)
   isExternal: true
@@ -692,19 +750,19 @@ references:
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
-  name: FamilyInstanceWrapper<TParamMap>
-  nameWithType: FamilyInstanceWrapper<TParamMap>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap)
-  name.vb: FamilyInstanceWrapper(Of TParamMap)
+  name: FamilyInstanceWrapper<TWrapperParams>
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams)
+  name.vb: FamilyInstanceWrapper(Of TWrapperParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
     name: FamilyInstanceWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
   - name: <
-  - name: TParamMap
+  - name: TWrapperParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
@@ -714,17 +772,17 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TParamMap
+  - name: TWrapperParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance
   name: FamilyInstance
-  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -737,64 +795,35 @@ references:
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_
   name: FamilyInstanceWrapper
-  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstanceWrapper
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).New
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).New
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>.FamilyInstanceWrapper
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>.FamilyInstanceWrapper
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams).New
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams).New
   name.vb: New
-- uid: Autodesk.Revit.DB.FamilyInstance
-  commentId: T:Autodesk.Revit.DB.FamilyInstance
-  parent: Autodesk.Revit.DB
-  isExternal: true
-  name: FamilyInstance
-  nameWithType: FamilyInstance
-  fullName: Autodesk.Revit.DB.FamilyInstance
-- uid: '{TParamMap}'
-  commentId: '!:TParamMap'
-  definition: TParamMap
-  name: TParamMap
-  nameWithType: TParamMap
-  fullName: TParamMap
-- uid: Autodesk.Revit.DB
-  commentId: N:Autodesk.Revit.DB
-  isExternal: true
-  name: Autodesk.Revit.DB
-  nameWithType: Autodesk.Revit.DB
-  fullName: Autodesk.Revit.DB
-  spec.csharp:
-  - uid: Autodesk
-    name: Autodesk
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit
-    name: Revit
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
-    isExternal: true
-  spec.vb:
-  - uid: Autodesk
-    name: Autodesk
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit
-    name: Revit
-    isExternal: true
-  - name: .
-  - uid: Autodesk.Revit.DB
-    name: DB
-    isExternal: true
-- uid: TParamMap
-  name: TParamMap
-  nameWithType: TParamMap
-  fullName: TParamMap
+- uid: '{TWrapperParams}'
+  commentId: '!:TWrapperParams'
+  definition: TWrapperParams
+  name: TWrapperParams
+  nameWithType: TWrapperParams
+  fullName: TWrapperParams
+- uid: TWrapperParams
+  name: TWrapperParams
+  nameWithType: TWrapperParams
+  fullName: TWrapperParams
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*
   commentId: Overload:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance
   name: FamilyInstance
-  nameWithType: FamilyInstanceWrapper<TParamMap>.FamilyInstance
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParamMap>.FamilyInstance
-  nameWithType.vb: FamilyInstanceWrapper(Of TParamMap).FamilyInstance
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParamMap).FamilyInstance
+  nameWithType: FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>.FamilyInstance
+  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams).FamilyInstance
+- uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  commentId: P:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance
+  parent: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.html#DynamoForRevitUtils_Entities_Wrappers_IFamilyInstanceWrapper_FamilyInstance
+  name: FamilyInstance
+  nameWithType: IFamilyInstanceWrapper.FamilyInstance
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.FamilyInstance

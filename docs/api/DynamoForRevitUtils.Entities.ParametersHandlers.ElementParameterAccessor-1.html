@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class ElementParameterAccessor&lt;TParamMap&gt; | DynamoForRevitUtils - Docs </title>
+      <title>Class ElementParameterAccessor&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ElementParameterAccessor&lt;TParamMap&gt; | DynamoForRevitUtils - Docs ">
+      <meta name="title" content="Class ElementParameterAccessor&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs ">
       <meta name="generator" content="docfx ">
   
       <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
@@ -97,14 +97,14 @@
 
 
 
-  <h1 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1" class="text-break">Class ElementParameterAccessor&lt;TParamMap&gt;</h1>
-  <div class="markdown level0 summary"><p>Class used to access parameters on Revit elements, using the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+  <h1 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1" class="text-break">Class ElementParameterAccessor&lt;TWrapperParams&gt;</h1>
+  <div class="markdown level0 summary"><p>Class used to access parameters on Revit elements, using the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">ElementParameterAccessor&lt;TParamMap&gt;</span></div>
+    <div class="level1"><span class="xref">ElementParameterAccessor&lt;TWrapperParams&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -135,7 +135,7 @@
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
-public class ElementParameterAccessor&lt;TParamMap&gt; where TParamMap : IElementParameterMap</code></pre>
+public class ElementParameterAccessor&lt;TWrapperParams&gt; where TWrapperParams : IElementWrapperParameters</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -147,17 +147,17 @@ public class ElementParameterAccessor&lt;TParamMap&gt; where TParamMap : IElemen
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TParamMap</span></td>
+        <td><span class="parametername">TWrapperParams</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> must have properties of Type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> with same names
-as properties on the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a></p>
+  <div class="markdown level0 remarks"><p><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> must have properties of Type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> with same names
+as properties on the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a></p>
 </div>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_examples"><strong>Examples</strong></h5>
-  <p>How to use on getters and setters of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> properties.</p>
+  <p>How to use on getters and setters of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> properties.</p>
 <pre><code class="lang-csharp">public string DetailNumber {
     get =&gt; ParameterAccessor.GetStringValue();
     set =&gt; ParameterAccessor.SetValue(value);
@@ -166,13 +166,13 @@ as properties on the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers
   <h3 id="constructors">Constructors
 </h3>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_DynamoForRevitUtils_Entities_Wrappers_IElementWrapper__0__" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})">ElementParameterAccessor(IElementWrapper&lt;TParamMap&gt;)</h4>
+  <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_DynamoForRevitUtils_Entities_Wrappers_IElementWrapper__0__" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})">ElementParameterAccessor(IElementWrapper&lt;TWrapperParams&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of ElementParameterAccessor using the given FamilyInstanceWrapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ElementParameterAccessor(IElementWrapper&lt;TParamMap&gt; elementWrapper)</code></pre>
+    <pre><code class="lang-csharp hljs">public ElementParameterAccessor(IElementWrapper&lt;TWrapperParams&gt; elementWrapper)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -185,7 +185,7 @@ as properties on the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TParamMap&gt;</td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TWrapperParams&gt;</td>
         <td><span class="parametername">elementWrapper</span></td>
         <td><p>The FamilyInstanceWrapper to get parameters from.</p>
 </td>
@@ -213,7 +213,7 @@ as properties on the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)">GetBoolValue(string?)</h4>
   <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value of parameter in Revit Element,
-by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -233,7 +233,7 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
@@ -256,16 +256,16 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)">GetDoubleValue(string?)</h4>
   <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value of parameter in Revit Element, converted to display units,
-by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -285,7 +285,7 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
@@ -308,16 +308,16 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)">GetElementIdValue(string?)</h4>
   <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Autodesk.Revit.DB.ElementId</span> value of parameter in Revit Element,
-by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -337,7 +337,7 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
@@ -360,16 +360,16 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)">GetIntegerValue(string?)</h4>
   <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value of parameter in Revit Element,
-by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -389,7 +389,7 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
@@ -412,16 +412,16 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)">GetStringValue(string?)</h4>
   <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> value of parameter in Revit Element,
-by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -441,7 +441,7 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
@@ -464,16 +464,16 @@ by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.E
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <a id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue*"></a>
   <h4 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_System_Object_System_String_" data-uid="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)">SetValue(object, string?)</h4>
   <div class="markdown level1 summary"><p>Sets the value of parameter in Revit Element, automatically
-converting from display units to internal, by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class.</p>
+converting from display units to internal, by using <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -499,17 +499,17 @@ converting from display units to internal, by using <a class="xref" href="Dynamo
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> class</p>
+        <td><p>The name of corresponding property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_System_Object_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> be the same as the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, but this is not required. If the property name on
-    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> is different from the property on
-    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>, then you need to specify it.
+    It is recommended that the property name on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> be the same as the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, but this is not required. If the property name on
+    <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> is different from the property on
+    <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>, then you need to specify it.
 </p>
 </div>
   <h5 class="exceptions">Exceptions</h5>

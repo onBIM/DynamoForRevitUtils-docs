@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class FamilyInstanceWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs </title>
+      <title>Class FamilyInstanceWrapper&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class FamilyInstanceWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs ">
+      <meta name="title" content="Class FamilyInstanceWrapper&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs ">
       <meta name="generator" content="docfx ">
   
       <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
@@ -97,30 +97,32 @@
 
 
 
-  <h1 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1" class="text-break">Class FamilyInstanceWrapper&lt;TParamMap&gt;</h1>
-  <div class="markdown level0 summary"><p>Represents an abstract wrapper class for Revit family instances.</p>
+  <h1 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1" class="text-break">Class FamilyInstanceWrapper&lt;TWrapperParams&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents a wrapper for Revit <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> with your parameters.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper</a>&lt;TParamMap&gt;</div>
-    <div class="level2"><span class="xref">FamilyInstanceWrapper&lt;TParamMap&gt;</span></div>
+    <div class="level1"><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper</a>&lt;TWrapperParams&gt;</div>
+    <div class="level2"><span class="xref">FamilyInstanceWrapper&lt;TWrapperParams&gt;</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TParamMap&gt;</div>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TWrapperParams&gt;</div>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html">IElementWrapper</a></div>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.html">IFamilyInstanceWrapper</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element">ElementWrapper&lt;TParamMap&gt;.Element</a>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element">ElementWrapper&lt;TWrapperParams&gt;.Element</a>
     </div>
     <div>
-      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap">ElementWrapper&lt;TParamMap&gt;.ParameterMap</a>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Parameters">ElementWrapper&lt;TWrapperParams&gt;.Parameters</a>
     </div>
     <div>
-      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor">ElementWrapper&lt;TParamMap&gt;.ParameterAccessor</a>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor">ElementWrapper&lt;TWrapperParams&gt;.ParameterAccessor</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -149,7 +151,7 @@
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
-public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt;TParamMap&gt;, IElementWrapper&lt;TParamMap&gt; where TParamMap : IElementParameterMap</code></pre>
+public abstract class FamilyInstanceWrapper&lt;TWrapperParams&gt; : ElementWrapper&lt;TWrapperParams&gt;, IElementWrapper&lt;TWrapperParams&gt;, IElementWrapper, IFamilyInstanceWrapper where TWrapperParams : IElementWrapperParameters</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -161,21 +163,22 @@ public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TParamMap</span></td>
-        <td></td>
+        <td><span class="parametername">TWrapperParams</span></td>
+        <td><p>Represents the type of this wrapper parameters</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="constructors">Constructors
 </h3>
   <a id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)">FamilyInstanceWrapper(FamilyInstance, TParamMap)</h4>
-  <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html">FamilyInstanceWrapper&lt;TParamMap&gt;</a>.</p>
+  <h4 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1__ctor_Autodesk_Revit_DB_FamilyInstance__0_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.#ctor(Autodesk.Revit.DB.FamilyInstance,`0)">FamilyInstanceWrapper(FamilyInstance, TWrapperParams)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html">FamilyInstanceWrapper&lt;TWrapperParams&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected FamilyInstanceWrapper(FamilyInstance famInst, TParamMap parameterMap)</code></pre>
+    <pre><code class="lang-csharp hljs">protected FamilyInstanceWrapper(FamilyInstance famInst, TWrapperParams parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -194,8 +197,8 @@ public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TParamMap</span></td>
-        <td><span class="parametername">parameterMap</span></td>
+        <td><span class="xref">TWrapperParams</span></td>
+        <td><span class="parametername">parameters</span></td>
         <td><p>The parameter associated with the family instance.</p>
 </td>
       </tr>
@@ -212,7 +215,7 @@ public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>Thrown when <code class="paramref">famInst</code> is null.</p>
+        <td><p>Thrown when <code class="paramref">famInst</code> or <code class="paramref">parameters</code> is null.</p>
 </td>
       </tr>
     </tbody>
@@ -221,7 +224,7 @@ public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt
 </h3>
   <a id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance_" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance*"></a>
   <h4 id="DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance" data-uid="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1.FamilyInstance">FamilyInstance</h4>
-  <div class="markdown level1 summary"><p>Represents the wrapped <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_FamilyInstanceWrapper_1_FamilyInstance">FamilyInstance</a>.</p>
+  <div class="markdown level1 summary"><p>Represents the <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> associated with this wrapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -245,7 +248,13 @@ public abstract class FamilyInstanceWrapper&lt;TParamMap&gt; : ElementWrapper&lt
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper&lt;TParamMap&gt;</a>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper&lt;TWrapperParams&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html">IElementWrapper</a>
+  </div>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper.html">IFamilyInstanceWrapper</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

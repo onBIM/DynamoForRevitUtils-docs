@@ -5,9 +5,9 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class ElementWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs </title>
+      <title>Class ElementWrapper&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ElementWrapper&lt;TParamMap&gt; | DynamoForRevitUtils - Docs ">
+      <meta name="title" content="Class ElementWrapper&lt;TWrapperParams&gt; | DynamoForRevitUtils - Docs ">
       <meta name="generator" content="docfx ">
   
       <link rel="shortcut icon" href="../images/onbim-logo-128x128.png">
@@ -97,19 +97,20 @@
 
 
 
-  <h1 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" class="text-break">Class ElementWrapper&lt;TParamMap&gt;</h1>
-  <div class="markdown level0 summary"><p>Represents an abstract base class for wrapping Revit elements.</p>
+  <h1 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1" class="text-break">Class ElementWrapper&lt;TWrapperParams&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents a wrapper for Revit <span class="xref">Autodesk.Revit.DB.Element</span> with your parameters.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">ElementWrapper&lt;TParamMap&gt;</span></div>
-      <div class="level2"><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html">FamilyInstanceWrapper&lt;TParamMap&gt;</a></div>
+    <div class="level1"><span class="xref">ElementWrapper&lt;TWrapperParams&gt;</span></div>
+      <div class="level2"><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html">FamilyInstanceWrapper&lt;TWrapperParams&gt;</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TParamMap&gt;</div>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper</a>&lt;TWrapperParams&gt;</div>
+    <div><a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html">IElementWrapper</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -140,7 +141,7 @@
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
-public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TParamMap&gt; where TParamMap : IElementParameterMap</code></pre>
+public abstract class ElementWrapper&lt;TWrapperParams&gt; : IElementWrapper&lt;TWrapperParams&gt;, IElementWrapper where TWrapperParams : IElementWrapperParameters</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -152,43 +153,85 @@ public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TPara
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TParamMap</span></td>
-        <td></td>
+        <td><span class="parametername">TWrapperParams</span></td>
+        <td><p>Represents the type of this wrapper parameters</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
-    Use this class in conjunction with the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a>
+    Use this class in conjunction with the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a>
     to enhance the way you access element parameters.
 </p>
 <p>
-    The <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> class represents the Revit Element
-    and the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a> represents the parameters of this element.
+    The <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> class represents the Revit Element
+    and the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> represents the parameters of this element.
 </p>
 <p>
     To use these classes together, proceed as follows:
 <ol><li>
-        Create a class derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> to represent specific characteristics
+        Create a class derived from <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> that will represent Element parameters.
+    </li><li>
+        Create properties of Type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> in this derived class.
+        It is recommended that properties have the same names as in <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> derived class
+        created on following step, but it is not required.
+    </li><li>
+        Create a class derived from <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> to represent specific characteristics
         of the elements you want to represent.
     </li><li>
-        Create properties in <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> with primitive Types or
+        Create properties in <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> with primitive Types or
         <span class="xref">Autodesk.Revit.DB.ElementId</span> Type to represent the elements data.
     </li><li>
-        Create properties of Type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> in a class derived
-        from <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterMap-1.html">ElementParameterMap&lt;T&gt;</a>. It is recommended that properties have the
-        same names as in <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> created on step one, but it is not required.
-    </li><li>
-        Use <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor">ParameterAccessor</a> within the getters and setters of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>
+        Use <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterAccessor">ParameterAccessor</a> within the getters and setters of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>
         properties to retrieve and assign parameter values directly from and to Revit element instances.
     </li></ol>
     This way you will no longer need to worry about fetching parameters from elements every time
     you need to get/set their values.
-    Use the properties of the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a> normally and their values
+    Use the properties of the <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> normally and their values
     will be automatically get/set from/to the element instances in Revit.
 
 </div>
   <h5 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-csharp">public class CableTrayFittingParameters : ElementWrapperParameters&lt;CableTrayFittingParameters&gt;
+{
+    // It is recommended that properties in this class 
+    // have the same name to corresponding 
+    // properties of ElementWrapper, but is not required.
+
+    // Notice the Type of properties here must be of Type ElementParameter
+
+    public ElementParameter DiffPropName { get; set; }
+
+    public ElementParameter IDR { get; set; }
+
+    public ElementParameter Elevation { get; set; }
+
+    public ElementParameter EleIdParam { get; set; }
+
+    // The constructor can't appear in the Dynamo library.
+    // - If there is no need to access it by other classes, then make it 'private'.
+    // - If you need to access it by other classes on the same project, make it 'internal'.
+    // - If you need to access it by other projects, make it 'public' and assing it with
+    //   [IsVisibleInDynamoLibrary(false)] attribute.
+    internal CableTrayFittingParameters() { }
+
+    // Static constructor shown as Dynamo Node in Library.
+    // Used to allow users customize parameters used.
+    public static CableTrayFittingParameters Create(
+        ElementParameter comments,
+        ElementParameter idr,
+        ElementParameter elevation,
+        ElementParameter eleId,
+    ) =&gt; new()
+    {
+        Comments = comments,
+        IDR = idr,
+        Elevation = elevation,
+        EleIdParam = eleId,
+    };
+}</code></pre>
+
   <pre><code class="lang-csharp">public class CableTrayFittingWrapper : ElementWrapper&lt;CableTrayFittingParameters&gt;
 {
     internal CableTrayFittingWrapper(
@@ -223,52 +266,16 @@ public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TPara
     }
 }</code></pre>
 
-  <pre><code class="lang-csharp">public class CableTrayFittingParameters : ElementParameterMap&lt;CableTrayFittingParameters&gt;
-{
-    // It is recommended that properties in this class 
-    // have the same name to corresponding 
-    // properties of ElementWrapper, but is not required.
-
-    // Notice the Type of properties here must be of Type ElementParameter
-
-    public ElementParameter DiffPropName { get; set; }
-
-    public ElementParameter IDR { get; set; }
-
-    public ElementParameter Elevation { get; set; }
-
-    public ElementParameter EleIdParam { get; set; }
-
-    // Constructor made internal to not appear in Dynamo Library, 
-    // but still accessible from other classes.
-    internal CableTrayFittingParameters() { }
-
-    // Static constructor shown as Dynamo Node in Library.
-    // Used to allow users customize parameters used.
-    public static CableTrayFittingParameters Create(
-        ElementParameter comments,
-        ElementParameter idr,
-        ElementParameter elevation,
-        ElementParameter eleId,
-    ) =&gt; new()
-    {
-        Comments = comments,
-        IDR = idr,
-        Elevation = elevation,
-        EleIdParam = eleId,
-    };
-}</code></pre>
-
   <h3 id="constructors">Constructors
 </h3>
   <a id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1__ctor_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1__ctor_Autodesk_Revit_DB_Element__0_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor(Autodesk.Revit.DB.Element,`0)">ElementWrapper(Element, TParamMap)</h4>
-  <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TParamMap&gt;</a>.</p>
+  <h4 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1__ctor_Autodesk_Revit_DB_Element__0_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.#ctor(Autodesk.Revit.DB.Element,`0)">ElementWrapper(Element, TWrapperParams)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ElementWrapper(Element element, TParamMap parameterMap)</code></pre>
+    <pre><code class="lang-csharp hljs">public ElementWrapper(Element element, TWrapperParams parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -287,9 +294,25 @@ public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TPara
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TParamMap</span></td>
-        <td><span class="parametername">parameterMap</span></td>
+        <td><span class="xref">TWrapperParams</span></td>
+        <td><span class="parametername">parameters</span></td>
         <td><p>The parameter indexers associated with the element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when <code class="paramref">element</code> or <code class="paramref">parameters</code> is null.</p>
 </td>
       </tr>
     </tbody>
@@ -298,7 +321,7 @@ public abstract class ElementWrapper&lt;TParamMap&gt; : IElementWrapper&lt;TPara
 </h3>
   <a id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element*"></a>
   <h4 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Element" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Element">Element</h4>
-  <div class="markdown level1 summary"><p>Represents the Revit Element associated with this wrapper object.</p>
+  <div class="markdown level1 summary"><p>Represents the <span class="xref">Autodesk.Revit.DB.Element</span> associated with this wrapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -328,7 +351,7 @@ Revit element through the associated element wrapper.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ElementParameterAccessor&lt;TParamMap&gt; ParameterAccessor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ElementParameterAccessor&lt;TWrapperParams&gt; ParameterAccessor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -340,20 +363,19 @@ Revit element through the associated element wrapper.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html">ElementParameterAccessor</a>&lt;TParamMap&gt;</td>
+        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html">ElementParameterAccessor</a>&lt;TWrapperParams&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_ParameterMap" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.ParameterMap">ParameterMap</h4>
-  <div class="markdown level1 summary"><p>Provides access to the mapping between property names and their associated parameters
-of the Revit element within this wrapper object.</p>
+  <a id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Parameters_" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Parameters*"></a>
+  <h4 id="DynamoForRevitUtils_Entities_Wrappers_ElementWrapper_1_Parameters" data-uid="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>Provides access to the parameters associated with this wrapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TParamMap ParameterMap { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TWrapperParams Parameters { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -365,14 +387,17 @@ of the Revit element within this wrapper object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TParamMap</span></td>
+        <td><span class="xref">TWrapperParams</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper&lt;TParamMap&gt;</a>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html">IElementWrapper&lt;TWrapperParams&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.html">IElementWrapper</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

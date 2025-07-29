@@ -98,7 +98,7 @@
 
 
   <h1 id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper" class="text-break">Interface IElementWrapper</h1>
-  <div class="markdown level0 summary"><p>Represents an interface for wrapping Revit elements.</p>
+  <div class="markdown level0 summary"><p>Represents a wrapper for a Revit <span class="xref">Autodesk.Revit.DB.Element</span>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DynamoForRevitUtils.html">DynamoForRevitUtils</a>.<a class="xref" href="DynamoForRevitUtils.Entities.html">Entities</a>.<a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.html">Wrappers</a></h6>
@@ -108,11 +108,15 @@
     <pre><code class="lang-csharp hljs">[IsVisibleInDynamoLibrary(false)]
 public interface IElementWrapper</code></pre>
   </div>
+  <h5 id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is used to encapsulate the underlying Revit <span class="xref">Autodesk.Revit.DB.Element</span>,
+without parameters.</p>
+</div>
   <h3 id="properties">Properties
 </h3>
   <a id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_Element_" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element*"></a>
   <h4 id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_Element" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element">Element</h4>
-  <div class="markdown level1 summary"><p>Represents the Revit Element associated with this wrapper object.</p>
+  <div class="markdown level1 summary"><p>Represents the <span class="xref">Autodesk.Revit.DB.Element</span> associated with this wrapper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -130,55 +134,6 @@ public interface IElementWrapper</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">Element</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterAccessor_" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterAccessor" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterAccessor">ParameterAccessor</h4>
-  <div class="markdown level1 summary"><p>Provides access to manipulate and retrieve parameter values of a
-Revit element through the associated element wrapper.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ElementParameterAccessor ParameterAccessor { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor.html">ElementParameterAccessor</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterMaps_" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps*"></a>
-  <h4 id="DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_ParameterMaps" data-uid="DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.ParameterMaps">ParameterMaps</h4>
-  <div class="markdown level1 summary"><p>Parameter indexers associated with the element.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;IElementParameterMap&gt; ParameterMaps { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.IElementParameterMap.html">IElementParameterMap</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
