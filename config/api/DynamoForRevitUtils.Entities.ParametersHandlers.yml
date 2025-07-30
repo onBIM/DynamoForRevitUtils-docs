@@ -8,9 +8,9 @@ items:
   - DynamoForRevitUtils.Entities.ParametersHandlers.AccessParameterOptions
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
-  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-  - DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
-  - DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
+  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+  - DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+  - DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding
   langs:
   - csharp
   - vb
@@ -49,19 +49,19 @@ references:
   commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
-  name: ElementParameterAccessor<TWrapperParams>
-  nameWithType: ElementParameterAccessor<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams)
-  name.vb: ElementParameterAccessor(Of TWrapperParams)
+  name: ElementParameterAccessor<TParams>
+  nameWithType: ElementParameterAccessor<TParams>
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>
+  nameWithType.vb: ElementParameterAccessor(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams)
+  name.vb: ElementParameterAccessor(Of TParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
     name: ElementParameterAccessor
     isExternal: true
     href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html
   - name: <
-  - name: TWrapperParams
+  - name: TParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
@@ -71,51 +71,51 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TWrapperParams
+  - name: TParams
   - name: )
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
-  name: ElementWrapperParameters<T>
-  nameWithType: ElementWrapperParameters<T>
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters<T>
-  nameWithType.vb: ElementWrapperParameters(Of T)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters(Of T)
-  name.vb: ElementWrapperParameters(Of T)
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
+  name: ElementParameters<T>
+  nameWithType: ElementParameters<T>
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters<T>
+  nameWithType.vb: ElementParameters(Of T)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters(Of T)
+  name.vb: ElementParameters(Of T)
   spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-    name: ElementWrapperParameters
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+    name: ElementParameters
     isExternal: true
-    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-    name: ElementWrapperParameters
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+    name: ElementParameters
     isExternal: true
-    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters.html
-  name: IElementWrapperParameters
-  nameWithType: IElementWrapperParameters
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.html
+  name: IElementParameters
+  nameWithType: IElementParameters
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding.html
-  name: WrapperPropertyParameterBinding
-  nameWithType: WrapperPropertyParameterBinding
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding.html
+  name: PropertyParameterBinding
+  nameWithType: PropertyParameterBinding
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
   isExternal: true

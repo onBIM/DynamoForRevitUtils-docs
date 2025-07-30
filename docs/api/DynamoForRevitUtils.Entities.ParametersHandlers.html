@@ -112,21 +112,29 @@ and the result of the access operation.</p>
       <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></h5>
       <section><p>Represents a parameter of a Revit element within the Dynamo for Revit utilities.</p>
 </section>
-      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html">ElementParameterAccessor&lt;TWrapperParams&gt;</a></h5>
-      <section><p>Class used to access parameters on Revit elements, using the <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a> class.</p>
+      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html">ElementParameterAccessor&lt;TParams&gt;</a></h5>
+      <section><p>Class used to access Revit Element parameters, using the classes derived from <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html">ElementParameters&lt;T&gt;</a>.
+It provides a more clever way and much more resources to access Revit Elements
+parameters than using Revit API directly.</p>
 </section>
-      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a></h5>
-      <section><p>Represents the parameters that will be associated with an <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> object.</p>
+      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html">ElementParameters&lt;T&gt;</a></h5>
+      <section><p>
+Represents the parameters that will be associated with a Revit Element.
+</p>
+<p>
+Devired classes from this one are used by <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html">ElementParameterAccessor&lt;TParams&gt;</a> to provide a more
+clever way to access Revit Element parameters, then directly from Revit API.
+</p>
 </section>
-      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding.html">WrapperPropertyParameterBinding</a></h5>
-      <section><p>Represents a binding between an <a class="xref" href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html">ElementWrapper&lt;TWrapperParams&gt;</a> property
-and an associated <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a> property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html">ElementWrapperParameters&lt;T&gt;</a>.</p>
+      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding.html">PropertyParameterBinding</a></h5>
+      <section><p>Represents a binding between a C# class property and an <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a>
+property on <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html">ElementParameters&lt;T&gt;</a>.</p>
 </section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters.html">IElementWrapperParameters</a></h5>
-      <section><p>Represents a mapping between property names and their corresponding element parameters.</p>
+      <h5><a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.html">IElementParameters</a></h5>
+      <section><p>Represents a class cotaining properties of Type <a class="xref" href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html">ElementParameter</a></p>
 </section>
 
 

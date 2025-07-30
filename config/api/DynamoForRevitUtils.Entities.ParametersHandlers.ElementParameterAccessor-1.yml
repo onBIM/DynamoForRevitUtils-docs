@@ -5,7 +5,7 @@ items:
   id: ElementParameterAccessor`1
   parent: DynamoForRevitUtils.Entities.ParametersHandlers
   children:
-  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})
+  - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(Autodesk.Revit.DB.Element,`0)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)
   - DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)
@@ -15,37 +15,120 @@ items:
   langs:
   - csharp
   - vb
-  name: ElementParameterAccessor<TWrapperParams>
-  nameWithType: ElementParameterAccessor<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>
+  name: ElementParameterAccessor<TParams>
+  nameWithType: ElementParameterAccessor<TParams>
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>
   type: Class
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.ParametersHandlers
-  summary: Class used to access parameters on Revit elements, using the <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
-  remarks: >-
-    <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> must have properties of Type <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> with same names
+  summary: >-
+    Class used to access Revit Element parameters, using the classes derived from <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref>.
 
-    as properties on the <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>
+    It provides a more clever way and much more resources to access Revit Elements
+
+    parameters than using Revit API directly.
+  remarks: >-
+    It is recommended the <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> must have properties with same names
+
+    as properties on the your C# class, but is not required. See examples to know how to use.
   example:
   - >-
-    How to use on getters and setters of <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref> properties.
+    <pre><code class="lang-csharp">// C# class that wrapps Revit Element
 
-    <pre><code class="lang-csharp">public string DetailNumber {
-        get =&gt; ParameterAccessor.GetStringValue();
-        set =&gt; ParameterAccessor.SetValue(value);
+    public class CableTrayFittingWrapper
+
+    {
+        private readonly ElementParameterAccessor&lt;CableTrayFittingParameters&gt; _parameterAccessor;
+
+        internal CableTrayFittingWrapper(
+            Autodesk.Revit.DB.Element element,
+            CableTrayFittingParameters parameters
+        ) : base(element, parameters) { 
+            _parameterAccessor = new ElementParameterAccessor&lt;CableTrayFittingParameters&gt;(element, parameters);
+        }
+
+        // Properties binded to Revit Element parameters
+
+        public string Comments {
+            get =&gt; _parameterAccessor.GetStringValue();
+            set =&gt; _parameterAccessor.SetValue(value);
+        }
+
+        public bool IDR {
+            get =&gt; _parameterAccessor.GetBoolValue();
+            set =&gt; _parameterAccessor.SetValue(value);
+        }
+
+        public double Elevation {
+            get =&gt; _parameterAccessor.GetDoubleValue();
+            set =&gt; _parameterAccessor.SetValue(value);
+        }
+
+        // Point to a property with other name in the CableTrayFittingParameters
+        public ElementId EleId {
+            get =&gt; _parameterAccessor.GetElementIdValue(
+                nameof(CableTrayFittingParameters.EleIdParam)
+            );
+            set =&gt; _parameterAccessor.SetValue(
+                value, 
+                nameof(CableTrayFittingParameters.EleIdParam)
+            );
+        }
+
+        // other code
+    }</code></pre>
+  - >-
+    <pre><code class="lang-csharp">public class CableTrayFittingParameters : ElementWrapperParameters&lt;CableTrayFittingParameters&gt;
+
+    {
+        // It is recommended that properties in this class 
+        // have the same name to corresponding 
+        // properties of ElementWrapper, but is not required.
+
+        // Notice the Type of properties here must be of Type ElementParameter
+
+        public ElementParameter DiffPropName { get; set; }
+
+        public ElementParameter IDR { get; set; }
+
+        public ElementParameter Elevation { get; set; }
+
+        public ElementParameter EleIdParam { get; set; }
+
+        // The constructor can't appear in the Dynamo library.
+        // - If there is no need to access it by other classes, then make it 'private'.
+        // - If you need to access it by other classes on the same project, make it 'internal'.
+        // - If you need to access it by other projects, make it 'public' and assing it with
+        //   [IsVisibleInDynamoLibrary(false)] attribute.
+        internal CableTrayFittingParameters() { }
+
+        // Static constructor shown as Dynamo Node in Library.
+        // Used to allow users customize parameters through Dynamo.
+        public static CableTrayFittingParameters Create(
+            ElementParameter comments,
+            ElementParameter idr,
+            ElementParameter elevation,
+            ElementParameter eleId,
+        ) =&gt; new()
+        {
+            Comments = comments,
+            IDR = idr,
+            Elevation = elevation,
+            EleIdParam = eleId,
+        };
     }</code></pre>
   syntax:
     content: >-
       [IsVisibleInDynamoLibrary(false)]
 
-      public class ElementParameterAccessor<TWrapperParams> where TWrapperParams : IElementWrapperParameters
+      public class ElementParameterAccessor<TParams> where TParams : IElementParameters
     typeParameters:
-    - id: TWrapperParams
+    - id: TParams
     content.vb: >-
       <IsVisibleInDynamoLibrary(False)>
 
-      Public Class ElementParameterAccessor(Of TWrapperParams As IElementWrapperParameters)
+      Public Class ElementParameterAccessor(Of TParams As IElementParameters)
   inheritance:
   - System.Object
   inheritedMembers:
@@ -64,40 +147,43 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams)
-  name.vb: ElementParameterAccessor(Of TWrapperParams)
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})
-  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})
-  id: '#ctor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0})'
+  nameWithType.vb: ElementParameterAccessor(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams)
+  name.vb: ElementParameterAccessor(Of TParams)
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(Autodesk.Revit.DB.Element,`0)
+  commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor(Autodesk.Revit.DB.Element,`0)
+  id: '#ctor(Autodesk.Revit.DB.Element,`0)'
   parent: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
   langs:
   - csharp
   - vb
-  name: ElementParameterAccessor(IElementWrapper<TWrapperParams>)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.ElementParameterAccessor(IElementWrapper<TWrapperParams>)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.ElementParameterAccessor(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>)
+  name: ElementParameterAccessor(Element, TParams)
+  nameWithType: ElementParameterAccessor<TParams>.ElementParameterAccessor(Element, TParams)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.ElementParameterAccessor(Autodesk.Revit.DB.Element, TParams)
   type: Constructor
   assemblies:
   - DynamoForRevitUtils
   namespace: DynamoForRevitUtils.Entities.ParametersHandlers
-  summary: Creates a new instance of ElementParameterAccessor using the given FamilyInstanceWrapper.
+  summary: Creates a new instance of ElementParameterAccessor by element and its parameters
   example: []
   syntax:
-    content: public ElementParameterAccessor(IElementWrapper<TWrapperParams> elementWrapper)
+    content: public ElementParameterAccessor(Element element, TParams parameters)
     parameters:
-    - id: elementWrapper
-      type: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TWrapperParams}}
-      description: The FamilyInstanceWrapper to get parameters from.
-    content.vb: Public Sub New(elementWrapper As IElementWrapper(Of TWrapperParams))
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Revit element to access parameters
+    - id: parameters
+      type: '{TParams}'
+      description: Class derived from <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters" data-throw-if-not-resolved="false"></xref> containing Element parameters.
+    content.vb: Public Sub New(element As Element, parameters As TParams)
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown when the familyInstanceWrapper is null.
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).New(IElementWrapper(Of TWrapperParams))
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).New(DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams))
-  name.vb: New(IElementWrapper(Of TWrapperParams))
+  nameWithType.vb: ElementParameterAccessor(Of TParams).New(Element, TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).New(Autodesk.Revit.DB.Element, TParams)
+  name.vb: New(Element, TParams)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue(System.String)
   id: GetDoubleValue(System.String)
@@ -106,8 +192,8 @@ items:
   - csharp
   - vb
   name: GetDoubleValue(string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetDoubleValue(string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetDoubleValue(string?)
+  nameWithType: ElementParameterAccessor<TParams>.GetDoubleValue(string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetDoubleValue(string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -115,28 +201,28 @@ items:
   summary: >-
     Retrieves the <xref href="System.Double" data-throw-if-not-resolved="false"></xref> value of parameter in Revit Element, converted to display units,
 
-    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    <remarks>
+        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+        the property on your C# class, but this is not required. If is not the case, then you need to specify
+        it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+        examples to know how to use.
+    </remarks>
   example: []
   syntax:
     content: public double GetDoubleValue(string? propertyName = null)
     parameters:
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     return:
       type: System.Double
       description: <xref href="System.Double" data-throw-if-not-resolved="false"></xref> value retrivied from Revit Element parameter, converted to display units.
     content.vb: Public Function GetDoubleValue(propertyName As String = Nothing) As Double
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue*
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetDoubleValue(String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetDoubleValue(String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetDoubleValue(String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetDoubleValue(String)
   name.vb: GetDoubleValue(String)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue(System.String)
@@ -146,8 +232,8 @@ items:
   - csharp
   - vb
   name: GetStringValue(string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetStringValue(string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetStringValue(string?)
+  nameWithType: ElementParameterAccessor<TParams>.GetStringValue(string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetStringValue(string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -155,28 +241,28 @@ items:
   summary: >-
     Retrieves the <xref href="System.String" data-throw-if-not-resolved="false"></xref> value of parameter in Revit Element,
 
-    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    <remarks>
+        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+        the property on your C# class, but this is not required. If is not the case, then you need to specify
+        it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+        examples to know how to use.
+    </remarks>
   example: []
   syntax:
     content: public string GetStringValue(string? propertyName = null)
     parameters:
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     return:
       type: System.String
       description: <xref href="System.String" data-throw-if-not-resolved="false"></xref> value retrivied from Revit Element parameter.
     content.vb: Public Function GetStringValue(propertyName As String = Nothing) As String
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue*
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetStringValue(String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetStringValue(String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetStringValue(String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetStringValue(String)
   name.vb: GetStringValue(String)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue(System.String)
@@ -186,8 +272,8 @@ items:
   - csharp
   - vb
   name: GetElementIdValue(string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetElementIdValue(string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetElementIdValue(string?)
+  nameWithType: ElementParameterAccessor<TParams>.GetElementIdValue(string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetElementIdValue(string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -195,28 +281,28 @@ items:
   summary: >-
     Retrieves the <xref href="Autodesk.Revit.DB.ElementId" data-throw-if-not-resolved="false"></xref> value of parameter in Revit Element,
 
-    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    <remarks>
+        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+        the property on your C# class, but this is not required. If is not the case, then you need to specify
+        it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+        examples to know how to use.
+    </remarks>
   example: []
   syntax:
     content: public ElementId GetElementIdValue(string? propertyName = null)
     parameters:
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     return:
       type: Autodesk.Revit.DB.ElementId
       description: <xref href="Autodesk.Revit.DB.ElementId" data-throw-if-not-resolved="false"></xref> value retrivied from Revit Element parameter.
     content.vb: Public Function GetElementIdValue(propertyName As String = Nothing) As ElementId
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue*
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetElementIdValue(String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetElementIdValue(String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetElementIdValue(String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetElementIdValue(String)
   name.vb: GetElementIdValue(String)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue(System.String)
@@ -226,8 +312,8 @@ items:
   - csharp
   - vb
   name: GetIntegerValue(string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetIntegerValue(string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetIntegerValue(string?)
+  nameWithType: ElementParameterAccessor<TParams>.GetIntegerValue(string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetIntegerValue(string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -235,28 +321,28 @@ items:
   summary: >-
     Retrieves the <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> value of parameter in Revit Element,
 
-    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    <remarks>
+        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+        the property on your C# class, but this is not required. If is not the case, then you need to specify
+        it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+        examples to know how to use.
+    </remarks>
   example: []
   syntax:
     content: public int GetIntegerValue(string? propertyName = null)
     parameters:
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     return:
       type: System.Int32
       description: <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> value retrivied from Revit Element parameter.
     content.vb: Public Function GetIntegerValue(propertyName As String = Nothing) As Integer
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetIntegerValue*
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetIntegerValue(String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetIntegerValue(String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetIntegerValue(String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetIntegerValue(String)
   name.vb: GetIntegerValue(String)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue(System.String)
@@ -266,8 +352,8 @@ items:
   - csharp
   - vb
   name: GetBoolValue(string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetBoolValue(string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetBoolValue(string?)
+  nameWithType: ElementParameterAccessor<TParams>.GetBoolValue(string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetBoolValue(string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -275,28 +361,28 @@ items:
   summary: >-
     Retrieves the <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> value of parameter in Revit Element,
 
-    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    <remarks>
+        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+        the property on your C# class, but this is not required. If is not the case, then you need to specify
+        it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+        examples to know how to use.
+    </remarks>
   example: []
   syntax:
     content: public bool GetBoolValue(string? propertyName = null)
     parameters:
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     return:
       type: System.Boolean
       description: <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> value retrivied from Revit Element parameter.
     content.vb: Public Function GetBoolValue(propertyName As String = Nothing) As Boolean
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetBoolValue*
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetBoolValue(String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetBoolValue(String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetBoolValue(String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetBoolValue(String)
   name.vb: GetBoolValue(String)
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)
   commentId: M:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue(System.Object,System.String)
@@ -306,8 +392,8 @@ items:
   - csharp
   - vb
   name: SetValue(object, string?)
-  nameWithType: ElementParameterAccessor<TWrapperParams>.SetValue(object, string?)
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.SetValue(object, string?)
+  nameWithType: ElementParameterAccessor<TParams>.SetValue(object, string?)
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.SetValue(object, string?)
   type: Method
   assemblies:
   - DynamoForRevitUtils
@@ -315,14 +401,15 @@ items:
   summary: >-
     Sets the value of parameter in Revit Element, automatically
 
-    converting from display units to internal, by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class.
+    converting from display units to internal, by using <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class.
   remarks: >-
-    <p>
-        It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> be the same as the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, but this is not required. If the property name on
-        <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> is different from the property on
-        <xref href="DynamoForRevitUtils.Entities.Wrappers.ElementWrapper%601" data-throw-if-not-resolved="false"></xref>, then you need to specify it.
-    </p>
+    It is recommended that the property name on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> have the same name as
+
+    the property on your C# class, but this is not required. If is not the case, then you need to specify
+
+    it on <code class="paramref">propertyName</code> argument. See <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> documentation
+
+    examples to know how to use.
   example: []
   syntax:
     content: public void SetValue(object value, string? propertyName = null)
@@ -332,7 +419,7 @@ items:
       description: Value to be set on parameter.
     - id: propertyName
       type: System.String
-      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601" data-throw-if-not-resolved="false"></xref> class
+      description: The name of corresponding property on <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601" data-throw-if-not-resolved="false"></xref> class
     content.vb: Public Sub SetValue(value As Object, propertyName As String = Nothing)
   overload: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.SetValue*
   exceptions:
@@ -342,73 +429,37 @@ items:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: <xref href="Autodesk.Revit.DB.SpecTypeId" data-throw-if-not-resolved="false"></xref> of the <xref href="DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter" data-throw-if-not-resolved="false"></xref> is null.
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).SetValue(Object, String)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).SetValue(Object, String)
+  nameWithType.vb: ElementParameterAccessor(Of TParams).SetValue(Object, String)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).SetValue(Object, String)
   name.vb: SetValue(Object, String)
 references:
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
-  name: ElementWrapperParameters<T>
-  nameWithType: ElementWrapperParameters<T>
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters<T>
-  nameWithType.vb: ElementWrapperParameters(Of T)
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters(Of T)
-  name.vb: ElementWrapperParameters(Of T)
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
+  name: ElementParameters<T>
+  nameWithType: ElementParameters<T>
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters<T>
+  nameWithType.vb: ElementParameters(Of T)
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters(Of T)
+  name.vb: ElementParameters(Of T)
   spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-    name: ElementWrapperParameters
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+    name: ElementParameters
     isExternal: true
-    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-    name: ElementWrapperParameters
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+    name: ElementParameters
     isExternal: true
-    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters-1.html
+    href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
-  - name: )
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-  parent: DynamoForRevitUtils.Entities.ParametersHandlers
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
-  name: ElementParameter
-  nameWithType: ElementParameter
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
-- uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-  commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  name: ElementWrapper<TWrapperParams>
-  nameWithType: ElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>
-  nameWithType.vb: ElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams)
-  name.vb: ElementWrapper(Of TWrapperParams)
-  spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-    name: ElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  - name: <
-  - name: TWrapperParams
-  - name: '>'
-  spec.vb:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-    name: ElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TWrapperParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers
   commentId: N:DynamoForRevitUtils.Entities.ParametersHandlers
@@ -810,6 +861,14 @@ references:
     name: GenericServices
     isExternal: true
     href: DynamoForRevitUtils.Services.GenericServices.html
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.html
+  name: IElementParameters
+  nameWithType: IElementParameters
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -820,163 +879,26 @@ references:
 - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor*
   commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.#ctor
   isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_DynamoForRevitUtils_Entities_Wrappers_IElementWrapper__0__
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1__ctor_Autodesk_Revit_DB_Element__0_
   name: ElementParameterAccessor
-  nameWithType: ElementParameterAccessor<TWrapperParams>.ElementParameterAccessor
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.ElementParameterAccessor
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).New
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).New
+  nameWithType: ElementParameterAccessor<TParams>.ElementParameterAccessor
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.ElementParameterAccessor
+  nameWithType.vb: ElementParameterAccessor(Of TParams).New
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).New
   name.vb: New
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{{TWrapperParams}}
-  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper{`0}
-  parent: DynamoForRevitUtils.Entities.Wrappers
-  definition: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  name: IElementWrapper<TWrapperParams>
-  nameWithType: IElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
-  nameWithType.vb: IElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
-  name.vb: IElementWrapper(Of TWrapperParams)
-  spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  - name: <
-  - name: TWrapperParams
-  - name: '>'
-  spec.vb:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TWrapperParams
-  - name: )
-- uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-  commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  name: IElementWrapper<TWrapperParams>
-  nameWithType: IElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
-  nameWithType.vb: IElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
-  name.vb: IElementWrapper(Of TWrapperParams)
-  spec.csharp:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  - name: <
-  - name: TWrapperParams
-  - name: '>'
-  spec.vb:
-  - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TWrapperParams
-  - name: )
-- uid: DynamoForRevitUtils.Entities.Wrappers
-  commentId: N:DynamoForRevitUtils.Entities.Wrappers
-  isExternal: true
-  href: DynamoForRevitUtils.html
-  name: DynamoForRevitUtils.Entities.Wrappers
-  nameWithType: DynamoForRevitUtils.Entities.Wrappers
-  fullName: DynamoForRevitUtils.Entities.Wrappers
-  spec.csharp:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities
-    name: Entities
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities.Wrappers
-    name: Wrappers
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.html
-  spec.vb:
-  - uid: DynamoForRevitUtils
-    name: DynamoForRevitUtils
-    isExternal: true
-    href: DynamoForRevitUtils.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities
-    name: Entities
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.html
-  - name: .
-  - uid: DynamoForRevitUtils.Entities.Wrappers
-    name: Wrappers
-    isExternal: true
-    href: DynamoForRevitUtils.Entities.Wrappers.html
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue*
-  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_System_String_
-  name: GetDoubleValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetDoubleValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetDoubleValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetDoubleValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetDoubleValue
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue*
-  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_System_String_
-  name: GetStringValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetStringValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetStringValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetStringValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetStringValue
-- uid: Autodesk.Revit.DB.ElementId
-  commentId: T:Autodesk.Revit.DB.ElementId
+- uid: Autodesk.Revit.DB.Element
+  commentId: T:Autodesk.Revit.DB.Element
   parent: Autodesk.Revit.DB
   isExternal: true
-  name: ElementId
-  nameWithType: ElementId
-  fullName: Autodesk.Revit.DB.ElementId
-- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue*
-  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue
-  isExternal: true
-  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_System_String_
-  name: GetElementIdValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetElementIdValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetElementIdValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetElementIdValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetElementIdValue
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: '{TParams}'
+  commentId: '!:TParams'
+  definition: TParams
+  name: TParams
+  nameWithType: TParams
+  fullName: TParams
 - uid: Autodesk.Revit.DB
   commentId: N:Autodesk.Revit.DB
   isExternal: true
@@ -1007,6 +929,66 @@ references:
   - uid: Autodesk.Revit.DB
     name: DB
     isExternal: true
+- uid: TParams
+  name: TParams
+  nameWithType: TParams
+  fullName: TParams
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetDoubleValue
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetDoubleValue_System_String_
+  name: GetDoubleValue
+  nameWithType: ElementParameterAccessor<TParams>.GetDoubleValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetDoubleValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetDoubleValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetDoubleValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetStringValue
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetStringValue_System_String_
+  name: GetStringValue
+  nameWithType: ElementParameterAccessor<TParams>.GetStringValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetStringValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetStringValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetStringValue
+- uid: Autodesk.Revit.DB.ElementId
+  commentId: T:Autodesk.Revit.DB.ElementId
+  parent: Autodesk.Revit.DB
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue*
+  commentId: Overload:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1.GetElementIdValue
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetElementIdValue_System_String_
+  name: GetElementIdValue
+  nameWithType: ElementParameterAccessor<TParams>.GetElementIdValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetElementIdValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetElementIdValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetElementIdValue
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -1023,10 +1005,10 @@ references:
   isExternal: true
   href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetIntegerValue_System_String_
   name: GetIntegerValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetIntegerValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetIntegerValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetIntegerValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetIntegerValue
+  nameWithType: ElementParameterAccessor<TParams>.GetIntegerValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetIntegerValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetIntegerValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetIntegerValue
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1043,16 +1025,24 @@ references:
   isExternal: true
   href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_GetBoolValue_System_String_
   name: GetBoolValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.GetBoolValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.GetBoolValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).GetBoolValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).GetBoolValue
+  nameWithType: ElementParameterAccessor<TParams>.GetBoolValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.GetBoolValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).GetBoolValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).GetBoolValue
 - uid: Autodesk.Revit.DB.SpecTypeId
   commentId: T:Autodesk.Revit.DB.SpecTypeId
   isExternal: true
   name: SpecTypeId
   nameWithType: SpecTypeId
   fullName: Autodesk.Revit.DB.SpecTypeId
+- uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  commentId: T:DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
+  parent: DynamoForRevitUtils.Entities.ParametersHandlers
+  isExternal: true
+  href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter.html
+  name: ElementParameter
+  nameWithType: ElementParameter
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter
 - uid: System.InvalidOperationException
   commentId: T:System.InvalidOperationException
   isExternal: true
@@ -1065,7 +1055,7 @@ references:
   isExternal: true
   href: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.html#DynamoForRevitUtils_Entities_ParametersHandlers_ElementParameterAccessor_1_SetValue_System_Object_System_String_
   name: SetValue
-  nameWithType: ElementParameterAccessor<TWrapperParams>.SetValue
-  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>.SetValue
-  nameWithType.vb: ElementParameterAccessor(Of TWrapperParams).SetValue
-  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TWrapperParams).SetValue
+  nameWithType: ElementParameterAccessor<TParams>.SetValue
+  fullName: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>.SetValue
+  nameWithType.vb: ElementParameterAccessor(Of TParams).SetValue
+  fullName.vb: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor(Of TParams).SetValue

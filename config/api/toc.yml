@@ -87,16 +87,16 @@ items:
     name: ElementParameter
     type: Class
   - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor`1
-    name: ElementParameterAccessor<TWrapperParams>
+    name: ElementParameterAccessor<TParams>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters`1
-    name: ElementWrapperParameters<T>
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters`1
+    name: ElementParameters<T>
     type: Class
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters
-    name: IElementWrapperParameters
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters
+    name: IElementParameters
     type: Interface
-  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.WrapperPropertyParameterBinding
-    name: WrapperPropertyParameterBinding
+  - uid: DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding
+    name: PropertyParameterBinding
     type: Class
 - uid: DynamoForRevitUtils.Entities.PickSelectionFilters
   name: DynamoForRevitUtils.Entities.PickSelectionFilters
@@ -122,16 +122,16 @@ items:
   type: Namespace
   items:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
-    name: ElementWrapper<TWrapperParams>
+    name: ElementWrapper<TParams>
     type: Class
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
-    name: FamilyInstanceWrapper<TWrapperParams>
+    name: FamilyInstanceWrapper<TParams>
     type: Class
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
     name: IElementWrapper
     type: Interface
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
-    name: IElementWrapper<TWrapperParams>
+    name: IElementWrapper<TParams>
     type: Interface
   - uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
     name: IFamilyInstanceWrapper

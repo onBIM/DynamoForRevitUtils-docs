@@ -9,9 +9,9 @@ items:
   langs:
   - csharp
   - vb
-  name: IElementWrapper<TWrapperParams>
-  nameWithType: IElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
+  name: IElementWrapper<TParams>
+  nameWithType: IElementWrapper<TParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParams>
   type: Interface
   assemblies:
   - DynamoForRevitUtils
@@ -22,14 +22,14 @@ items:
     content: >-
       [IsVisibleInDynamoLibrary(false)]
 
-      public interface IElementWrapper<TWrapperParams> : IElementWrapper where TWrapperParams : IElementWrapperParameters
+      public interface IElementWrapper<TParams> : IElementWrapper where TParams : IElementParameters
     typeParameters:
-    - id: TWrapperParams
+    - id: TParams
       description: Represents the type of this wrapper parameters
     content.vb: >-
       <IsVisibleInDynamoLibrary(False)>
 
-      Public Interface IElementWrapper(Of TWrapperParams As IElementWrapperParameters) Inherits IElementWrapper
+      Public Interface IElementWrapper(Of TParams As IElementParameters) Inherits IElementWrapper
   inheritedMembers:
   - DynamoForRevitUtils.Entities.Wrappers.IElementWrapper.Element
   extensionMethods:
@@ -40,9 +40,9 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: IElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
-  name.vb: IElementWrapper(Of TWrapperParams)
+  nameWithType.vb: IElementWrapper(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParams)
+  name.vb: IElementWrapper(Of TParams)
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
   commentId: P:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters
   id: Parameters
@@ -51,8 +51,8 @@ items:
   - csharp
   - vb
   name: Parameters
-  nameWithType: IElementWrapper<TWrapperParams>.Parameters
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>.Parameters
+  nameWithType: IElementWrapper<TParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParams>.Parameters
   type: Property
   assemblies:
   - DynamoForRevitUtils
@@ -60,14 +60,14 @@ items:
   summary: Provides access to the parameters associated with this wrapper.
   example: []
   syntax:
-    content: TWrapperParams Parameters { get; }
+    content: TParams Parameters { get; }
     parameters: []
     return:
-      type: '{TWrapperParams}'
-    content.vb: ReadOnly Property Parameters As TWrapperParams
+      type: '{TParams}'
+    content.vb: ReadOnly Property Parameters As TParams
   overload: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1.Parameters*
-  nameWithType.vb: IElementWrapper(Of TWrapperParams).Parameters
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams).Parameters
+  nameWithType.vb: IElementWrapper(Of TParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParams).Parameters
 references:
 - uid: DynamoForRevitUtils.Entities.Wrappers
   commentId: N:DynamoForRevitUtils.Entities.Wrappers
@@ -253,17 +253,17 @@ references:
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html#DynamoForRevitUtils_Entities_Wrappers_IElementWrapper_1_Parameters
   name: Parameters
-  nameWithType: IElementWrapper<TWrapperParams>.Parameters
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>.Parameters
-  nameWithType.vb: IElementWrapper(Of TWrapperParams).Parameters
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams).Parameters
-- uid: '{TWrapperParams}'
-  commentId: '!:TWrapperParams'
-  definition: TWrapperParams
-  name: TWrapperParams
-  nameWithType: TWrapperParams
-  fullName: TWrapperParams
-- uid: TWrapperParams
-  name: TWrapperParams
-  nameWithType: TWrapperParams
-  fullName: TWrapperParams
+  nameWithType: IElementWrapper<TParams>.Parameters
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParams>.Parameters
+  nameWithType.vb: IElementWrapper(Of TParams).Parameters
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParams).Parameters
+- uid: '{TParams}'
+  commentId: '!:TParams'
+  definition: TParams
+  name: TParams
+  nameWithType: TParams
+  fullName: TParams
+- uid: TParams
+  name: TParams
+  nameWithType: TParams
+  fullName: TParams

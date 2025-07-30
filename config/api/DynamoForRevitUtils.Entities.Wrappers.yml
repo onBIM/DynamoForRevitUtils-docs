@@ -23,19 +23,19 @@ references:
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
-  name: ElementWrapper<TWrapperParams>
-  nameWithType: ElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>
-  nameWithType.vb: ElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TWrapperParams)
-  name.vb: ElementWrapper(Of TWrapperParams)
+  name: ElementWrapper<TParams>
+  nameWithType: ElementWrapper<TParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParams>
+  nameWithType.vb: ElementWrapper(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper(Of TParams)
+  name.vb: ElementWrapper(Of TParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
     name: ElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.html
   - name: <
-  - name: TWrapperParams
+  - name: TParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.ElementWrapper`1
@@ -45,25 +45,25 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TWrapperParams
+  - name: TParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
-  name: FamilyInstanceWrapper<TWrapperParams>
-  nameWithType: FamilyInstanceWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>
-  nameWithType.vb: FamilyInstanceWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TWrapperParams)
-  name.vb: FamilyInstanceWrapper(Of TWrapperParams)
+  name: FamilyInstanceWrapper<TParams>
+  nameWithType: FamilyInstanceWrapper<TParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParams>
+  nameWithType.vb: FamilyInstanceWrapper(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper(Of TParams)
+  name.vb: FamilyInstanceWrapper(Of TParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
     name: FamilyInstanceWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.html
   - name: <
-  - name: TWrapperParams
+  - name: TParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper`1
@@ -73,7 +73,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TWrapperParams
+  - name: TParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper
@@ -87,19 +87,19 @@ references:
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
   isExternal: true
   href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
-  name: IElementWrapper<TWrapperParams>
-  nameWithType: IElementWrapper<TWrapperParams>
-  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>
-  nameWithType.vb: IElementWrapper(Of TWrapperParams)
-  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TWrapperParams)
-  name.vb: IElementWrapper(Of TWrapperParams)
+  name: IElementWrapper<TParams>
+  nameWithType: IElementWrapper<TParams>
+  fullName: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParams>
+  nameWithType.vb: IElementWrapper(Of TParams)
+  fullName.vb: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper(Of TParams)
+  name.vb: IElementWrapper(Of TParams)
   spec.csharp:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
     name: IElementWrapper
     isExternal: true
     href: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.html
   - name: <
-  - name: TWrapperParams
+  - name: TParams
   - name: '>'
   spec.vb:
   - uid: DynamoForRevitUtils.Entities.Wrappers.IElementWrapper`1
@@ -109,7 +109,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TWrapperParams
+  - name: TParams
   - name: )
 - uid: DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper
   commentId: T:DynamoForRevitUtils.Entities.Wrappers.IFamilyInstanceWrapper

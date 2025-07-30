@@ -1337,8 +1337,8 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TWrapperParams>",
-      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.yml\" sourcestartlinenumber=\"1\">Class used to access parameters on Revit elements, using the <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapperParameters%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor<TParams>",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor-1.yml\" sourcestartlinenumber=\"1\">Class used to access Revit Element parameters, using the classes derived from <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601\" data-throw-if-not-resolved=\"false\"></xref>.\nIt provides a more clever way and much more resources to access Revit Elements\nparameters than using Revit API directly.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1384,6 +1384,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters<T>",
+      "Summary": "<p>\nRepresents the parameters that will be associated with a Revit Element.\n</p>\n<p>\nDevired classes from this one are used by <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameterAccessor%601\" data-throw-if-not-resolved=\"false\"></xref> to provide a more\nclever way to access Revit Element parameters, then directly from Revit API.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.ElementWrapper.yml",
       "output": {
         ".html": {
@@ -1426,6 +1440,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementParameters.yml\" sourcestartlinenumber=\"1\">Represents a class cotaining properties of Type <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapper.yml",
       "output": {
         ".html": {
@@ -1451,6 +1479,20 @@
       "IsMRef": true,
       "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.IElementWrapperParameters.yml\" sourcestartlinenumber=\"1\">Represents a mapping between property names and their corresponding element parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding",
+      "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.ParametersHandlers.PropertyParameterBinding.yml\" sourcestartlinenumber=\"1\">Represents a binding between a C# class property and an <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameter\" data-throw-if-not-resolved=\"false\"></xref>\nproperty on <xref href=\"DynamoForRevitUtils.Entities.ParametersHandlers.ElementParameters%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1645,7 +1687,7 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TWrapperParams>",
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.ElementWrapper<TParams>",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.ElementWrapper-1.yml\" sourcestartlinenumber=\"1\">Represents a wrapper for Revit <xref href=\"Autodesk.Revit.DB.Element\" data-throw-if-not-resolved=\"false\"></xref> with your parameters.</p>\n"
     },
     {
@@ -1673,7 +1715,7 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TWrapperParams>",
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper<TParams>",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.FamilyInstanceWrapper-1.yml\" sourcestartlinenumber=\"1\">Represents a wrapper for Revit <xref href=\"Autodesk.Revit.DB.FamilyInstance\" data-throw-if-not-resolved=\"false\"></xref> with your parameters.</p>\n"
     },
     {
@@ -1715,7 +1757,7 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TWrapperParams>",
+      "Title": "DynamoForRevitUtils.Entities.Wrappers.IElementWrapper<TParams>",
       "Summary": "<p sourcefile=\"api/DynamoForRevitUtils.Entities.Wrappers.IElementWrapper-1.yml\" sourcestartlinenumber=\"1\">Interface used to represents an Revit element wrapper with it parameters</p>\n"
     },
     {
